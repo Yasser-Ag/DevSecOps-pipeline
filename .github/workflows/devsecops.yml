@@ -2,12 +2,20 @@ name: devsecops-pipeline
 
 on:
   workflow_dispatch:
+    inputs:
+      cache_mode:
+        description: "cold (purge tool caches) or warm (nominal)"
+        type: choice
+        options: [warm, cold]
+        default: warm
+      target:
+        description: "target to scan (path relative to /opt/devsecops-lab)"
+        default: app/crAPI
   push:
     branches: [main]
 
 env:
   LAB: /opt/devsecops-lab
-  TARGET: app/crAPI
   PATH: /home/lab/.local/bin:/usr/local/bin:/usr/bin:/bin
 
 jobs:
@@ -15,14 +23,56 @@ jobs:
     runs-on: [self-hosted, devsecops]
     steps:
 
+      - name: Resolve run parameters
+        run: |
+          echo "TARGET=${{ inputs.target || 'app/crAPI' }}" >> $GITHUB_ENV
+          echo "CACHE_MODE=${{ inputs.cache_mode || 'warm' }}" >> $GITHUB_ENV
+
+      - name: Fetch pipeline code
+        run: |
+          rm -rf $RUNNER_TEMP/repo
+          git clone --depth 1 https://github.com/Yasser-Ag/DevSecOps-pipeline.git $RUNNER_TEMP/repo
+
+      - name: Verify tool versions against lockfile
+        run: |
+          {
+            echo "semgrep=$(semgrep --version)"
+            echo "trivy=$(trivy --version | head -1 | awk '{print $2}')"
+            echo "gitleaks=$(gitleaks version)"
+            echo "checkov=$(checkov --version)"
+            echo "nuclei=$(nuclei -version 2>&1 | grep -o 'v[0-9.]*' | head -1)"
+            echo "actionlint=$(actionlint -version | head -1)"
+          } > $RUNNER_TEMP/versions.observed
+          if ! diff -u $RUNNER_TEMP/repo/pipeline/versions.lock $RUNNER_TEMP/versions.observed; then
+            echo "::error::Tool versions drifted from versions.lock — results are not comparable to previous runs."
+            exit 1
+          fi
+          echo "Versions match lockfile."
+
       - name: Prepare run directory
         run: |
           RUN_DIR=$LAB/results/run-${{ github.run_number }}
           mkdir -p $RUN_DIR
           echo "RUN_DIR=$RUN_DIR" >> $GITHUB_ENV
-          echo "target=$TARGET" > $RUN_DIR/meta.txt
-          echo "commit=${{ github.sha }}" >> $RUN_DIR/meta.txt
-          date -u +%FT%TZ >> $RUN_DIR/meta.txt
+          {
+            echo "target=$TARGET"
+            echo "commit_pipeline=${{ github.sha }}"
+            echo "commit_target=$(git -C $LAB/$TARGET rev-parse HEAD)"
+            echo "cache_mode=$CACHE_MODE"
+            echo "run_number=${{ github.run_number }}"
+            date -u +%FT%TZ
+          } > $RUN_DIR/meta.txt
+          cp $RUNNER_TEMP/versions.observed $RUN_DIR/versions.txt
+
+      - name: Apply cache policy
+        run: |
+          if [ "$CACHE_MODE" = "cold" ]; then
+            trivy clean --all || true
+            rm -rf ~/.semgrep || true
+            echo "Caches purged (cold run)."
+          else
+            echo "Caches preserved (warm run)."
+          fi
 
       - name: "Stage 1 — SAST (Semgrep)"
         run: |
@@ -30,18 +80,14 @@ jobs:
           semgrep scan --config p/owasp-top-ten --config p/secrets \
             --json --output $RUN_DIR/01-sast-semgrep.json \
             --metrics off --quiet $LAB/$TARGET || true
-          END=$(date +%s.%N)
-          echo "sast=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
-          echo "SAST findings: $(jq '.results | length' $RUN_DIR/01-sast-semgrep.json)"
+          echo "sast=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
       - name: "Stage 2 — SCA (Trivy fs)"
         run: |
           START=$(date +%s.%N)
           trivy fs --scanners vuln --format json \
             --output $RUN_DIR/02-sca-trivy.json $LAB/$TARGET || true
-          END=$(date +%s.%N)
-          echo "sca=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
-          echo "SCA findings: $(jq '[.Results[]?.Vulnerabilities[]?] | length' $RUN_DIR/02-sca-trivy.json)"
+          echo "sca=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
       - name: "Stage 3 — Secrets (gitleaks)"
         run: |
@@ -49,36 +95,42 @@ jobs:
           gitleaks detect --source $LAB/$TARGET --no-git \
             --report-format json --report-path $RUN_DIR/03-secrets-gitleaks.json \
             --exit-code 0
-          END=$(date +%s.%N)
-          echo "secrets=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
-          echo "Secrets findings: $(jq 'length' $RUN_DIR/03-secrets-gitleaks.json 2>/dev/null || echo 0)"
-
-      - name: Fetch pipeline code
-        run: |
-          rm -rf $RUNNER_TEMP/repo
-          git clone --depth 1 https://github.com/Yasser-Ag/DevSecOps-pipeline.git $RUNNER_TEMP/repo
+          echo "secrets=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
       - name: "Stage 7 — Normalize (CWE)"
         run: |
           START=$(date +%s.%N)
           python3 $RUNNER_TEMP/repo/pipeline/normalize.py $RUN_DIR --lab $LAB
-          END=$(date +%s.%N)
-          echo "normalize=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
+          echo "normalize=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p $RUNNER_TEMP/artifacts
+          cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
+             $RUN_DIR/summary.json $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
+             $RUNNER_TEMP/artifacts/
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: run-${{ github.run_number }}-${{ env.CACHE_MODE }}
+          path: ${{ runner.temp }}/artifacts
+          retention-days: 90
 
       - name: Summary
         run: |
           S=$RUN_DIR/summary.json
           {
-            echo "## Run ${{ github.run_number }} — $(jq -r .target $S)"
-            echo "**$(jq -r .raw_total $S) findings bruts → $(jq -r .dedup_total $S) après normalisation** ($(jq -r .multi_tool $S) multi-outils, $(jq -r .no_cwe $S) sans CWE)"
+            echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
+            echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** ($(jq -r .multi_tool $S) multi-tool, $(jq -r .no_cwe $S) without CWE)"
             echo ''
-            echo '| Outil | Findings |'; echo '|---|---|'
+            echo '| Tool | Findings |'; echo '|---|---|'
             jq -r '.raw_by_tool | to_entries[] | "| \(.key) | \(.value) |"' $S
             echo ''
-            echo '| Sévérité | Nb |'; echo '|---|---|'
+            echo '| Severity | Count |'; echo '|---|---|'
             jq -r '.by_severity | to_entries[] | "| \(.key) | \(.value) |"' $S
             echo ''
-            echo '| Top CWE | Nb |'; echo '|---|---|'
+            echo '| Top CWE | Count |'; echo '|---|---|'
             jq -r '.by_cwe | to_entries[:10][] | "| \(.key) | \(.value) |"' $S
             echo ''
             echo '```'; cat $RUN_DIR/timing.txt; echo '```'
