@@ -97,6 +97,37 @@ jobs:
             --exit-code 0
           echo "secrets=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
+      - name: "Stage 4 — IaC / Config (checkov + trivy config + actionlint)"
+        run: |
+          START=$(date +%s.%N)
+          checkov --directory $LAB/$TARGET \
+            --framework dockerfile,kubernetes,github_actions,terraform,secrets \
+            --output json --output-file-path $RUN_DIR/04a-iac-checkov.json \
+            --compact --quiet --soft-fail || true
+          trivy config --format json \
+            --output $RUN_DIR/04b-config-trivy.json $LAB/$TARGET || true
+          find $LAB/$TARGET -path '*/.github/workflows/*.y*ml' -print0 \
+            | xargs -0 -r actionlint -format '{{json .}}' \
+            > $RUN_DIR/04c-actions-actionlint.json 2>/dev/null || echo '[]' > $RUN_DIR/04c-actions-actionlint.json
+          echo "iac=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 5 — Image (Trivy image)"
+        run: |
+          START=$(date +%s.%N)
+          IMAGES=$(docker ps --filter "name=crapi" --format '{{.Image}}' | sort -u)
+          echo '{"images":[]}' > $RUN_DIR/05-image-trivy.json
+          if [ -n "$IMAGES" ]; then
+            echo "$IMAGES" > $RUN_DIR/05-images.txt
+            for IMG in $IMAGES; do
+              SAFE=$(echo "$IMG" | tr '/:' '__')
+              trivy image --scanners vuln --format json \
+                --output $RUN_DIR/05-image-$SAFE.json "$IMG" || true
+            done
+          else
+            echo "No running target images — stage 5 skipped (target not deployed)." 
+          fi
+          echo "image=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
       - name: "Stage 7 — Normalize (CWE)"
         run: |
           START=$(date +%s.%N)
