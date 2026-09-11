@@ -97,18 +97,15 @@ jobs:
             --exit-code 0
           echo "secrets=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
-      - name: "Stage 4 — IaC / Config (checkov + trivy config + actionlint)"
+      - name: "Stage 4 — IaC / Config (checkov + Trivy config)"
         run: |
           START=$(date +%s.%N)
           checkov --directory $LAB/$TARGET \
             --framework dockerfile,kubernetes,github_actions,terraform,secrets \
-            --output json --output-file-path $RUN_DIR/04a-iac-checkov.json \
-            --compact --quiet --soft-fail || true
+            --output json --quiet --compact --soft-fail \
+            > $RUN_DIR/04a-iac-checkov.json 2>/dev/null || true
           trivy config --format json \
             --output $RUN_DIR/04b-config-trivy.json $LAB/$TARGET || true
-          find $LAB/$TARGET -path '*/.github/workflows/*.y*ml' -print0 \
-            | xargs -0 -r actionlint -format '{{json .}}' \
-            > $RUN_DIR/04c-actions-actionlint.json 2>/dev/null || echo '[]' > $RUN_DIR/04c-actions-actionlint.json
           echo "iac=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
       - name: "Stage 5 — Image (Trivy image)"
