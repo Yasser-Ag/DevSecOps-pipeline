@@ -133,8 +133,9 @@ jobs:
       - name: Collect artifacts
         run: |
           mkdir -p $RUNNER_TEMP/artifacts
-          cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
-             $RUN_DIR/summary.json $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
+             cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
+             $RUN_DIR/summary.json $RUN_DIR/consensus.json \
+             $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
              $RUNNER_TEMP/artifacts/
 
       - name: Upload artifacts
@@ -149,7 +150,10 @@ jobs:
           S=$RUN_DIR/summary.json
           {
             echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
-            echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** ($(jq -r .multi_tool $S) multi-tool, $(jq -r .no_cwe $S) without CWE)"
+            echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
+            echo ''
+            echo '| Stage | Findings |'; echo '|---|---|'
+            jq -r '.raw_by_stage | to_entries[] | "| \(.key) | \(.value) |"' $S
             echo ''
             echo '| Tool | Findings |'; echo '|---|---|'
             jq -r '.raw_by_tool | to_entries[] | "| \(.key) | \(.value) |"' $S
