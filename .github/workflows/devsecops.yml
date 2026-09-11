@@ -1,0 +1,65 @@
+name: devsecops-pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+env:
+  LAB: /opt/devsecops-lab
+  TARGET: app/crAPI
+  PATH: /home/lab/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+jobs:
+  scan:
+    runs-on: [self-hosted, devsecops]
+    steps:
+
+      - name: Prepare run directory
+        run: |
+          RUN_DIR=$LAB/results/run-${{ github.run_number }}
+          mkdir -p $RUN_DIR
+          echo "RUN_DIR=$RUN_DIR" >> $GITHUB_ENV
+          echo "target=$TARGET" > $RUN_DIR/meta.txt
+          echo "commit=${{ github.sha }}" >> $RUN_DIR/meta.txt
+          date -u +%FT%TZ >> $RUN_DIR/meta.txt
+
+      - name: "Stage 1 — SAST (Semgrep)"
+        run: |
+          START=$(date +%s.%N)
+          semgrep scan --config p/owasp-top-ten --config p/secrets \
+            --json --output $RUN_DIR/01-sast-semgrep.json \
+            --metrics off --quiet $LAB/$TARGET || true
+          END=$(date +%s.%N)
+          echo "sast=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
+          echo "SAST findings: $(jq '.results | length' $RUN_DIR/01-sast-semgrep.json)"
+
+      - name: "Stage 2 — SCA (Trivy fs)"
+        run: |
+          START=$(date +%s.%N)
+          trivy fs --scanners vuln --format json \
+            --output $RUN_DIR/02-sca-trivy.json $LAB/$TARGET || true
+          END=$(date +%s.%N)
+          echo "sca=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
+          echo "SCA findings: $(jq '[.Results[]?.Vulnerabilities[]?] | length' $RUN_DIR/02-sca-trivy.json)"
+
+      - name: "Stage 3 — Secrets (gitleaks)"
+        run: |
+          START=$(date +%s.%N)
+          gitleaks detect --source $LAB/$TARGET --no-git \
+            --report-format json --report-path $RUN_DIR/03-secrets-gitleaks.json \
+            --exit-code 0
+          END=$(date +%s.%N)
+          echo "secrets=$(echo "$END - $START" | bc)" >> $RUN_DIR/timing.txt
+          echo "Secrets findings: $(jq 'length' $RUN_DIR/03-secrets-gitleaks.json 2>/dev/null || echo 0)"
+
+      - name: Summary
+        run: |
+          {
+            echo "## Run ${{ github.run_number }} — $TARGET"
+            echo '| Stage | Findings | Seconds |'
+            echo '|---|---|---|'
+            echo "| SAST | $(jq '.results|length' $RUN_DIR/01-sast-semgrep.json) | $(grep sast $RUN_DIR/timing.txt | cut -d= -f2 | cut -c1-6) |"
+            echo "| SCA | $(jq '[.Results[]?.Vulnerabilities[]?]|length' $RUN_DIR/02-sca-trivy.json) | $(grep sca $RUN_DIR/timing.txt | cut -d= -f2 | cut -c1-6) |"
+            echo "| Secrets | $(jq 'length' $RUN_DIR/03-secrets-gitleaks.json 2>/dev/null || echo 0) | $(grep secrets $RUN_DIR/timing.txt | cut -d= -f2 | cut -c1-6) |"
+          } >> $GITHUB_STEP_SUMMARY
