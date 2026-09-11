@@ -41,7 +41,6 @@ jobs:
             echo "gitleaks=$(gitleaks version)"
             echo "checkov=$(checkov --version)"
             echo "nuclei=$(nuclei -version 2>&1 | grep -o 'v[0-9.]*' | head -1)"
-            echo "actionlint=$(actionlint -version | head -1)"
           } > $RUNNER_TEMP/versions.observed
           if ! diff -u $RUNNER_TEMP/repo/pipeline/versions.lock $RUNNER_TEMP/versions.observed; then
             echo "::error::Tool versions drifted from versions.lock — results are not comparable to previous runs."
