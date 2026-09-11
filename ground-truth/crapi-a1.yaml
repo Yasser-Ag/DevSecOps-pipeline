@@ -1,27 +1,31 @@
 # =============================================================================
-#  Ground truth A1 — vulnérabilités applicatives documentées de crAPI
-#  Source d'autorité : docs/challenges.md + docs/challengeSolutions.md
-#  Commit figé       : b5fc307f3e5f875809b095b771108ef342a33724 (2026-09-09)
-#  Construit le      : 2026-09-11
+#  Ground truth A1 — documented application-level vulnerabilities of crAPI
 #
-#  Champs :
-#    id             identifiant stable utilisé dans les calculs
-#    title          intitulé officiel (docs/challenges.md)
-#    source_line    ligne dans docs/challenges.md (traçabilité)
-#    owasp_api      catégorie OWASP API Security Top 10 (2023)
-#    cwe            CWE attendu (mapping documenté ci-dessous)
-#    service        service crAPI concerné
-#    nature         business_logic | implementation | configuration
-#    detectable_by  familles d'outils qui PEUVENT théoriquement le détecter
-#                   (sast | sca | dast | secrets | iac | image | none)
-#                   "none" = hors de portée de tout scanner automatisé
-#    rationale      pourquoi cette détectabilité — argumenté, pas asserté
+#  Authoritative sources : docs/challenges.md, docs/challengeSolutions.md
+#  Pinned commit         : b5fc307f3e5f875809b095b771108ef342a33724 (2026-09-09)
+#  Compiled              : 2026-09-11
 #
-#  NOTE MÉTHODOLOGIQUE
-#  Le champ `detectable_by` est une borne SUPÉRIEURE théorique, établie avant
-#  toute exécution du pipeline (pré-enregistrement). Il sert à distinguer
-#  "le pipeline a raté" de "aucun outil de cette famille ne peut trouver ça".
-#  Il n'est jamais modifié après observation des résultats.
+#  Fields
+#    id                 stable identifier used in recall computations
+#    title              official wording (docs/challenges.md)
+#    source_line        line number in docs/challenges.md (traceability)
+#    owasp_api          OWASP API Security Top 10 (2023) / OWASP LLM Top 10 (2025)
+#    cwe                expected CWE
+#    service            crAPI microservice concerned
+#    service_evidence   confirmed  = endpoint stated in challengeSolutions.md
+#                       inferred   = deduced from functional scope, not stated
+#    endpoint           API path when documented, else null
+#    solution_detail    full | title_only  (depth of the official solution)
+#    nature             business_logic | implementation
+#    detectable_by      tool families that CAN theoretically detect it
+#                       (sast | sca | dast | secrets | iac | image | none)
+#    rationale          justification of the detectability bound
+#
+#  METHODOLOGICAL NOTE
+#  `detectable_by` is a theoretical UPPER BOUND, established before any
+#  pipeline execution (pre-registered). It separates "the pipeline missed it"
+#  from "no tool of that family can find it". It is never revised after
+#  observing results.
 # =============================================================================
 
 target: crAPI
@@ -31,7 +35,7 @@ source_files:
   - docs/challenges.md
   - docs/challengeSolutions.md
 documented_total: 18
-secret_challenges: 3        # exclus des calculs : non documentés par l'éditeur
+secret_challenges_excluded: true
 
 challenges:
 
@@ -42,12 +46,17 @@ challenges:
     owasp_api: "API1:2023 Broken Object Level Authorization"
     cwe: CWE-639
     service: identity
+    service_evidence: confirmed
+    endpoint: "/identity/api/v2/vehicle/<vehicleid>/location"
+    solution_detail: full
     nature: business_logic
     detectable_by: [dast]
     rationale: >
-      Nécessite deux comptes et la manipulation d'un identifiant de ressource
-      à l'exécution. Aucun scanner statique ne peut inférer la relation
-      propriétaire/objet ; un DAST authentifié multi-utilisateurs le peut.
+      Requires two accounts and manipulation of a resource identifier at
+      runtime. The exploit chains a second service (/community/api/v2/
+      community/posts/recent) to obtain another user's vehicleid. No static
+      analyser can infer the owner/object relation; an authenticated
+      multi-user DAST can.
 
   - id: CH-02
     title: "Access mechanic reports of other users"
@@ -55,11 +64,15 @@ challenges:
     owasp_api: "API1:2023 Broken Object Level Authorization"
     cwe: CWE-639
     service: workshop
+    service_evidence: confirmed
+    endpoint: "/workshop/api/merchant/contact_mechanic"
+    solution_detail: full
     nature: business_logic
     detectable_by: [dast]
     rationale: >
-      Même mécanisme que CH-01 sur un endpoint non documenté ; exige une phase
-      de découverte puis une comparaison de réponses entre deux identités.
+      Same mechanism as CH-01 on an undocumented endpoint disclosed through a
+      report_link field; requires a discovery phase followed by cross-identity
+      response comparison.
 
   # --- Broken User Authentication --------------------------------------------
   - id: CH-03
@@ -68,12 +81,15 @@ challenges:
     owasp_api: "API2:2023 Broken Authentication"
     cwe: CWE-307
     service: identity
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Absence de limitation sur la validation d'OTP. Observable uniquement par
-      envoi répété de requêtes ; le code ne contient pas de motif syntaxique
-      identifiable de façon fiable par SAST.
+      Missing rate limiting on OTP validation. Observable only through repeated
+      requests; the code contains no syntactic pattern a generic SAST ruleset
+      reliably flags.
 
   # --- Excessive Data Exposure ------------------------------------------------
   - id: CH-04
@@ -82,12 +98,15 @@ challenges:
     owasp_api: "API3:2023 Broken Object Property Level Authorization"
     cwe: CWE-200
     service: community
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Sérialisation trop large d'un objet. Un DAST peut repérer des champs
-      sensibles dans les réponses ; le SAST le pourrait en théorie mais exige
-      une règle spécifique au modèle de données, absente des rulesets génériques.
+      Over-broad object serialization. A DAST can spot sensitive fields in
+      responses; SAST could in principle, but requires a rule specific to the
+      data model, absent from generic rulesets.
 
   - id: CH-05
     title: "Find an API endpoint that leaks an internal property of a video"
@@ -95,11 +114,14 @@ challenges:
     owasp_api: "API3:2023 Broken Object Property Level Authorization"
     cwe: CWE-200
     service: community
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Propriété interne exposée dans la réponse JSON ; détectable par analyse
-      des réponses, pas par lecture du code sans connaissance métier.
+      Internal property exposed in the JSON response; detectable by response
+      analysis, not by code reading without domain knowledge.
 
   # --- Rate Limiting ----------------------------------------------------------
   - id: CH-06
@@ -108,11 +130,14 @@ challenges:
     owasp_api: "API4:2023 Unrestricted Resource Consumption"
     cwe: CWE-770
     service: workshop
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Absence de contrôle sur un paramètre de répétition. Mesurable par
-      comportement (temps de réponse, charge) ; invisible statiquement.
+      Missing bound on a repetition parameter. Measurable behaviourally
+      (response time, load); statically invisible.
 
   # --- BFLA -------------------------------------------------------------------
   - id: CH-07
@@ -121,11 +146,14 @@ challenges:
     owasp_api: "API5:2023 Broken Function Level Authorization"
     cwe: CWE-285
     service: community
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: business_logic
     detectable_by: [dast]
     rationale: >
-      Endpoint administrateur accessible à un utilisateur standard. Exige de
-      tester une route privilégiée avec un jeton non privilégié.
+      Administrative endpoint reachable by a standard user; requires exercising
+      a privileged route with a non-privileged token.
 
   # --- Mass Assignment --------------------------------------------------------
   - id: CH-08
@@ -134,11 +162,14 @@ challenges:
     owasp_api: "API6:2023 Unrestricted Access to Sensitive Business Flows"
     cwe: CWE-915
     service: workshop
+    service_evidence: confirmed
+    endpoint: "/workshop/api/shop/orders"
+    solution_detail: full
     nature: business_logic
     detectable_by: [dast]
     rationale: >
-      Liaison de masse sur un champ de prix/quantité. Le SAST peut signaler un
-      binding non restreint en théorie, mais l'impact métier n'est pas inférable.
+      Mass assignment on a price/quantity field. SAST could in theory flag an
+      unrestricted binding, but the business impact is not inferable from code.
 
   - id: CH-09
     title: "Increase your balance by $1,000 or more"
@@ -146,12 +177,15 @@ challenges:
     owasp_api: "API6:2023 Unrestricted Access to Sensitive Business Flows"
     cwe: CWE-840
     service: workshop
+    service_evidence: confirmed
+    endpoint: "/workshop/api/shop/orders"
+    solution_detail: full
     nature: business_logic
     detectable_by: [none]
     rationale: >
-      Faille arithmétique/sémantique pure (crAPI la classe elle-même comme
-      logique métier). Hors de portée de tout scanner : aucune requête ne
-      révèle l'erreur sans compréhension de la règle de gestion attendue.
+      Purely arithmetic/semantic flaw (crAPI itself classifies it as business
+      logic). Out of reach of any scanner: no request reveals the error without
+      knowledge of the intended business rule.
 
   - id: CH-10
     title: "Update internal video properties"
@@ -159,11 +193,14 @@ challenges:
     owasp_api: "API3:2023 Broken Object Property Level Authorization"
     cwe: CWE-915
     service: community
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Écriture d'une propriété interne via mass assignment ; nécessite d'abord
-      CH-05 pour connaître le nom du champ — dépendance de chaînage.
+      Write access to an internal property via mass assignment; depends on
+      CH-05 to learn the field name (challenge chaining).
 
   # --- SSRF -------------------------------------------------------------------
   - id: CH-11
@@ -172,12 +209,15 @@ challenges:
     owasp_api: "API7:2023 Server Side Request Forgery"
     cwe: CWE-918
     service: workshop
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [sast, dast]
     rationale: >
-      Requête HTTP construite à partir d'une entrée utilisateur : motif
-      syntaxique reconnaissable par SAST (source→sink) ET confirmable par DAST
-      via rappel hors bande. Candidat de consensus inter-outils.
+      HTTP request built from user input: a source-to-sink pattern recognisable
+      by SAST AND confirmable by DAST through an out-of-band callback.
+      Candidate for cross-tool consensus.
 
   # --- NoSQL Injection --------------------------------------------------------
   - id: CH-12
@@ -186,11 +226,14 @@ challenges:
     owasp_api: "API8:2023 Security Misconfiguration"
     cwe: CWE-943
     service: community
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [sast, dast]
     rationale: >
-      Injection NoSQL (MongoDB) : concaténation d'entrée non assainie dans une
-      requête — détectable par règle SAST d'injection et par payload DAST.
+      NoSQL (MongoDB) injection: unsanitised input concatenated into a query —
+      detectable by a SAST injection rule and by a DAST payload.
 
   # --- SQL Injection ----------------------------------------------------------
   - id: CH-13
@@ -199,11 +242,14 @@ challenges:
     owasp_api: "API8:2023 Security Misconfiguration"
     cwe: CWE-89
     service: workshop
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [sast, dast]
     rationale: >
-      Injection SQL classique (PostgreSQL). Cas le plus favorable aux deux
-      familles : motif statique net et payload d'injection standard.
+      Classic SQL injection (PostgreSQL). Most favourable case for both
+      families: clear static pattern and standard injection payload.
 
   # --- Unauthenticated Access -------------------------------------------------
   - id: CH-14
@@ -212,12 +258,15 @@ challenges:
     owasp_api: "API2:2023 Broken Authentication"
     cwe: CWE-306
     service: identity
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Route sans middleware d'authentification. Un SAST pourrait le voir avec
-      une règle spécifique au framework ; en pratique la vérification par
-      requête non authentifiée est la seule méthode fiable.
+      Route without authentication middleware. A SAST could detect it with a
+      framework-specific rule; in practice an unauthenticated request is the
+      only reliable method.
 
   # --- JWT --------------------------------------------------------------------
   - id: CH-15
@@ -226,26 +275,32 @@ challenges:
     owasp_api: "API2:2023 Broken Authentication"
     cwe: CWE-347
     service: identity
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: full
     nature: implementation
     detectable_by: [sast, dast]
     rationale: >
-      Validation de signature défaillante (JWKS externe non contrôlé).
-      Détectable par règle SAST sur la vérification de jeton et par forge de
-      jeton côté DAST si un JWKS contrôlé par l'attaquant est accepté.
+      Faulty signature validation (uncontrolled external JWKS). Detectable by a
+      SAST rule on token verification and by DAST token forgery if an
+      attacker-controlled JWKS is accepted.
 
-  # --- LLM (OWASP LLM Top 10) -------------------------------------------------
+  # --- LLM (OWASP LLM Top 10 2025) --------------------------------------------
   - id: CH-16
     title: "Use the chatbot to do a successful prompt injection"
     source_line: 104
     owasp_api: "LLM01:2025 Prompt Injection"
     cwe: CWE-1427
     service: chatbot
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Injection d'instructions via l'entrée utilisateur du chatbot. Aucun
-      outil statique généraliste n'a de règle pour ce motif ; la détection
-      exige un test comportemental avec payloads adverses.
+      Instruction injection through the chatbot input. No general-purpose
+      static tool ships a rule for this pattern; detection requires behavioural
+      testing with adversarial payloads.
 
   - id: CH-17
     title: "Extract the credentials of another user using chatbot"
@@ -253,11 +308,14 @@ challenges:
     owasp_api: "LLM02:2025 Sensitive Information Disclosure"
     cwe: CWE-200
     service: chatbot
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: implementation
     detectable_by: [dast]
     rationale: >
-      Fuite de données via le contexte du modèle. Nécessite d'observer les
-      réponses du LLM ; hors de portée de l'analyse statique.
+      Data leakage through model context. Requires observing LLM responses;
+      out of reach of static analysis.
 
   - id: CH-18
     title: "Make the chatbot do an action on behalf of another user"
@@ -265,28 +323,57 @@ challenges:
     owasp_api: "LLM06:2025 Excessive Agency"
     cwe: CWE-862
     service: chatbot
+    service_evidence: inferred
+    endpoint: null
+    solution_detail: title_only
     nature: business_logic
     detectable_by: [dast]
     rationale: >
-      Le modèle dispose d'outils sans contrôle d'autorisation par identité.
-      Détectable seulement en exerçant l'agent avec deux identités distinctes.
+      The model holds tools without per-identity authorization checks.
+      Detectable only by exercising the agent with two distinct identities.
 
 # =============================================================================
-#  Bornes supérieures théoriques (pré-enregistrées, avant exécution)
+#  Pre-registered theoretical upper bounds (before any execution)
 # =============================================================================
 theoretical_upper_bound:
   sast:    4      # CH-11, CH-12, CH-13, CH-15
-  sca:     0      # aucun challenge n'est une CVE de dépendance
-  secrets: 0      # aucun challenge n'est un secret commité
-  dast:    17     # tous sauf CH-09
-  none:    1      # CH-09 (logique métier arithmétique pure)
+  sca:     0      # no challenge is a dependency CVE
+  secrets: 0      # no challenge is a committed secret
+  dast:    17     # all except CH-09
+  none:    1      # CH-09 (pure arithmetic business logic)
 
-# Référence externe pour situer les résultats :
-#   OWASP API Security Testing Framework (ASTF) rapporte 4 des 18 challenges
-#   détectés par un scanner dédié. Source : www-project-api-security-testing-
-#   framework/docs/TRACEABILITY.md — à citer dans la discussion.
+# =============================================================================
+#  Documentation gaps observed in the authoritative sources
+#  (reported as-is; they bound what can be asserted about this ground truth)
+# =============================================================================
+documentation_gaps:
+  - id: GAP-1
+    description: >
+      Only 5 of 18 challenges (CH-01, CH-02, CH-08, CH-09, CH-15) carry a
+      "Detailed solution" section in challengeSolutions.md. The remaining 13
+      are title-only, so their service attribution is inferred from functional
+      scope rather than stated by the project.
+  - id: GAP-2
+    description: >
+      challenges.md announces 3 secret challenges while challengeSolutions.md
+      announces 2. Secret challenges are excluded from all computations.
+  - id: GAP-3
+    description: >
+      challengeSolutions.md stops at CH-15; the three LLM challenges (CH-16 to
+      CH-18) present in challenges.md have no corresponding solution section.
+  - id: GAP-4
+    description: >
+      Neither source file references source-code paths. Ground-truth matching
+      is therefore performed on CWE and service, not on file location.
+
+# =============================================================================
+#  External reference point for result interpretation
+# =============================================================================
 external_reference:
   project: "OWASP API Security Testing Framework"
+  source: "www-project-api-security-testing-framework/docs/TRACEABILITY.md"
   detected: 4
   total: 18
-  note: "scanner dédié API, non un pipeline généraliste"
+  note: >
+    Dedicated API security scanner, not a general-purpose pipeline. Provides an
+    independent baseline for situating the DAST stage results.
