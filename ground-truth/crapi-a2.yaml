@@ -1,0 +1,264 @@
+# =============================================================================
+#  Ground truth A2 — infrastructure and configuration weaknesses in crAPI
+#
+#  Unlike A1, crAPI publishes no list of intentional infrastructure weaknesses:
+#  the project targets the OWASP API Top 10, not deployment hardening. A2 is
+#  therefore established by DIRECT INSPECTION of the repository, before any
+#  pipeline result is consulted. Every entry carries the exact shell command
+#  that produced its count, so a reviewer can recompute the whole table.
+#
+#  Pinned commit : b5fc307f3e5f875809b095b771108ef342a33724 (2026-09-09)
+#  Compiled      : 2026-09-11
+#  Working dir for all verification commands: <repo root>
+#
+#  Fields
+#    id              stable identifier
+#    weakness        short description
+#    cwe             expected CWE
+#    artifacts       kind of artifact concerned
+#    expected_count  number of affected artifacts found by inspection
+#    verify          shell command reproducing the count
+#    provenance      first_party | vendored | base_image
+#    detectable_by   tool families that CAN theoretically detect it
+#    rationale       justification
+#
+#  METHODOLOGICAL NOTE
+#  As in A1, `detectable_by` is a pre-registered theoretical upper bound and is
+#  never revised after observing results. `expected_count` is a count of
+#  AFFECTED ARTIFACTS, not of tool findings: a tool may legitimately report
+#  several findings per artifact (e.g. one per container in a pod spec).
+# =============================================================================
+
+target: crAPI
+commit: b5fc307f3e5f875809b095b771108ef342a33724
+commit_date: 2026-09-09
+compiled: 2026-09-11
+method: direct_inspection
+
+scope:
+  included:
+    - services/*/Dockerfile
+    - deploy/docker/docker-compose*.yml
+    - deploy/k8s/**/*.yaml
+    - deploy/helm/**/*.yaml
+    - .github/workflows/*.yml
+  excluded:
+    - path: services/community/vendor/**
+      reason: >
+        Third-party Go code vendored into the repository. Scanned by the
+        pipeline (supply-chain coverage is a deliberate capability) but
+        excluded from the A2 denominator, since these artifacts are not
+        authored by the crAPI team. Measured impact on this target: 2 findings.
+    - path: "**/node_modules/**"
+      reason: Third-party JavaScript dependencies, same rationale as above.
+
+inventory:
+  dockerfiles: 7
+  compose_files: 2
+  k8s_manifests: 42
+  helm_manifests: 48
+  github_workflows: 3
+
+weaknesses:
+
+  - id: A2-01
+    weakness: "Container image runs as root (no USER directive)"
+    cwe: CWE-250
+    artifacts: dockerfile
+    expected_count: 6
+    affected:
+      - services/chatbot/Dockerfile
+      - services/community/Dockerfile
+      - services/gateway-service/Dockerfile
+      - services/identity/Dockerfile
+      - services/web/Dockerfile
+      - services/workshop/Dockerfile
+    verify: >
+      for f in services/*/Dockerfile; do grep -q '^USER ' $f || echo $f; done
+    provenance: first_party
+    detectable_by: [iac, image]
+    rationale: >
+      Absence of a USER instruction is a purely syntactic property of the
+      Dockerfile, squarely within the scope of IaC scanners (checkov
+      CKV_DOCKER_3, Trivy DS002). Image scanners can also observe the effective
+      runtime user from image metadata.
+
+  - id: A2-02
+    weakness: "No HEALTHCHECK instruction in container image"
+    cwe: CWE-1008
+    artifacts: dockerfile
+    expected_count: 7
+    verify: >
+      for f in services/*/Dockerfile; do grep -q 'HEALTHCHECK' $f || echo $f; done
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      Checked by checkov CKV_DOCKER_2. Classified as an availability/robustness
+      weakness rather than a security vulnerability; retained because scanners
+      report it and it therefore contributes to alert volume.
+
+  - id: A2-03
+    weakness: "Base image not pinned by digest"
+    cwe: CWE-1357
+    artifacts: dockerfile
+    expected_count: 12
+    note: >
+      12 distinct FROM statements, none using a sha256 digest. Three use a
+      floating tag with no patch level (alpine:3, golang:alpine, node:20),
+      which is the most mutable form.
+    verify: >
+      grep -h '^FROM' services/*/Dockerfile | sort -u
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      Tag-based references can be silently repointed by the image publisher.
+      Detected by checkov CKV_DOCKER_7 and Trivy DS013.
+
+  - id: A2-04
+    weakness: "Kubernetes workload without securityContext"
+    cwe: CWE-250
+    artifacts: k8s_manifest
+    expected_count: 9
+    affected:
+      - deploy/k8s/base/chatbot/deployment.yaml
+      - deploy/k8s/base/community/deployment.yaml
+      - deploy/k8s/base/gateway-service/deployment.yaml
+      - deploy/k8s/base/identity/deployment.yaml
+      - deploy/k8s/base/web/deployment.yaml
+      - deploy/k8s/base/workshop/deployment.yaml
+      - deploy/k8s/base/chromadb/statefulset.yaml
+      - deploy/k8s/base/mongodb/statefulset.yaml
+      - deploy/k8s/base/postgres/statefulset.yaml
+    verify: >
+      grep -L 'securityContext' deploy/k8s/base/*/deployment.yaml
+      deploy/k8s/base/*/statefulset.yaml
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      Without a securityContext, containers inherit permissive defaults
+      (root user, privilege escalation allowed, writable root filesystem).
+      Covered by several checkov CKV_K8S_* and Trivy KSV* checks; one
+      artifact typically yields multiple findings.
+
+  - id: A2-05
+    weakness: "Kubernetes image reference on mutable :latest tag"
+    cwe: CWE-1357
+    artifacts: k8s_manifest
+    expected_count: 8
+    verify: >
+      grep -c 'image:.*:latest' deploy/k8s/base/*/*.yaml | grep -v ':0'
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      Same supply-chain concern as A2-03, at the deployment layer. Detected by
+      checkov CKV_K8S_43 and Trivy KSV013.
+
+  - id: A2-06
+    weakness: "Resources deployed into the default namespace"
+    cwe: CWE-668
+    artifacts: k8s_manifest
+    expected_count: 35
+    verify: >
+      grep -L 'namespace:' deploy/k8s/base/*/*.yaml | wc -l
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      The default namespace provides no isolation boundary between workloads.
+      Detected by checkov CKV_K8S_21 and Trivy KSV037.
+
+  - id: A2-07
+    weakness: "Hard-coded database password in ConfigMap"
+    cwe: CWE-798
+    artifacts: k8s_manifest
+    expected_count: 1
+    note: >
+      DB_PASSWORD and MONGO_DB_PASSWORD carry the literal value
+      "crapisecretpassword" in deploy/k8s/base/chatbot/config.yaml. Other
+      sensitive keys in the same file (CHATBOT_OPENAI_API_KEY, ANTHROPIC_API_KEY,
+      AZURE_OPENAI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, COHERE_API_KEY,
+      AWS_BEARER_TOKEN_BEDROCK, AZURE_AD_TOKEN) are declared but EMPTY: they
+      constitute a structural weakness (secrets belong in a Secret, not a
+      ConfigMap) without being exposed credentials. Counted as one affected
+      artifact; the empty keys are recorded separately as A2-08.
+    verify: >
+      grep -riE '(password|secret|token|api_key)' deploy/k8s/base/*/config.yaml
+    provenance: first_party
+    detectable_by: [secrets, iac]
+    rationale: >
+      A literal credential in a version-controlled manifest is detectable by
+      secret scanners (gitleaks) and by IaC scanners with a secrets framework
+      (checkov CKV_SECRET_*, Trivy KSV-01010).
+
+  - id: A2-08
+    weakness: "Sensitive keys declared in ConfigMap rather than Secret"
+    cwe: CWE-522
+    artifacts: k8s_manifest
+    expected_count: 1
+    verify: >
+      grep -riE 'API_KEY|TOKEN' deploy/k8s/base/chatbot/config.yaml
+    provenance: first_party
+    detectable_by: [iac]
+    rationale: >
+      Structural weakness independent of whether values are populated:
+      ConfigMap data is unencrypted at rest and readable by any pod with the
+      corresponding RBAC. Trivy KSV-01010 targets exactly this pattern.
+
+  - id: A2-09
+    weakness: "GitHub Actions referenced by mutable tag instead of commit SHA"
+    cwe: CWE-1357
+    artifacts: github_workflow
+    expected_count: 17
+    note: >
+      17 distinct action references across 3 workflows, none pinned to a
+      40-character commit SHA. Three are third-party, non-official actions
+      (tj-actions/branch-names, jwalton/gh-docker-logs,
+      Noelware/docker-manifest-action); tj-actions was itself compromised in
+      March 2025, making this a materialised rather than hypothetical risk.
+      Two references target deprecated major versions (actions/download-artifact@v2,
+      actions/upload-artifact@v2).
+    verify: >
+      grep -hoE 'uses: [^@]+@[^ ]+' .github/workflows/*.yml | sort -u
+    provenance: first_party
+    detectable_by: [sast, iac]
+    rationale: >
+      Semgrep ships a dedicated rule
+      (github-actions.security.github-actions-mutable-action-tag) and checkov
+      covers it via CKV_GHA_3. Expected cross-tool agreement candidate.
+
+# =============================================================================
+#  Verified NON-weaknesses
+#  Recorded so that any finding on these controls can be classified as a
+#  false positive rather than silently counted as a detection.
+# =============================================================================
+verified_absent:
+
+  - id: NA-01
+    control: "Resource requests and limits on Kubernetes deployments"
+    expected_cwe_if_present: CWE-770
+    verify: >
+      grep -L 'resources:' deploy/k8s/base/*/deployment.yaml
+    result: >
+      Empty output: every deployment declares a resources block. Any
+      CWE-770 finding on these artifacts is a candidate false positive.
+
+  - id: NA-02
+    control: "Privileged containers, host networking, Docker socket mount"
+    expected_cwe_if_present: CWE-250
+    verify: >
+      grep -nE 'privileged|network_mode|/var/run/docker.sock'
+      deploy/docker/docker-compose.yml
+    result: >
+      Empty output: none of these patterns is present in the compose file.
+
+# =============================================================================
+#  Pre-registered theoretical upper bounds (affected artifacts, not findings)
+# =============================================================================
+theoretical_upper_bound:
+  iac:     9    # A2-01 .. A2-09, all reachable by an IaC scanner
+  sast:    1    # A2-09 only (Semgrep ships a GitHub Actions ruleset)
+  secrets: 1    # A2-07 only
+  image:   1    # A2-01 only (effective user observable from image metadata)
+  sca:     0    # A2 contains no dependency CVE by construction
+
+total_weaknesses: 9
+total_affected_artifacts: 96
