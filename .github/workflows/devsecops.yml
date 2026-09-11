@@ -59,7 +59,7 @@ jobs:
             echo "commit_target=$(git -C $LAB/$TARGET rev-parse HEAD)"
             echo "cache_mode=$CACHE_MODE"
             echo "run_number=${{ github.run_number }}"
-            date -u +%FT%TZ
+            echo "started_at=$(date -u +%FT%TZ)"
           } > $RUN_DIR/meta.txt
           cp $RUNNER_TEMP/versions.observed $RUN_DIR/versions.txt
 
@@ -111,7 +111,6 @@ jobs:
         run: |
           START=$(date +%s.%N)
           IMAGES=$(docker ps --filter "name=crapi" --format '{{.Image}}' | sort -u)
-          echo '{"images":[]}' > $RUN_DIR/05-image-trivy.json
           if [ -n "$IMAGES" ]; then
             echo "$IMAGES" > $RUN_DIR/05-images.txt
             for IMG in $IMAGES; do
@@ -120,9 +119,20 @@ jobs:
                 --output $RUN_DIR/05-image-$SAFE.json "$IMG" || true
             done
           else
-            echo "No running target images — stage 5 skipped (target not deployed)." 
+            : > $RUN_DIR/05-images.txt
+            echo "No running target images — stage 5 skipped (target not deployed)."
           fi
           echo "image=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: Record vulnerability database state
+        run: |
+          trivy version --format json > $RUN_DIR/trivy-db.json 2>/dev/null || echo '{}' > $RUN_DIR/trivy-db.json
+          {
+            echo "trivy_vulndb_updated_at=$(jq -r '.VulnerabilityDB.UpdatedAt // "unknown"' $RUN_DIR/trivy-db.json)"
+            echo "trivy_vulndb_downloaded_at=$(jq -r '.VulnerabilityDB.DownloadedAt // "unknown"' $RUN_DIR/trivy-db.json)"
+            echo "trivy_checkbundle_digest=$(jq -r '.CheckBundle.Digest // "unknown"' $RUN_DIR/trivy-db.json)"
+          } >> $RUN_DIR/meta.txt
+          cat $RUN_DIR/meta.txt
 
       - name: "Stage 7 — Normalize (CWE)"
         run: |
@@ -133,8 +143,8 @@ jobs:
       - name: Collect artifacts
         run: |
           mkdir -p $RUNNER_TEMP/artifacts
-             cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
-             $RUN_DIR/summary.json $RUN_DIR/consensus.json \
+          cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
+             $RUN_DIR/trivy-db.json $RUN_DIR/summary.json $RUN_DIR/consensus.json \
              $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
              $RUNNER_TEMP/artifacts/
 
@@ -151,6 +161,8 @@ jobs:
           {
             echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
             echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
+            echo ''
+            echo "Vulnerability DB published: \`$(grep trivy_vulndb_updated_at $RUN_DIR/meta.txt | cut -d= -f2)\`"
             echo ''
             echo '| Stage | Findings |'; echo '|---|---|'
             jq -r '.raw_by_stage | to_entries[] | "| \(.key) | \(.value) |"' $S
