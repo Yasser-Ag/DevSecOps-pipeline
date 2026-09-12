@@ -105,9 +105,9 @@ weaknesses:
     unpinned_from_statements: 12
     note: >
       Counted in AFFECTED FILES (7 Dockerfiles) for consistency with the other
-      entries. The underlying volume is 12 distinct FROM statements, none using
-      a sha256 digest. Three use a
-      floating tag with no patch level (alpine:3, golang:alpine, node:20),
+      entries, which count artifacts rather than findings. The underlying
+      volume is 12 distinct FROM statements, none using a sha256 digest. Three
+      use a floating tag with no patch level (alpine:3, golang:alpine, node:20),
       which is the most mutable form.
     verify: >
       grep -h '^FROM' services/*/Dockerfile | sort -u
