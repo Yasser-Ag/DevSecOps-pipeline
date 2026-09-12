@@ -140,11 +140,17 @@ jobs:
           python3 $RUNNER_TEMP/repo/pipeline/normalize.py $RUN_DIR --lab $LAB
           echo "normalize=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
+       - name: "Evaluate against A2 ground truth"
+        run: |
+          python3 $RUNNER_TEMP/repo/pipeline/evaluate.py $RUN_DIR \
+            --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a2.yaml
+
       - name: Collect artifacts
         run: |
           mkdir -p $RUNNER_TEMP/artifacts
           cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
              $RUN_DIR/trivy-db.json $RUN_DIR/summary.json $RUN_DIR/consensus.json \
+             $RUN_DIR/evaluation-a2.json \
              $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
              $RUNNER_TEMP/artifacts/
 
@@ -158,6 +164,7 @@ jobs:
       - name: Summary
         run: |
           S=$RUN_DIR/summary.json
+          E=$RUN_DIR/evaluation-a2.json
           {
             echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
             echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
@@ -176,5 +183,15 @@ jobs:
             echo '| Top CWE | Count |'; echo '|---|---|'
             jq -r '.by_cwe | to_entries[:10][] | "| \(.key) | \(.value) |"' $S
             echo ''
+            if [ -f "$E" ]; then
+              echo "### A2 ground-truth recall: $(jq -r .weaknesses_detected $E)/$(jq -r .weaknesses_total $E) weaknesses ($(jq -r '.weakness_recall * 100 | floor' $E)%)"
+              echo ''
+              echo '| ID | CWE | Artifacts | Findings | Tools |'; echo '|---|---|---|---|---|'
+              jq -r '.per_weakness[] | "| \(.id) | \(.cwe) | \(.matched_artifacts)/\(.expected_count) | \(.findings) | \(if (.by_tool | length) > 0 then (.by_tool | join(", ")) else "-" end) |"' $E
+              echo ''
+              echo '| Verified-absent control | CWE | False positives |'; echo '|---|---|---|'
+              jq -r '.verified_absent_checks[] | "| \(.id) \(.control) | \(.cwe) | \(.findings_on_absent_control) |"' $E
+              echo ''
+            fi
             echo '```'; cat $RUN_DIR/timing.txt; echo '```'
           } >> $GITHUB_STEP_SUMMARY
