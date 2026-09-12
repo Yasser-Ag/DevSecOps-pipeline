@@ -101,9 +101,12 @@ weaknesses:
     weakness: "Base image not pinned by digest"
     cwe: CWE-1357
     artifacts: dockerfile
-    expected_count: 12
+    expected_count: 7
+    unpinned_from_statements: 12
     note: >
-      12 distinct FROM statements, none using a sha256 digest. Three use a
+      Counted in AFFECTED FILES (7 Dockerfiles) for consistency with the other
+      entries. The underlying volume is 12 distinct FROM statements, none using
+      a sha256 digest. Three use a
       floating tag with no patch level (alpine:3, golang:alpine, node:20),
       which is the most mutable form.
     verify: >
