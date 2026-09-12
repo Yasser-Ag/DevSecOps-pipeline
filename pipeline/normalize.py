@@ -128,6 +128,10 @@ CHECKOV_PREFIX_CWE = {
 }
 CHECKOV_DEFAULT = "CWE-284"
 
+# ZAP risk codes: 0=Informational, 1=Low, 2=Medium, 3=High.
+# ZAP defines no Critical level; High is its ceiling.
+ZAP_RISK = {"0": "LOW", "1": "LOW", "2": "MEDIUM", "3": "HIGH"}
+
 CWE_RE = re.compile(r"CWE-\d+")
 
 
@@ -293,6 +297,59 @@ def from_trivy_image(doc, lab, target, image):
             }
 
 
+def from_zap(doc, lab, target, mode):
+    """ZAP groups occurrences under a single alert object; one finding is
+    emitted per INSTANCE so that DAST counts remain commensurable with the
+    other stages, where one finding is one occurrence."""
+    for site in (doc or {}).get("site") or []:
+        for a in site.get("alerts") or []:
+            raw_cwe = str(a.get("cweid", "")).strip()
+            cwe = f"CWE-{raw_cwe}" if raw_cwe and raw_cwe != "-1" else None
+            sev = ZAP_RISK.get(str(a.get("riskcode", "0")), "LOW")
+            for inst in a.get("instances") or [{}]:
+                uri = inst.get("uri", "")
+                loc = uri.split("://", 1)[-1].split("?", 1)[0]
+                yield {
+                    "tool": f"zap-{mode}", "stage": "dast", "layer": "runtime",
+                    "target": target,
+                    "cwe_id": cwe, "cwe_ids": [cwe] if cwe else [],
+                    "severity": sev,
+                    "location": loc, "rule": a.get("pluginid"),
+                    "title": (a.get("alert") or "")[:160],
+                    "evidence": (inst.get("method", "") + " " +
+                                 (inst.get("evidence") or "")).strip()[:200],
+                    "raw_ref": f'zap-{mode}:{a.get("pluginid")}@{loc}',
+                }
+
+
+def from_nuclei(lines, lab, target):
+    for line in lines or []:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            n = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        info = n.get("info") or {}
+        classification = info.get("classification") or {}
+        cwes = [str(c).upper() for c in (classification.get("cwe-id") or [])]
+        loc = str(n.get("matched-at") or n.get("host") or "")
+        loc = loc.split("://", 1)[-1].split("?", 1)[0]
+        extracted = n.get("extracted-results") or []
+        yield {
+            "tool": "nuclei", "stage": "dast", "layer": "runtime",
+            "target": target,
+            "cwe_id": cwes[0] if cwes else None, "cwe_ids": cwes,
+            "severity": SEVERITY.get(
+                str(info.get("severity", "low")).upper(), "LOW"),
+            "location": loc, "rule": n.get("template-id"),
+            "title": (info.get("name") or "")[:160],
+            "evidence": str(extracted[0])[:200] if extracted else None,
+            "raw_ref": f'nuclei:{n.get("template-id")}@{loc}',
+        }
+
+
 # ----------------------------------------------------------------------- main
 def collect(run_dir: Path, lab: str, target: str):
     findings = []
@@ -314,6 +371,16 @@ def collect(run_dir: Path, lab: str, target: str):
         if candidate.is_file():
             findings.extend(from_checkov(load(candidate), lab, target))
             break
+
+    # DAST: ZAP (unauthenticated and authenticated passes) and Nuclei
+    for fname, mode in (("06a-dast-zap-unauth.json", "unauth"),
+                        ("06b-dast-zap-auth.json", "auth")):
+        p = run_dir / fname
+        if p.is_file():
+            findings.extend(from_zap(load(p), lab, target, mode))
+    p = run_dir / "06c-dast-nuclei.jsonl"
+    if p.is_file():
+        findings.extend(from_nuclei(p.read_text().splitlines(), lab, target))
 
     # one file per scanned image
     for p in sorted(run_dir.glob("05-image-*.json")):
