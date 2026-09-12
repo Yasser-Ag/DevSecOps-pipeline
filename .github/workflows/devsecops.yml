@@ -140,7 +140,7 @@ jobs:
           python3 $RUNNER_TEMP/repo/pipeline/normalize.py $RUN_DIR --lab $LAB
           echo "normalize=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
-       - name: "Evaluate against A2 ground truth"
+      - name: "Evaluate against A2 ground truth"
         run: |
           python3 $RUNNER_TEMP/repo/pipeline/evaluate.py $RUN_DIR \
             --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a2.yaml
