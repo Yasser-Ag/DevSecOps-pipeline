@@ -42,6 +42,9 @@ FAMILY = {
     "checkov": "iac",
     "trivy-config": "iac",
     "trivy-image": "image",
+    "zap-unauth": "dast",
+    "zap-auth": "dast",
+    "nuclei": "dast",
 }
 
 # Artifact kind to path pattern, used when a weakness lists no explicit files.
