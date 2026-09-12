@@ -124,6 +124,67 @@ jobs:
           fi
           echo "image=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
+            
+      - name: "Stage 6 — DAST (ZAP + Nuclei)"
+        run: |
+          START=$(date +%s.%N)
+          BASE=http://127.0.0.1:8888
+          SPEC=$LAB/$TARGET/openapi-spec/crapi-openapi-spec.json
+
+          if ! curl -sf -o /dev/null $BASE/; then
+            echo "Target not reachable — stage 6 skipped."
+            echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
+            echo '[]' > $RUN_DIR/06c-dast-nuclei.json
+            echo "dast=0" >> $RUN_DIR/timing.txt
+            exit 0
+          fi
+
+          # --- obtain a JWT for the authenticated pass (idempotent signup)
+          curl -s -X POST $BASE/identity/api/auth/signup \
+            -H 'Content-Type: application/json' \
+            -d '{"name":"dast tester","email":"dast@example.com","number":"9876543210","password":"Test!2345"}' \
+            > /dev/null || true
+          TOKEN=$(curl -s -X POST $BASE/identity/api/auth/login \
+            -H 'Content-Type: application/json' \
+            -d '{"email":"dast@example.com","password":"Test!2345"}' | jq -r '.token // empty')
+          if [ -n "$TOKEN" ]; then
+            echo "JWT acquired (${#TOKEN} chars)."
+          else
+            echo "::warning::Could not acquire JWT — authenticated pass will be skipped."
+          fi
+
+          mkdir -p $RUN_DIR/zap && chmod 777 $RUN_DIR/zap
+          cp $SPEC $RUN_DIR/zap/openapi.json
+
+          # --- pass 1: unauthenticated
+          docker run --rm --network host \
+            -v $RUN_DIR/zap:/zap/wrk:rw \
+            ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
+            -t /zap/wrk/openapi.json -f openapi \
+            -J zap-unauth.json -I -z "-config api.disablekey=true" \
+            > $RUN_DIR/zap/zap-unauth.log 2>&1 || true
+          cp $RUN_DIR/zap/zap-unauth.json $RUN_DIR/06a-dast-zap-unauth.json 2>/dev/null || echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
+
+          # --- pass 2: authenticated
+          if [ -n "$TOKEN" ]; then
+            docker run --rm --network host \
+              -v $RUN_DIR/zap:/zap/wrk:rw \
+              ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
+              -t /zap/wrk/openapi.json -f openapi \
+              -J zap-auth.json -I \
+              -z "-config api.disablekey=true -config replacer.full_list\\(0\\).description=auth -config replacer.full_list\\(0\\).enabled=true -config replacer.full_list\\(0\\).matchtype=REQ_HEADER -config replacer.full_list\\(0\\).matchstr=Authorization -config replacer.full_list\\(0\\).regex=false -config replacer.full_list\\(0\\).replacement=\"Bearer $TOKEN\"" \
+              > $RUN_DIR/zap/zap-auth.log 2>&1 || true
+            cp $RUN_DIR/zap/zap-auth.json $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo '{}' > $RUN_DIR/06b-dast-zap-auth.json
+          fi
+
+          # --- nuclei
+          nuclei -u $BASE -jsonl -o $RUN_DIR/06c-dast-nuclei.jsonl \
+            -severity low,medium,high,critical -silent -no-interactsh \
+            > /dev/null 2>&1 || true
+          [ -f $RUN_DIR/06c-dast-nuclei.jsonl ] || : > $RUN_DIR/06c-dast-nuclei.jsonl
+
+          echo "dast=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
       - name: Record vulnerability database state
         run: |
           trivy version --format json > $RUN_DIR/trivy-db.json 2>/dev/null || echo '{}' > $RUN_DIR/trivy-db.json
@@ -153,6 +214,7 @@ jobs:
              $RUN_DIR/evaluation-a2.json \
              $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
              $RUNNER_TEMP/artifacts/
+          cp $RUN_DIR/06c-dast-nuclei.jsonl $RUNNER_TEMP/artifacts/ 2>/dev/null || true
 
       - name: Upload artifacts
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
