@@ -117,6 +117,7 @@ weaknesses:
       Tag-based references can be silently repointed by the image publisher.
       Detected by checkov CKV_DOCKER_7 and Trivy DS013.
 
+
   - id: A2-04
     weakness: "Kubernetes workload without securityContext"
     cwe: CWE-250
@@ -148,6 +149,15 @@ weaknesses:
     cwe: CWE-1357
     artifacts: k8s_manifest
     expected_count: 8
+    affected:
+      - deploy/k8s/base/chatbot/deployment.yaml
+      - deploy/k8s/base/chromadb/statefulset.yaml
+      - deploy/k8s/base/community/deployment.yaml
+      - deploy/k8s/base/gateway-service/deployment.yaml
+      - deploy/k8s/base/identity/deployment.yaml
+      - deploy/k8s/base/mailhog/deployment.yaml
+      - deploy/k8s/base/web/deployment.yaml
+      - deploy/k8s/base/workshop/deployment.yaml
     verify: >
       grep -c 'image:.*:latest' deploy/k8s/base/*/*.yaml | grep -v ':0'
     provenance: first_party
@@ -161,6 +171,7 @@ weaknesses:
     cwe: CWE-668
     artifacts: k8s_manifest
     expected_count: 35
+    path_prefix: deploy/k8s/base/
     verify: >
       grep -L 'namespace:' deploy/k8s/base/*/*.yaml | wc -l
     provenance: first_party
@@ -174,6 +185,8 @@ weaknesses:
     cwe: CWE-798
     artifacts: k8s_manifest
     expected_count: 1
+    affected:
+      - deploy/k8s/base/chatbot/config.yaml
     note: >
       DB_PASSWORD and MONGO_DB_PASSWORD carry the literal value
       "crapisecretpassword" in deploy/k8s/base/chatbot/config.yaml. Other
@@ -197,6 +210,8 @@ weaknesses:
     cwe: CWE-522
     artifacts: k8s_manifest
     expected_count: 1
+    affected:
+      - deploy/k8s/base/chatbot/config.yaml
     verify: >
       grep -riE 'API_KEY|TOKEN' deploy/k8s/base/chatbot/config.yaml
     provenance: first_party
@@ -210,9 +225,17 @@ weaknesses:
     weakness: "GitHub Actions referenced by mutable tag instead of commit SHA"
     cwe: CWE-1357
     artifacts: github_workflow
-    expected_count: 17
+    expected_count: 3
+    affected:
+      - .github/workflows/pr-build.yml
+      - .github/workflows/publish.yml
+      - .github/workflows/workflow-multiarch.yml
+    unpinned_references: 17
     note: >
-      17 distinct action references across 3 workflows, none pinned to a
+      Counted in AFFECTED FILES (3 workflows) for consistency with the other
+      entries, which count artifacts rather than findings. The underlying
+      volume is 17 distinct action references across those 3 workflows, none
+      pinned to a
       40-character commit SHA. Three are third-party, non-official actions
       (tj-actions/branch-names, jwalton/gh-docker-logs,
       Noelware/docker-manifest-action); tj-actions was itself compromised in
@@ -238,6 +261,7 @@ verified_absent:
   - id: NA-01
     control: "Resource requests and limits on Kubernetes deployments"
     expected_cwe_if_present: CWE-770
+    scope_prefix: deploy/k8s/base/
     verify: >
       grep -L 'resources:' deploy/k8s/base/*/deployment.yaml
     result: >
@@ -247,6 +271,7 @@ verified_absent:
   - id: NA-02
     control: "Privileged containers, host networking, Docker socket mount"
     expected_cwe_if_present: CWE-250
+    scope_prefix: deploy/docker/
     verify: >
       grep -nE 'privileged|network_mode|/var/run/docker.sock'
       deploy/docker/docker-compose.yml
@@ -264,4 +289,4 @@ theoretical_upper_bound:
   sca:     0    # A2 contains no dependency CVE by construction
 
 total_weaknesses: 9
-total_affected_artifacts: 96
+total_affected_artifacts: 82
