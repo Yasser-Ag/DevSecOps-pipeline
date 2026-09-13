@@ -124,8 +124,8 @@ jobs:
           fi
           echo "image=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
 
-            
       - name: "Stage 6 — DAST (ZAP + Nuclei)"
+        timeout-minutes: 35
         run: |
           START=$(date +%s.%N)
           BASE=http://127.0.0.1:8888
@@ -134,7 +134,7 @@ jobs:
           if ! curl -sf -o /dev/null $BASE/; then
             echo "Target not reachable — stage 6 skipped."
             echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
-            echo '[]' > $RUN_DIR/06c-dast-nuclei.json
+            : > $RUN_DIR/06c-dast-nuclei.jsonl
             echo "dast=0" >> $RUN_DIR/timing.txt
             exit 0
           fi
@@ -157,7 +157,7 @@ jobs:
           cp $SPEC $RUN_DIR/zap/openapi.json
 
           # --- pass 1: unauthenticated
-          docker run --rm --network host \
+          timeout 900 docker run --rm --network host \
             -v $RUN_DIR/zap:/zap/wrk:rw \
             ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
             -t /zap/wrk/openapi.json -f openapi \
@@ -167,7 +167,7 @@ jobs:
 
           # --- pass 2: authenticated
           if [ -n "$TOKEN" ]; then
-            docker run --rm --network host \
+            timeout 900 docker run --rm --network host \
               -v $RUN_DIR/zap:/zap/wrk:rw \
               ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
               -t /zap/wrk/openapi.json -f openapi \
@@ -178,7 +178,7 @@ jobs:
           fi
 
           # --- nuclei
-          nuclei -u $BASE -jsonl -o $RUN_DIR/06c-dast-nuclei.jsonl \
+          timeout 600 nuclei -u $BASE -jsonl -o $RUN_DIR/06c-dast-nuclei.jsonl \
             -severity low,medium,high,critical -silent -no-interactsh \
             > /dev/null 2>&1 || true
           [ -f $RUN_DIR/06c-dast-nuclei.jsonl ] || : > $RUN_DIR/06c-dast-nuclei.jsonl
@@ -206,6 +206,11 @@ jobs:
           python3 $RUNNER_TEMP/repo/pipeline/evaluate.py $RUN_DIR \
             --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a2.yaml
 
+      - name: "Evaluate against A1 ground truth"
+        run: |
+          python3 $RUNNER_TEMP/repo/pipeline/evaluate_a1.py $RUN_DIR \
+            --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a1.yaml || true
+
       - name: Collect artifacts
         run: |
           mkdir -p $RUNNER_TEMP/artifacts
@@ -214,6 +219,7 @@ jobs:
              $RUN_DIR/evaluation-a2.json \
              $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
              $RUNNER_TEMP/artifacts/
+          cp $RUN_DIR/evaluation-a1.json $RUNNER_TEMP/artifacts/ 2>/dev/null || true
           cp $RUN_DIR/06c-dast-nuclei.jsonl $RUNNER_TEMP/artifacts/ 2>/dev/null || true
 
       - name: Upload artifacts
@@ -227,6 +233,7 @@ jobs:
         run: |
           S=$RUN_DIR/summary.json
           E=$RUN_DIR/evaluation-a2.json
+          E1=$RUN_DIR/evaluation-a1.json
           {
             echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
             echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
@@ -253,6 +260,20 @@ jobs:
               echo ''
               echo '| Verified-absent control | CWE | False positives |'; echo '|---|---|---|'
               jq -r '.verified_absent_checks[] | "| \(.id) \(.control) | \(.cwe) | \(.findings_on_absent_control) |"' $E
+              echo ''
+            fi
+            if [ -f "$E1" ]; then
+              echo "### A1 ground-truth recall: $(jq -r .detected_strict_cwe $E1)/$(jq -r .challenges_total $E1) strict CWE, $(jq -r .detected_any $E1)/$(jq -r .challenges_total $E1) CWE or endpoint"
+              echo ''
+              echo "Eligible families: $(jq -r '.eligible_families | join(", ")' $E1) — $(jq -r .findings_eligible $E1) findings considered, $(jq -r .findings_excluded_by_family $E1) excluded by construction"
+              echo ''
+              echo '| Family | Detected | Pre-registered bound |'; echo '|---|---|---|'
+              jq -r '.family_recall | to_entries[] | select(.value.bound > 0) | "| \(.key) | \(.value.detected) | \(.value.bound) |"' $E1
+              echo ''
+              echo '| ID | CWE | Nature | Detected by |'; echo '|---|---|---|---|'
+              jq -r '.per_challenge[] | "| \(.id) | \(.cwe) | \(.nature) | \(if (.by_tool | length) > 0 then (.by_tool | join(", ")) else "-" end) |"' $E1
+              echo ''
+              echo "External baseline — $(jq -r '.external_reference.project // "n/a"' $E1): $(jq -r '.external_reference.detected // "n/a"' $E1)/$(jq -r '.external_reference.total // "n/a"' $E1)"
               echo ''
             fi
             echo '```'; cat $RUN_DIR/timing.txt; echo '```'
