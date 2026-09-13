@@ -197,19 +197,25 @@ jobs:
           cp $RUN_DIR/zap/zap-unauth.json $RUN_DIR/06a-dast-zap-unauth.json 2>/dev/null || echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
 
           # --- pass 2: authenticated
-          # Both passes run with --network host and would otherwise contend for
-          # the same proxy port: the second daemon fails with BindException,
-          # waits out its 600s connection timeout and writes no report, while
-          # the job still reports success. An explicit distinct port and a short
-          # settle delay avoid the collision, and the produced artifact is
-          # validated rather than assumed.
+          # Both passes run with --network host and contend for ZAP's proxy
+          # port: if the second daemon starts while the first container is
+          # still holding it, it fails with BindException, waits out its 600s
+          # connection timeout and writes no report while the job still reports
+          # success. zap-api-scan.py exposes no port option (-p is a progress
+          # file), so the collision is avoided by waiting for the first
+          # container to be fully gone. The produced artifact is then validated
+          # rather than assumed.
           if [ -n "$TOKEN" ]; then
-            sleep 15
+            for i in $(seq 1 30); do
+              docker ps -q --filter ancestor=ghcr.io/zaproxy/zaproxy:stable | grep -q . || break
+              sleep 5
+            done
+            sleep 10
             timeout 900 docker run --rm --network host \
               -v $RUN_DIR/zap:/zap/wrk:rw \
               ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
               -t /zap/wrk/openapi.json -f openapi \
-              -J zap-auth.json -I -p 8091 \
+              -J zap-auth.json -I \
               -z "-config api.disablekey=true -config replacer.full_list\\(0\\).description=auth -config replacer.full_list\\(0\\).enabled=true -config replacer.full_list\\(0\\).matchtype=REQ_HEADER -config replacer.full_list\\(0\\).matchstr=Authorization -config replacer.full_list\\(0\\).regex=false -config replacer.full_list\\(0\\).replacement=\"Bearer $TOKEN\"" \
               > $RUN_DIR/zap/zap-auth.log 2>&1 || true
             cp $RUN_DIR/zap/zap-auth.json $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo '{}' > $RUN_DIR/06b-dast-zap-auth.json
