@@ -147,18 +147,31 @@ jobs:
           # account's own token. Recall dropped from 2/18 to 0/18 with no change
           # to the pipeline. A fresh account is therefore provisioned per run.
           DAST_EMAIL="dast-${{ github.run_number }}@example.com"
-          DAST_PASS="Test!2345"
+          DAST_PASS='Test!2345'
           DAST_PHONE="9$(printf '%09d' $(( (RANDOM * 32768 + RANDOM) % 1000000000 )))"
 
-          SIGNUP=$(curl -s -o /dev/null -w '%{http_code}' \
+          # JSON payloads are built with jq rather than by hand: manual quoting
+          # inside a YAML block scalar produced malformed bodies, to which the
+          # target replied HTTP 500 instead of a validation error.
+          SIGNUP_BODY=$(jq -nc \
+            --arg name "dast tester" \
+            --arg email "$DAST_EMAIL" \
+            --arg number "$DAST_PHONE" \
+            --arg password "$DAST_PASS" \
+            '{name:$name, email:$email, number:$number, password:$password}')
+          LOGIN_BODY=$(jq -nc \
+            --arg email "$DAST_EMAIL" \
+            --arg password "$DAST_PASS" \
+            '{email:$email, password:$password}')
+
+          SIGNUP=$(curl -s -o /tmp/signup.out -w '%{http_code}' \
             -X POST $BASE/identity/api/auth/signup \
-            -H 'Content-Type: application/json' \
-            -d "{\"name\":\"dast tester\",\"email\":\"$DAST_EMAIL\",\"number\":\"$DAST_PHONE\",\"password\":\"$DAST_PASS\"}")
+            -H 'Content-Type: application/json' -d "$SIGNUP_BODY")
           echo "signup $DAST_EMAIL -> HTTP $SIGNUP"
+          if [ "$SIGNUP" != "200" ]; then head -c 300 /tmp/signup.out; echo; fi
 
           TOKEN=$(curl -s -X POST $BASE/identity/api/auth/login \
-            -H 'Content-Type: application/json' \
-            -d "{\"email\":\"$DAST_EMAIL\",\"password\":\"$DAST_PASS\"}" | jq -r '.token // empty')
+            -H 'Content-Type: application/json' -d "$LOGIN_BODY" | jq -r '.token // empty')
 
           {
             echo "dast_account=$DAST_EMAIL"
