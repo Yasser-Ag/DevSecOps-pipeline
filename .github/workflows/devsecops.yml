@@ -139,18 +139,36 @@ jobs:
             exit 0
           fi
 
-          # --- obtain a JWT for the authenticated pass (idempotent signup)
-          curl -s -X POST $BASE/identity/api/auth/signup \
+          # --- provision a disposable account for the authenticated pass
+          # A dynamic scan mutates application state. Measured on this target:
+          # an account reused across runs became unusable ("Invalid Credentials")
+          # while still present in the database with a rewritten bcrypt hash —
+          # ZAP had exercised /identity/api/v2/user/reset-password with the
+          # account's own token. Recall dropped from 2/18 to 0/18 with no change
+          # to the pipeline. A fresh account is therefore provisioned per run.
+          DAST_EMAIL="dast-${{ github.run_number }}@example.com"
+          DAST_PASS="Test!2345"
+          DAST_PHONE="9$(printf '%09d' $(( (RANDOM * 32768 + RANDOM) % 1000000000 )))"
+
+          SIGNUP=$(curl -s -o /dev/null -w '%{http_code}' \
+            -X POST $BASE/identity/api/auth/signup \
             -H 'Content-Type: application/json' \
-            -d '{"name":"dast tester","email":"dast@example.com","number":"9876543210","password":"Test!2345"}' \
-            > /dev/null || true
+            -d "{\"name\":\"dast tester\",\"email\":\"$DAST_EMAIL\",\"number\":\"$DAST_PHONE\",\"password\":\"$DAST_PASS\"}")
+          echo "signup $DAST_EMAIL -> HTTP $SIGNUP"
+
           TOKEN=$(curl -s -X POST $BASE/identity/api/auth/login \
             -H 'Content-Type: application/json' \
-            -d '{"email":"dast@example.com","password":"Test!2345"}' | jq -r '.token // empty')
+            -d "{\"email\":\"$DAST_EMAIL\",\"password\":\"$DAST_PASS\"}" | jq -r '.token // empty')
+
+          {
+            echo "dast_account=$DAST_EMAIL"
+            echo "dast_auth_pass=$([ -n "$TOKEN" ] && echo performed || echo skipped)"
+          } >> $RUN_DIR/meta.txt
+
           if [ -n "$TOKEN" ]; then
-            echo "JWT acquired (${#TOKEN} chars)."
+            echo "JWT acquired for $DAST_EMAIL (${#TOKEN} chars)."
           else
-            echo "::warning::Could not acquire JWT — authenticated pass will be skipped."
+            echo "::error::Could not acquire JWT for $DAST_EMAIL (signup returned $SIGNUP). The authenticated pass is skipped and A1 recall from this run is NOT comparable to authenticated runs."
           fi
 
           mkdir -p $RUN_DIR/zap && chmod 777 $RUN_DIR/zap
