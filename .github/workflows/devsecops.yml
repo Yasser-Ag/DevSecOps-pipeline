@@ -175,7 +175,7 @@ jobs:
 
           {
             echo "dast_account=$DAST_EMAIL"
-            echo "dast_auth_pass=$([ -n "$TOKEN" ] && echo performed || echo skipped)"
+            echo "dast_auth_pass=$([ -n "$TOKEN" ] && echo token_acquired || echo skipped)"
           } >> $RUN_DIR/meta.txt
 
           if [ -n "$TOKEN" ]; then
@@ -197,15 +197,31 @@ jobs:
           cp $RUN_DIR/zap/zap-unauth.json $RUN_DIR/06a-dast-zap-unauth.json 2>/dev/null || echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
 
           # --- pass 2: authenticated
+          # Both passes run with --network host and would otherwise contend for
+          # the same proxy port: the second daemon fails with BindException,
+          # waits out its 600s connection timeout and writes no report, while
+          # the job still reports success. An explicit distinct port and a short
+          # settle delay avoid the collision, and the produced artifact is
+          # validated rather than assumed.
           if [ -n "$TOKEN" ]; then
+            sleep 15
             timeout 900 docker run --rm --network host \
               -v $RUN_DIR/zap:/zap/wrk:rw \
               ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
               -t /zap/wrk/openapi.json -f openapi \
-              -J zap-auth.json -I \
+              -J zap-auth.json -I -p 8091 \
               -z "-config api.disablekey=true -config replacer.full_list\\(0\\).description=auth -config replacer.full_list\\(0\\).enabled=true -config replacer.full_list\\(0\\).matchtype=REQ_HEADER -config replacer.full_list\\(0\\).matchstr=Authorization -config replacer.full_list\\(0\\).regex=false -config replacer.full_list\\(0\\).replacement=\"Bearer $TOKEN\"" \
               > $RUN_DIR/zap/zap-auth.log 2>&1 || true
             cp $RUN_DIR/zap/zap-auth.json $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo '{}' > $RUN_DIR/06b-dast-zap-auth.json
+
+            AUTH_ALERTS=$(jq '[.site[]?.alerts[]?] | length' $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo 0)
+            echo "authenticated pass produced $AUTH_ALERTS alerts"
+            if [ "$AUTH_ALERTS" -gt 0 ]; then
+              sed -i "s/^dast_auth_pass=.*/dast_auth_pass=performed/" $RUN_DIR/meta.txt
+            else
+              sed -i "s/^dast_auth_pass=.*/dast_auth_pass=failed/" $RUN_DIR/meta.txt
+              echo "::error::Authenticated ZAP pass produced no alerts. A1 recall from this run is NOT comparable to authenticated runs. See $RUN_DIR/zap/zap-auth.log"
+            fi
           fi
 
           # --- nuclei
@@ -270,6 +286,8 @@ jobs:
             echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
             echo ''
             echo "Vulnerability DB published: \`$(grep trivy_vulndb_updated_at $RUN_DIR/meta.txt | cut -d= -f2)\`"
+            echo ''
+            echo "DAST authenticated pass: \`$(grep '^dast_auth_pass=' $RUN_DIR/meta.txt | cut -d= -f2 || echo n/a)\`"
             echo ''
             echo '| Stage | Findings |'; echo '|---|---|'
             jq -r '.raw_by_stage | to_entries[] | "| \(.key) | \(.value) |"' $S
