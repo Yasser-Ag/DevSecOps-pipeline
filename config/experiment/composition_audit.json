@@ -1,0 +1,30 @@
+{
+  "collected_files": 38,
+  "comparator_domains": 6,
+  "corruption_controls_rejected": [
+    "wrong_component",
+    "missing_replay_check",
+    "failed_replay_check",
+    "lost_raw_comparison",
+    "changed_existing_container",
+    "skipped_test",
+    "scientific_scan_in_qualification",
+    "wrong_installed_import"
+  ],
+  "dynamic_profiles": 18,
+  "historical_replay_checks": 44,
+  "package_delta": [
+    "composition_sources.json",
+    "engineering/transport_final_composition.py"
+  ],
+  "package_manifest_sha256": "4579ba6ad6ec0b432725a94f4452f67aea70e60380b22158efb4dbba7a79b9e2",
+  "passed": true,
+  "preexisting_container_configurations_preserved": 262,
+  "protected_prior_sources": 1476,
+  "scientific_release": false,
+  "source_records_verified": 1716,
+  "static_profiles": 75,
+  "tests": 52,
+  "triage_observations": 88,
+  "verified_utc": "2026-10-23T10:34:14.913164+00:00"
+}

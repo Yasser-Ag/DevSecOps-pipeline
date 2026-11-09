@@ -1,0 +1,9 @@
+check,action,basis
+Choose the decision unit,"Keep alert, vulnerability identity, artifact occurrence and property counts separate.",data/derived/measure_definitions.csv:1
+Preserve group membership,Retain all member locations when a grouping key merges distinct supported instances.,data/derived/grouping.csv:1
+Audit stage omission,"Compare supported sets after omission, including occurrences as well as identities.",data/derived/omissions.csv:1
+Keep qualified limits visible,An unqualified operation or missing reference link is not a demonstrated negative.,data/derived/dynamic_profiles.csv:1
+Separate memory boundaries,Do not treat the RSS of a container client as scanner memory.,data/derived/static_profiles.csv:1
+Check triage against references,Report false-warning removal and supported-warning loss separately; retain invalid and abstaining outputs.,data/derived/triage_by_class.csv:1
+Pin source and advisory identities,"Keep executable, image, database and input identities with the recorded results.",config/asset_locks.json:1
+Limit generalization,These observed cases and deployment settings do not establish general scanner or model rankings.,protocol/experimental_protocol.md:1

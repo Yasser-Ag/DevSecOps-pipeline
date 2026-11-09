@@ -1,0 +1,2727 @@
+[
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-bandit-python",
+    "profile": "aigoat-bandit-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-checkov-docker-deployment",
+    "profile": "aigoat-checkov-docker-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-checkov-docker-original",
+    "profile": "aigoat-checkov-docker-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-gitleaks-source",
+    "profile": "aigoat-gitleaks-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-hadolint-deployment",
+    "profile": "aigoat-hadolint-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-hadolint-original",
+    "profile": "aigoat-hadolint-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-kics-compose",
+    "profile": "aigoat-kics-compose",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-semgrep-frontend",
+    "profile": "aigoat-semgrep-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-semgrep-python",
+    "profile": "aigoat-semgrep-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-syft-image-backend",
+    "profile": "aigoat-syft-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-grype-image-backend",
+    "profile": "aigoat-grype-image-backend",
+    "requires": [
+      "b1-aigoat-syft-image-backend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-syft-image-frontend",
+    "profile": "aigoat-syft-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-grype-image-frontend",
+    "profile": "aigoat-grype-image-frontend",
+    "requires": [
+      "b1-aigoat-syft-image-frontend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-syft-image-ollama",
+    "profile": "aigoat-syft-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-grype-image-ollama",
+    "profile": "aigoat-grype-image-ollama",
+    "requires": [
+      "b1-aigoat-syft-image-ollama"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-syft-source",
+    "profile": "aigoat-syft-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-grype-source",
+    "profile": "aigoat-grype-source",
+    "requires": [
+      "b1-aigoat-syft-source"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-config-deployment",
+    "profile": "aigoat-trivy-config-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-config-original",
+    "profile": "aigoat-trivy-config-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-image-backend",
+    "profile": "aigoat-trivy-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-image-frontend",
+    "profile": "aigoat-trivy-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-image-ollama",
+    "profile": "aigoat-trivy-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-secret-source",
+    "profile": "aigoat-trivy-secret-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-trivy-source",
+    "profile": "aigoat-trivy-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-zizmor-workflow",
+    "profile": "aigoat-zizmor-workflow",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-compose-kics-compose-deployment-qualified",
+    "profile": "aigoat-compose-kics-compose-deployment-qualified",
+    "requires": [],
+    "suite": "aigoat-compose"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-aigoat-workflow-checkov-workflow-qualified",
+    "profile": "aigoat-workflow-checkov-workflow-qualified",
+    "requires": [],
+    "suite": "aigoat-workflow"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-checkov",
+    "profile": "configuration-checkov",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-gitleaks",
+    "profile": "configuration-gitleaks",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-hadolint",
+    "profile": "configuration-hadolint",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-kics-compose",
+    "profile": "configuration-kics-compose",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-trivy-config",
+    "profile": "configuration-trivy-config",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-configuration-trivy-secret",
+    "profile": "configuration-trivy-secret",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-checkov-kubernetes",
+    "profile": "infrastructure-controls-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-checkov-terraform",
+    "profile": "infrastructure-controls-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-checkov-workflow",
+    "profile": "infrastructure-controls-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-kics-terraform",
+    "profile": "infrastructure-controls-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-kubescape",
+    "profile": "infrastructure-controls-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-trivy-kubernetes",
+    "profile": "infrastructure-controls-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-trivy-terraform",
+    "profile": "infrastructure-controls-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-controls-zizmor",
+    "profile": "infrastructure-controls-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-checkov-kubernetes",
+    "profile": "infrastructure-originals-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-checkov-terraform",
+    "profile": "infrastructure-originals-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-checkov-workflow",
+    "profile": "infrastructure-originals-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-kics-terraform",
+    "profile": "infrastructure-originals-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-kubescape",
+    "profile": "infrastructure-originals-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-trivy-kubernetes",
+    "profile": "infrastructure-originals-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-trivy-terraform",
+    "profile": "infrastructure-originals-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-infrastructure-originals-zizmor",
+    "profile": "infrastructure-originals-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-java-checkov",
+    "profile": "java-checkov",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-java-findsecbugs",
+    "profile": "java-findsecbugs",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-java-semgrep",
+    "profile": "java-semgrep",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-k8s-scope-matrix-checkov",
+    "profile": "k8s-scope-matrix-checkov",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-k8s-scope-matrix-trivy",
+    "profile": "k8s-scope-matrix-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-k8s-scope-split-trivy",
+    "profile": "k8s-scope-split-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92early-syft",
+    "profile": "os-ubi92early-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92early-grype",
+    "profile": "os-ubi92early-grype",
+    "requires": [
+      "b1-os-ubi92early-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92early-trivy",
+    "profile": "os-ubi92early-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92late-syft",
+    "profile": "os-ubi92late-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92late-grype",
+    "profile": "os-ubi92late-grype",
+    "requires": [
+      "b1-os-ubi92late-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi92late-trivy",
+    "profile": "os-ubi92late-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi94-syft",
+    "profile": "os-ubi94-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi94-grype",
+    "profile": "os-ubi94-grype",
+    "requires": [
+      "b1-os-ubi94-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi94-trivy",
+    "profile": "os-ubi94-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi98-syft",
+    "profile": "os-ubi98-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi98-grype",
+    "profile": "os-ubi98-grype",
+    "requires": [
+      "b1-os-ubi98-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-os-ubi98-trivy",
+    "profile": "os-ubi98-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-dependency-check",
+    "profile": "sca-dependency-check",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-syft-filesystem",
+    "profile": "sca-syft-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-grype-filesystem",
+    "profile": "sca-grype-filesystem",
+    "requires": [
+      "b1-sca-syft-filesystem"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-syft-image",
+    "profile": "sca-syft-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-grype-image",
+    "profile": "sca-grype-image",
+    "requires": [
+      "b1-sca-syft-image"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-trivy-filesystem",
+    "profile": "sca-trivy-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-trivy-image",
+    "profile": "sca-trivy-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 1,
+    "job_id": "b1-sca-trivy-rootfs",
+    "profile": "sca-trivy-rootfs",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-bandit-python",
+    "profile": "aigoat-bandit-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-checkov-docker-deployment",
+    "profile": "aigoat-checkov-docker-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-checkov-docker-original",
+    "profile": "aigoat-checkov-docker-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-gitleaks-source",
+    "profile": "aigoat-gitleaks-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-hadolint-deployment",
+    "profile": "aigoat-hadolint-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-hadolint-original",
+    "profile": "aigoat-hadolint-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-kics-compose",
+    "profile": "aigoat-kics-compose",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-semgrep-frontend",
+    "profile": "aigoat-semgrep-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-semgrep-python",
+    "profile": "aigoat-semgrep-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-syft-image-backend",
+    "profile": "aigoat-syft-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-grype-image-backend",
+    "profile": "aigoat-grype-image-backend",
+    "requires": [
+      "b2-aigoat-syft-image-backend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-syft-image-frontend",
+    "profile": "aigoat-syft-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-grype-image-frontend",
+    "profile": "aigoat-grype-image-frontend",
+    "requires": [
+      "b2-aigoat-syft-image-frontend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-syft-image-ollama",
+    "profile": "aigoat-syft-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-grype-image-ollama",
+    "profile": "aigoat-grype-image-ollama",
+    "requires": [
+      "b2-aigoat-syft-image-ollama"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-syft-source",
+    "profile": "aigoat-syft-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-grype-source",
+    "profile": "aigoat-grype-source",
+    "requires": [
+      "b2-aigoat-syft-source"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-config-deployment",
+    "profile": "aigoat-trivy-config-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-config-original",
+    "profile": "aigoat-trivy-config-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-image-backend",
+    "profile": "aigoat-trivy-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-image-frontend",
+    "profile": "aigoat-trivy-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-image-ollama",
+    "profile": "aigoat-trivy-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-secret-source",
+    "profile": "aigoat-trivy-secret-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-trivy-source",
+    "profile": "aigoat-trivy-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-zizmor-workflow",
+    "profile": "aigoat-zizmor-workflow",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-compose-kics-compose-deployment-qualified",
+    "profile": "aigoat-compose-kics-compose-deployment-qualified",
+    "requires": [],
+    "suite": "aigoat-compose"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-aigoat-workflow-checkov-workflow-qualified",
+    "profile": "aigoat-workflow-checkov-workflow-qualified",
+    "requires": [],
+    "suite": "aigoat-workflow"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-checkov",
+    "profile": "configuration-checkov",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-gitleaks",
+    "profile": "configuration-gitleaks",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-hadolint",
+    "profile": "configuration-hadolint",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-kics-compose",
+    "profile": "configuration-kics-compose",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-trivy-config",
+    "profile": "configuration-trivy-config",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-configuration-trivy-secret",
+    "profile": "configuration-trivy-secret",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-checkov-kubernetes",
+    "profile": "infrastructure-controls-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-checkov-terraform",
+    "profile": "infrastructure-controls-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-checkov-workflow",
+    "profile": "infrastructure-controls-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-kics-terraform",
+    "profile": "infrastructure-controls-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-kubescape",
+    "profile": "infrastructure-controls-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-trivy-kubernetes",
+    "profile": "infrastructure-controls-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-trivy-terraform",
+    "profile": "infrastructure-controls-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-controls-zizmor",
+    "profile": "infrastructure-controls-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-checkov-kubernetes",
+    "profile": "infrastructure-originals-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-checkov-terraform",
+    "profile": "infrastructure-originals-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-checkov-workflow",
+    "profile": "infrastructure-originals-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-kics-terraform",
+    "profile": "infrastructure-originals-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-kubescape",
+    "profile": "infrastructure-originals-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-trivy-kubernetes",
+    "profile": "infrastructure-originals-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-trivy-terraform",
+    "profile": "infrastructure-originals-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-infrastructure-originals-zizmor",
+    "profile": "infrastructure-originals-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-java-checkov",
+    "profile": "java-checkov",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-java-findsecbugs",
+    "profile": "java-findsecbugs",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-java-semgrep",
+    "profile": "java-semgrep",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-k8s-scope-matrix-checkov",
+    "profile": "k8s-scope-matrix-checkov",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-k8s-scope-matrix-trivy",
+    "profile": "k8s-scope-matrix-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-k8s-scope-split-trivy",
+    "profile": "k8s-scope-split-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92early-syft",
+    "profile": "os-ubi92early-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92early-grype",
+    "profile": "os-ubi92early-grype",
+    "requires": [
+      "b2-os-ubi92early-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92early-trivy",
+    "profile": "os-ubi92early-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92late-syft",
+    "profile": "os-ubi92late-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92late-grype",
+    "profile": "os-ubi92late-grype",
+    "requires": [
+      "b2-os-ubi92late-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi92late-trivy",
+    "profile": "os-ubi92late-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi94-syft",
+    "profile": "os-ubi94-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi94-grype",
+    "profile": "os-ubi94-grype",
+    "requires": [
+      "b2-os-ubi94-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi94-trivy",
+    "profile": "os-ubi94-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi98-syft",
+    "profile": "os-ubi98-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi98-grype",
+    "profile": "os-ubi98-grype",
+    "requires": [
+      "b2-os-ubi98-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-os-ubi98-trivy",
+    "profile": "os-ubi98-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-dependency-check",
+    "profile": "sca-dependency-check",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-syft-filesystem",
+    "profile": "sca-syft-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-grype-filesystem",
+    "profile": "sca-grype-filesystem",
+    "requires": [
+      "b2-sca-syft-filesystem"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-syft-image",
+    "profile": "sca-syft-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-grype-image",
+    "profile": "sca-grype-image",
+    "requires": [
+      "b2-sca-syft-image"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-trivy-filesystem",
+    "profile": "sca-trivy-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-trivy-image",
+    "profile": "sca-trivy-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 2,
+    "job_id": "b2-sca-trivy-rootfs",
+    "profile": "sca-trivy-rootfs",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-bandit-python",
+    "profile": "aigoat-bandit-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-checkov-docker-deployment",
+    "profile": "aigoat-checkov-docker-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-checkov-docker-original",
+    "profile": "aigoat-checkov-docker-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-gitleaks-source",
+    "profile": "aigoat-gitleaks-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-hadolint-deployment",
+    "profile": "aigoat-hadolint-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-hadolint-original",
+    "profile": "aigoat-hadolint-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-kics-compose",
+    "profile": "aigoat-kics-compose",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-semgrep-frontend",
+    "profile": "aigoat-semgrep-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-semgrep-python",
+    "profile": "aigoat-semgrep-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-syft-image-backend",
+    "profile": "aigoat-syft-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-grype-image-backend",
+    "profile": "aigoat-grype-image-backend",
+    "requires": [
+      "b3-aigoat-syft-image-backend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-syft-image-frontend",
+    "profile": "aigoat-syft-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-grype-image-frontend",
+    "profile": "aigoat-grype-image-frontend",
+    "requires": [
+      "b3-aigoat-syft-image-frontend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-syft-image-ollama",
+    "profile": "aigoat-syft-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-grype-image-ollama",
+    "profile": "aigoat-grype-image-ollama",
+    "requires": [
+      "b3-aigoat-syft-image-ollama"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-syft-source",
+    "profile": "aigoat-syft-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-grype-source",
+    "profile": "aigoat-grype-source",
+    "requires": [
+      "b3-aigoat-syft-source"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-config-deployment",
+    "profile": "aigoat-trivy-config-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-config-original",
+    "profile": "aigoat-trivy-config-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-image-backend",
+    "profile": "aigoat-trivy-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-image-frontend",
+    "profile": "aigoat-trivy-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-image-ollama",
+    "profile": "aigoat-trivy-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-secret-source",
+    "profile": "aigoat-trivy-secret-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-trivy-source",
+    "profile": "aigoat-trivy-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-zizmor-workflow",
+    "profile": "aigoat-zizmor-workflow",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-compose-kics-compose-deployment-qualified",
+    "profile": "aigoat-compose-kics-compose-deployment-qualified",
+    "requires": [],
+    "suite": "aigoat-compose"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-aigoat-workflow-checkov-workflow-qualified",
+    "profile": "aigoat-workflow-checkov-workflow-qualified",
+    "requires": [],
+    "suite": "aigoat-workflow"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-checkov",
+    "profile": "configuration-checkov",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-gitleaks",
+    "profile": "configuration-gitleaks",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-hadolint",
+    "profile": "configuration-hadolint",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-kics-compose",
+    "profile": "configuration-kics-compose",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-trivy-config",
+    "profile": "configuration-trivy-config",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-configuration-trivy-secret",
+    "profile": "configuration-trivy-secret",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-checkov-kubernetes",
+    "profile": "infrastructure-controls-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-checkov-terraform",
+    "profile": "infrastructure-controls-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-checkov-workflow",
+    "profile": "infrastructure-controls-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-kics-terraform",
+    "profile": "infrastructure-controls-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-kubescape",
+    "profile": "infrastructure-controls-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-trivy-kubernetes",
+    "profile": "infrastructure-controls-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-trivy-terraform",
+    "profile": "infrastructure-controls-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-controls-zizmor",
+    "profile": "infrastructure-controls-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-checkov-kubernetes",
+    "profile": "infrastructure-originals-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-checkov-terraform",
+    "profile": "infrastructure-originals-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-checkov-workflow",
+    "profile": "infrastructure-originals-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-kics-terraform",
+    "profile": "infrastructure-originals-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-kubescape",
+    "profile": "infrastructure-originals-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-trivy-kubernetes",
+    "profile": "infrastructure-originals-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-trivy-terraform",
+    "profile": "infrastructure-originals-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-infrastructure-originals-zizmor",
+    "profile": "infrastructure-originals-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-java-checkov",
+    "profile": "java-checkov",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-java-findsecbugs",
+    "profile": "java-findsecbugs",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-java-semgrep",
+    "profile": "java-semgrep",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-k8s-scope-matrix-checkov",
+    "profile": "k8s-scope-matrix-checkov",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-k8s-scope-matrix-trivy",
+    "profile": "k8s-scope-matrix-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-k8s-scope-split-trivy",
+    "profile": "k8s-scope-split-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92early-syft",
+    "profile": "os-ubi92early-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92early-grype",
+    "profile": "os-ubi92early-grype",
+    "requires": [
+      "b3-os-ubi92early-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92early-trivy",
+    "profile": "os-ubi92early-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92late-syft",
+    "profile": "os-ubi92late-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92late-grype",
+    "profile": "os-ubi92late-grype",
+    "requires": [
+      "b3-os-ubi92late-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi92late-trivy",
+    "profile": "os-ubi92late-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi94-syft",
+    "profile": "os-ubi94-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi94-grype",
+    "profile": "os-ubi94-grype",
+    "requires": [
+      "b3-os-ubi94-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi94-trivy",
+    "profile": "os-ubi94-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi98-syft",
+    "profile": "os-ubi98-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi98-grype",
+    "profile": "os-ubi98-grype",
+    "requires": [
+      "b3-os-ubi98-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-os-ubi98-trivy",
+    "profile": "os-ubi98-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-dependency-check",
+    "profile": "sca-dependency-check",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-syft-filesystem",
+    "profile": "sca-syft-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-grype-filesystem",
+    "profile": "sca-grype-filesystem",
+    "requires": [
+      "b3-sca-syft-filesystem"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-syft-image",
+    "profile": "sca-syft-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-grype-image",
+    "profile": "sca-grype-image",
+    "requires": [
+      "b3-sca-syft-image"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-trivy-filesystem",
+    "profile": "sca-trivy-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-trivy-image",
+    "profile": "sca-trivy-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 3,
+    "job_id": "b3-sca-trivy-rootfs",
+    "profile": "sca-trivy-rootfs",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-bandit-python",
+    "profile": "aigoat-bandit-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-checkov-docker-deployment",
+    "profile": "aigoat-checkov-docker-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-checkov-docker-original",
+    "profile": "aigoat-checkov-docker-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-gitleaks-source",
+    "profile": "aigoat-gitleaks-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-hadolint-deployment",
+    "profile": "aigoat-hadolint-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-hadolint-original",
+    "profile": "aigoat-hadolint-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-kics-compose",
+    "profile": "aigoat-kics-compose",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-semgrep-frontend",
+    "profile": "aigoat-semgrep-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-semgrep-python",
+    "profile": "aigoat-semgrep-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-syft-image-backend",
+    "profile": "aigoat-syft-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-grype-image-backend",
+    "profile": "aigoat-grype-image-backend",
+    "requires": [
+      "b4-aigoat-syft-image-backend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-syft-image-frontend",
+    "profile": "aigoat-syft-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-grype-image-frontend",
+    "profile": "aigoat-grype-image-frontend",
+    "requires": [
+      "b4-aigoat-syft-image-frontend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-syft-image-ollama",
+    "profile": "aigoat-syft-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-grype-image-ollama",
+    "profile": "aigoat-grype-image-ollama",
+    "requires": [
+      "b4-aigoat-syft-image-ollama"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-syft-source",
+    "profile": "aigoat-syft-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-grype-source",
+    "profile": "aigoat-grype-source",
+    "requires": [
+      "b4-aigoat-syft-source"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-config-deployment",
+    "profile": "aigoat-trivy-config-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-config-original",
+    "profile": "aigoat-trivy-config-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-image-backend",
+    "profile": "aigoat-trivy-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-image-frontend",
+    "profile": "aigoat-trivy-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-image-ollama",
+    "profile": "aigoat-trivy-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-secret-source",
+    "profile": "aigoat-trivy-secret-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-trivy-source",
+    "profile": "aigoat-trivy-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-zizmor-workflow",
+    "profile": "aigoat-zizmor-workflow",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-compose-kics-compose-deployment-qualified",
+    "profile": "aigoat-compose-kics-compose-deployment-qualified",
+    "requires": [],
+    "suite": "aigoat-compose"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-aigoat-workflow-checkov-workflow-qualified",
+    "profile": "aigoat-workflow-checkov-workflow-qualified",
+    "requires": [],
+    "suite": "aigoat-workflow"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-checkov",
+    "profile": "configuration-checkov",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-gitleaks",
+    "profile": "configuration-gitleaks",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-hadolint",
+    "profile": "configuration-hadolint",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-kics-compose",
+    "profile": "configuration-kics-compose",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-trivy-config",
+    "profile": "configuration-trivy-config",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-configuration-trivy-secret",
+    "profile": "configuration-trivy-secret",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-checkov-kubernetes",
+    "profile": "infrastructure-controls-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-checkov-terraform",
+    "profile": "infrastructure-controls-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-checkov-workflow",
+    "profile": "infrastructure-controls-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-kics-terraform",
+    "profile": "infrastructure-controls-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-kubescape",
+    "profile": "infrastructure-controls-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-trivy-kubernetes",
+    "profile": "infrastructure-controls-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-trivy-terraform",
+    "profile": "infrastructure-controls-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-controls-zizmor",
+    "profile": "infrastructure-controls-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-checkov-kubernetes",
+    "profile": "infrastructure-originals-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-checkov-terraform",
+    "profile": "infrastructure-originals-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-checkov-workflow",
+    "profile": "infrastructure-originals-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-kics-terraform",
+    "profile": "infrastructure-originals-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-kubescape",
+    "profile": "infrastructure-originals-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-trivy-kubernetes",
+    "profile": "infrastructure-originals-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-trivy-terraform",
+    "profile": "infrastructure-originals-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-infrastructure-originals-zizmor",
+    "profile": "infrastructure-originals-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-java-checkov",
+    "profile": "java-checkov",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-java-findsecbugs",
+    "profile": "java-findsecbugs",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-java-semgrep",
+    "profile": "java-semgrep",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-k8s-scope-matrix-checkov",
+    "profile": "k8s-scope-matrix-checkov",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-k8s-scope-matrix-trivy",
+    "profile": "k8s-scope-matrix-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-k8s-scope-split-trivy",
+    "profile": "k8s-scope-split-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92early-syft",
+    "profile": "os-ubi92early-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92early-grype",
+    "profile": "os-ubi92early-grype",
+    "requires": [
+      "b4-os-ubi92early-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92early-trivy",
+    "profile": "os-ubi92early-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92late-syft",
+    "profile": "os-ubi92late-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92late-grype",
+    "profile": "os-ubi92late-grype",
+    "requires": [
+      "b4-os-ubi92late-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi92late-trivy",
+    "profile": "os-ubi92late-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi94-syft",
+    "profile": "os-ubi94-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi94-grype",
+    "profile": "os-ubi94-grype",
+    "requires": [
+      "b4-os-ubi94-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi94-trivy",
+    "profile": "os-ubi94-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi98-syft",
+    "profile": "os-ubi98-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi98-grype",
+    "profile": "os-ubi98-grype",
+    "requires": [
+      "b4-os-ubi98-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-os-ubi98-trivy",
+    "profile": "os-ubi98-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-dependency-check",
+    "profile": "sca-dependency-check",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-syft-filesystem",
+    "profile": "sca-syft-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-grype-filesystem",
+    "profile": "sca-grype-filesystem",
+    "requires": [
+      "b4-sca-syft-filesystem"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-syft-image",
+    "profile": "sca-syft-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-grype-image",
+    "profile": "sca-grype-image",
+    "requires": [
+      "b4-sca-syft-image"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-trivy-filesystem",
+    "profile": "sca-trivy-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-trivy-image",
+    "profile": "sca-trivy-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 4,
+    "job_id": "b4-sca-trivy-rootfs",
+    "profile": "sca-trivy-rootfs",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-bandit-python",
+    "profile": "aigoat-bandit-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-checkov-docker-deployment",
+    "profile": "aigoat-checkov-docker-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-checkov-docker-original",
+    "profile": "aigoat-checkov-docker-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-gitleaks-source",
+    "profile": "aigoat-gitleaks-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-hadolint-deployment",
+    "profile": "aigoat-hadolint-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-hadolint-original",
+    "profile": "aigoat-hadolint-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-kics-compose",
+    "profile": "aigoat-kics-compose",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-semgrep-frontend",
+    "profile": "aigoat-semgrep-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-semgrep-python",
+    "profile": "aigoat-semgrep-python",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-syft-image-backend",
+    "profile": "aigoat-syft-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-grype-image-backend",
+    "profile": "aigoat-grype-image-backend",
+    "requires": [
+      "b5-aigoat-syft-image-backend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-syft-image-frontend",
+    "profile": "aigoat-syft-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-grype-image-frontend",
+    "profile": "aigoat-grype-image-frontend",
+    "requires": [
+      "b5-aigoat-syft-image-frontend"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-syft-image-ollama",
+    "profile": "aigoat-syft-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-grype-image-ollama",
+    "profile": "aigoat-grype-image-ollama",
+    "requires": [
+      "b5-aigoat-syft-image-ollama"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-syft-source",
+    "profile": "aigoat-syft-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-grype-source",
+    "profile": "aigoat-grype-source",
+    "requires": [
+      "b5-aigoat-syft-source"
+    ],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-config-deployment",
+    "profile": "aigoat-trivy-config-deployment",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-config-original",
+    "profile": "aigoat-trivy-config-original",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-image-backend",
+    "profile": "aigoat-trivy-image-backend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-image-frontend",
+    "profile": "aigoat-trivy-image-frontend",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-image-ollama",
+    "profile": "aigoat-trivy-image-ollama",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-secret-source",
+    "profile": "aigoat-trivy-secret-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-trivy-source",
+    "profile": "aigoat-trivy-source",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-zizmor-workflow",
+    "profile": "aigoat-zizmor-workflow",
+    "requires": [],
+    "suite": "aigoat"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-compose-kics-compose-deployment-qualified",
+    "profile": "aigoat-compose-kics-compose-deployment-qualified",
+    "requires": [],
+    "suite": "aigoat-compose"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-aigoat-workflow-checkov-workflow-qualified",
+    "profile": "aigoat-workflow-checkov-workflow-qualified",
+    "requires": [],
+    "suite": "aigoat-workflow"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-checkov",
+    "profile": "configuration-checkov",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-gitleaks",
+    "profile": "configuration-gitleaks",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-hadolint",
+    "profile": "configuration-hadolint",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-kics-compose",
+    "profile": "configuration-kics-compose",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-trivy-config",
+    "profile": "configuration-trivy-config",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-configuration-trivy-secret",
+    "profile": "configuration-trivy-secret",
+    "requires": [],
+    "suite": "configuration"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-checkov-kubernetes",
+    "profile": "infrastructure-controls-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-checkov-terraform",
+    "profile": "infrastructure-controls-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-checkov-workflow",
+    "profile": "infrastructure-controls-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-kics-terraform",
+    "profile": "infrastructure-controls-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-kubescape",
+    "profile": "infrastructure-controls-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-trivy-kubernetes",
+    "profile": "infrastructure-controls-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-trivy-terraform",
+    "profile": "infrastructure-controls-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-controls-zizmor",
+    "profile": "infrastructure-controls-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-checkov-kubernetes",
+    "profile": "infrastructure-originals-checkov-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-checkov-terraform",
+    "profile": "infrastructure-originals-checkov-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-checkov-workflow",
+    "profile": "infrastructure-originals-checkov-workflow",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-kics-terraform",
+    "profile": "infrastructure-originals-kics-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-kubescape",
+    "profile": "infrastructure-originals-kubescape",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-trivy-kubernetes",
+    "profile": "infrastructure-originals-trivy-kubernetes",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-trivy-terraform",
+    "profile": "infrastructure-originals-trivy-terraform",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-infrastructure-originals-zizmor",
+    "profile": "infrastructure-originals-zizmor",
+    "requires": [],
+    "suite": "infrastructure"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-java-checkov",
+    "profile": "java-checkov",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-java-findsecbugs",
+    "profile": "java-findsecbugs",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-java-semgrep",
+    "profile": "java-semgrep",
+    "requires": [],
+    "suite": "java"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-k8s-scope-matrix-checkov",
+    "profile": "k8s-scope-matrix-checkov",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-k8s-scope-matrix-trivy",
+    "profile": "k8s-scope-matrix-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-k8s-scope-split-trivy",
+    "profile": "k8s-scope-split-trivy",
+    "requires": [],
+    "suite": "k8s-scope"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92early-syft",
+    "profile": "os-ubi92early-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92early-grype",
+    "profile": "os-ubi92early-grype",
+    "requires": [
+      "b5-os-ubi92early-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92early-trivy",
+    "profile": "os-ubi92early-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92late-syft",
+    "profile": "os-ubi92late-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92late-grype",
+    "profile": "os-ubi92late-grype",
+    "requires": [
+      "b5-os-ubi92late-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi92late-trivy",
+    "profile": "os-ubi92late-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi94-syft",
+    "profile": "os-ubi94-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi94-grype",
+    "profile": "os-ubi94-grype",
+    "requires": [
+      "b5-os-ubi94-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi94-trivy",
+    "profile": "os-ubi94-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi98-syft",
+    "profile": "os-ubi98-syft",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi98-grype",
+    "profile": "os-ubi98-grype",
+    "requires": [
+      "b5-os-ubi98-syft"
+    ],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-os-ubi98-trivy",
+    "profile": "os-ubi98-trivy",
+    "requires": [],
+    "suite": "os"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-dependency-check",
+    "profile": "sca-dependency-check",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-syft-filesystem",
+    "profile": "sca-syft-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-grype-filesystem",
+    "profile": "sca-grype-filesystem",
+    "requires": [
+      "b5-sca-syft-filesystem"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-syft-image",
+    "profile": "sca-syft-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-grype-image",
+    "profile": "sca-grype-image",
+    "requires": [
+      "b5-sca-syft-image"
+    ],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-trivy-filesystem",
+    "profile": "sca-trivy-filesystem",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-trivy-image",
+    "profile": "sca-trivy-image",
+    "requires": [],
+    "suite": "sca"
+  },
+  {
+    "block": 5,
+    "job_id": "b5-sca-trivy-rootfs",
+    "profile": "sca-trivy-rootfs",
+    "requires": [],
+    "suite": "sca"
+  }
+]

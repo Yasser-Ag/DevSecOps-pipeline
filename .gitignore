@@ -1,0 +1,13 @@
+.venv/
+.source_cache/
+.replay/
+reconstructed_results/
+evidence/
+__pycache__/
+*.pyc
+*.gguf
+*.tar.gz
+*.zip
+
+# Separately retrieved AGPL font files
+src/figures/fonts/*.otf

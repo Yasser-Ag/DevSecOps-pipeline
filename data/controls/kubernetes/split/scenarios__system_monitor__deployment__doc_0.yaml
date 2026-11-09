@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: goatvault
+  namespace: default
+type: Opaque
+data:
+  k8sgoatvaultkey: <MASKED:secret:1>

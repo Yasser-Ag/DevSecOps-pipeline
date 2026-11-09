@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: containers-pod-absent-child-absent
+  namespace: development
+spec:
+  securityContext: {}
+  containers:
+  - name: subject
+    image: registry.invalid/static-probe:never-executed
+    securityContext: {}

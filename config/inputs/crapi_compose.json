@@ -1,0 +1,764 @@
+{
+  "name": "dsxa-crapi-api-development-20260922-02",
+  "networks": {
+    "default": {
+      "internal": true,
+      "labels": {
+        "org.research.owner": "devsecops-access"
+      },
+      "name": "dsxa-crapi-api-development-20260922-02-network"
+    },
+    "ingress": {
+      "internal": false,
+      "labels": {
+        "org.research.owner": "devsecops-access"
+      },
+      "name": "dsxa-crapi-api-development-20260922-02-ingress"
+    }
+  },
+  "services": {
+    "api.mypremiumdealership.com": {
+      "command": null,
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.1,
+            "memory": "134217728"
+          }
+        }
+      },
+      "entrypoint": null,
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "start_period": "15s",
+        "test": [
+          "CMD-SHELL",
+          "bash -c 'echo -n \"GET / HTTP/1.1\\n\\n\" > /dev/tcp/127.0.0.1/443'"
+        ],
+        "timeout": "15s"
+      },
+      "image": "crapi/gateway-service@sha256:97dade9daf0e758547b1686e2d3303c8c9b79838167f728a9211f0ee1f4622b0",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "134217728",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no"
+    },
+    "audit-proxy": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python3",
+        "-B",
+        "/opt/api_recording_proxy.py"
+      ],
+      "cpus": 0.5,
+      "image": "python@sha256:ed86c82274b3c69b52fb5820f358f0bd7df0b603332063cb5c6e32bd220c3e6e",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.role": "measurement_harness",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "134217728",
+      "networks": {
+        "default": null,
+        "ingress": null
+      },
+      "ports": [
+        {
+          "host_ip": "127.0.0.1",
+          "protocol": "tcp",
+          "published": "10080",
+          "target": 8080
+        }
+      ],
+      "pull_policy": "never",
+      "read_only": true,
+      "restart": "no",
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "1000:1000",
+      "volumes": [
+        {
+          "read_only": true,
+          "source": "<LAB_ROOT>/environment/api-development-code-v2/engineering/api_recording_proxy.py",
+          "target": "/opt/api_recording_proxy.py",
+          "type": "bind"
+        },
+        {
+          "read_only": true,
+          "source": "<LAB_ROOT>/evidence/api-development-20260922-02/proxy-control",
+          "target": "/control",
+          "type": "bind"
+        },
+        {
+          "read_only": false,
+          "source": "<LAB_ROOT>/evidence/api-development-20260922-02/proxy-logs",
+          "target": "/logs",
+          "type": "bind"
+        }
+      ]
+    },
+    "chromadb": {
+      "command": null,
+      "deploy": {
+        "resources": {
+          "limits": {
+            "memory": "805306368"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "IS_PERSISTENT": "TRUE"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "start_period": "20s",
+        "test": [
+          "CMD",
+          "/bin/bash",
+          "-c",
+          "cat < /dev/null > /dev/tcp/localhost/8000"
+        ],
+        "timeout": "15s"
+      },
+      "image": "chromadb/chroma@sha256:1e0b73a187a28757c572acba508c46f48c9e8b0acaf5c20e6d95cdedce1acdf6",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "805306368",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no",
+      "volumes": [
+        {
+          "source": "chromadb-data",
+          "target": "/data",
+          "type": "volume",
+          "volume": {}
+        }
+      ]
+    },
+    "crapi-chatbot": {
+      "command": null,
+      "depends_on": {
+        "chromadb": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "crapi-identity": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "mongodb": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "deploy": {
+        "resources": {
+          "limits": {
+            "memory": "1073741824"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "ANTHROPIC_API_KEY": "",
+        "API_PASSWORD": "<MASKED:fixture_credential:1>",
+        "API_USER": "<MASKED:email:21>",
+        "AWS_ACCESS_KEY_ID": "",
+        "AWS_ASSUME_ROLE_ARN": "",
+        "AWS_BEARER_TOKEN_BEDROCK": "",
+        "AWS_EXTERNAL_ID": "",
+        "AWS_REGION": "",
+        "AWS_ROLE_SESSION_NAME": "crapi-chatbot-session",
+        "AWS_SECRET_ACCESS_KEY": "",
+        "AWS_SESSION_TOKEN": "",
+        "AZURE_AD_TOKEN": "",
+        "AZURE_OPENAI_API_KEY": "",
+        "AZURE_OPENAI_API_VERSION": "2024-02-15-preview",
+        "AZURE_OPENAI_CHAT_DEPLOYMENT": "",
+        "AZURE_OPENAI_EMBEDDINGS_DEPLOYMENT": "",
+        "AZURE_OPENAI_ENDPOINT": "",
+        "CHATBOT_EMBEDDINGS_DIMENSIONS": "1536",
+        "CHATBOT_EMBEDDINGS_MODEL": "",
+        "CHATBOT_LIFE": "1",
+        "CHATBOT_LLM_MODEL": "",
+        "CHATBOT_LLM_PROVIDER": "openai",
+        "CHATBOT_OPENAI_API_KEY": "",
+        "CHATBOT_OPENAI_BASE_URL": "",
+        "CHROMA_HOST": "chromadb",
+        "CHROMA_PORT": "8000",
+        "COHERE_API_KEY": "",
+        "DB_HOST": "postgresdb",
+        "DB_NAME": "crapi",
+        "DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "DB_PORT": "5432",
+        "DB_USER": "admin",
+        "GOOGLE_APPLICATION_CREDENTIALS": "",
+        "GROQ_API_KEY": "",
+        "IDENTITY_SERVICE": "crapi-identity:8080",
+        "MAX_CONTENT_LENGTH": "50000",
+        "MISTRAL_API_KEY": "",
+        "MONGO_DB_HOST": "mongodb",
+        "MONGO_DB_NAME": "crapi",
+        "MONGO_DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "MONGO_DB_PORT": "27017",
+        "MONGO_DB_USER": "admin",
+        "OPENAPI_SPEC": "/app/resources/crapi-openapi-spec.json",
+        "SERVER_PORT": "5002",
+        "TLS_ENABLED": "false",
+        "VERTEX_LOCATION": "",
+        "VERTEX_PROJECT": "",
+        "WEB_SERVICE": "crapi-web"
+      },
+      "image": "crapi/crapi-chatbot@sha256:36d274d54182a8baddba7ede17282035bb43ab9cb9cf87927e1fe7109901e0aa",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "1073741824",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no"
+    },
+    "crapi-community": {
+      "command": null,
+      "depends_on": {
+        "crapi-identity": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "mongodb": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "postgresdb": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.3,
+            "memory": "268435456"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "DB_HOST": "postgresdb",
+        "DB_NAME": "crapi",
+        "DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "DB_PORT": "5432",
+        "DB_USER": "admin",
+        "IDENTITY_SERVICE": "crapi-identity:8080",
+        "LOG_LEVEL": "INFO",
+        "MONGO_DB_HOST": "mongodb",
+        "MONGO_DB_NAME": "crapi",
+        "MONGO_DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "MONGO_DB_PORT": "27017",
+        "MONGO_DB_USER": "admin",
+        "SERVER_PORT": "8087",
+        "TLS_CERTIFICATE": "certs/server.crt",
+        "TLS_ENABLED": "false",
+        "TLS_KEY": "certs/server.key"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD-SHELL",
+          "/app/health.sh"
+        ],
+        "timeout": "15s"
+      },
+      "image": "sha256:4f6a43e2065e7a6a3a8537821a35ec8d12204a77242448daa08694eb3486b0c6",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "268435456",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no"
+    },
+    "crapi-identity": {
+      "command": null,
+      "depends_on": {
+        "mailhog": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "mongodb": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "postgresdb": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.8,
+            "memory": "805306368"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "API_GATEWAY_URL": "https://api.mypremiumdealership.com",
+        "DB_HOST": "postgresdb",
+        "DB_NAME": "crapi",
+        "DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "DB_PORT": "5432",
+        "DB_USER": "admin",
+        "ENABLE_LOG4J": "false",
+        "ENABLE_SHELL_INJECTION": "false",
+        "JWT_EXPIRATION": "604800000",
+        "JWT_SECRET": "<MASKED:fixture_credential:2>",
+        "LOG_LEVEL": "INFO",
+        "MAILHOG_DOMAIN": "example.com",
+        "MAILHOG_HOST": "mailhog",
+        "MAILHOG_PORT": "1025",
+        "SERVER_PORT": "8080",
+        "SMTP_AUTH": "true",
+        "SMTP_EMAIL": "<MASKED:email:336>",
+        "SMTP_FROM": "<MASKED:email:229>",
+        "SMTP_HOST": "smtp.example.com",
+        "SMTP_PASS": "xxxxxxxxxxxxxx",
+        "SMTP_PORT": "587",
+        "SMTP_STARTTLS": "true",
+        "TLS_ENABLED": "false",
+        "TLS_KEYSTORE": "classpath:certs/server.p12",
+        "TLS_KEYSTORE_PASSWORD": "<MASKED:fixture_credential:4>",
+        "TLS_KEYSTORE_TYPE": "PKCS12",
+        "TLS_KEY_ALIAS": "identity",
+        "TLS_KEY_PASSWORD": "<MASKED:fixture_credential:4>"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD-SHELL",
+          "/app/health.sh"
+        ],
+        "timeout": "15s"
+      },
+      "image": "sha256:ee0c2d2a9f7466158aed1540ddbd146eea37dcc88a8020b19707fc7b7d582cc0",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "805306368",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no",
+      "volumes": [
+        {
+          "bind": {},
+          "source": "<LAB_ROOT>/evidence/api-development-20260922-02/target-profile/state/keys",
+          "target": "/app/keys",
+          "type": "bind"
+        }
+      ]
+    },
+    "crapi-web": {
+      "command": null,
+      "depends_on": {
+        "crapi-community": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "crapi-identity": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "crapi-workshop": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.3,
+            "memory": "268435456"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "CHATBOT_SERVICE": "crapi-chatbot:5002",
+        "COMMUNITY_SERVICE": "crapi-community:8087",
+        "IDENTITY_SERVICE": "crapi-identity:8080",
+        "MAILHOG_WEB_SERVICE": "mailhog:8025",
+        "TLS_ENABLED": "false",
+        "WORKSHOP_SERVICE": "crapi-workshop:8000"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD-SHELL",
+          "curl 0.0.0.0:80/health"
+        ],
+        "timeout": "15s"
+      },
+      "image": "sha256:4705d26ec8841008fa63c8fb8e6d1421247f6ab2fd5e2c61e534716f3e057027",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "268435456",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no"
+    },
+    "crapi-workshop": {
+      "command": null,
+      "depends_on": {
+        "crapi-community": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "crapi-identity": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "mongodb": {
+          "condition": "service_healthy",
+          "required": true
+        },
+        "postgresdb": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 1,
+            "memory": "805306368"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "API_GATEWAY_URL": "https://api.mypremiumdealership.com",
+        "DB_CONN_MAX_AGE": "600",
+        "DB_HOST": "postgresdb",
+        "DB_NAME": "crapi",
+        "DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "DB_PORT": "5432",
+        "DB_USER": "admin",
+        "FILES_LIMIT": "1000",
+        "GUNICORN_MAX_REQUESTS": "1000",
+        "GUNICORN_MAX_REQUESTS_JITTER": "50",
+        "GUNICORN_TIMEOUT": "120",
+        "GUNICORN_WORKERS": "4",
+        "IDENTITY_SERVICE": "crapi-identity:8080",
+        "LOG_LEVEL": "INFO",
+        "MONGO_DB_HOST": "mongodb",
+        "MONGO_DB_NAME": "crapi",
+        "MONGO_DB_PASSWORD": "<MASKED:fixture_credential:3>",
+        "MONGO_DB_PORT": "27017",
+        "MONGO_DB_USER": "admin",
+        "SECRET_KEY": "<MASKED:fixture_credential:2>",
+        "SERVER_PORT": "8000",
+        "TLS_CERTIFICATE": "certs/server.crt",
+        "TLS_ENABLED": "false",
+        "TLS_KEY": "certs/server.key"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD-SHELL",
+          "/app/health.sh"
+        ],
+        "timeout": "15s"
+      },
+      "image": "sha256:c036d2c50ebeaddf719cd91bf601d49933c843645527512440b32bb9e88b3200",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "805306368",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no"
+    },
+    "lab-ingress": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python3",
+        "-B",
+        "/opt/tcp_ingress.py"
+      ],
+      "cpus": 0.5,
+      "depends_on": {
+        "crapi-web": {
+          "condition": "service_healthy"
+        },
+        "mailhog": {
+          "condition": "service_healthy"
+        }
+      },
+      "image": "python@sha256:ed86c82274b3c69b52fb5820f358f0bd7df0b603332063cb5c6e32bd220c3e6e",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.role": "harness",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "134217728",
+      "networks": {
+        "default": null,
+        "ingress": null
+      },
+      "ports": [
+        {
+          "host_ip": "127.0.0.1",
+          "protocol": "tcp",
+          "published": "10000",
+          "target": 8080
+        },
+        {
+          "host_ip": "127.0.0.1",
+          "protocol": "tcp",
+          "published": "10001",
+          "target": 8025
+        }
+      ],
+      "pull_policy": "never",
+      "read_only": true,
+      "restart": "no",
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "65534:65534",
+      "volumes": [
+        {
+          "read_only": true,
+          "source": "<LAB_ROOT>/environment/tcp_ingress.py",
+          "target": "/opt/tcp_ingress.py",
+          "type": "bind"
+        }
+      ]
+    },
+    "mailhog": {
+      "command": null,
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.3,
+            "memory": "134217728"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "MH_MONGO_URI": "admin:crapisecretpassword@mongodb:27017",
+        "MH_STORAGE": "mongodb"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD",
+          "nc",
+          "-z",
+          "localhost",
+          "8025"
+        ],
+        "timeout": "15s"
+      },
+      "image": "crapi/mailhog@sha256:015c23f79d40c9dc1800cd0a458503b89aeda3b585a12c37d53829d6c7d61fdd",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "134217728",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no",
+      "user": "root"
+    },
+    "mongodb": {
+      "command": null,
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.3,
+            "memory": "536870912"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "MONGO_INITDB_ROOT_PASSWORD": "<MASKED:fixture_credential:3>",
+        "MONGO_INITDB_ROOT_USERNAME": "admin"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "start_period": "20s",
+        "test": [
+          "CMD-SHELL",
+          "echo 'db.runCommand(\"ping\").ok' | mongo mongodb:27017/test --quiet"
+        ],
+        "timeout": "15s"
+      },
+      "image": "mongo@sha256:4be76f674fc4b27859816811b8baa3c51830eb1dbf4ca81a51e26b79edd662ef",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "536870912",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no",
+      "volumes": [
+        {
+          "source": "mongodb-data",
+          "target": "/data/db",
+          "type": "volume",
+          "volume": {}
+        }
+      ]
+    },
+    "postgresdb": {
+      "command": [
+        "postgres",
+        "-c",
+        "max_connections=500"
+      ],
+      "deploy": {
+        "placement": {},
+        "resources": {
+          "limits": {
+            "cpus": 0.5,
+            "memory": "536870912"
+          }
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "POSTGRES_DB": "crapi",
+        "POSTGRES_PASSWORD": "<MASKED:fixture_credential:3>",
+        "POSTGRES_USER": "admin"
+      },
+      "healthcheck": {
+        "interval": "15s",
+        "retries": 15,
+        "test": [
+          "CMD-SHELL",
+          "pg_isready"
+        ],
+        "timeout": "15s"
+      },
+      "image": "postgres@sha256:156f0b253fd61366d5fc2107ad45955027d5612f695a8436ce20167f3fa79bff",
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.purpose": "engineering",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "mem_limit": "536870912",
+      "networks": {
+        "default": null
+      },
+      "ports": [],
+      "pull_policy": "never",
+      "restart": "no",
+      "volumes": [
+        {
+          "source": "postgresql-data",
+          "target": "/var/lib/postgresql/data",
+          "type": "volume",
+          "volume": {}
+        }
+      ]
+    }
+  },
+  "volumes": {
+    "chromadb-data": {
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "name": "dsxa-crapi-api-development-20260922-02-chromadb-data"
+    },
+    "mongodb-data": {
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "name": "dsxa-crapi-api-development-20260922-02-mongodb-data"
+    },
+    "postgresql-data": {
+      "labels": {
+        "org.research.owner": "devsecops-access",
+        "org.research.run": "api-development-20260922-02"
+      },
+      "name": "dsxa-crapi-api-development-20260922-02-postgresql-data"
+    }
+  }
+}

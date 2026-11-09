@@ -1,0 +1,42 @@
+[
+  {
+    "container_wall_seconds": 1.1504765837453306,
+    "job_id": "b1-B0",
+    "load_seconds": null,
+    "minimum_host_available_memory_bytes": 15138959360,
+    "minimum_root_available_bytes": 22613037056,
+    "warmup_seconds": null
+  },
+  {
+    "container_wall_seconds": 2.3090722542256117,
+    "job_id": "b1-B1",
+    "load_seconds": null,
+    "minimum_host_available_memory_bytes": 15128444928,
+    "minimum_root_available_bytes": 22612811776,
+    "warmup_seconds": null
+  },
+  {
+    "container_wall_seconds": 7305.7004904258065,
+    "job_id": "b1-qwen35-9b-q4km",
+    "load_seconds": 6.066608921159059,
+    "minimum_host_available_memory_bytes": 11708649472,
+    "minimum_root_available_bytes": 22599454720,
+    "response_statuses": {
+      "completed": 175,
+      "invalid": 1
+    },
+    "warmup_seconds": 16.979726897086948
+  },
+  {
+    "container_wall_seconds": 4248.972740052734,
+    "job_id": "b1-gemma4-e4b-qat-q40",
+    "load_seconds": 9.129112965893,
+    "minimum_host_available_memory_bytes": 12359225344,
+    "minimum_root_available_bytes": 22589902848,
+    "response_statuses": {
+      "completed": 160,
+      "invalid": 16
+    },
+    "warmup_seconds": 8.932013761252165
+  }
+]

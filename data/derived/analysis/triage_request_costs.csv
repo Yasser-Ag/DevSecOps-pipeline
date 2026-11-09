@@ -1,0 +1,9 @@
+block,condition,requests,request_seconds_sum,request_seconds_median,decision_interval_seconds_sum,server_cpu_seconds_sum,sampled_peak_server_rss_kib,sampled_peak_cgroup_current_bytes,scope
+1,Q-A,88,2720.954319307115,29.562833323841915,2722.359431773424,21363.80000000002,8820956,3399139328,Scientific request intervals only; startup/warmup/container overhead reported separately.
+1,Q-C,88,4556.536073891912,51.60673745139502,4557.954980520997,35326.64000000003,8820956,3399393280,Scientific request intervals only; startup/warmup/container overhead reported separately.
+1,G-A,88,1554.3291796827689,16.621738707181066,1554.8403798677027,12208.25999999999,6893856,4802408448,Scientific request intervals only; startup/warmup/container overhead reported separately.
+1,G-C,88,2673.695462332573,30.964207850862294,2674.252184848767,21007.70999999999,6858292,4809039872,Scientific request intervals only; startup/warmup/container overhead reported separately.
+2,Q-A,88,2745.9403617056087,29.93508987966925,2747.334711165633,21550.95999999997,8805248,4394291200,Scientific request intervals only; startup/warmup/container overhead reported separately.
+2,Q-C,88,4570.737971164752,51.99361679656431,4572.169804710895,35436.599999999955,8805252,4394471424,Scientific request intervals only; startup/warmup/container overhead reported separately.
+2,G-A,88,1570.9533302430063,16.7447322094813,1571.5207861438394,12334.800000000003,7610540,2737770496,Scientific request intervals only; startup/warmup/container overhead reported separately.
+2,G-C,88,2699.0141554852016,30.499346903990954,2699.6186566874385,21201.259999999995,7628432,2750017536,Scientific request intervals only; startup/warmup/container overhead reported separately.

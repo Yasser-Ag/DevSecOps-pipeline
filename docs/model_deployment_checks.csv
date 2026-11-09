@@ -1,0 +1,24 @@
+setting,status,source,note
+Qwen model,PASS,config/model_identities.json:2,"Repository, revision, file and full SHA-256 retained."
+Gemma model,PASS,config/model_identities.json:11,"Repository, revision, file and full SHA-256 retained."
+qwen35_9b_q4km pass 1 server build/context/slot,PASS,evidence/triage/pass1/recordings/b1_qwen35_9b_q4km/server_properties.json:1,Defaults are not confused with per-request temperature and seed.
+qwen35_9b_q4km pass 1 container,PASS,evidence/triage/pass1/recordings/b1_qwen35_9b_q4km/creation_command.json:1,Eight CPUs; memory and memory-plus-swap both 12 GiB; isolated network; read-only root.
+qwen35_9b_q4km pass 1 requests,PASS,evidence/triage/pass1/recordings/b1_qwen35_9b_q4km/request_*_request.json:1,176 stored requests checked; no inferencing.
+qwen35_9b_q4km pass 1 strict schema,PASS,evidence/triage/pass1/recordings/b1_qwen35_9b_q4km/request_*_request.json:1,Four required fields; additionalProperties false; strict true.
+qwen35_9b_q4km pass 2 server build/context/slot,PASS,evidence/triage/pass2/recordings/b2_qwen35_9b_q4km/server_properties.json:1,Defaults are not confused with per-request temperature and seed.
+qwen35_9b_q4km pass 2 container,PASS,evidence/triage/pass2/recordings/b2_qwen35_9b_q4km/creation_command.json:1,Eight CPUs; memory and memory-plus-swap both 12 GiB; isolated network; read-only root.
+qwen35_9b_q4km pass 2 requests,PASS,evidence/triage/pass2/recordings/b2_qwen35_9b_q4km/request_*_request.json:1,176 stored requests checked; no inferencing.
+qwen35_9b_q4km pass 2 strict schema,PASS,evidence/triage/pass2/recordings/b2_qwen35_9b_q4km/request_*_request.json:1,Four required fields; additionalProperties false; strict true.
+qwen35_9b_q4km template unchanged between passes,PASS,evidence/triage/pass1/recordings/b1_qwen35_9b_q4km/server_properties.json;evidence/triage/pass2/recordings/b2_qwen35_9b_q4km/server_properties.json,SHA-256 7f0e529032c25183bcd66c7f238da2d377f43be754a94e2725a58c4e16d2ed67
+gemma4_e4b_qat_q40 pass 1 server build/context/slot,PASS,evidence/triage/pass1/recordings/b1_gemma4_e4b_qat_q40/server_properties.json:1,Defaults are not confused with per-request temperature and seed.
+gemma4_e4b_qat_q40 pass 1 container,PASS,evidence/triage/pass1/recordings/b1_gemma4_e4b_qat_q40/creation_command.json:1,Eight CPUs; memory and memory-plus-swap both 12 GiB; isolated network; read-only root.
+gemma4_e4b_qat_q40 pass 1 requests,PASS,evidence/triage/pass1/recordings/b1_gemma4_e4b_qat_q40/request_*_request.json:1,176 stored requests checked; no inferencing.
+gemma4_e4b_qat_q40 pass 1 strict schema,PASS,evidence/triage/pass1/recordings/b1_gemma4_e4b_qat_q40/request_*_request.json:1,Four required fields; additionalProperties false; strict true.
+gemma4_e4b_qat_q40 pass 2 server build/context/slot,PASS,evidence/triage/pass2/recordings/b2_gemma4_e4b_qat_q40/server_properties.json:1,Defaults are not confused with per-request temperature and seed.
+gemma4_e4b_qat_q40 pass 2 container,PASS,evidence/triage/pass2/recordings/b2_gemma4_e4b_qat_q40/creation_command.json:1,Eight CPUs; memory and memory-plus-swap both 12 GiB; isolated network; read-only root.
+gemma4_e4b_qat_q40 pass 2 requests,PASS,evidence/triage/pass2/recordings/b2_gemma4_e4b_qat_q40/request_*_request.json:1,176 stored requests checked; no inferencing.
+gemma4_e4b_qat_q40 pass 2 strict schema,PASS,evidence/triage/pass2/recordings/b2_gemma4_e4b_qat_q40/request_*_request.json:1,Four required fields; additionalProperties false; strict true.
+gemma4_e4b_qat_q40 template unchanged between passes,PASS,evidence/triage/pass1/recordings/b1_gemma4_e4b_qat_q40/server_properties.json;evidence/triage/pass2/recordings/b2_gemma4_e4b_qat_q40/server_properties.json,SHA-256 603a42db292c25278e9b23d94c7abbe77453f13e26a053c43c5c2f900b4136f7
+Conservative decision validator,PASS,src/analysis/triage_validator.py:5,"Exact recorded validator; identifiers, unique evidence list, dismissal support and 1–2000 character rationale checked. Full decision equivalence is separately replayed."
+CPU-only; eight generation/batch threads; offline; no chat override,PASS,src/pipeline/triage_pass_one/engineering/repeated_triage_probe.py:44;src/pipeline/triage_pass_two/engineering/repeated_triage_probe.py:44;config/mounted_code_identities.csv:2,"The recorded in-container code sets -ngl 0, -t 8, -tb 8 and --offline explicitly. The complete argv at lines 44-46 is passed to Popen at line 50 and contains no chat-template or Jinja override. The same probe hash is verified against both completed-pass package manifests."
+Erase slot before each request,PASS,src/pipeline/study/final_triage_contract.py:101;evidence/triage/pass1/recordings/;evidence/triage/pass2/recordings/,Contract requires erasure; individual measurement records retain reset time. Exact controller argv not added without an identified source.

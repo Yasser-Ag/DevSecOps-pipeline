@@ -1,0 +1,1362 @@
+{
+  "1": {
+    "aigoat-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-nuclei-invalid"
+    },
+    "aigoat-nuclei-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-nuclei-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-nuclei-valid-alice"
+    },
+    "aigoat-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-schemathesis-invalid"
+    },
+    "aigoat-schemathesis-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-schemathesis-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-schemathesis-valid-alice"
+    },
+    "aigoat-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-zap-invalid-zapfix2"
+    },
+    "aigoat-zap-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-aigoat-zap-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-aigoat-zap-valid-alice-zapfix2"
+    },
+    "crapi-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-nuclei-invalid"
+    },
+    "crapi-nuclei-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-nuclei-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-nuclei-valid-a"
+    },
+    "crapi-restler-a-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-a-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-a-gated-namespace"
+    },
+    "crapi-restler-a-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-a-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-a-raw-namespace"
+    },
+    "crapi-restler-a-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-a-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-a-raw-no-checker"
+    },
+    "crapi-restler-b-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-b-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-b-gated-namespace"
+    },
+    "crapi-restler-b-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-b-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-b-raw-namespace"
+    },
+    "crapi-restler-b-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-restler-b-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-restler-b-raw-no-checker"
+    },
+    "crapi-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-schemathesis-invalid"
+    },
+    "crapi-schemathesis-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-schemathesis-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-schemathesis-valid-a"
+    },
+    "crapi-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-zap-invalid-zapfix2"
+    },
+    "crapi-zap-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 1,
+          "id": "b01-crapi-zap-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b01-crapi-zap-valid-a-zapfix2"
+    }
+  },
+  "2": {
+    "aigoat-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-nuclei-invalid"
+    },
+    "aigoat-nuclei-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-nuclei-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-nuclei-valid-alice"
+    },
+    "aigoat-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-schemathesis-invalid"
+    },
+    "aigoat-schemathesis-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-schemathesis-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-schemathesis-valid-alice"
+    },
+    "aigoat-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-zap-invalid-zapfix2"
+    },
+    "aigoat-zap-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-aigoat-zap-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-aigoat-zap-valid-alice-zapfix2"
+    },
+    "crapi-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-nuclei-invalid"
+    },
+    "crapi-nuclei-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-nuclei-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-nuclei-valid-a"
+    },
+    "crapi-restler-a-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-a-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-a-gated-namespace"
+    },
+    "crapi-restler-a-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-a-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-a-raw-namespace"
+    },
+    "crapi-restler-a-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-a-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-a-raw-no-checker"
+    },
+    "crapi-restler-b-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-b-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-b-gated-namespace"
+    },
+    "crapi-restler-b-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-b-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-b-raw-namespace"
+    },
+    "crapi-restler-b-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-restler-b-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-restler-b-raw-no-checker"
+    },
+    "crapi-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-schemathesis-invalid"
+    },
+    "crapi-schemathesis-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-schemathesis-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-schemathesis-valid-a"
+    },
+    "crapi-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-zap-invalid-zapfix2"
+    },
+    "crapi-zap-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 2,
+          "id": "b02-crapi-zap-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b02-crapi-zap-valid-a-zapfix2"
+    }
+  },
+  "3": {
+    "aigoat-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-nuclei-invalid"
+    },
+    "aigoat-nuclei-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-nuclei-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-nuclei-valid-alice"
+    },
+    "aigoat-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-schemathesis-invalid"
+    },
+    "aigoat-schemathesis-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-schemathesis-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-schemathesis-valid-alice"
+    },
+    "aigoat-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-zap-invalid-zapfix2"
+    },
+    "aigoat-zap-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-aigoat-zap-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-aigoat-zap-valid-alice-zapfix2"
+    },
+    "crapi-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-nuclei-invalid"
+    },
+    "crapi-nuclei-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-nuclei-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-nuclei-valid-a"
+    },
+    "crapi-restler-a-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-a-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-a-gated-namespace"
+    },
+    "crapi-restler-a-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-a-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-a-raw-namespace"
+    },
+    "crapi-restler-a-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-a-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-a-raw-no-checker"
+    },
+    "crapi-restler-b-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-b-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-b-gated-namespace"
+    },
+    "crapi-restler-b-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-b-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-b-raw-namespace"
+    },
+    "crapi-restler-b-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-restler-b-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-restler-b-raw-no-checker"
+    },
+    "crapi-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-schemathesis-invalid"
+    },
+    "crapi-schemathesis-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-schemathesis-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-schemathesis-valid-a"
+    },
+    "crapi-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-zap-invalid-zapfix2"
+    },
+    "crapi-zap-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 3,
+          "id": "b03-crapi-zap-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b03-crapi-zap-valid-a-zapfix2"
+    }
+  },
+  "4": {
+    "aigoat-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-nuclei-invalid"
+    },
+    "aigoat-nuclei-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-nuclei-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-nuclei-valid-alice"
+    },
+    "aigoat-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-schemathesis-invalid"
+    },
+    "aigoat-schemathesis-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-schemathesis-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-schemathesis-valid-alice"
+    },
+    "aigoat-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-zap-invalid-zapfix2"
+    },
+    "aigoat-zap-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-aigoat-zap-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-aigoat-zap-valid-alice-zapfix2"
+    },
+    "crapi-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-nuclei-invalid"
+    },
+    "crapi-nuclei-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-nuclei-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-nuclei-valid-a"
+    },
+    "crapi-restler-a-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-a-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-a-gated-namespace"
+    },
+    "crapi-restler-a-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-a-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-a-raw-namespace"
+    },
+    "crapi-restler-a-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-a-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-a-raw-no-checker"
+    },
+    "crapi-restler-b-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-b-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-b-gated-namespace"
+    },
+    "crapi-restler-b-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-b-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-b-raw-namespace"
+    },
+    "crapi-restler-b-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-restler-b-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-restler-b-raw-no-checker"
+    },
+    "crapi-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-schemathesis-invalid"
+    },
+    "crapi-schemathesis-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-schemathesis-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-schemathesis-valid-a"
+    },
+    "crapi-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-zap-invalid-zapfix2"
+    },
+    "crapi-zap-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 4,
+          "id": "b04-crapi-zap-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b04-crapi-zap-valid-a-zapfix2"
+    }
+  },
+  "5": {
+    "aigoat-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-nuclei-invalid"
+    },
+    "aigoat-nuclei-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-nuclei-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-nuclei-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-nuclei-valid-alice"
+    },
+    "aigoat-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-schemathesis-invalid"
+    },
+    "aigoat-schemathesis-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-schemathesis-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-schemathesis-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-schemathesis-valid-alice"
+    },
+    "aigoat-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-zap-invalid-zapfix2"
+    },
+    "aigoat-zap-valid-alice": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-aigoat-zap-valid-alice",
+          "kind": "scanner",
+          "profile_id": "aigoat-zap-valid-alice",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-aigoat-zap-valid-alice-zapfix2"
+    },
+    "crapi-nuclei-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-nuclei-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-nuclei-invalid"
+    },
+    "crapi-nuclei-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-nuclei-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-nuclei-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-nuclei-valid-a"
+    },
+    "crapi-restler-a-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-a-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-a-gated-namespace"
+    },
+    "crapi-restler-a-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-a-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-a-raw-namespace"
+    },
+    "crapi-restler-a-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-a-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-a-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-a-raw-no-checker"
+    },
+    "crapi-restler-b-gated-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-b-gated-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-gated-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-b-gated-namespace"
+    },
+    "crapi-restler-b-raw-namespace": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-b-raw-namespace",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-namespace",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-b-raw-namespace"
+    },
+    "crapi-restler-b-raw-no-checker": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-restler-b-raw-no-checker",
+          "kind": "scanner",
+          "profile_id": "crapi-restler-b-raw-no-checker",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-restler-b-raw-no-checker"
+    },
+    "crapi-schemathesis-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-schemathesis-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-schemathesis-invalid"
+    },
+    "crapi-schemathesis-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-schemathesis-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-schemathesis-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+        "release_sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-schemathesis-valid-a"
+    },
+    "crapi-zap-invalid": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-zap-invalid",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-invalid",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-zap-invalid-zapfix2"
+    },
+    "crapi-zap-valid-a": {
+      "contract": {
+        "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+        "job": {
+          "block": 5,
+          "id": "b05-crapi-zap-valid-a",
+          "kind": "scanner",
+          "profile_id": "crapi-zap-valid-a",
+          "reset": "fresh target state before this job"
+        },
+        "package_manifest_sha256": "264fcef5993020616d4b4f2c264b32716b2587ea8b422a501254cd815ba1a65b",
+        "release_sha256": "1c0e04f360ccda7a7e06abcf94e5e919fc0e5c287ba4e4a5de94fcdcea181aad"
+      },
+      "root": "<PROJECT_ROOT>/evidence/final_dynamic_campaign_2026-10-23/runs/dynamic-final-20261023-01-b05-crapi-zap-valid-a-zapfix2"
+    }
+  }
+}

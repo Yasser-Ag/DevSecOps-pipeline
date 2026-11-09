@@ -1,0 +1,5 @@
+run_number,strict_groups,loose_groups,unit,source_original_sha256,source_fields
+9,2,27,"cross-tool group keys, not independently validated vulnerabilities",76aa29a0e4cacbc093b7be0c234fc0db4bbb18ae7fd3c297e6e14704eb23f879,consensus_pairs_strict;consensus_pairs_loose
+16,2,27,"cross-tool group keys, not independently validated vulnerabilities",bd8ad4dae75999b66e7878b3ed30d0c7d42582ee499736c48c919a70c7dd7fa5,consensus_pairs_strict;consensus_pairs_loose
+17,2,27,"cross-tool group keys, not independently validated vulnerabilities",5ea6b5f85d703248456e3ee72053ccbe80cac52e72c601b9c247fb90bc380b2c,consensus_pairs_strict;consensus_pairs_loose
+31,144,33,"cross-tool group keys, not independently validated vulnerabilities",bae33f414992fc0388fc0719eb7cc0a5f913d91a6fc6c043e02b42088a5e531a,consensus_pairs_strict;consensus_pairs_loose

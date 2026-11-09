@@ -1,0 +1,22 @@
+{
+  "project": "ArtifexSoftware/urw-base35-fonts",
+  "release": "20200910",
+  "upstream_release_url": "https://github.com/ArtifexSoftware/urw-base35-fonts/releases/tag/20200910",
+  "source_archive_url": "https://deb.debian.org/debian/pool/main/f/fonts-urw-base35/fonts-urw-base35_20200910.orig.tar.gz",
+  "source_archive_sha256": "e0d9b7f11885fdfdc4987f06b2aa0565ad2a4af52b22e5ebf79e1a98abd0ae2f",
+  "license": "AGPL-3.0 with font embedding exception",
+  "files": [
+    {
+      "file": "NimbusSans-Regular.otf",
+      "member": "urw-base35-fonts-20200910/fonts/NimbusSans-Regular.otf",
+      "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "bytes": 82264
+    },
+    {
+      "file": "NimbusSans-Bold.otf",
+      "member": "urw-base35-fonts-20200910/fonts/NimbusSans-Bold.otf",
+      "sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+      "bytes": 83264
+    }
+  ]
+}

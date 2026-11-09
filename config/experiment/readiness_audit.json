@@ -1,0 +1,14 @@
+{
+  "collected_files": 12,
+  "collection_manifest_sha256": "e37257346c6d901c956feb11e998bbc077751137ae0af75a5b63047e532cc67d",
+  "finished_utc": "2026-10-23T10:43:02.809022+00:00",
+  "preexisting_containers": 262,
+  "resources": {
+    "active_container_ids": [],
+    "host_available_bytes": 15129669632,
+    "root_available_bytes": 23968108544,
+    "utc": "2026-10-23T10:43:02.808289+00:00"
+  },
+  "source_sha256": "ddea4216f04bf25d4c8f3177bd5c456ed58f21de1989319cb2a1a25ee8885935",
+  "success": true
+}

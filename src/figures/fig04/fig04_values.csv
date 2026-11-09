@@ -1,0 +1,17 @@
+row,population,omitted,unit,before,after,source
+1,sast-java,java-findsecbugs,cases,10,6,K_tables/A5_omission.csv:2
+2,sca,image_scan,occurrences,6,3,K_tables/A5_omission.csv:88
+2,sca,image_scan,identities,2,2,K_tables/A5_omission.csv:88
+3,sca,source_sca,occurrences,6,3,K_tables/A5_omission.csv:89
+3,sca,source_sca,identities,2,2,K_tables/A5_omission.csv:89
+4,docker,configuration-trivy-config,final-process properties,3,2,K_tables/A5_omission.csv:14
+5,compose:docker_socket_mounted; compose:host_network_enabled; compose:no_new_privileges_disabled; compose:privileged_enabled,configuration-kics-compose,service properties,4,0,K_tables/A5_omission.csv:20; K_tables/A5_omission.csv:19; K_tables/A5_omission.csv:17; K_tables/A5_omission.csv:18
+6,kubernetes:controls,infrastructure-controls-checkov-kubernetes,container properties,3,2,K_tables/A5_omission.csv:36
+7,kubernetes:originals,infrastructure-originals-trivy-kubernetes,container properties,8,6,K_tables/A5_omission.csv:41
+8,kubernetes:matrix,k8s-scope-matrix-checkov,container properties,9,8,K_tables/A5_omission.csv:42
+9,kubernetes:matrix,k8s-scope-matrix-trivy,container properties,9,5,K_tables/A5_omission.csv:43
+10,kubernetes:split,k8s-scope-split-trivy,container properties,6,0,K_tables/A5_omission.csv:44
+11,api-authorization,crapi-restler-a-raw-namespace,authorization instances,2,1,K_tables/A5_omission.csv:58
+12,api-authorization,crapi-restler-b-raw-namespace,authorization instances,2,1,K_tables/A5_omission.csv:61
+13,aigoat-declared-properties,aigoat-compose-kics-compose-deployment-qualified,properties,31,20,K_tables/A5_omission.csv:65
+14,aigoat-declared-properties,aigoat-kics-compose,properties,31,21,K_tables/A5_omission.csv:68

@@ -1,0 +1,3 @@
+tool,version,runs,interpretation,source_original_sha256,source_lines
+actionlint,1.7.12,10;11,Observed version added to the list but absent from the expected lock; no previously listed version changed.,9c9c93194468f48f774440461d8f62a4ae976ce0ad5ba3bd3b1b013c6fee0599,76-83
+zap,2.17.0,29,Recorded in the preserved authenticated ZAP startup log; not found as a numeric core version in the Actions logs.,9c9c93194468f48f774440461d8f62a4ae976ce0ad5ba3bd3b1b013c6fee0599,269-283

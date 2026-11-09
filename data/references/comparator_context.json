@@ -1,0 +1,1794 @@
+{
+  "java": {
+    "org/owasp/benchmark/testcode/BenchmarkTest00051.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00051.java",
+      "source_sha256": "edc6c2af0c174db15d58c95113dddd0080c80ea00dde63efa4fa700da0915b52"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00006.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00006.java",
+      "source_sha256": "8671e8cd2686594b31abba5a17021472e25c5e3d074362a164dae2a5a4e8deda"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00054.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00054.java",
+      "source_sha256": "8f4170ba1a8c2e4683ae731e3acaa594f8bcd9392c7ca58a91af33f5d5035571"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00005.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00005.java",
+      "source_sha256": "d0c8ba1cf523346cce805fdc434a8100db734b729fc8d5a50a20ad3b2a1da2a1"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00009.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00009.java",
+      "source_sha256": "4b821de37870d10de8c5ac4a3005267f46e533ac695b8af6a7f2785f6d682500"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00003.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00003.java",
+      "source_sha256": "13134297b4aa87c09b5ae6bb1e92eb0dafbfe25525d57fa1511896ec0f46b247"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00138.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00138.java",
+      "source_sha256": "b50805b575a0b644e606001079e13ff52e8dba13c3b0fb931ed25f60cc5ff9e2"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00012.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00012.java",
+      "source_sha256": "fede10eae38d579c376ccaaea92491c73028aa0feca0f7cdbcac6d98cbbc2da0"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00063.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00063.java",
+      "source_sha256": "36cf79aee6a1c62ab8d832a3f32c08d4812d549c2417b6a5aac450794b37f1b2"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00001.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00001.java",
+      "source_sha256": "a83e78f8e9dd7b941c19eb2709429a2b7bec32b8921c193f3d02c4a04097a4b7"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00016.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00016.java",
+      "source_sha256": "2e68508f28e3a584fa626c232ed4da685a5a9a5d598bc0d756afb51a4c37752c"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00087.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00087.java",
+      "source_sha256": "2196f7f3fa9b99552ef19bbc3dae65371f34dda8479cc8db833b708751906b1f"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00052.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00052.java",
+      "source_sha256": "eaebe123b57b506dc834783c2567bc85f069d4e767b1ce5a003c16675da866ed"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00008.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java",
+      "source_sha256": "9bc49dbe491a39162c97b0c43b8ce5e42a4de5c0552c52117b1a51b0a541dfbe"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00097.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00097.java",
+      "source_sha256": "ba21e33f55da169829a780ff85508bbeedc5d131ceee1ccc58cdb26b6fa5c03e"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00004.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00004.java",
+      "source_sha256": "b73d2b9b44c0738fa2de8e5724ad48bf9f0871ed104a869429fb8b5b02d5d7c2"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00010.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00010.java",
+      "source_sha256": "3546ba4ceb6d8bb45e2c305e863c7335fd909eec5083f557b10b00088b6a55fe"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00023.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00023.java",
+      "source_sha256": "4a1e99b60cfc26ba6fc2ee11d6e3aec95cbfb936800e7555fd9db065c673a595"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00116.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00116.java",
+      "source_sha256": "c1f37842bc25aac5d295791cbaa64d2f4c9ba9dddb7ee8be4664709751f8bace"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00207.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00207.java",
+      "source_sha256": "a4ac92580fcecee43c69bcb49c70a69d4b0d4c1aaf0ca3403d9302f8df447472"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00147.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00147.java",
+      "source_sha256": "aa65ee7eab0c117281130f1d8e56ca802217937baeb9cc1166c1d751c2e5f092"
+    },
+    "org/owasp/benchmark/testcode/BenchmarkTest00013.java": {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00013.java",
+      "source_sha256": "359a81ca3f56c8f11a1319c54ead9ee6f86a2d7c5a5413588cd9d4312b90f3a9"
+    }
+  },
+  "java_partition": "owasp-development:20cbf3d11123347e47ed89541e6942836def53f7",
+  "secrets": {
+    "secrets/s01.pem": {
+      "file_sha256": "2137bdd9aa7e297a7f36546ddb9ac204b54bb1f8d21b056c836b2908f77828dc",
+      "public_der_sha256": "f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "parse_exit_code": 0
+    },
+    "secrets/s02.pem": {
+      "file_sha256": "2137bdd9aa7e297a7f36546ddb9ac204b54bb1f8d21b056c836b2908f77828dc",
+      "public_der_sha256": "f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "parse_exit_code": 0
+    },
+    "secrets/s03.pem": {
+      "file_sha256": "294f59010b87d5e0b5b714be8289df6fc5448aa918042ea4e00d232139d7bbf2",
+      "public_der_sha256": "f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "parse_exit_code": 0
+    },
+    "secrets/s04.pem": {
+      "file_sha256": "9940d6f83f477b32e0017b23316227014a81df24ed09dee9cd86d4f0094ec529",
+      "public_der_sha256": "f18c2e39fc88f009769e1a153c54101a857bcc8f7ef559090b92c60910b8660e",
+      "parse_exit_code": 0
+    },
+    "secrets/s05.pem": {
+      "file_sha256": "96cacbb7fb4c02703913a6db5832003655086acb8233a8abe2486e2a80805be4",
+      "public_der_sha256": null,
+      "parse_exit_code": 1
+    },
+    "secrets/s06.pem": {
+      "file_sha256": "15af041893a9a423b8f86bd3acd4ff0c42b41201ec51a0048471b6cbd8c60405",
+      "public_der_sha256": null,
+      "parse_exit_code": 1
+    },
+    "secrets/s07.txt": {
+      "file_sha256": "534eb686b504a275f05845e24bc123b219486730dc5863b51b24ebf84a4ac9fb",
+      "public_der_sha256": null,
+      "parse_exit_code": 1
+    }
+  },
+  "identity": [
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "source",
+      "bytes_sha256": "ade7402a70667a727635d5c4c29495f4ff96f061f12539763f6f123973b465b0",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-core-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:8c3726ed81cdfddf2528b73c2e7aaab9e7b178a4cd0f30d2671830c44ef2a8bd",
+      "object": "component-advisory:73ce3669e2e883861db12920f4c3267ba886feb040837e2a6d99d3d713787f1a",
+      "occurrence": "sca-occurrence:8c3726ed81cdfddf2528b73c2e7aaab9e7b178a4cd0f30d2671830c44ef2a8bd",
+      "path": "lib/log4j-core-2.14.1.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "image",
+      "bytes_sha256": "ade7402a70667a727635d5c4c29495f4ff96f061f12539763f6f123973b465b0",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-core-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:3f7acb20f0e8902cd3f66651b9186db8046a783598858dc5af1741fb8f8f1fc1",
+      "object": "component-advisory:73ce3669e2e883861db12920f4c3267ba886feb040837e2a6d99d3d713787f1a",
+      "occurrence": "sca-occurrence:3f7acb20f0e8902cd3f66651b9186db8046a783598858dc5af1741fb8f8f1fc1",
+      "path": "opt/sca-inputs/lib/log4j-core-2.14.1.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "source",
+      "bytes_sha256": "ade7402a70667a727635d5c4c29495f4ff96f061f12539763f6f123973b465b0",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/mirror/log4j-core-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:a0f83c356460e9dcb75e00e15d11b308e786433fe188f3326b990e789a8f7f9c",
+      "object": "component-advisory:73ce3669e2e883861db12920f4c3267ba886feb040837e2a6d99d3d713787f1a",
+      "occurrence": "sca-occurrence:a0f83c356460e9dcb75e00e15d11b308e786433fe188f3326b990e789a8f7f9c",
+      "path": "mirror/log4j-core-2.14.1.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "image",
+      "bytes_sha256": "ade7402a70667a727635d5c4c29495f4ff96f061f12539763f6f123973b465b0",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/mirror/log4j-core-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:d52ed240d01773619979ea2abc11a621b248dd6bec0143530f24e3fa52a182bc",
+      "object": "component-advisory:73ce3669e2e883861db12920f4c3267ba886feb040837e2a6d99d3d713787f1a",
+      "occurrence": "sca-occurrence:d52ed240d01773619979ea2abc11a621b248dd6bec0143530f24e3fa52a182bc",
+      "path": "opt/sca-inputs/mirror/log4j-core-2.14.1.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "source",
+      "bytes_sha256": "c967f223487980b9364e94a7c7f9a8a01fd3ee7c19bdbf0b0f9f8cb8511f3d41",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-core-2.17.1.jar",
+        "sca/vendor_sources/log4j-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:70061a4a8284420318c28994b2befc096cc2b4596a05055a5a3bf90673ad0d1d",
+      "object": "component-advisory:39de5faeb3e58c43d6d6b6b26fdd1aa7062c86061427e9f03b4a9e6b98105eb0",
+      "occurrence": "sca-occurrence:70061a4a8284420318c28994b2befc096cc2b4596a05055a5a3bf90673ad0d1d",
+      "path": "lib/log4j-core-2.17.1.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "image",
+      "bytes_sha256": "c967f223487980b9364e94a7c7f9a8a01fd3ee7c19bdbf0b0f9f8cb8511f3d41",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-core-2.17.1.jar",
+        "sca/vendor_sources/log4j-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:10e6616fa15e2aca65cebb466c3501ccba3deb8cc33061a9f96868e7b7e5ee56",
+      "object": "component-advisory:39de5faeb3e58c43d6d6b6b26fdd1aa7062c86061427e9f03b4a9e6b98105eb0",
+      "occurrence": "sca-occurrence:10e6616fa15e2aca65cebb466c3501ccba3deb8cc33061a9f96868e7b7e5ee56",
+      "path": "opt/sca-inputs/lib/log4j-core-2.17.1.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.17.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "source",
+      "bytes_sha256": "8caf58db006c609949a0068110395a33067a2bad707c3da35e959c0473f9a916",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-api-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:d3e898615dd7a46ebe9cf86177c42df7690736787e1e3c1290de36a0b6cd3c18",
+      "object": "component-advisory:9ef006a877c7f8c9895b66776a91bb932260eec2865155f7d4aef035624dd82b",
+      "occurrence": "sca-occurrence:d3e898615dd7a46ebe9cf86177c42df7690736787e1e3c1290de36a0b6cd3c18",
+      "path": "lib/log4j-api-2.14.1.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2021-44228",
+      "artifact": "image",
+      "bytes_sha256": "8caf58db006c609949a0068110395a33067a2bad707c3da35e959c0473f9a916",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/log4j-api-2.14.1.jar",
+        "sca/vendor_sources/log4j-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:61c3255ac22a53e3ef6892c5374f0631c91d6210749ec42f9ca1201ce03dca9d",
+      "object": "component-advisory:9ef006a877c7f8c9895b66776a91bb932260eec2865155f7d4aef035624dd82b",
+      "occurrence": "sca-occurrence:61c3255ac22a53e3ef6892c5374f0631c91d6210749ec42f9ca1201ce03dca9d",
+      "path": "opt/sca-inputs/lib/log4j-api-2.14.1.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2022-42889",
+      "artifact": "source",
+      "bytes_sha256": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/commons-text-1.9.jar",
+        "sca/vendor_sources/commons-text-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:abcfe9b009cbfa7ed7b562f5b7d1ac3afc173ae3b9b84b80d6d89820d8f3caf1",
+      "object": "component-advisory:f3c37ac6e6a3df91bb8fedcf4cb592b9d14d120a512d79ea2af95caeb91a43d6",
+      "occurrence": "sca-occurrence:abcfe9b009cbfa7ed7b562f5b7d1ac3afc173ae3b9b84b80d6d89820d8f3caf1",
+      "path": "lib/commons-text-1.9.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.commons/commons-text@1.9",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2022-42889",
+      "artifact": "image",
+      "bytes_sha256": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/commons-text-1.9.jar",
+        "sca/vendor_sources/commons-text-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:540d61c269b4a360e4ea3afb71c277c5a3453d23f99878ab7c123f12616ec4bf",
+      "object": "component-advisory:f3c37ac6e6a3df91bb8fedcf4cb592b9d14d120a512d79ea2af95caeb91a43d6",
+      "occurrence": "sca-occurrence:540d61c269b4a360e4ea3afb71c277c5a3453d23f99878ab7c123f12616ec4bf",
+      "path": "opt/sca-inputs/lib/commons-text-1.9.jar",
+      "positive": true,
+      "purl": "pkg:maven/org.apache.commons/commons-text@1.9",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2022-42889",
+      "artifact": "source",
+      "bytes_sha256": "770cd903fa7b604d1f7ef7ba17f84108667294b2b478be8ed1af3bffb4ae0018",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/commons-text-1.10.0.jar",
+        "sca/vendor_sources/commons-text-security.html"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:fbe95ae7d39c1c0d8233dd7cff3390858d67da2e8ede68f9239c9384e4cb5b65",
+      "object": "component-advisory:6017cb72f29a904d74f0a93ea7a70bb09e348566564bbdef27f7efaaf6a7f89f",
+      "occurrence": "sca-occurrence:fbe95ae7d39c1c0d8233dd7cff3390858d67da2e8ede68f9239c9384e4cb5b65",
+      "path": "lib/commons-text-1.10.0.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.commons/commons-text@1.10.0",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "advisory": "CVE-2022-42889",
+      "artifact": "image",
+      "bytes_sha256": "770cd903fa7b604d1f7ef7ba17f84108667294b2b478be8ed1af3bffb4ae0018",
+      "evidence_ids": [
+        "sca/reference_manifest.json",
+        "sca/build-context/scanner-inputs/lib/commons-text-1.10.0.jar",
+        "sca/vendor_sources/commons-text-security.html",
+        "sca/image_byte_verification.json"
+      ],
+      "family": "sca",
+      "id": "sca-occurrence:03cf5b547c4e24782e436fd4435c308e249edbc8d9a1bf1ce1fb48adef0d81ee",
+      "object": "component-advisory:6017cb72f29a904d74f0a93ea7a70bb09e348566564bbdef27f7efaaf6a7f89f",
+      "occurrence": "sca-occurrence:03cf5b547c4e24782e436fd4435c308e249edbc8d9a1bf1ce1fb48adef0d81ee",
+      "path": "opt/sca-inputs/lib/commons-text-1.10.0.jar",
+      "positive": false,
+      "purl": "pkg:maven/org.apache.commons/commons-text@1.10.0",
+      "scope": "Named vendor version predicate; runtime exploitation unassessed."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s01.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s01.pem",
+      "object": "key:f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "occurrence": "private-occurrence:secrets/s01.pem",
+      "path": "secrets/s01.pem",
+      "positive": true,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s02.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s02.pem",
+      "object": "key:f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "occurrence": "private-occurrence:secrets/s02.pem",
+      "path": "secrets/s02.pem",
+      "positive": true,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s03.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s03.pem",
+      "object": "key:f176eeabeaf49d807178eb09a27a71dcd5a0a98d1cac64093111a92200121d91",
+      "occurrence": "private-occurrence:secrets/s03.pem",
+      "path": "secrets/s03.pem",
+      "positive": true,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s04.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s04.pem",
+      "object": "key:f18c2e39fc88f009769e1a153c54101a857bcc8f7ef559090b92c60910b8660e",
+      "occurrence": "private-occurrence:secrets/s04.pem",
+      "path": "secrets/s04.pem",
+      "positive": true,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s05.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s05.pem",
+      "object": null,
+      "occurrence": null,
+      "path": "secrets/s05.pem",
+      "positive": false,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s06.pem"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s06.pem",
+      "object": null,
+      "occurrence": null,
+      "path": "secrets/s06.pem",
+      "positive": false,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "artifact": "source",
+      "evidence_ids": [
+        "configuration/reference/reference_manifest.json",
+        "configuration/reference/scanner-inputs/secrets/s07.txt"
+      ],
+      "family": "secret",
+      "id": "private-occurrence:secrets/s07.txt",
+      "object": null,
+      "occurrence": null,
+      "path": "secrets/s07.txt",
+      "positive": false,
+      "scope": "Parseable private material; no registered credential or exposure claim."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d01-probe.stdout",
+        "configuration/d01.container.json",
+        "configuration/reference/scanner-inputs/docker/d01/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d01/Dockerfile",
+      "path": "docker/d01/Dockerfile",
+      "positive": false,
+      "runtime_uid": 65532,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d02-probe.stdout",
+        "configuration/d02.container.json",
+        "configuration/reference/scanner-inputs/docker/d02/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d02/Dockerfile",
+      "path": "docker/d02/Dockerfile",
+      "positive": true,
+      "runtime_uid": 0,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d03-probe.stdout",
+        "configuration/d03.container.json",
+        "configuration/reference/scanner-inputs/docker/d03/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d03/Dockerfile",
+      "path": "docker/d03/Dockerfile",
+      "positive": true,
+      "runtime_uid": 0,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d04-probe.stdout",
+        "configuration/d04.container.json",
+        "configuration/reference/scanner-inputs/docker/d04/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d04/Dockerfile",
+      "path": "docker/d04/Dockerfile",
+      "positive": false,
+      "runtime_uid": 65532,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d05-probe.stdout",
+        "configuration/d05.container.json",
+        "configuration/reference/scanner-inputs/docker/d05/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d05/Dockerfile",
+      "path": "docker/d05/Dockerfile",
+      "positive": false,
+      "runtime_uid": 65532,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    },
+    {
+      "evidence_ids": [
+        "configuration/d06-probe.stdout",
+        "configuration/d06.container.json",
+        "configuration/reference/scanner-inputs/docker/d06/Dockerfile"
+      ],
+      "family": "docker",
+      "id": "final-process:docker/d06/Dockerfile",
+      "path": "docker/d06/Dockerfile",
+      "positive": true,
+      "runtime_uid": 0,
+      "scope": "Observed default process UID in the bounded isolated probe."
+    }
+  ],
+  "advisory_aliases": {
+    "GHSA-599f-7c49-w659": "CVE-2022-42889",
+    "CVE-2022-42889": "CVE-2022-42889",
+    "GHSA-jfh8-c2jp-5v3q": "CVE-2021-44228",
+    "CVE-2021-44228": "CVE-2021-44228"
+  },
+  "kubernetes": [
+    {
+      "corpus": "controls",
+      "artifact_path": "k01.yaml",
+      "file": "data/controls/kubernetes/controls/k01.yaml",
+      "original_sha256": "4e5cfc6455e4be03ddb5bfafb33423922c1050b886a480a06dbd3e8c64576734",
+      "published_sha256": "4e5cfc6455e4be03ddb5bfafb33423922c1050b886a480a06dbd3e8c64576734"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k02.yaml",
+      "file": "data/controls/kubernetes/controls/k02.yaml",
+      "original_sha256": "54404fa11b53f8cee37c8f700eefa2ade1b08d5410c9745c3fd3bb945db06635",
+      "published_sha256": "54404fa11b53f8cee37c8f700eefa2ade1b08d5410c9745c3fd3bb945db06635"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k03.yaml",
+      "file": "data/controls/kubernetes/controls/k03.yaml",
+      "original_sha256": "d09eb98f66126889c59d042f2fdc57bbb96f9efa5d398be8d452bd4512148519",
+      "published_sha256": "d09eb98f66126889c59d042f2fdc57bbb96f9efa5d398be8d452bd4512148519"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k04.yaml",
+      "file": "data/controls/kubernetes/controls/k04.yaml",
+      "original_sha256": "62f7c874ead15f59121f7f94f0c69e62440911ca1aa1a15a1aa981948d7e2971",
+      "published_sha256": "62f7c874ead15f59121f7f94f0c69e62440911ca1aa1a15a1aa981948d7e2971"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k05.yaml",
+      "file": "data/controls/kubernetes/controls/k05.yaml",
+      "original_sha256": "c545b51b85837e0eed74e13118a79555c70f70dda373ebbccf088fc7a21fd1eb",
+      "published_sha256": "c545b51b85837e0eed74e13118a79555c70f70dda373ebbccf088fc7a21fd1eb"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k06.yaml",
+      "file": "data/controls/kubernetes/controls/k06.yaml",
+      "original_sha256": "19cb7af01d99f6186e8f12ef033597cabdb153f394e41db88ea14237e6c95b4c",
+      "published_sha256": "19cb7af01d99f6186e8f12ef033597cabdb153f394e41db88ea14237e6c95b4c"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k07.yaml",
+      "file": "data/controls/kubernetes/controls/k07.yaml",
+      "original_sha256": "42185d46376a6663e3679c3b0f75d38bc8fabb9a1aec4f48e62da809c7920df3",
+      "published_sha256": "42185d46376a6663e3679c3b0f75d38bc8fabb9a1aec4f48e62da809c7920df3"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k08.yaml",
+      "file": "data/controls/kubernetes/controls/k08.yaml",
+      "original_sha256": "f5f5aaac3dadda41b7991bfea5d8a7d0d4a2df1086521a9191992226010fcda5",
+      "published_sha256": "f5f5aaac3dadda41b7991bfea5d8a7d0d4a2df1086521a9191992226010fcda5"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k09.yaml",
+      "file": "data/controls/kubernetes/controls/k09.yaml",
+      "original_sha256": "ca39def234c1cc94b4a2913b0d210f4fa142b249f35534e278e6086a9cd7b513",
+      "published_sha256": "ca39def234c1cc94b4a2913b0d210f4fa142b249f35534e278e6086a9cd7b513"
+    },
+    {
+      "corpus": "controls",
+      "artifact_path": "k10.yaml",
+      "file": "data/controls/kubernetes/controls/k10.yaml",
+      "original_sha256": "7bf4836225b35d7f3dc7e366f1b5f64f77863c6033b15d99a567dcd3c8a18e11",
+      "published_sha256": "7bf4836225b35d7f3dc7e366f1b5f64f77863c6033b15d99a567dcd3c8a18e11"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/batch-check/job.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/batch_check/job.yaml",
+      "original_sha256": "fc1d29e62bf0d9a8ee51566bf0d9191ac1be88bd52199876bb9cbd481364b5a2",
+      "published_sha256": "fc1d29e62bf0d9a8ee51566bf0d9191ac1be88bd52199876bb9cbd481364b5a2"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/build-code/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/build_code/deployment.yaml",
+      "original_sha256": "8b68dd6fa70aba02b932ea0586b94eebe6c289b20fe985e192ac49fdebdbd3c3",
+      "published_sha256": "8b68dd6fa70aba02b932ea0586b94eebe6c289b20fe985e192ac49fdebdbd3c3"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/cache-store/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/cache_store/deployment.yaml",
+      "original_sha256": "abefe64d3421194aa829306580a98a7a6342beb48b63ce2d86917e62f8579c94",
+      "published_sha256": "abefe64d3421194aa829306580a98a7a6342beb48b63ce2d86917e62f8579c94"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/hidden-in-layers/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/hidden_in_layers/deployment.yaml",
+      "original_sha256": "01e0c8a455b5481942e0029a5598361eb84cb76874e6ce0739385663948fb638",
+      "published_sha256": "01e0c8a455b5481942e0029a5598361eb84cb76874e6ce0739385663948fb638"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/internal-proxy/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/internal_proxy/deployment.yaml",
+      "original_sha256": "bbee97e74fd4975a89d35b55b7d309d20930e49af05baed6889a108a42f64b6f",
+      "published_sha256": "bbee97e74fd4975a89d35b55b7d309d20930e49af05baed6889a108a42f64b6f"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/poor-registry/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/poor_registry/deployment.yaml",
+      "original_sha256": "b616513d8f2c0047c6978a08bf3f12fad632aa8dc1c64e1a07b473bd697fdb1f",
+      "published_sha256": "b616513d8f2c0047c6978a08bf3f12fad632aa8dc1c64e1a07b473bd697fdb1f"
+    },
+    {
+      "corpus": "originals",
+      "artifact_path": "scenarios/system-monitor/deployment.yaml",
+      "file": "data/controls/kubernetes/originals/scenarios/system_monitor/deployment.yaml",
+      "original_sha256": "80e9a538528b99dce15f0f01f2a4571134e371894cf4098fdb4b5fbde0155bd9",
+      "published_sha256": "aca35f3dac02df01b66dcc13fe88fb5859c1564cc780ad118640306e8ef886f7"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-absent-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_absent_child_absent.yaml",
+      "original_sha256": "3cd107165c6614a55c5785058fe8e8d552c1d683552111922633784a9a17f822",
+      "published_sha256": "3cd107165c6614a55c5785058fe8e8d552c1d683552111922633784a9a17f822"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-absent-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_absent_child_false.yaml",
+      "original_sha256": "2dc0a6a70221001ff8ddc1e604f923f8257e84d1d3ccdfeac037b6a2a6f6d16b",
+      "published_sha256": "2dc0a6a70221001ff8ddc1e604f923f8257e84d1d3ccdfeac037b6a2a6f6d16b"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-absent-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_absent_child_true.yaml",
+      "original_sha256": "2a95a72d121003d87f0b4cd6b834d02f2e5557b694aa610abc4032dc3fe2d2d7",
+      "published_sha256": "2a95a72d121003d87f0b4cd6b834d02f2e5557b694aa610abc4032dc3fe2d2d7"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-false-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_false_child_absent.yaml",
+      "original_sha256": "3c8286892c570c00a7d800f43758f99f564f1722ae6ef1d474974931e4bbfa1d",
+      "published_sha256": "3c8286892c570c00a7d800f43758f99f564f1722ae6ef1d474974931e4bbfa1d"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-false-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_false_child_false.yaml",
+      "original_sha256": "5dcd3852f9a1ddc1b8e9d35641bc36cadd6eb0dc5fc9b32d4328e55ba27e075b",
+      "published_sha256": "5dcd3852f9a1ddc1b8e9d35641bc36cadd6eb0dc5fc9b32d4328e55ba27e075b"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-false-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_false_child_true.yaml",
+      "original_sha256": "454bfac6da49446951f23056625cfb43a652ac1ce83287481ee32558ca4d06c2",
+      "published_sha256": "454bfac6da49446951f23056625cfb43a652ac1ce83287481ee32558ca4d06c2"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-true-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_true_child_absent.yaml",
+      "original_sha256": "3db4afa67424215bae80f2bd8e57dc8217d42c7db829b48044c025e55bd52938",
+      "published_sha256": "3db4afa67424215bae80f2bd8e57dc8217d42c7db829b48044c025e55bd52938"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-true-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_true_child_false.yaml",
+      "original_sha256": "e4616819941e4d9c2c41fdd7ce6ead3c92ae3ea9d5530973a1dc88a9bd262a37",
+      "published_sha256": "e4616819941e4d9c2c41fdd7ce6ead3c92ae3ea9d5530973a1dc88a9bd262a37"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "containers-pod-true-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/containers_pod_true_child_true.yaml",
+      "original_sha256": "319bb6e618d3f7766fddaf7f6cf9de3788ff3b04115c027da46e03f5b5772023",
+      "published_sha256": "319bb6e618d3f7766fddaf7f6cf9de3788ff3b04115c027da46e03f5b5772023"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-absent-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_absent_child_absent.yaml",
+      "original_sha256": "b7e655de85369e047998f034c47a41bb5b4f7d086c7121f71d5302b4b9e1709c",
+      "published_sha256": "b7e655de85369e047998f034c47a41bb5b4f7d086c7121f71d5302b4b9e1709c"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-absent-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_absent_child_false.yaml",
+      "original_sha256": "e05507a3906331c0f1f849ccb2ccb86c22b50ae6bcf9ef4d44b35da2175c1bcb",
+      "published_sha256": "e05507a3906331c0f1f849ccb2ccb86c22b50ae6bcf9ef4d44b35da2175c1bcb"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-absent-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_absent_child_true.yaml",
+      "original_sha256": "0669b27589adff0cf4d7c0c2e89ad05eb4d3796650b25fe4ae2fee8a00779c59",
+      "published_sha256": "0669b27589adff0cf4d7c0c2e89ad05eb4d3796650b25fe4ae2fee8a00779c59"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-false-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_false_child_absent.yaml",
+      "original_sha256": "fd61a30df9dbb5463415081fcb31b46f81773206da31e50c16c8fc14cecbcbab",
+      "published_sha256": "fd61a30df9dbb5463415081fcb31b46f81773206da31e50c16c8fc14cecbcbab"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-false-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_false_child_false.yaml",
+      "original_sha256": "d88b308cd6ae946ad8bce1b8d9596d2453c7e49c17a0ad4a0fd45b0ee7342944",
+      "published_sha256": "d88b308cd6ae946ad8bce1b8d9596d2453c7e49c17a0ad4a0fd45b0ee7342944"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-false-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_false_child_true.yaml",
+      "original_sha256": "83884b9e022b2944afa00ab70556f5f4655bcce3576ed6932b2504bbd3656d59",
+      "published_sha256": "83884b9e022b2944afa00ab70556f5f4655bcce3576ed6932b2504bbd3656d59"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-true-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_true_child_absent.yaml",
+      "original_sha256": "6abea7a2bfc1fc34aa8fc6257da3430236efe36d7517fd45e69a431a83de21e5",
+      "published_sha256": "6abea7a2bfc1fc34aa8fc6257da3430236efe36d7517fd45e69a431a83de21e5"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-true-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_true_child_false.yaml",
+      "original_sha256": "9e98ab42d18c71c0e0fab49ee5eeae8c5bb912826f2b8938bc63d1c23eb6c6e1",
+      "published_sha256": "9e98ab42d18c71c0e0fab49ee5eeae8c5bb912826f2b8938bc63d1c23eb6c6e1"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "ephemeralcontainers-pod-true-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/ephemeralcontainers_pod_true_child_true.yaml",
+      "original_sha256": "52644a79f1c571abe13d4a568ad172dd099648c79c92162592bc8c11697f430c",
+      "published_sha256": "52644a79f1c571abe13d4a568ad172dd099648c79c92162592bc8c11697f430c"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-absent-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_absent_child_absent.yaml",
+      "original_sha256": "b91743d0c35b81dfd4af5a29f0ec704591a2e76e1f867ec1a561577dc2d59294",
+      "published_sha256": "b91743d0c35b81dfd4af5a29f0ec704591a2e76e1f867ec1a561577dc2d59294"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-absent-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_absent_child_false.yaml",
+      "original_sha256": "30c9666d29c5d35bd6659c73671061c0577681e0ced45d7ae8542284133bf1c9",
+      "published_sha256": "30c9666d29c5d35bd6659c73671061c0577681e0ced45d7ae8542284133bf1c9"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-absent-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_absent_child_true.yaml",
+      "original_sha256": "3f839c016370d43535d5a7ea8c3ceb1317e371f0a782acfbb0a45bdde9214f6d",
+      "published_sha256": "3f839c016370d43535d5a7ea8c3ceb1317e371f0a782acfbb0a45bdde9214f6d"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-false-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_false_child_absent.yaml",
+      "original_sha256": "70e72a068132f3420eddf85260f8b43c409d1216d92d2059d1c999ccb8dcdc82",
+      "published_sha256": "70e72a068132f3420eddf85260f8b43c409d1216d92d2059d1c999ccb8dcdc82"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-false-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_false_child_false.yaml",
+      "original_sha256": "61c7063f888580dccb21dbc307a22216c4c7c6bbf38e90963d64390eb23112d0",
+      "published_sha256": "61c7063f888580dccb21dbc307a22216c4c7c6bbf38e90963d64390eb23112d0"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-false-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_false_child_true.yaml",
+      "original_sha256": "aac1d854191b2ed2130316aef5643438ec35b21449b757b7d2d5a2eff5cbb1d9",
+      "published_sha256": "aac1d854191b2ed2130316aef5643438ec35b21449b757b7d2d5a2eff5cbb1d9"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-true-child-absent.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_true_child_absent.yaml",
+      "original_sha256": "59eb744be11903305dbcc7666660a6d1918c26759d08d8b863012f01d2da1151",
+      "published_sha256": "59eb744be11903305dbcc7666660a6d1918c26759d08d8b863012f01d2da1151"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-true-child-false.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_true_child_false.yaml",
+      "original_sha256": "ef0b3a7aaddc9f8a4458ae2218e30671f7ea596be57ad67228ad41003ddde19d",
+      "published_sha256": "ef0b3a7aaddc9f8a4458ae2218e30671f7ea596be57ad67228ad41003ddde19d"
+    },
+    {
+      "corpus": "matrix",
+      "artifact_path": "initcontainers-pod-true-child-true.yaml",
+      "file": "data/controls/kubernetes/matrix/initcontainers_pod_true_child_true.yaml",
+      "original_sha256": "b63144503775629f264db39fc6bd1e579fe48ac06e4ed79a67c6772372daf60c",
+      "published_sha256": "b63144503775629f264db39fc6bd1e579fe48ac06e4ed79a67c6772372daf60c"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--build-code--deployment--doc-0.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__build_code__deployment__doc_0.yaml",
+      "original_sha256": "bc9dfb8dc8712001b43e73978752611ab91e4eee5949fb3ad993d63e36033995",
+      "published_sha256": "bc9dfb8dc8712001b43e73978752611ab91e4eee5949fb3ad993d63e36033995"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--build-code--deployment--doc-1.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__build_code__deployment__doc_1.yaml",
+      "original_sha256": "c0a45a0d24847947f71f2ab5009cc1aca30f4cdb80b0e9bfac2f05267cdb6529",
+      "published_sha256": "c0a45a0d24847947f71f2ab5009cc1aca30f4cdb80b0e9bfac2f05267cdb6529"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--cache-store--deployment--doc-0.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__cache_store__deployment__doc_0.yaml",
+      "original_sha256": "ea9b555770c43048ac38eb60ed9d3f2d9d22699e9220384c711ec1d9075df948",
+      "published_sha256": "ea9b555770c43048ac38eb60ed9d3f2d9d22699e9220384c711ec1d9075df948"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--cache-store--deployment--doc-1.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__cache_store__deployment__doc_1.yaml",
+      "original_sha256": "6ee7f48b751fa4ec939fdb5b673dd13c3e837fd3f8d4c1e1838e478981490e3e",
+      "published_sha256": "6ee7f48b751fa4ec939fdb5b673dd13c3e837fd3f8d4c1e1838e478981490e3e"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--cache-store--deployment--doc-2.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__cache_store__deployment__doc_2.yaml",
+      "original_sha256": "e615a0386e2feecd6908e49da71a92fbc85c6fd5af49004059b99af1c805c49a",
+      "published_sha256": "e615a0386e2feecd6908e49da71a92fbc85c6fd5af49004059b99af1c805c49a"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--internal-proxy--deployment--doc-0.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__internal_proxy__deployment__doc_0.yaml",
+      "original_sha256": "aa1ce4b7c7ddbeb0828bd4e76e041de574f8bb304607913ccd78b34c6cd24b1f",
+      "published_sha256": "aa1ce4b7c7ddbeb0828bd4e76e041de574f8bb304607913ccd78b34c6cd24b1f"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--internal-proxy--deployment--doc-1.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__internal_proxy__deployment__doc_1.yaml",
+      "original_sha256": "9a9ad3b0c9be21d2d4a8b321164bd7cd8ca6fa87a1f6cac7107339e05f800e8a",
+      "published_sha256": "9a9ad3b0c9be21d2d4a8b321164bd7cd8ca6fa87a1f6cac7107339e05f800e8a"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--internal-proxy--deployment--doc-2.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__internal_proxy__deployment__doc_2.yaml",
+      "original_sha256": "2ead9239bc13e92904c1b967c4e1b5bf30468aefa586589e6b3f76dadcddaaaf",
+      "published_sha256": "2ead9239bc13e92904c1b967c4e1b5bf30468aefa586589e6b3f76dadcddaaaf"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--poor-registry--deployment--doc-0.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__poor_registry__deployment__doc_0.yaml",
+      "original_sha256": "17fe7fe02888853621fdc0461ec0f8fea1322d025c191813e4b20f9abd5831c6",
+      "published_sha256": "17fe7fe02888853621fdc0461ec0f8fea1322d025c191813e4b20f9abd5831c6"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--poor-registry--deployment--doc-1.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__poor_registry__deployment__doc_1.yaml",
+      "original_sha256": "61707adc74d0e896cc81137475f038d445defd3d5cbef9ae2330701429878705",
+      "published_sha256": "61707adc74d0e896cc81137475f038d445defd3d5cbef9ae2330701429878705"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--system-monitor--deployment--doc-0.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__system_monitor__deployment__doc_0.yaml",
+      "original_sha256": "22667d2f2ed5180ff5777ad222647bb321a83bcb88fb961ca795fbad3f987dd7",
+      "published_sha256": "f8ee6392c3a5e1ed8e4ca0daa787b6c11caeae7b0ced58ac4295d73b4927f814"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--system-monitor--deployment--doc-1.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__system_monitor__deployment__doc_1.yaml",
+      "original_sha256": "527d0ce273982fac8e977e803e4c45a01563bd01c81cfa1fe06b2750642fca2b",
+      "published_sha256": "527d0ce273982fac8e977e803e4c45a01563bd01c81cfa1fe06b2750642fca2b"
+    },
+    {
+      "corpus": "split",
+      "artifact_path": "scenarios--system-monitor--deployment--doc-2.yaml",
+      "file": "data/controls/kubernetes/split/scenarios__system_monitor__deployment__doc_2.yaml",
+      "original_sha256": "a24c31fd2c5502296dbbae522072113d32a48a6ebb3df32b9111e9ce749d989b",
+      "published_sha256": "a24c31fd2c5502296dbbae522072113d32a48a6ebb3df32b9111e9ce749d989b"
+    }
+  ],
+  "terraform": [
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        5,
+        12
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": true,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T01",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t01",
+      "resource_span": [
+        1,
+        13
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        19,
+        26
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": false,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T02",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t02",
+      "resource_span": [
+        15,
+        27
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        33,
+        40
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": false,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T03",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t03",
+      "resource_span": [
+        29,
+        41
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        47,
+        54
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": true,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T04A",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t04a",
+      "resource_span": [
+        43,
+        55
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        61,
+        68
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": true,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T04B",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t04b",
+      "resource_span": [
+        57,
+        69
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        75,
+        82
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": true,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T05",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t05",
+      "resource_span": [
+        71,
+        83
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "controls",
+      "ingress_index": 0,
+      "ingress_span": [
+        89,
+        96
+      ],
+      "path": "controls/terraform/main.tf",
+      "positive": false,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "T06",
+      "reference_timing": "prescan_control",
+      "resource": "aws_security_group.t06",
+      "resource_span": [
+        85,
+        97
+      ],
+      "source_sha256": "b29b28f6ce74993054f74256d65a6294a8f8c05ba46c51173bec5e77f9b2bc16"
+    },
+    {
+      "corpus": "originals",
+      "ingress_index": 1,
+      "ingress_span": [
+        90,
+        96
+      ],
+      "path": "originals/terraform/terraform/aws/ec2.tf",
+      "positive": true,
+      "property": "declared_unrestricted_tcp_22",
+      "reference_id": "TG-web-node-tcp22",
+      "reference_timing": "post_outcome_source_annotation",
+      "resource": "aws_security_group.web-node",
+      "resource_span": [
+        77,
+        115
+      ],
+      "source_sha256": "5fcc2d4cf052fb2032d9470179f63a903d280b99cf5b1bb2db6e15200ecd9428"
+    },
+    {
+      "corpus": "originals",
+      "ingress_index": null,
+      "ingress_span": null,
+      "path": "originals/terraform/terraform/aws/db-app.tf",
+      "positive": false,
+      "property": "declared_unrestricted_tcp_22",
+      "rationale": "TCP/3306 excludes TCP/22 independently of unresolved CIDR expression.",
+      "reference_id": "TG-database-rule-tcp22",
+      "reference_timing": "post_outcome_source_annotation",
+      "resource": "aws_security_group_rule.ingress",
+      "resource_span": [
+        136,
+        143
+      ],
+      "source_sha256": "242feb266e4ed7fc3a2725f88bade8b0029d46bbda3d66b60c4936381f7deda9"
+    }
+  ],
+  "crapi_templates": [
+    {
+      "case_id": "ebcc06f43d373beb45551de01083a22e382e72667afe0a50a11cea86471ba74b",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "strict-transport-security",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "strict-transport-security"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "ea72bd6cffa3b877c1d3ce4f823d3bfc2eb4c5fa4fc9f624fe65ef90160e6ee9",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "content-security-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "content-security-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "f122499c785b4c3cdc4d9018932778b1d6320403d73a10444c1c2b5e76cc4b53",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "permissions-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "permissions-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "e5f9aa1b52468023a96c79141b9f5b404af2e38e096a043ed76a7eb81b5771ab",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-frame-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-frame-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "bdac7fed707ef1ffc30d7388ae0a0fcc91f8b4ab1fc678dfbf84bb01f7666849",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-content-type-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-content-type-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "6b2ebcf5fcf742bd288aa88942e35f75e39f0cf17bfa97f4228d7f8772b54c62",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-permitted-cross-domain-policies",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-permitted-cross-domain-policies"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "893c4efbd442a60977d131bbe859dadde91359d472d10459791c849204903774",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "referrer-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "referrer-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "1d5559f12b914605f71dfa5ab8cb0e1c579e6a4770eef10c01d4dd7009b3802d",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-embedder-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-embedder-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "7d559804ae53bf880bf7895f72ef20b17f5afa46b83719fb11b8e0b89139ba10",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-opener-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-opener-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "c0fc8e9806a63f4bdd9e9508978abb838f43ac83ea0fe8a7e6aa68becfc6f047",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-resource-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-resource-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "06750592b0c893c6c72de35fdb58be9271f39d551da7fbea48ac13efc125284a",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "strict-transport-security",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "strict-transport-security"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "c804933d979612b20bf94b1a761bca6c146f2a7a8d88ad8a5f612245a1ca4827",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "content-security-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "content-security-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "0926d6629064a9dfd7afef5d92306bbf8b06e5dbad7a972ad9e2bb823e16b2e8",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "permissions-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "permissions-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "338eb4e04d17dffe698231bf5fa09ff5e95a3d2671b473d964367cd9a3b5b448",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-frame-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-frame-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "bb71e91026b17802779b0bb2c0ee2058f5c5091feb26b49370e070dbee33047d",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-content-type-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-content-type-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "362657fb8e1b0b037919c4309f23c3ebe2936985c95a244ac857be71fa704bf5",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-permitted-cross-domain-policies",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-permitted-cross-domain-policies"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "fa2e3682828e2a5a0af8e673c6f475c73d4d01d1c51fc14c6b2df63b9ba26f90",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "referrer-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "referrer-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "71e0c9b32ef19dedefdd1b172556507164106723dafacfc0e13ad77c7fccbf82",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-embedder-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-embedder-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "08d8fd1e3f16f78fcb22647633b13e3149670e7d84f4579a914959eb54fd6f2c",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-opener-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-opener-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "c1c01bc9f5ab9060adf782a5b4f915cdf0100bdf37048cf7e5c35f3b5224ebb8",
+      "partition": "crapi-api-development:valid-a",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-resource-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-resource-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "8bfdfe305de7cae2782726ee4c308a1656d33877ee1ee73b2719d4dc2c1e3c2e",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "strict-transport-security",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "strict-transport-security"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "3a26dbc73da298aa11f0ec99d345cc1fa53a58656f7daff1c17d291c5574e642",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "content-security-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "content-security-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "e4869748f72da958e6e48051e08f91e92cdc1a224842caee69735e49cbdffaa5",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "permissions-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "permissions-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "b63ad2fcc6936e59bd1e7adcba8239a81a2c078261f794f1a8c14e3a276ca844",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-frame-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-frame-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "6d23a6d31c0efde822400bce19749e250e9cb8532a363cc86f384023dbef79f5",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-content-type-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-content-type-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "1449cf147e58652f8aec12a0d5b6ee32ddd657635a501f250070b3674f12bdd1",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "x-permitted-cross-domain-policies",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-permitted-cross-domain-policies"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "9ad65d4105b7039c6095458644a266047ac71929d798b87258f1bc47ac4d1497",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "referrer-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "referrer-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "cbf61a44cbededfa01b7297e7c97af5aad918793f5838efff9272c772b25f084",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-embedder-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-embedder-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "d007d0656fa380528987b35aa37291d5dbedb7f68353f13407a7daa7bab90999",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-opener-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-opener-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "2a3c30eb440f2546b7288630e2cf12099079ccab3b85efa284c4fbd38b890fb6",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:a}/location",
+      "surface": "header",
+      "name": "cross-origin-resource-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-resource-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "f99bfb4ad055a19b202720670a74ba0b685f24dc69a0a7c1ad533ddb6423b148",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "strict-transport-security",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "strict-transport-security"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "c91db00d86930300de0bb138866595f6c5391a30ac898ce6074f0e6b12d7b24c",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "content-security-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "content-security-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "eae18ebcd3ac91a5ed30669015742491c709994d44eeffa081c609e37270f421",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "permissions-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "permissions-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "0f87556fdb77822fcbb66505f01a4aa9de9aa8450fbe2f769c78f600dd032f02",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-frame-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-frame-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "0a5a312b354e9ff5c7005c11d9cc1ebfcba44aff2bdaaab49186fc0a549dbc08",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-content-type-options",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-content-type-options"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "a4a10bd0a6114eef99be5bf4dffd8cccfa1b0e1f9b873c2469de6afc58c8272d",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "x-permitted-cross-domain-policies",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "x-permitted-cross-domain-policies"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "e8a5aaddf08d75fc928d70610040ece473007e7fa915873905299fc293404195",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "referrer-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "referrer-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "2c975bb88800f743269080572b3cb52333c1c30981bd579883fe94ce4b1c3582",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-embedder-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-embedder-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "181cd15846dcd24d31d3e5a391e60acafb928e2bc92b0f7970a46cae61745b4e",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-opener-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-opener-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    },
+    {
+      "case_id": "bb7b23d4692ac247a8fe56bc05be866aaf3db59bbffad49d786d89c7a6dbfc86",
+      "partition": "crapi-api-development:invalid",
+      "target": "crapi",
+      "method": "GET",
+      "path": "/identity/api/v2/vehicle/{owner:b}/location",
+      "surface": "header",
+      "name": "cross-origin-resource-policy",
+      "weakness": {
+        "class": "response_header_absence",
+        "variant": {
+          "header": "cross-origin-resource-policy"
+        }
+      },
+      "unit": "header_absence_on_one_response_condition"
+    }
+  ]
+}

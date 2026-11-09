@@ -1,0 +1,19 @@
+{
+  "limit": "Native launcher hashes checked here; full Python/runtime dependency lock remains a final release binding.",
+  "restler": {
+    "image": "sha256:d53d78a15f1279d07315c503536c8c741889073dd02678aa57311e4a55f04af5",
+    "source_commit": "eaacd92733771d35e90acfb2040fe37d4e5d09b1"
+  },
+  "tools": {
+    "nuclei": {
+      "path": "/usr/local/bin/nuclei",
+      "realpath": "/usr/local/bin/nuclei",
+      "sha256": "c49588140f357cbdddd5436dec11201953a4c5390faeec90777f9ee2cfd70251"
+    },
+    "schemathesis": {
+      "path": "<LAB_ROOT>/environment/toolset-completion-20260922-01/python/bin/schemathesis",
+      "realpath": "<LAB_ROOT>/environment/toolset-completion-20260922-01/python/bin/schemathesis",
+      "sha256": "e420fa85ced3f588e0cee6bd2224e12a2ccd06ad147f3aa002cb93e5f62ea892"
+    }
+  }
+}

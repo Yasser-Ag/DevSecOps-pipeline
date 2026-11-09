@@ -1,0 +1,17 @@
+{
+  "compose": {
+    "bytes": 3823,
+    "path": "<LAB_ROOT>/environment/aigoat-qualification-20261012-01/compose.json",
+    "sha256": "94de7561fb8fad7e35d5c8b744a5b9e3878555cf1f780bcf2099481c12ee670f"
+  },
+  "config": {
+    "bytes": 1141,
+    "path": "<LAB_ROOT>/environment/aigoat-qualification-20261012-01/config.json",
+    "sha256": "1ce5b23057c0410e0be201c6cc5157cd159f4d414fec6347da064ade267bc6ba"
+  },
+  "seed": {
+    "bytes": 21927,
+    "path": "<LAB_ROOT>/environment/aigoat-qualification-20261012-01/evidence/runtime-01/qualified_state.tar.gz",
+    "sha256": "98e736b7d46cb10e6815dfa4af0530ded04c08ea784b30303bb8cbd738f9104b"
+  }
+}

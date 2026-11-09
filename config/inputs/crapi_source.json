@@ -1,0 +1,75 @@
+{
+  "builds": [
+    {
+      "path": "<LAB_ROOT>/builds/crapi-community-20260921-01/manifest.json",
+      "runtime_image": "sha256:4f6a43e2065e7a6a3a8537821a35ec8d12204a77242448daa08694eb3486b0c6",
+      "service": "community",
+      "source_commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+      "success": true
+    },
+    {
+      "path": "<LAB_ROOT>/builds/crapi-identity-20260921-01/manifest.json",
+      "runtime_image": "sha256:ee0c2d2a9f7466158aed1540ddbd146eea37dcc88a8020b19707fc7b7d582cc0",
+      "service": "identity",
+      "source_commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+      "success": true
+    },
+    {
+      "path": "<LAB_ROOT>/builds/crapi-web-20260921-01/manifest.json",
+      "runtime_image": "sha256:4705d26ec8841008fa63c8fb8e6d1421247f6ab2fd5e2c61e534716f3e057027",
+      "service": "web",
+      "source_commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+      "success": true
+    },
+    {
+      "path": "<LAB_ROOT>/builds/crapi-workshop-20260921-01/manifest.json",
+      "runtime_image": "sha256:c036d2c50ebeaddf719cd91bf601d49933c843645527512440b32bb9e88b3200",
+      "service": "workshop",
+      "source_commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+      "success": true
+    }
+  ],
+  "commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+  "files": [
+    {
+      "bytes": 7483,
+      "path": "docs/challengeSolutions.md",
+      "sha256": "42fc0c3aa0060f2fb8cceb22507e81aa4c21ea5364be56768f36bc1df2d82600"
+    },
+    {
+      "bytes": 4937,
+      "path": "docs/challenges.md",
+      "sha256": "1f526b425369d0858c21c20ee9c903ac61e4dcbf55687b7647035ac706be4ae5"
+    },
+    {
+      "bytes": 101438,
+      "path": "openapi-spec/crapi-openapi-spec.json",
+      "sha256": "9d57e0e76348a9a6bdff2c841ce791bb9de604a316b724074a998e3c484a4ace"
+    },
+    {
+      "bytes": 152656,
+      "path": "services/chatbot/src/resources/crapi-openapi-spec.json",
+      "sha256": "8d16b09f329e7372db703dc8a95d7ef2f7e53deb3ff19a75e604ec6d3b84e09b"
+    },
+    {
+      "bytes": 4142,
+      "path": "services/identity/src/main/java/com/crapi/config/WebSecurityConfig.java",
+      "sha256": "c3727e3686b7033c5b67549876298e446bbb64e258ae5e9f988c24a51eda1265"
+    },
+    {
+      "bytes": 5390,
+      "path": "services/identity/src/main/java/com/crapi/controller/VehicleController.java",
+      "sha256": "c49f5ab14aab7b80386c5e309d6e493360ab86f21d41d939002f1d2961f78789"
+    },
+    {
+      "bytes": 9937,
+      "path": "services/identity/src/main/java/com/crapi/service/Impl/VehicleServiceImpl.java",
+      "sha256": "1eadd6a4020699ea0e48e2ab3a245afc2618daf8e75ec97057f84a883d34a2c7"
+    },
+    {
+      "bytes": 1348,
+      "path": "services/identity/src/main/java/com/crapi/service/VehicleService.java",
+      "sha256": "80ca1b962e314f54b4028f5a40ed0095f59cc5117a4128ee4fde60e7403f7fc5"
+    }
+  ]
+}

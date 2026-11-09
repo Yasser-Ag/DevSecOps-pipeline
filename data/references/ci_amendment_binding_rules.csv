@@ -1,0 +1,3 @@
+population,tool,native_rule,qualification,reference_property,verified_coordinates,recorded_support,source
+workflow-job:controls,checkov,CKV2_GHA_1,not mapped: global policy is not job-local support,declared_contents_write after job override,Global permissions; no job localization,0/4 in each of five blocks,protocol/ci_workflow_amendment.md:109
+workflow-job:controls,zizmor,excessive-permissions,conditional job rule; no supporting finding recorded,declared_contents_write after job override,Exact file/job; primary symbolic route jobs.<job>.permissions; source span and job write-all value,0/4 in each of five blocks,protocol/ci_workflow_amendment.md:106

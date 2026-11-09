@@ -1,0 +1,21 @@
+{
+  "observation_id": "resumption-inventory-20261012",
+  "observed_utc": "2026-10-12T10:36:09.241385+00:00",
+  "source_sha256": "8dbc2bc0cf24d278e5ed5d4ac5731729c807633777d4a064c5ff2348821353d6",
+  "source_fields": [
+    "commands.cpu.stdout",
+    "commands.memory.stdout",
+    "commands.os.stdout",
+    "commands.docker_version.stdout"
+  ],
+  "cpu_count": 8,
+  "cpu_model": "AMD EPYC-Rome Processor",
+  "memory_bytes": 16372285440,
+  "memory_GiB": 15.247879028320312,
+  "os_name": "Ubuntu",
+  "os_version": "24.04",
+  "kernel_release": null,
+  "docker_client": "29.8.0",
+  "docker_server": "29.8.0",
+  "scope": "Read-only pre-campaign host observation; not a fresh measurement and not proof of unchanged kernel throughout the campaign."
+}

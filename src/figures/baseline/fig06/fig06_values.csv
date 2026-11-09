@@ -1,0 +1,85 @@
+panel,class_or_matrix,condition,category,value,source
+a1,True native alerts,B0; B1; Q-A; Q-C; G-A; G-C,n,62,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:5; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+a1,True native alerts,B0,retain,62,K_tables/triage_by_class.csv:2
+a1,True native alerts,B0,dismiss,0,K_tables/triage_by_class.csv:2
+a1,True native alerts,B0,abstain,0,K_tables/triage_by_class.csv:2
+a1,True native alerts,B0,invalid,0,K_tables/triage_by_class.csv:2
+a1,True native alerts,B1,retain,62,K_tables/triage_by_class.csv:3
+a1,True native alerts,B1,dismiss,0,K_tables/triage_by_class.csv:3
+a1,True native alerts,B1,abstain,0,K_tables/triage_by_class.csv:3
+a1,True native alerts,B1,invalid,0,K_tables/triage_by_class.csv:3
+a1,True native alerts,Q-A,retain,40,K_tables/triage_by_class.csv:4
+a1,True native alerts,Q-A,dismiss,0,K_tables/triage_by_class.csv:4
+a1,True native alerts,Q-A,abstain,22,K_tables/triage_by_class.csv:4
+a1,True native alerts,Q-A,invalid,0,K_tables/triage_by_class.csv:4
+a1,True native alerts,Q-C,retain,57,K_tables/triage_by_class.csv:5
+a1,True native alerts,Q-C,dismiss,1,K_tables/triage_by_class.csv:5
+a1,True native alerts,Q-C,abstain,3,K_tables/triage_by_class.csv:5
+a1,True native alerts,Q-C,invalid,1,K_tables/triage_by_class.csv:5
+a1,True native alerts,G-A,retain,54,K_tables/triage_by_class.csv:6
+a1,True native alerts,G-A,dismiss,0,K_tables/triage_by_class.csv:6
+a1,True native alerts,G-A,abstain,0,K_tables/triage_by_class.csv:6
+a1,True native alerts,G-A,invalid,8,K_tables/triage_by_class.csv:6
+a1,True native alerts,G-C,retain,54,K_tables/triage_by_class.csv:7
+a1,True native alerts,G-C,dismiss,0,K_tables/triage_by_class.csv:7
+a1,True native alerts,G-C,abstain,0,K_tables/triage_by_class.csv:7
+a1,True native alerts,G-C,invalid,8,K_tables/triage_by_class.csv:7
+a2,False native alerts,B0; B1; Q-A; Q-C; G-A; G-C,n,11,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:5; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+a2,False native alerts,B0,retain,11,K_tables/triage_by_class.csv:2
+a2,False native alerts,B0,dismiss,0,K_tables/triage_by_class.csv:2
+a2,False native alerts,B0,abstain,0,K_tables/triage_by_class.csv:2
+a2,False native alerts,B0,invalid,0,K_tables/triage_by_class.csv:2
+a2,False native alerts,B1,retain,11,K_tables/triage_by_class.csv:3
+a2,False native alerts,B1,dismiss,0,K_tables/triage_by_class.csv:3
+a2,False native alerts,B1,abstain,0,K_tables/triage_by_class.csv:3
+a2,False native alerts,B1,invalid,0,K_tables/triage_by_class.csv:3
+a2,False native alerts,Q-A,retain,0,K_tables/triage_by_class.csv:4
+a2,False native alerts,Q-A,dismiss,0,K_tables/triage_by_class.csv:4
+a2,False native alerts,Q-A,abstain,11,K_tables/triage_by_class.csv:4
+a2,False native alerts,Q-A,invalid,0,K_tables/triage_by_class.csv:4
+a2,False native alerts,Q-C,retain,9,K_tables/triage_by_class.csv:5
+a2,False native alerts,Q-C,dismiss,0,K_tables/triage_by_class.csv:5
+a2,False native alerts,Q-C,abstain,2,K_tables/triage_by_class.csv:5
+a2,False native alerts,Q-C,invalid,0,K_tables/triage_by_class.csv:5
+a2,False native alerts,G-A,retain,11,K_tables/triage_by_class.csv:6
+a2,False native alerts,G-A,dismiss,0,K_tables/triage_by_class.csv:6
+a2,False native alerts,G-A,abstain,0,K_tables/triage_by_class.csv:6
+a2,False native alerts,G-A,invalid,0,K_tables/triage_by_class.csv:6
+a2,False native alerts,G-C,retain,11,K_tables/triage_by_class.csv:7
+a2,False native alerts,G-C,dismiss,0,K_tables/triage_by_class.csv:7
+a2,False native alerts,G-C,abstain,0,K_tables/triage_by_class.csv:7
+a2,False native alerts,G-C,invalid,0,K_tables/triage_by_class.csv:7
+a3,True declarations,B0; B1; Q-A; Q-C; G-A; G-C,n,15,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:5; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+a3,True declarations,B0,retain,15,K_tables/triage_by_class.csv:2
+a3,True declarations,B0,dismiss,0,K_tables/triage_by_class.csv:2
+a3,True declarations,B0,abstain,0,K_tables/triage_by_class.csv:2
+a3,True declarations,B0,invalid,0,K_tables/triage_by_class.csv:2
+a3,True declarations,B1,retain,15,K_tables/triage_by_class.csv:3
+a3,True declarations,B1,dismiss,0,K_tables/triage_by_class.csv:3
+a3,True declarations,B1,abstain,0,K_tables/triage_by_class.csv:3
+a3,True declarations,B1,invalid,0,K_tables/triage_by_class.csv:3
+a3,True declarations,Q-A,retain,3,K_tables/triage_by_class.csv:4
+a3,True declarations,Q-A,dismiss,0,K_tables/triage_by_class.csv:4
+a3,True declarations,Q-A,abstain,12,K_tables/triage_by_class.csv:4
+a3,True declarations,Q-A,invalid,0,K_tables/triage_by_class.csv:4
+a3,True declarations,Q-C,retain,0,K_tables/triage_by_class.csv:5
+a3,True declarations,Q-C,dismiss,3,K_tables/triage_by_class.csv:5
+a3,True declarations,Q-C,abstain,12,K_tables/triage_by_class.csv:5
+a3,True declarations,Q-C,invalid,0,K_tables/triage_by_class.csv:5
+a3,True declarations,G-A,retain,15,K_tables/triage_by_class.csv:6
+a3,True declarations,G-A,dismiss,0,K_tables/triage_by_class.csv:6
+a3,True declarations,G-A,abstain,0,K_tables/triage_by_class.csv:6
+a3,True declarations,G-A,invalid,0,K_tables/triage_by_class.csv:6
+a3,True declarations,G-C,retain,15,K_tables/triage_by_class.csv:7
+a3,True declarations,G-C,dismiss,0,K_tables/triage_by_class.csv:7
+a3,True declarations,G-C,abstain,0,K_tables/triage_by_class.csv:7
+a3,True declarations,G-C,invalid,0,K_tables/triage_by_class.csv:7
+b,Operational matrices,B0; B1; Q-A; Q-C; G-A; G-C,native_n,73,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:5; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+b,"B0, B1, Q-A, G-A, G-C",B0; B1; Q-A; G-A; G-C,Tr,62,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+b,"B0, B1, Q-A, G-A, G-C",B0; B1; Q-A; G-A; G-C,Td,0,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+b,"B0, B1, Q-A, G-A, G-C",B0; B1; Q-A; G-A; G-C,Fr,11,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+b,"B0, B1, Q-A, G-A, G-C",B0; B1; Q-A; G-A; G-C,Fd,0,K_tables/triage_by_class.csv:2; K_tables/triage_by_class.csv:3; K_tables/triage_by_class.csv:4; K_tables/triage_by_class.csv:6; K_tables/triage_by_class.csv:7
+b,Q-C,Q-C,Tr,61,K_tables/triage_by_class.csv:5
+b,Q-C,Q-C,Td,1,K_tables/triage_by_class.csv:5
+b,Q-C,Q-C,Fr,11,K_tables/triage_by_class.csv:5
+b,Q-C,Q-C,Fd,0,K_tables/triage_by_class.csv:5

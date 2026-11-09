@@ -1,0 +1,23 @@
+{
+  "composition_digest": "1c127c1193a85243452be36d792e624915682f2cfd1f1ee5a494c96365745149",
+  "dynamic_execution": {
+    "asset_locks_sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9",
+    "generation_sha256": "06af8622dcde5e289438756888314b6333cd91e5d18ec0540b7e56b2cfada825",
+    "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+    "profiles_sha256": "35668338d8255345846d64face858eb0394d4f29fc8b7945656adf89b2ca7dab",
+    "schedule_sha256": "a669013b2b6c41d7ebfe57e0a228862e3b90edfee4e4476a1417d730321b7a31"
+  },
+  "final_ready": true,
+  "gates": {
+    "G1": "passed",
+    "G2": "passed",
+    "G3": "passed",
+    "G4": "passed",
+    "G5": "passed",
+    "G6": "passed",
+    "G7": "passed",
+    "G8": "passed"
+  },
+  "protocol_sha256": "05767b83e68990e669d3050b1f456c85365ddca357f7a605c06ff857bde2cafa",
+  "protocol_version": "1.0"
+}

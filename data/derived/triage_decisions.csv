@@ -1,0 +1,13 @@
+condition,pass_number,n_inputs,retain,dismiss,abstain,invalid,false_alerts_removed,false_alerts_denominator,true_alerts_lost,true_alerts_denominator,declarations_lost,declarations_denominator,supported_cases_before,supported_cases_after,explicit_decisions,explicit_decision_coverage_fraction,source_decisions,source_endpoints
+B0,1,88,88,0,0,0,0,11,0,62,0,15,32,32,88,1.0,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:2;data/derived/analysis/triage_summary.csv:3
+B1,1,88,88,0,0,0,0,11,0,62,0,15,32,32,88,1.0,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:4;data/derived/analysis/triage_summary.csv:5
+Q-A,1,88,43,0,45,0,0,11,0,62,0,15,32,32,43,0.48863636363636365,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:6;data/derived/analysis/triage_summary.csv:7
+Q-C,1,88,66,4,17,1,0,11,1,62,3,15,32,31,70,0.7954545454545454,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:8;data/derived/analysis/triage_summary.csv:9
+G-A,1,88,80,0,0,8,0,11,0,62,0,15,32,32,80,0.9090909090909091,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:10;data/derived/analysis/triage_summary.csv:11
+G-C,1,88,80,0,0,8,0,11,0,62,0,15,32,32,80,0.9090909090909091,triage/pass1/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:12;data/derived/analysis/triage_summary.csv:13
+B0,2,88,88,0,0,0,0,11,0,62,0,15,32,32,88,1.0,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:14;data/derived/analysis/triage_summary.csv:15
+B1,2,88,88,0,0,0,0,11,0,62,0,15,32,32,88,1.0,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:16;data/derived/analysis/triage_summary.csv:17
+Q-A,2,88,43,0,45,0,0,11,0,62,0,15,32,32,43,0.48863636363636365,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:18;data/derived/analysis/triage_summary.csv:19
+Q-C,2,88,66,4,17,1,0,11,1,62,3,15,32,31,70,0.7954545454545454,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:20;data/derived/analysis/triage_summary.csv:21
+G-A,2,88,80,0,0,8,0,11,0,62,0,15,32,32,80,0.9090909090909091,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:22;data/derived/analysis/triage_summary.csv:23
+G-C,2,88,80,0,0,8,0,11,0,62,0,15,32,32,80,0.9090909090909091,triage/pass2/validated/decisions.jsonl:1,data/derived/analysis/triage_summary.csv:24;data/derived/analysis/triage_summary.csv:25

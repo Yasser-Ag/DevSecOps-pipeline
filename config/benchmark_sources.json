@@ -1,0 +1,845 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00051.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "edc6c2af0c174db15d58c95113dddd0080c80ea00dde63efa4fa700da0915b52",
+      "source_bytes": 2562,
+      "line_start": 1,
+      "line_end": 71,
+      "excerpt_sha256": "1ddf2f24f805bb096e7830cc496be018c325106ae9ed8f9d2d72797e5ff95b0b",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1539,
+          1551
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00006.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "8671e8cd2686594b31abba5a17021472e25c5e3d074362a164dae2a5a4e8deda",
+      "source_bytes": 2747,
+      "line_start": 1,
+      "line_end": 77,
+      "excerpt_sha256": "400d1e758874706bb1a164b1b36be51cdf3845411378ac021d491d0dadc4162d",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1539,
+          1551
+        ],
+        [
+          1783,
+          1871
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00054.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "8f4170ba1a8c2e4683ae731e3acaa594f8bcd9392c7ca58a91af33f5d5035571",
+      "source_bytes": 7931,
+      "line_start": 1,
+      "line_end": 169,
+      "excerpt_sha256": "e7f94fb691e931c5cdcd0349276168528256b13e7853827801ae52fe87b5678b",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1581,
+          1610
+        ],
+        [
+          2743,
+          2773
+        ],
+        [
+          2782,
+          2873
+        ],
+        [
+          2882,
+          2906
+        ],
+        [
+          2915,
+          2992
+        ],
+        [
+          3001,
+          3033
+        ],
+        [
+          3042,
+          3062
+        ],
+        [
+          3071,
+          3126
+        ],
+        [
+          3135,
+          3190
+        ],
+        [
+          3199,
+          3254
+        ],
+        [
+          3263,
+          3320
+        ],
+        [
+          3329,
+          3338
+        ],
+        [
+          3580,
+          3612
+        ],
+        [
+          3928,
+          3960
+        ],
+        [
+          5040,
+          5076
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00005.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "d0c8ba1cf523346cce805fdc434a8100db734b729fc8d5a50a20ad3b2a1da2a1",
+      "source_bytes": 5385,
+      "line_start": 1,
+      "line_end": 122,
+      "excerpt_sha256": "35ec92669f7639106626a3d9aed6ac00a394e007f5f0298c45a3008b2896e3a0",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1541,
+          1553
+        ],
+        [
+          1785,
+          1873
+        ],
+        [
+          1943,
+          1973
+        ],
+        [
+          1982,
+          2073
+        ],
+        [
+          2082,
+          2113
+        ],
+        [
+          2122,
+          2139
+        ],
+        [
+          2148,
+          2200
+        ],
+        [
+          2209,
+          2263
+        ],
+        [
+          2272,
+          2278
+        ],
+        [
+          2401,
+          2428
+        ],
+        [
+          2550,
+          2582
+        ],
+        [
+          2896,
+          2928
+        ],
+        [
+          4010,
+          4046
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00009.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "4b821de37870d10de8c5ac4a3005267f46e533ac695b8af6a7f2785f6d682500",
+      "source_bytes": 5319,
+      "line_start": 1,
+      "line_end": 124,
+      "excerpt_sha256": "b2c4283c7badb369297cb25cad1847fda4c11c362101e7fc5fdb09049de3cbab",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1539,
+          1551
+        ],
+        [
+          1919,
+          1961
+        ],
+        [
+          2146,
+          2213
+        ],
+        [
+          2230,
+          2238
+        ],
+        [
+          2294,
+          2373
+        ],
+        [
+          3860,
+          3896
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00003.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "13134297b4aa87c09b5ae6bb1e92eb0dafbfe25525d57fa1511896ec0f46b247",
+      "source_bytes": 5283,
+      "line_start": 1,
+      "line_end": 120,
+      "excerpt_sha256": "445a59b6af371b3323b01b0f42cca29a32f95ed97d05fb5e0cd402911ac25e87",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1571,
+          1600
+        ],
+        [
+          2189,
+          2201
+        ],
+        [
+          4223,
+          4259
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00138.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "b50805b575a0b644e606001079e13ff52e8dba13c3b0fb931ed25f60cc5ff9e2",
+      "source_bytes": 5139,
+      "line_start": 1,
+      "line_end": 116,
+      "excerpt_sha256": "a137e0083db6d0423e87f9d4a0547c3e6adf61b753f516387185207ec8baf538",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1771,
+          1859
+        ],
+        [
+          1950,
+          2018
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00012.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "fede10eae38d579c376ccaaea92491c73028aa0feca0f7cdbcac6d98cbbc2da0",
+      "source_bytes": 5056,
+      "line_start": 1,
+      "line_end": 112,
+      "excerpt_sha256": "18c386b01c9c8adf3cdedec8bfb758269ec61761455896ab147616f7ad19686b",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1540,
+          1552
+        ],
+        [
+          1835,
+          1861
+        ],
+        [
+          1881,
+          1971
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00063.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "36cf79aee6a1c62ab8d832a3f32c08d4812d549c2417b6a5aac450794b37f1b2",
+      "source_bytes": 4577,
+      "line_start": 1,
+      "line_end": 112,
+      "excerpt_sha256": "815ed665ace0c390631fc28731e6575e995956beb2241ac1ffe3095a1371d2ba",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1583,
+          1612
+        ],
+        [
+          2741,
+          2809
+        ],
+        [
+          4512,
+          4526
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00001.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "a83e78f8e9dd7b941c19eb2709429a2b7bec32b8921c193f3d02c4a04097a4b7",
+      "source_bytes": 4395,
+      "line_start": 1,
+      "line_end": 106,
+      "excerpt_sha256": "22231a375cb45837160c0f976a591ccf244eb441d77bf1d695a582fea616cc8e",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1575,
+          1604
+        ],
+        [
+          2199,
+          2211
+        ],
+        [
+          4330,
+          4344
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00016.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "2e68508f28e3a584fa626c232ed4da685a5a9a5d598bc0d756afb51a4c37752c",
+      "source_bytes": 3339,
+      "line_start": 1,
+      "line_end": 83,
+      "excerpt_sha256": "0a7737a9d36facb6ae75f13ae8bec5d122320c8c9f6ffaadd645d0d76f34fcc2",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1547,
+          1559
+        ],
+        [
+          1842,
+          1868
+        ],
+        [
+          1888,
+          1978
+        ],
+        [
+          2922,
+          2960
+        ],
+        [
+          2969,
+          3014
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00087.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "2196f7f3fa9b99552ef19bbc3dae65371f34dda8479cc8db833b708751906b1f",
+      "source_bytes": 4367,
+      "line_start": 1,
+      "line_end": 104,
+      "excerpt_sha256": "988a6acdbd46e8114856a4ebf88a040c759e16ba3557b525fe0fbef50fa76ce7",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1585,
+          1614
+        ],
+        [
+          3949,
+          3987
+        ],
+        [
+          3996,
+          4041
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00052.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "eaebe123b57b506dc834783c2567bc85f069d4e767b1ce5a003c16675da866ed",
+      "source_bytes": 2751,
+      "line_start": 1,
+      "line_end": 67,
+      "excerpt_sha256": "45c58b493e5b9862141c7f6eee2689ea2665a9c2acee0da265927dc9534645a1",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1539,
+          1551
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "9bc49dbe491a39162c97b0c43b8ce5e42a4de5c0552c52117b1a51b0a541dfbe",
+      "source_bytes": 2615,
+      "line_start": 1,
+      "line_end": 67,
+      "excerpt_sha256": "68394ed041654bbe79a9f6cf6b3fa187802bcb47d1d28a016739e8cdf67ea5a2",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1539,
+          1551
+        ],
+        [
+          1783,
+          1871
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00097.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "ba21e33f55da169829a780ff85508bbeedc5d131ceee1ccc58cdb26b6fa5c03e",
+      "source_bytes": 3307,
+      "line_start": 1,
+      "line_end": 82,
+      "excerpt_sha256": "684253c9b429af4f716ec97aaaf39d998b64d18ba75cdeccaef18cee4b3554c1",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1580,
+          1609
+        ],
+        [
+          2738,
+          2806
+        ],
+        [
+          2914,
+          2992
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00004.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "b73d2b9b44c0738fa2de8e5724ad48bf9f0871ed104a869429fb8b5b02d5d7c2",
+      "source_bytes": 3137,
+      "line_start": 1,
+      "line_end": 76,
+      "excerpt_sha256": "a0cc500645aa9bcc6aa1546deaf00fa6cdc12dfb401d18771dff8e3cb07e1217",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1572,
+          1601
+        ],
+        [
+          2196,
+          2208
+        ],
+        [
+          2730,
+          2812
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00010.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "3546ba4ceb6d8bb45e2c305e863c7335fd909eec5083f557b10b00088b6a55fe",
+      "source_bytes": 4966,
+      "line_start": 1,
+      "line_end": 116,
+      "excerpt_sha256": "123ae7e22e808d0a20769451eba2c375d17f85c7d6a52de25a5a48799502cfe6",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1543,
+          1555
+        ],
+        [
+          1923,
+          1965
+        ],
+        [
+          2150,
+          2217
+        ],
+        [
+          2234,
+          2242
+        ],
+        [
+          2298,
+          2377
+        ],
+        [
+          3957,
+          3995
+        ],
+        [
+          4012,
+          4057
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00023.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "4a1e99b60cfc26ba6fc2ee11d6e3aec95cbfb936800e7555fd9db065c673a595",
+      "source_bytes": 3970,
+      "line_start": 1,
+      "line_end": 96,
+      "excerpt_sha256": "7ded9243ce0bf84420fe252fd899eb3ed1625cc18d64266f3c95c37e2244cac5",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1543,
+          1555
+        ],
+        [
+          1847,
+          1879
+        ],
+        [
+          3240,
+          3278
+        ],
+        [
+          3291,
+          3336
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00116.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "c1f37842bc25aac5d295791cbaa64d2f4c9ba9dddb7ee8be4664709751f8bace",
+      "source_bytes": 5188,
+      "line_start": 1,
+      "line_end": 111,
+      "excerpt_sha256": "e5ad20b76a4010747c6b865026428bcfa8b2b501b840866736af6c0efc39c8a7",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1575,
+          1604
+        ],
+        [
+          2871,
+          2906
+        ],
+        [
+          2950,
+          2975
+        ],
+        [
+          3023,
+          3058
+        ],
+        [
+          3110,
+          3128
+        ],
+        [
+          3180,
+          3206
+        ],
+        [
+          3645,
+          3659
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00207.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "a4ac92580fcecee43c69bcb49c70a69d4b0d4c1aaf0ca3403d9302f8df447472",
+      "source_bytes": 3855,
+      "line_start": 1,
+      "line_end": 90,
+      "excerpt_sha256": "0fb8e6cdc0cdf7d551f8b799ad0197a566db4ba236daf9877e5fa29f92f6b419",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1772,
+          1860
+        ],
+        [
+          2709,
+          2723
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00147.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "aa65ee7eab0c117281130f1d8e56ca802217937baeb9cc1166c1d751c2e5f092",
+      "source_bytes": 2467,
+      "line_start": 1,
+      "line_end": 67,
+      "excerpt_sha256": "b800f29e04513d518a58d5fa4eaf7c597582e79a5e60c639c0876b397d9c2d9e",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          762
+        ],
+        [
+          1747,
+          1835
+        ],
+        [
+          2188,
+          2216
+        ],
+        [
+          2255,
+          2283
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00013.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "359a81ca3f56c8f11a1319c54ead9ee6f86a2d7c5a5413588cd9d4312b90f3a9",
+      "source_bytes": 2186,
+      "line_start": 1,
+      "line_end": 58,
+      "excerpt_sha256": "ecd401c03279b520be63f56d34d81bc6214192b5e72ba8ee115b70b0edaf9ca0",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          754
+        ],
+        [
+          1538,
+          1550
+        ],
+        [
+          1822,
+          1848
+        ],
+        [
+          1868,
+          1958
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    },
+    {
+      "repository": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+      "revision": "20cbf3d11123347e47ed89541e6942836def53f7",
+      "path": "src/main/java/org/owasp/benchmark/helpers/SeparateClassRequest.java",
+      "license": "GPL-2.0-only",
+      "source_sha256": "8ec6b1867d27ebe55c79180755447ece6f98746dcfbf0127b2e4ea5646399739",
+      "source_bytes": 1649,
+      "line_start": 1,
+      "line_end": 55,
+      "excerpt_sha256": "51a05167990fc969337259f6acd1e481ecbc3e0407008b17163e09fe800ede2b",
+      "transformation": "blank_comments_preserve_line_breaks",
+      "comment_byte_ranges": [
+        [
+          0,
+          755
+        ],
+        [
+          1542,
+          1576
+        ]
+      ],
+      "software_heritage_revision": "swh:1:rev:20cbf3d11123347e47ed89541e6942836def53f7",
+      "software_heritage_status": "revision_confirmed"
+    }
+  ]
+}

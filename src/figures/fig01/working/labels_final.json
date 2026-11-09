@@ -1,0 +1,195 @@
+{
+  "banner": "Main evaluation · one Ubuntu 24.04 host (8 vCPUs, ~15 GiB) · pinned versions · isolated, sequential workloads · five repeated blocks: 375 static invocations, 90 dynamic jobs",
+  "columns": [
+    "Analyzed material",
+    "Scanning stages",
+    "Evidence store",
+    "Analyses"
+  ],
+  "layers": [
+    {
+      "title": "Source code",
+      "material": "OWASP Benchmark Java subset AIGoat backend (Python) and frontend",
+      "icon": "CodeXml",
+      "family": "code",
+      "stage_title": "SAST",
+      "stage_blocks": [
+        "Semgrep · FindSecBugs · Bandit"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "OWASP Benchmark Java subset",
+        "AIGoat backend (Python) and frontend"
+      ]
+    },
+    {
+      "title": "Dependencies",
+      "material": "Constructed component/advisory fixtures AIGoat source dependencies",
+      "icon": "Package",
+      "family": "code",
+      "stage_title": "SCA",
+      "stage_blocks": [
+        "Dependency-Check · Trivy · Grype",
+        "Inventory: Syft"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "Constructed component/advisory fixtures",
+        "AIGoat source dependencies"
+      ]
+    },
+    {
+      "title": "Images and OS",
+      "material": "Constructed SCA image AIGoat service images four Red Hat UBI 9 images",
+      "icon": "Container",
+      "family": "images",
+      "stage_title": "Package checks",
+      "stage_blocks": [
+        "Trivy · Grype",
+        "Inventory: Syft"
+      ],
+      "badges": [
+        "[images analyzed]"
+      ],
+      "material_blocks": [
+        "Constructed SCA image",
+        "AIGoat service images",
+        "four Red Hat UBI 9 images"
+      ]
+    },
+    {
+      "title": "Secrets",
+      "material": "Constructed synthetic-secret controls AIGoat source files",
+      "icon": "KeyRound",
+      "family": "secrets",
+      "stage_title": "Secret detection",
+      "stage_blocks": [
+        "Gitleaks · Trivy"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "Constructed synthetic-secret controls",
+        "AIGoat source files"
+      ]
+    },
+    {
+      "title": "Docker / Compose",
+      "material": "Constructed Docker/Compose controls crAPI Dockerfiles AIGoat original and deployment files",
+      "icon": "FileCog",
+      "family": "configuration",
+      "stage_title": "Configuration checks",
+      "stage_blocks": [
+        "Checkov · Hadolint",
+        "Trivy · KICS"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "Constructed Docker/Compose controls",
+        "crAPI Dockerfiles",
+        "AIGoat original and deployment files"
+      ]
+    },
+    {
+      "title": "Terraform",
+      "material": "TerraGoat: selected AWS files Constructed resource controls",
+      "icon": "Cloud",
+      "family": "configuration",
+      "stage_title": "IaC checks",
+      "stage_blocks": [
+        "Checkov · Trivy · KICS"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "TerraGoat: selected AWS files",
+        "Constructed resource controls"
+      ]
+    },
+    {
+      "title": "Kubernetes",
+      "material": "Kubernetes Goat: selected scenario files Constructed controls and scope matrices",
+      "icon": "ShipWheel",
+      "family": "configuration",
+      "stage_title": "Manifest checks",
+      "stage_blocks": [
+        "Checkov · Trivy · Kubescape"
+      ],
+      "badges": [
+        "[files analyzed]"
+      ],
+      "material_blocks": [
+        "Kubernetes Goat: selected scenario files",
+        "Constructed controls and scope matrices"
+      ]
+    },
+    {
+      "title": "CI workflows",
+      "material": "Selected crAPI, TerraGoat, CI/CD Goat and AIGoat workflows Constructed controls",
+      "icon": "Workflow",
+      "family": "configuration",
+      "stage_title": "Workflow checks",
+      "stage_blocks": [
+        "Checkov · zizmor"
+      ],
+      "badges": [
+        "[files analyzed]",
+        "[descriptive]"
+      ],
+      "material_blocks": [
+        "Selected crAPI, TerraGoat, CI/CD Goat and AIGoat workflows",
+        "Constructed controls"
+      ]
+    },
+    {
+      "title": "Running APIs",
+      "material": "crAPI [deployed] API services · data stores · controlled ingress AIGoat [deployed] Frontend · backend/RAG · local model service",
+      "icon": "Globe",
+      "family": "dynamic",
+      "stage_title": "Dynamic API checks",
+      "stage_blocks": [
+        "ZAP · Nuclei · Schemathesis",
+        "RESTler (crAPI only)",
+        "Controlled authentication and object-authorization tests"
+      ],
+      "badges": [],
+      "material_blocks": [
+        "crAPI [deployed]",
+        "API services · data stores · controlled ingress",
+        "AIGoat [deployed]",
+        "Frontend · backend/RAG · local model service"
+      ]
+    }
+  ],
+  "evidence": [
+    "Stored native reports + measurement records (versions, timing, memory samples)",
+    "Normalized observations",
+    "Links to reference instances 35 reference populations"
+  ],
+  "analyses": [
+    "Coverage within scored populations",
+    "Grouping and retention",
+    "Stage omission; time, memory and output volume"
+  ],
+  "legend": "solid line: data flow · dashed line: separate experiment on fixed inputs · badges: [files analyzed], [images analyzed], [deployed], [descriptive] = analyzed and measured, not scored",
+  "llm_input": "88 fixed inputs (scanner observations selected before the main evaluation)",
+  "llm_blocks": [
+    "Local LLM triage (separate experiment)",
+    "B0 keep-all · B1 severity rule",
+    "Qwen · Gemma: alert-only / added context",
+    "Local CPU inference, no external network · two passes",
+    "→ actions, invalid responses, latency, memory"
+  ],
+  "evidence_reference_blocks": [
+    "Links to reference instances",
+    "35 reference populations"
+  ]
+}

@@ -1,0 +1,9 @@
+Study,What is evaluated,Unit reported,Relation to this study
+Manowska and Hejnosz [8],Trivy and Grype on 22 standard and minimized container images,"Total findings, unique CVEs, severity counts, overlap between scanners","Keeps component/advisory identity and artifact occurrence separate, and shows that they lead to different conclusions about omitting a stage"
+LUCID [9],Reduction of false positives and inconsistencies among container scanners,Inconsistencies between tools,"Measures which reference instances a reduction keeps or loses, rather than agreement between tools"
+Scope+Offset [11] and its normalized variant [51],Deduplication and tracking of SAST findings across tools and code versions,Duplicate reports,"Separates incorrect associations from losses caused by discarding group members, at fixed snapshots"
+Du et al. [5],LLM filtering of static-analysis alarms in an industrial setting (433 alarms),"False positives removed, recall, cost per alarm","Counts lost true findings, latency and memory for local models, and checks explanations against the supplied code"
+Spec2SeqFuzz [17],Stateful REST API fuzzing guided by predicted request categories,Reproducible errors,Records whether each dynamic job reached the operation its reference requires
+Łabęda and Sepczuk [59],LLM guidance to a human tester in Android dynamic testing,"Test cases fully, partially or not discovered","Concerns the removal of existing findings, not guidance to a tester"
+Cho et al. [61],Evidence-gated LLM review that holds cases when evidence is missing,Review decisions and held cases,"Applies a conservative fallback, then measures what is still lost"
+Rida et al. [7],A six-stage Jenkins pipeline with PHP analysis tools for a multi-tier web application on AWS provisioned with Terraform,"Seconds per run and per stage; processor, memory and cost per run; reported issues; blocking rate",Adds instance-level outcomes to the measurement of scanning cost

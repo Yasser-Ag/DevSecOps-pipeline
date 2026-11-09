@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the artifact and the associated article when using this material."
+title: "Code and data for: What Alert Counts Hide: Grouping, Stage Omission and LLM Triage in DevSecOps Pipelines"
+type: dataset
+authors:
+  - family-names: Agzayal
+    given-names: Yasser
+    affiliation: "Computer Science & Smart Systems Laboratory, Data & Intelligent Systems Team, FSTT, Abdelmalek Essaadi University, Tetouan 93000, Morocco"
+    orcid: https://orcid.org/0009-0002-7180-8894
+  - family-names: Bouhorma
+    given-names: Mohammed
+    affiliation: "Computer Science & Smart Systems Laboratory, Data & Intelligent Systems Team, FSTT, Abdelmalek Essaadi University, Tetouan 93000, Morocco"
+    orcid: https://orcid.org/0000-0002-5687-5231
+version: 1.0.0
+doi: 10.5281/zenodo.24016866
+repository-code: https://github.com/Yasser-Ag/DevSecOps-pipeline
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - "DevSecOps"
+  - "security scanners"
+  - "vulnerability management"
+  - "alert deduplication"
+  - "software composition analysis"
+  - "infrastructure as code"
+  - "container security"
+  - "large language models"
+  - "alert triage"

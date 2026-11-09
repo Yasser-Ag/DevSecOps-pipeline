@@ -1,0 +1,280 @@
+[
+  {
+    "case_id": "D01",
+    "positive": false,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:868fc3b564a8f356c84b0aa949e2696f25f950501997ab2cf28ab7dc101f3ba8",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "4af5c6fd90afae72ce05d28bc2e1e82ad6e8edbbad7c4fe7454f9a33c1bc43c4"
+  },
+  {
+    "case_id": "D02",
+    "positive": true,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:7a94515d3f4996411c3e8e3719c04ba53c5b3bdd59a8f648f4a5bfbe0fd08cef",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "2114be7a946e9c57242bb49f0766aa00d29bcd00e2a5930a67a76dfc258df7cb"
+  },
+  {
+    "case_id": "D03",
+    "positive": true,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:b031ecdb20410a02e7b2585a5e2e3f2b71e2cb7fec5e1821e91e9456fce596a5",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "da427b91415adcae0cdba2255e7919146594864358fc1950959626a316378591"
+  },
+  {
+    "case_id": "D04",
+    "positive": false,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:50d72d08fe05eaf1061e94de5900a63e431adaef5776d05b526c53cee713c265",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "0522a8fa3a290c70ce4c0b855dfd6545387a6516671d423e0f0aee1aa69a2aae"
+  },
+  {
+    "case_id": "D05",
+    "positive": false,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:ebb80d9b91151abc11254dcf9c0079dc4b32019864dfb58f9a3c4373027b93d0",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "b300a3f76640f66392154c9c39c5614a07e700f8d529251cf80aed55e7718dfc"
+  },
+  {
+    "case_id": "D06",
+    "positive": true,
+    "property": "final_default_process_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "cpus": 1,
+      "image": "sha256:e4958df23e5c1bba6c22b3473ea2d6f26a4fd3e129b23071576f19946848551a",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ]
+    },
+    "source_sha256": "d1bd2d7fc30c6c8382f58b61d38062a196becba56e94d6856bedb9f08edd1a06"
+  },
+  {
+    "case_id": "C01",
+    "positive": false,
+    "property": "runtime_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "65532:65532"
+    },
+    "source_sha256": "b582919e9e6b7806da74cd2a2398d6fd72a0d437d3e8a4ce3d3f9e87c9961eb2"
+  },
+  {
+    "case_id": "C02",
+    "positive": true,
+    "property": "runtime_uid_zero",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "0:0"
+    },
+    "source_sha256": "1fa58e716666e4354e3bf46bcf5217437917b78cc3aacbae89697bf09a3edee0"
+  },
+  {
+    "case_id": "C03",
+    "positive": false,
+    "property": "writable_rootfs",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "65532:65532"
+    },
+    "source_sha256": "b582919e9e6b7806da74cd2a2398d6fd72a0d437d3e8a4ce3d3f9e87c9961eb2"
+  },
+  {
+    "case_id": "C04",
+    "positive": true,
+    "property": "writable_rootfs",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "65532:65532"
+    },
+    "source_sha256": "bbb28448a81426a00a81e1c396c4dc7006793c297e4702022a378bf755bbc582"
+  },
+  {
+    "case_id": "C05",
+    "positive": false,
+    "property": "no_new_privileges_disabled",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "user": "65532:65532"
+    },
+    "source_sha256": "b582919e9e6b7806da74cd2a2398d6fd72a0d437d3e8a4ce3d3f9e87c9961eb2"
+  },
+  {
+    "case_id": "C06",
+    "positive": true,
+    "property": "no_new_privileges_disabled",
+    "service": {
+      "cap_drop": [
+        "ALL"
+      ],
+      "command": [
+        "python",
+        "-c",
+        "print(1)"
+      ],
+      "cpus": 1,
+      "entrypoint": null,
+      "image": "sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e",
+      "mem_limit": "134217728",
+      "network_mode": "none",
+      "pids_limit": 32,
+      "read_only": true,
+      "user": "65532:65532"
+    },
+    "source_sha256": "066ba7b07203f6a72a3fc750fe0f1cd7a2f036501948d3e361a3835bcb5cf255"
+  }
+]

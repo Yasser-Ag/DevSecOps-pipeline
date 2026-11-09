@@ -1,0 +1,9 @@
+target=app/crAPI
+commit_pipeline=40f7ed1909280b0ad397c385fb2c6fcd7d074e03
+commit_target=b5fc307f3e5f875809b095b771108ef342a33724
+cache_mode=warm
+run_number=17
+started_at=2026-09-12T20:50:50Z
+trivy_vulndb_updated_at=2026-09-12T19:05:37.279522217Z
+trivy_vulndb_downloaded_at=2026-09-12T20:51:12.04614605Z
+trivy_checkbundle_digest=sha256:1583562f8b90ed2a071b99f0e5ffff6b57e4ceb6ca3e4796577b4e6a339eb74c

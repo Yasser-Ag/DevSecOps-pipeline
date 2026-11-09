@@ -1,0 +1,1372 @@
+{
+  "conditions": [
+    {
+      "description": "Retain all baseline warnings",
+      "id": "B0"
+    },
+    {
+      "description": "Unchanged literal low/informational severity gate",
+      "id": "B1"
+    },
+    {
+      "description": "Pinned Qwen deployment, alert only",
+      "id": "Q-A"
+    },
+    {
+      "description": "Same Qwen deployment, bounded technical context",
+      "id": "Q-C"
+    },
+    {
+      "description": "Pinned Gemma deployment, alert only",
+      "id": "G-A"
+    },
+    {
+      "description": "Same Gemma deployment, identical bounded context content",
+      "id": "G-C"
+    }
+  ],
+  "context_effect_scope": "Report the 61 cases with added evidence separately from the 27 without qualified added evidence. Whole-cohort condition differences do not prove an information-context effect for the latter.",
+  "contributions": [
+    "C1 linked reference collection",
+    "C2 matching validity",
+    "C3 coverage/cost and bounded local triage"
+  ],
+  "created_utc": "2026-10-22T22:22:00.441513+00:00",
+  "dynamic_execution_controller": {
+    "actual_preflight_generations": 0,
+    "actual_preflight_scanner_invocations": 0,
+    "archive_sha256": "60114403128f6d8bdf5c961897f167135f9f5f74397d7828e64c04b09c9244f3",
+    "artifacts": {
+      "audit": "evidence/dynamic_execution_2026-10-22/audit-v2.json",
+      "audit_controls": "evidence/dynamic_execution_2026-10-22/audit-controls.json",
+      "final_guard": "evidence/dynamic_execution_2026-10-22/remote-check-final.stdout",
+      "replay": "evidence/dynamic_execution_2026-10-22/historical-report-replay.json"
+    },
+    "attempts": [
+      {
+        "cause": "Sanitized environment dropped required pinned-image DOTNET_SYSTEM_GLOBALIZATION_INVARIANT.",
+        "preservation_passed": true,
+        "success": false,
+        "version": 1
+      },
+      {
+        "preservation_passed": true,
+        "success": true,
+        "version": 2
+      }
+    ],
+    "audit_checks": 482,
+    "audit_corruption_controls": 4,
+    "binary_library_identities": 32,
+    "bookkeeping_delta_unit_qualified_package": "<LAB_ROOT>/environment/final-output-adapters-v2",
+    "checkpoint": "DYNAMIC_EXECUTION_CHECKPOINT_2026-10-22.md",
+    "collected_files": 109,
+    "directed_checker_invocations_planned": 30,
+    "dynamic_profiles": 18,
+    "final_campaign_ready": false,
+    "grammar_compilations_planned": 30,
+    "historical_report_profiles": 18,
+    "host_samples": 13,
+    "last_guard_utc": "2026-10-22T19:21:16.158513+00:00",
+    "local_bookkeeping_delta": "evidence/dynamic_execution_2026-10-22/local-final-candidate/manifest.json",
+    "local_bookkeeping_delta_deployed": true,
+    "local_tests": 65,
+    "minimum_available_memory_bytes": 15024947200,
+    "minimum_free_bytes": 24415862784,
+    "native_detector_invocations_planned": 60,
+    "native_runtime_tree_entries": 2889,
+    "offline_synthetic_compiles": 1,
+    "package_sha256": "16395603e98ea5012936709488e7152da852e163a5f966257835764704d72fb0",
+    "pending": [
+      "All-lot applicability, comparator/relation/exclusion/cluster/contrast bindings",
+      "Include the tested local attempted-request bookkeeping delta in the final package",
+      "Final release/readiness and fresh host guard; then protocol v1.0"
+    ],
+    "planned_jobs": 95,
+    "preexisting_container_configs_preserved": 262,
+    "protocol_frozen": false,
+    "remote_package": "<LAB_ROOT>/environment/dynamic-execution-code-v2",
+    "remote_run": "<LAB_ROOT>/evidence/dynamic-execution-preflight-20261022-02",
+    "repetitions": 5,
+    "scientific_results_created": false,
+    "scope_amendment_deployed": true,
+    "status": "execution_infrastructure_qualified_final_release_pending",
+    "synthetic_canaries": 3,
+    "target_requests_planned": 20,
+    "temporary_containers_removed": 7,
+    "temporary_networks_removed": 2,
+    "ubuntu_package_tests": 64,
+    "verified_utc": "2026-10-22T19:28:06.446628+00:00"
+  },
+  "dynamic_profile_execution": {
+    "additional_scope_budget_controls": 11,
+    "archive_sha256": "008025d625e5ccf81be97e847811289f4c46bfc380fff8784bfc43abdca3918a",
+    "artifacts": {
+      "audit": "evidence/dynamic_profiles_2026-10-22/audit-v2.json",
+      "audit_controls": "evidence/dynamic_profiles_2026-10-22/audit-controls.json",
+      "final_guard": "evidence/dynamic_profiles_2026-10-22/remote-check-final.stdout",
+      "replay": "evidence/dynamic_profiles_2026-10-22/historical-scope-replay-amended.json"
+    },
+    "attempts": [
+      {
+        "cause": "Root-owned private proxy control file replaced by the root backend probe.",
+        "preservation_passed": true,
+        "success": false,
+        "version": 1
+      },
+      {
+        "preservation_passed": true,
+        "success": true,
+        "version": 2
+      }
+    ],
+    "audit_checks": 587,
+    "audit_corruption_checks": 4,
+    "checkpoint": "DYNAMIC_PROFILES_CHECKPOINT_2026-10-22.md",
+    "collected_files": 248,
+    "directed_authorization_profiles": 6,
+    "final_campaign_ready": false,
+    "host_samples": 33,
+    "local_amended_contract_tests": 24,
+    "local_candidate": "evidence/dynamic_profiles_2026-10-22/local-final-candidate",
+    "local_candidate_deployed": false,
+    "minimum_available_memory_bytes": 14111645696,
+    "minimum_free_bytes": 24058449920,
+    "native_detector_profiles": 12,
+    "package_sha256": "fca511a513051ed5bbc4b772e5c8801875707c91753d9ceb1d03363aa4305954",
+    "package_tests_local": 41,
+    "package_tests_ubuntu": 41,
+    "paired_reference_controls": 24,
+    "pending": [
+      "Final dynamic lifecycle and native isolation/dependency locks",
+      "Actual input/output path materialization and report/reach validation",
+      "Cost accounting and target-generation execution binding",
+      "Whole-study applicability and analysis bindings",
+      "Protocol v1.0 release"
+    ],
+    "preexisting_containers_preserved": 262,
+    "profiles": 18,
+    "protocol_frozen": false,
+    "remote_package": "<LAB_ROOT>/environment/dynamic-profiles-code-v2",
+    "remote_run": "<LAB_ROOT>/evidence/dynamic-profiles-preflight-20261022-02",
+    "request_policy_replay": {
+      "newly_blocked_historical_requests": 0,
+      "profiles": 18,
+      "requests": 1115,
+      "retained_prior_gate_requests": 4,
+      "strict_scope_crapi_zap_blocked_requests_per_profile": 167,
+      "strict_scope_crapi_zap_requests_per_profile": 170
+    },
+    "scanner_invocations": 0,
+    "scientific_results_created": false,
+    "status": "fixture_proxy_and_input_construction_qualified_final_dynamic_execution_pending",
+    "target_generations": 0,
+    "temporary_containers_removed": 17,
+    "temporary_networks_removed": 4,
+    "temporary_volumes_removed": 4,
+    "triage_generations": 0,
+    "verified_utc": "2026-10-22T18:49:17.932024+00:00"
+  },
+  "dynamic_reset_execution": {
+    "checkpoint": "DYNAMIC_RESET_CHECKPOINT_2026-10-22.md",
+    "scientific_execution": false,
+    "status": "qualified"
+  },
+  "experiments": [
+    {
+      "cohort_description": "22 existing cases (11 positive, 11 negative); 49 security warnings. Keep the 21 unresolved warnings visible.",
+      "endpoint": "Per-case TP/FP/FN/TN only when applicability and mapping are resolved; native warning retention is a separate endpoint.",
+      "experiment_id": "E01",
+      "human_gate_scope": "Resolve exact warning-to-case mapping. The seven review tasks cover eleven inherited false warnings, not all labels or all cases.",
+      "human_review_ids": [
+        "SAST-01",
+        "SAST-02",
+        "SAST-03",
+        "SAST-04",
+        "SAST-05",
+        "SAST-06",
+        "SAST-07"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 11,
+        "inherited_true": 17,
+        "native_records": 49,
+        "reference_records": 22,
+        "unresolved": 21
+      },
+      "native_tool_ids": [
+        "findsecbugs",
+        "semgrep"
+      ],
+      "population_ids": [
+        "sast-java"
+      ],
+      "reference_authority": "Published case/CWE label plus exact native source/sink correspondence",
+      "research_questions": [
+        "RQ1",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "OWASP designated application weaknesses"
+    },
+    {
+      "cohort_description": "12 reference records; 14 native warnings. Related dependencies and repeated file occurrences remain distinct.",
+      "endpoint": "Named-advisory applicability and artifact-occurrence coverage; case retention. No native false-removal denominator exists.",
+      "experiment_id": "E02",
+      "human_gate_scope": "Freeze exact profiles, component/advisory units and independently justified occurrence links; a new ambiguous link requires additional evidence.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 14,
+        "native_records": 14,
+        "reference_records": 12,
+        "unresolved": 0
+      },
+      "native_tool_ids": [
+        "dependency",
+        "grype",
+        "trivy"
+      ],
+      "population_ids": [
+        "sca"
+      ],
+      "reference_authority": "Vendor version predicates, package bytes, advisory aliases and artifact lineage",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Java components, advisories and image occurrences"
+    },
+    {
+      "cohort_description": "12 reference records; two native warnings. Release/advisory conditions stay explicit.",
+      "endpoint": "Named affected/fixed predicates and retention; no global CVE accuracy or zero-day detection claim.",
+      "experiment_id": "E03",
+      "human_gate_scope": "Freeze vendor/source-package scope and tool modes; no new human annotation is automatically required for a literal predicate.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 2,
+        "native_records": 2,
+        "reference_records": 12,
+        "unresolved": 0
+      },
+      "native_tool_ids": [
+        "grype",
+        "trivy"
+      ],
+      "population_ids": [
+        "os-advisory"
+      ],
+      "reference_authority": "Pinned vendor advisory predicates and source-package lineage",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "OS advisory applicability and image lineage"
+    },
+    {
+      "cohort_description": "Seven controls; eight native warnings. File occurrence and underlying key identity are different units.",
+      "endpoint": "Material detection, object/occurrence counting and retention; no production secret prevalence estimate.",
+      "experiment_id": "E04",
+      "human_gate_scope": "Freeze the occurrence/object distinction and preserve synthetic-material status.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 8,
+        "native_records": 8,
+        "reference_records": 7,
+        "unresolved": 0
+      },
+      "native_tool_ids": [
+        "gitleaks",
+        "trivy"
+      ],
+      "population_ids": [
+        "secret"
+      ],
+      "reference_authority": "Independent parsing of synthetic key material and file-byte identity",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Synthetic secret material and occurrences"
+    },
+    {
+      "cohort_description": "Retain all existing control pairs and unresolved native claims; dangerous variants remain static-only.",
+      "endpoint": "Declaration or effective-property coverage at the specified endpoint; only already resolved native assertions enter triage quality.",
+      "experiment_id": "E05",
+      "human_gate_scope": "Two runtime-property populations lack qualified scanner linkage. Missing linkage is not a negative tool result; qualify or mark the affected metric unavailable.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 4,
+        "native_records": 23,
+        "reference_records": 18,
+        "unresolved": 19
+      },
+      "native_tool_ids": [
+        "hadolint",
+        "kics",
+        "trivy"
+      ],
+      "population_ids": [
+        "docker",
+        "compose:runtime_uid_zero",
+        "compose:writable_rootfs",
+        "compose:no_new_privileges_disabled",
+        "compose:privileged_enabled",
+        "compose:host_network_enabled",
+        "compose:docker_socket_mounted",
+        "compose:unqualified-native"
+      ],
+      "reference_authority": "Literal source declarations and separately observed safe runtime probes",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Docker and Compose properties"
+    },
+    {
+      "cohort_description": "Separate global and job permission populations, controls and original files.",
+      "endpoint": "Location/scope agreement and visibility under explicit reporting counterfactuals; native security precision remains unavailable.",
+      "experiment_id": "E06",
+      "human_gate_scope": "Resolve applicability and unknown defaults before property-level accuracy; existing 32 tasks do not adjudicate workflow-native correctness.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 0,
+        "native_records": 22,
+        "reference_records": 32,
+        "unresolved": 22
+      },
+      "native_tool_ids": [
+        "checkov",
+        "zizmor"
+      ],
+      "population_ids": [
+        "workflow-job:controls",
+        "workflow-job:originals",
+        "workflow-global:controls",
+        "workflow-global:originals"
+      ],
+      "reference_authority": "Parsed workflow/job/step declarations and retained symbolic/byte locations",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "CI workflow permission scopes"
+    },
+    {
+      "cohort_description": "Separate original TerraGoat observations from constructed resource controls.",
+      "endpoint": "Resource/property coverage and false same-instance pairs; constructed pair counts are not independent vulnerabilities.",
+      "experiment_id": "E07",
+      "human_gate_scope": "Keep original neutral comparisons and constructed diagnostic effects separate.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 15,
+        "native_records": 15,
+        "reference_records": 9,
+        "unresolved": 0
+      },
+      "native_tool_ids": [
+        "checkov",
+        "kics",
+        "trivy"
+      ],
+      "population_ids": [
+        "terraform:controls",
+        "terraform:originals"
+      ],
+      "reference_authority": "Independent source resource declarations",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Terraform resource identity"
+    },
+    {
+      "cohort_description": "Original, control, precedence-matrix and split-object populations remain separate.",
+      "endpoint": "Declaration coverage, scope agreement and reporting-policy losses; not runtime exploitability or complete native precision.",
+      "experiment_id": "E08",
+      "human_gate_scope": "Preserve unsupported/rule-not-applicable outcomes separately from PASS; frozen scope must match pinned policy behavior.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 0,
+        "native_records": 40,
+        "reference_records": 70,
+        "unresolved": 40
+      },
+      "native_tool_ids": [
+        "checkov",
+        "trivy"
+      ],
+      "population_ids": [
+        "kubernetes:controls",
+        "kubernetes:originals",
+        "kubernetes:matrix",
+        "kubernetes:split"
+      ],
+      "reference_authority": "Source object/container identities and pinned rule applicability",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Kubernetes resource and container scope"
+    },
+    {
+      "cohort_description": "Two authorization instances of one documented defect; retain 139 other native API observations as unresolved.",
+      "endpoint": "Known-instance authorization coverage, explicit request/role identity and scoped cost; no API-wide precision.",
+      "experiment_id": "E09",
+      "human_gate_scope": "Freeze request/authentication/reset conditions; do not substitute generic headers for authorization evidence.",
+      "human_review_ids": [],
+      "human_review_status": "no_dependency_in_current_32_tasks",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 2,
+        "native_records": 141,
+        "reference_records": 2,
+        "unresolved": 139
+      },
+      "native_tool_ids": [
+        "nuclei",
+        "restler",
+        "zap"
+      ],
+      "population_ids": [
+        "api-native:invalid",
+        "api-native:a",
+        "api-authorization"
+      ],
+      "reference_authority": "Independently verified ownership/access behavior and context-specific HTTP references",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "crAPI supplied API and authorization cases"
+    },
+    {
+      "cohort_description": "146 literal/HTTP references, 89 native observations; 56 existing associations. Fifteen scoped proposals remain pending.",
+      "endpoint": "Property support and identity effects; scoped native retention only after adjudication. Contradicted projections are not automatically false alerts.",
+      "experiment_id": "E10",
+      "human_gate_scope": "All 13 property reviews support scope checking. PROP-03/08/13 specifically govern the fifteen declaration-only proposals; other judgments do not automatically label all 89 warnings.",
+      "human_review_ids": [
+        "PROP-01",
+        "PROP-02",
+        "PROP-03",
+        "PROP-04",
+        "PROP-05",
+        "PROP-06",
+        "PROP-07",
+        "PROP-08",
+        "PROP-09",
+        "PROP-10",
+        "PROP-11",
+        "PROP-12",
+        "PROP-13"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 0,
+        "native_records": 89,
+        "reference_records": 146,
+        "unresolved": 89
+      },
+      "native_tool_ids": [
+        "checkov",
+        "kics",
+        "nuclei",
+        "trivy-config",
+        "zap"
+      ],
+      "population_ids": [
+        "aigoat-declared-properties",
+        "aigoat-http-properties"
+      ],
+      "reference_authority": "Independent source parsing and same-route/actor HTTP observations",
+      "research_questions": [
+        "RQ1",
+        "RQ2",
+        "RQ3",
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "AIGoat declaration and HTTP properties"
+    },
+    {
+      "cohort_description": "Eight document/actor/level controls; two documents; one documented scenario. Four generation observations are separate.",
+      "endpoint": "Context-authorization checks and document/chunk relations. Scanner semantic RAG coverage remains unavailable without a qualified detector.",
+      "experiment_id": "E11",
+      "human_gate_scope": "All twelve RAG reviews are required for this retained extension; neither a supplied reference probe nor a generated marker is an automatic scanner discovery.",
+      "human_review_ids": [
+        "RAG-01",
+        "RAG-02",
+        "RAG-03",
+        "RAG-04",
+        "RAG-05",
+        "RAG-06",
+        "RAG-07",
+        "RAG-08",
+        "RAG-09",
+        "RAG-10",
+        "RAG-11",
+        "RAG-12"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "inventory": {
+        "inherited_false": 0,
+        "inherited_true": 0,
+        "native_records": 0,
+        "reference_records": 8,
+        "unresolved": 0
+      },
+      "native_tool_ids": [],
+      "population_ids": [
+        "aigoat-rag-context-authorization"
+      ],
+      "reference_authority": "Document ownership, retrieval/context traces and explicit evidence boundaries",
+      "research_questions": [
+        "RQ1",
+        "RQ3"
+      ],
+      "run_status": "draft_not_executable",
+      "title": "Bounded AIGoat RAG authorization scenario"
+    },
+    {
+      "endpoint": "Paired supported same-instance/different-instance relations, unknown pairs, false merges/splits, and case visibility under separately identified reporting policies.",
+      "experiment_id": "E12",
+      "human_gate_scope": "Review dependencies propagate only to the included source subsets. Preparation and already supported source checks can proceed.",
+      "human_review_ids": [
+        "SAST-01",
+        "SAST-02",
+        "SAST-03",
+        "SAST-04",
+        "SAST-05",
+        "SAST-06",
+        "SAST-07",
+        "PROP-01",
+        "PROP-02",
+        "PROP-03",
+        "PROP-04",
+        "PROP-05",
+        "PROP-06",
+        "PROP-07",
+        "PROP-08",
+        "PROP-09",
+        "PROP-10",
+        "PROP-11",
+        "PROP-12",
+        "PROP-13"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "research_questions": [
+        "RQ3"
+      ],
+      "run_status": "draft_not_executable",
+      "source_experiments": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10"
+      ],
+      "title": "Matching validity and reporting-policy consequences"
+    },
+    {
+      "endpoint": "Verified per-population union, leave-one-stage-out loss, fixed-order increments and measured time/CPU/memory; never pool heterogeneous reference counts.",
+      "experiment_id": "E13",
+      "human_gate_scope": "Review dependencies propagate only to the included source subsets. Preparation and already supported source checks can proceed.",
+      "human_review_ids": [
+        "SAST-01",
+        "SAST-02",
+        "SAST-03",
+        "SAST-04",
+        "SAST-05",
+        "SAST-06",
+        "SAST-07",
+        "PROP-01",
+        "PROP-02",
+        "PROP-03",
+        "PROP-04",
+        "PROP-05",
+        "PROP-06",
+        "PROP-07",
+        "PROP-08",
+        "PROP-09",
+        "PROP-10",
+        "PROP-11",
+        "PROP-12",
+        "PROP-13"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "research_questions": [
+        "RQ1",
+        "RQ2"
+      ],
+      "run_status": "draft_not_executable",
+      "source_experiments": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10"
+      ],
+      "title": "Stage complementarity and measured cost"
+    },
+    {
+      "endpoint": "False baseline warnings dismissed, true warnings dismissed, verified cases losing all retained witnesses, abstention/invalid outputs and cost, by population.",
+      "experiment_id": "E14",
+      "human_gate_scope": "Review dependencies propagate only to the included source subsets. Preparation and already supported source checks can proceed.",
+      "human_review_ids": [
+        "SAST-01",
+        "SAST-02",
+        "SAST-03",
+        "SAST-04",
+        "SAST-05",
+        "SAST-06",
+        "SAST-07",
+        "PROP-03",
+        "PROP-08",
+        "PROP-13"
+      ],
+      "human_review_status": "focused_R1_tasks_reconciled_at_recorded_scope",
+      "independent_work_now": "Complete exact profile/reset, comparator and measurement bindings; preserve qualified sources and candidate inputs.",
+      "research_questions": [
+        "RQ4"
+      ],
+      "run_status": "draft_not_executable",
+      "source_experiments": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E07",
+        "E09",
+        "E10"
+      ],
+      "title": "Six-condition local alert triage"
+    }
+  ],
+  "final_campaign_ready": false,
+  "fresh_comparator_integration": {
+    "active_remote_handle": null,
+    "audit": "evidence/final_comparators_2026-10-22/artifact_audit.json",
+    "bundle": "evidence/final_comparators_2026-10-22/candidate-v1",
+    "checkpoint": "FRESH_COMPARATORS_CHECKPOINT_2026-10-22.md",
+    "corruption_controls": "evidence/final_comparators_2026-10-22/corruption_controls.json",
+    "corruption_controls_rejected": 8,
+    "dynamic_profiles_replayed": 6,
+    "families": 6,
+    "file_identity_checks": 1484,
+    "final_campaign_ready": false,
+    "historical_aigoat_http_outside_frozen_context": 33,
+    "historical_aigoat_http_verified": 13,
+    "immutable_qualification_builds": 1,
+    "local_tests": 23,
+    "membership_checks": 168,
+    "new_scientific_measurements": 0,
+    "next_action": "Seal component-specific execution/evaluation releases under one campaign manifest, using static_campaign_run.py and final_runtime_ingress.collect_static for block-bound runtime evidence. Include fresh comparators, the corrected dynamic bookkeeping package and isolated triage inputs. Validate the final combination on Ubuntu, refresh host readiness and issue protocol v1.0 before the accepted sequential campaign. Do not rerun completed target qualifications or expand the study scope.",
+    "output_manifest_sha256": "532862317857a23be157ad3b8c31db03ddd4e7ed98b91b1c5e4369428eb1dded",
+    "previous_protected_sources_unchanged": 618,
+    "protocol_frozen": false,
+    "remote_actions": false,
+    "replay_checks": 44,
+    "scope": "Local fresh-comparator integration qualification; historical replay is not a final experiment.",
+    "source_files_bound": 1476,
+    "source_manifest_sha256": "b3500424b24495c87ac34cac6b0b1cdc935808d81f55d03fa3c0faee07fda878",
+    "source_snapshot_manifest_sha256": "874a480a3d74f515de3f13077865d86d613af3af5005047ce190feed03f61c2f",
+    "static_profiles_replayed": 28,
+    "success": true,
+    "synthetic_reference_responses": 0,
+    "ubuntu_qualification": false,
+    "unit_log_sha256": "5b72c7b77de851d3093d15f8fa1dd668ba306266192a77d0fc77b1cdf0b6b9a8",
+    "verified_utc": "2026-10-22T21:36:18.975926+00:00"
+  },
+  "fresh_output_adapters": {
+    "active_remote_handle": null,
+    "all_dynamic_native_records_preserved": 187,
+    "all_static_native_records_preserved": 9589,
+    "archive_sha256": "212044e151b39993ba107ef08d8da1c3c3adacc2970e58e9f7abd8e737f2d675",
+    "canonical_records_accounted": 1988,
+    "checkpoint": "FINAL_OUTPUT_CHECKPOINT_2026-10-22.md",
+    "collected_files_verified": 8,
+    "complete_bookkeeping_delta_files_verified": 3,
+    "correction": "evidence/final_output_2026-10-22/correction-v2/erratum.json",
+    "dynamic_bookkeeping_delta_included": true,
+    "dynamic_profiles": 18,
+    "final_campaign_ready": false,
+    "interruption_regression": "evidence/final_output_2026-10-22/correction-v2/interruption_regression.json",
+    "local_tests": 147,
+    "next_action": "Seal component-specific execution/evaluation releases under one campaign manifest, using static_campaign_run.py and final_runtime_ingress.collect_static for block-bound runtime evidence. Include fresh comparators, the corrected dynamic bookkeeping package and isolated triage inputs. Validate the final combination on Ubuntu, refresh host readiness and issue protocol v1.0 before the accepted sequential campaign. Do not rerun completed target qualifications or expand the study scope.",
+    "package": "evidence/final_output_2026-10-22/package-v2",
+    "package_files_verified": 66,
+    "package_manifest_sha256": "6337bd13ab0ebf0e3ad5528eb50ee3d3fd0c792a48fa91e10d082f60ab8e736e",
+    "preexisting_container_configurations_preserved": 262,
+    "protected_source_files_unchanged": 525,
+    "protocol_frozen": false,
+    "remote_package": "<LAB_ROOT>/environment/final-output-adapters-v2",
+    "remote_run": "<LAB_ROOT>/evidence/final-output-unit-qualification-20261022-02",
+    "replay_bundle": "evidence/final_output_2026-10-22/candidate-v1",
+    "replay_identity_assertions": 626,
+    "replay_mutation_controls_rejected": 6,
+    "replay_semantic_assertions": 7404,
+    "replay_source_files": 618,
+    "scientific_scans_or_generations": 0,
+    "scope": "Native report adapters and technical unit qualification; no new scientific measurements.",
+    "static_catalog_assertions": 1801,
+    "static_order_amendment": "evidence/final_output_2026-10-22/candidate-v1/order_amendment.json",
+    "static_profiles": 75,
+    "success": true,
+    "supersedes": "evidence/final_output_2026-10-22/verification_summary.json",
+    "ubuntu_audit": "evidence/final_output_2026-10-22/ubuntu_audit_v2.json",
+    "ubuntu_audit_assertions": 47,
+    "ubuntu_tests": 147,
+    "verified_utc": "2026-10-22T21:00:48.641589+00:00"
+  },
+  "gates": [
+    {
+      "current_state": "All 32 focused R1 propositions reconciled. First judgments and limits retained. No new human judgment or whole-corpus validation claimed.",
+      "evidence": "evidence/review_reconciliation_2026-10-22/r1-v3/evaluation/reconciliation.jsonl",
+      "id": "G1",
+      "kind": "human",
+      "passed": true,
+      "requirement": "Review and reconcile the relevant P1-P4 tasks; retain initial judgments and unresolved cases."
+    },
+    {
+      "current_state": "All 35 populations, 338 references, 1988 native records, 200 links and 88 triage endpoints are bound with typed eligibility/exclusions; all native records resolve to compatible profiles. New outputs require frozen typed adapters, not copied historical IDs.",
+      "evidence": "evidence/whole_study_2026-10-22/audit-v1.json",
+      "id": "G2",
+      "kind": "local_technical",
+      "passed": true,
+      "requirement": "Seal exact populations, endpoints, all case/finding IDs and exclusions."
+    },
+    {
+      "current_state": "Fresh adapters, six comparator domains and per-block runtime integration are qualified. Runtime integration passes 96 tests on both platforms, 24 actual safe probes and eight corruption controls. Exact final component composition/release remains pending.",
+      "id": "G3",
+      "kind": "local_technical",
+      "partial_evidence": "evidence/runtime_integration_2026-10-22/verification_summary.json",
+      "passed": false,
+      "requirement": "Bind exact target/tool/profile/configuration/reset/time limits to each retained measurement."
+    },
+    {
+      "current_state": "Six comparator domains now consume fresh job/report identities with independent reference scoring, complete-member baselines and explicit exclusions. Local qualification passes; final Ubuntu release is under G3.",
+      "evidence": "evidence/final_comparators_2026-10-22/artifact_audit.json",
+      "id": "G4",
+      "kind": "local_technical",
+      "passed": true,
+      "requirement": "Bind every comparator to executable implementation, supported input domain and independent relation evidence."
+    },
+    {
+      "current_state": "All 88 paired inputs, request/order/runtime settings and executable controller are sealed. 28 tests pass locally and on Ubuntu; actual three-container mount/network preflight passes without inference. Scientific execution still requires protocol release.",
+      "evidence": "evidence/repeated_triage_controller_2026-10-22/verification_summary.json",
+      "id": "G5",
+      "input_binding_complete": true,
+      "kind": "local_technical",
+      "passed": true,
+      "requirement": "Generate observable-only packet lists and paired context/omission accounting from the qualified release."
+    },
+    {
+      "current_state": "Five scanner and four triage blocks retained. Static schedule amended before final execution to the qualified suite-grouped reset order; same 375 job identities/dependencies. Frozen clusters, contrasts and uncertainty unchanged.",
+      "evidence": "evidence/whole_study_2026-10-22/audit-v1.json",
+      "id": "G6",
+      "kind": "local_scientific",
+      "order_amendment": "evidence/final_output_2026-10-22/candidate-v1/order_amendment.json",
+      "passed": true,
+      "requirement": "Freeze repetition, ordering, clustering, uncertainty and contrast definitions."
+    },
+    {
+      "current_state": "The 22:18:12 UTC closing guard is ready; no active containers. 262 pre-existing configurations and recorded shared/other-project metadata are preserved. Refresh immediately before final campaign execution.",
+      "id": "G7",
+      "kind": "remote_operational_later",
+      "passed": false,
+      "preflight_evidence": "evidence/runtime_integration_2026-10-22/ubuntu-audit-v1.json",
+      "requirement": "Fresh shared-host guard, exclusive lease, resource budget and metadata-preservation checks."
+    },
+    {
+      "current_state": "Protocol v0.8 unchanged/unfrozen. Runtime integration is qualified; seal/validate the final component releases and host readiness before v1.0.",
+      "id": "G8",
+      "kind": "protocol",
+      "passed": false,
+      "requirement": "Record protocol v1.0 and a runnable campaign manifest only after applicable dependencies pass."
+    }
+  ],
+  "human_review": {
+    "completed_tasks": 32,
+    "consensus_session_performed": false,
+    "integrated_date": "2026-10-22",
+    "reconciliation": "evidence/review_reconciliation_2026-10-22/r1-v3/evaluation/reconciliation.jsonl",
+    "reviewer_id": "R1",
+    "scope": "32 focused propositions only; not a whole-corpus or blinded agreement study.",
+    "supplied_review_date": "2026-10-16",
+    "unresolved_proposition_disagreements": 0
+  },
+  "input_binding": {
+    "alert_only": "evidence/review_reconciliation_2026-10-22/r1-v3/inference/alert_only.jsonl",
+    "context": "evidence/review_reconciliation_2026-10-22/r1-v3/inference/context.jsonl",
+    "evaluation_artifacts_must_not_be_mounted_for_inference": true,
+    "paired_inputs": 88,
+    "status": "qualified_subset_not_executable_campaign",
+    "token_selection": "evidence/review_reconciliation_2026-10-22/r1-v3/technical/token_selection.json",
+    "with_added_context": 61,
+    "without_added_context": 27
+  },
+  "input_hashes": {
+    "EXPERIMENT_EVIDENCE_STANDARD.md": "8510ad726dfc8e846fe0ddca91e5b8fc7651d50f7c24212a919e667ca7584b4f",
+    "PROTOCOL_DRAFT.md": "3bc26247a11174e4a8857553a2c0d7712aebdf547af43d3a7559d56aa5f3feb1",
+    "REFERENCE_ADJUDICATION_CHECKPOINT_2026-10-16.md": "c869963fcff213040c170d57f047bc87835389bc202af98ff1c6f251dced4456",
+    "STUDY_PLAN_ELECTRONICS_2026-10-12.md": "b05c234d63700e5839c51eb721e3e9e95d21422676a2847c843f23701177d86e",
+    "TRIAGE_EXPANDED_CHECKPOINT_2026-10-12.md": "6066d877913f5065ac12b24ab3fc327cdaaa6e1ae61313f197255a648ba91b7a",
+    "evidence/aigoat_linkage_2026-10-12/development-v5/evaluation/links.jsonl": "702aff7a50e85ad743470248580029195138944ed187bbecdc38298df718c3a1",
+    "evidence/aigoat_linkage_2026-10-12/development-v5/evaluation/native_findings.jsonl": "82404024b29e8e2be4d294b62ecdab6d6500ac24d0c5a5a2764a56bb6b100d2c",
+    "evidence/aigoat_linkage_2026-10-12/development-v5/evaluation/references.jsonl": "f9819bfd5fcc4efdf854e3e524d165d3b5a3b75ee96222eca17afeb071d457bb",
+    "evidence/aigoat_tokenizer_2026-10-12/verification_summary.json": "a874933c41e3edb2dda86a7c49bfbfe7bfcc56d82cb8f6ed7c5cc802ba2790cc",
+    "evidence/reference_adjudication_2026-10-16/build-v2/coauthor/review_form.csv": "13970be0155ffcb1d523ccafa7abb7b3fdcdc7924ea9f8539d901f79d54b1aec",
+    "evidence/reference_adjudication_2026-10-16/build-v2/coauthor/tasks.json": "ea63d6540b21895b038e7b07e3ddb14d6a743607495dddd83ddb4656f3748f9b",
+    "evidence/reference_adjudication_2026-10-16/build-v2/coordinator/native_claim_proposals.jsonl": "21153e6b404e6fbfafba0fc23d8400f2f2bd7e31f99f92d07879a37b4eb7c52a",
+    "evidence/reference_adjudication_2026-10-16/build-v2/population_matrix.csv": "1f44c4d01aa26c26af59c6c62c5ef87cf153794b99a616be6ca21eef97b4e1b8",
+    "evidence/reference_adjudication_2026-10-16/build-v2/summary.json": "f3561105d8097b31e8f21951bfadbb8c92ab1525ca8d14923e8d8f07953e5383",
+    "evidence/review_reconciliation_2026-10-22/r1-v3/manifest.json": "45c352ce8ea1b3b4f7862e8a98626e636250a668844e5bd716f174d29a3957be",
+    "evidence/review_reconciliation_2026-10-22/r1-v3/summary.json": "fb5f477672f6beae1722fe7fa73efd2517d56737dfe0fae0bcd555e375f39dcd",
+    "evidence/review_reconciliation_2026-10-22/reconciliation_audit_v3.json": "9e2ee347381b7ceabca0d0fc583d2f30d11d5e8e16c2e2304d163d50adf4dc51",
+    "evidence/triage_expanded_2026-10-12/development_analysis.json": "28bb186176586f5a8baf00c7de8493cc4cd72983e495a6012d516393947c3126",
+    "models/BENCHMARK_CONTRACT.md": "c953d733c8ac375be427f68986a6a166aa70eaa10749a1051171e69535b88f33",
+    "study/R1_RECONCILIATION_2026-10-22.yaml": "a36a85eb4124d9744bbfc047b0f35377a0696beaf321ef2b3bb24f06107e712c",
+    "study/REFERENCE_ADJUDICATION_CONTRACT.md": "8a886ee221260bfb0a38f5e5568e9fc4682476f4615a7f9ee18bb11b1e47de0b"
+  },
+  "inventory": {
+    "native_labels": {
+      "false": 11,
+      "true": 62,
+      "unresolved": 1915
+    },
+    "native_records": 1988,
+    "populations": 35,
+    "reference_records": 338
+  },
+  "journal": "Electronics",
+  "metric_contracts": [
+    {
+      "clustering": "source case/family; repeat scans do not add cases",
+      "denominator": "all frozen applicable positive references",
+      "id": "case_detection",
+      "numerator": "detected applicable positive references",
+      "rqs": [
+        "RQ1"
+      ],
+      "unit": "applicable_reference_case",
+      "unknown_policy": "Show total catalog, eligible subset and unresolved mapping; unknown is not negative."
+    },
+    {
+      "clustering": "source case/family",
+      "denominator": "frozen resolved applicable positive/negative case universe",
+      "id": "case_confusion",
+      "numerator": "TP, FP, FN, TN separately",
+      "rqs": [
+        "RQ1"
+      ],
+      "unit": "OWASP designated case/CWE",
+      "unknown_policy": "No whole-warning or whole-file label substitution; provide unscored counts."
+    },
+    {
+      "clustering": "source artifact family",
+      "denominator": "frozen applicable properties of the same endpoint type",
+      "id": "property_coverage",
+      "numerator": "supported detected properties",
+      "rqs": [
+        "RQ1"
+      ],
+      "unit": "artifact/resource/context/property",
+      "unknown_policy": "Unknown implication is not a detector false positive."
+    },
+    {
+      "clustering": "source family; stage omissions are paired",
+      "denominator": "applicable references in the same population, if normalized",
+      "id": "unique_stage_contribution",
+      "numerator": "size of union(all stages) minus union(all except s)",
+      "rqs": [
+        "RQ2"
+      ],
+      "unit": "verified instance within one compatible population",
+      "unknown_policy": "Never create an overall percentage from incompatible property/vulnerability units."
+    },
+    {
+      "clustering": "source case/object/resource; pair counts are dependent",
+      "denominator": "supported comparable pairs in each ground-truth relation class",
+      "id": "false_merge_split",
+      "numerator": "same-instance disagreements and different-instance disagreements separately",
+      "rqs": [
+        "RQ3"
+      ],
+      "unit": "independently resolved finding pair of the same relation type",
+      "unknown_policy": "Non-identical IDs alone do not prove different vulnerabilities; related-to is not equality."
+    },
+    {
+      "clustering": "source family; repeated policies do not add instances",
+      "denominator": "verified positive instances represented in B0",
+      "id": "case_visibility_loss",
+      "numerator": "instances with zero retained supported witnesses",
+      "rqs": [
+        "RQ3",
+        "RQ4"
+      ],
+      "unit": "verified positive instance represented before policy",
+      "unknown_policy": "Exclude negative reference cases from true-case retention; show unresolved witness links."
+    },
+    {
+      "clustering": "seven current negative SAST source cases, not eleven independent defects",
+      "denominator": "false warnings in the fixed baseline cohort",
+      "id": "false_warning_removal",
+      "numerator": "false warnings dismissed",
+      "rqs": [
+        "RQ4"
+      ],
+      "scope": "Eleven reviewed false SAST warnings from seven source cases. There are no false declarations in the 15-case extension.",
+      "unit": "resolved native warning",
+      "unknown_policy": "Undefined when no false warnings; no global FPR claim."
+    },
+    {
+      "clustering": "source case/object/resource",
+      "denominator": "true warnings in the same baseline population",
+      "id": "true_warning_loss",
+      "numerator": "true warnings dismissed",
+      "rqs": [
+        "RQ4"
+      ],
+      "scope": "The 73 inherited resolved native observations, separately by population. Do not pool the 15 additional literal declarations into this endpoint.",
+      "unit": "resolved native warning at its frozen assertion scope",
+      "unknown_policy": "Separate literal declaration correctness from exploitability."
+    },
+    {
+      "clustering": "finding nested in source family; repeated output not new truth",
+      "denominator": "attempted units; scheduled-not-run units separate",
+      "id": "behavior",
+      "numerator": "abstentions, invalids, timeouts, missing replies and action differences separately",
+      "rqs": [
+        "RQ4"
+      ],
+      "unit": "attempted finding/condition",
+      "unknown_policy": "Retain findings on invalid, missing or abstaining replies; never silently repair."
+    },
+    {
+      "clustering": "execution block; all repeat values retained",
+      "denominator": "attempted/processed cases only where throughput defined",
+      "id": "cost",
+      "numerator": "wall seconds, CPU seconds, sampled RSS, cgroup counters, tokens and output volume",
+      "rqs": [
+        "RQ2",
+        "RQ4"
+      ],
+      "unit": "run/block/request with named measurement boundary",
+      "unknown_policy": "Keep startup/reset/acquisition separate; measured RSS and cgroup memory are not interchangeable."
+    },
+    {
+      "clustering": "shared original/deployment Compose artifacts and related services; not 15 independent applications",
+      "denominator": "15 reconciled declared assertions, reported separately",
+      "id": "declared_assertion_retention",
+      "numerator": "supported literal assertions retained",
+      "rqs": [
+        "RQ4"
+      ],
+      "unit": "specified file/resource/declaration predicate",
+      "unknown_policy": "No claim about complete native security correctness, exploitability or false-warning reduction."
+    }
+  ],
+  "next_independent_action": "Seal component-specific execution/evaluation releases under one campaign manifest, using static_campaign_run.py and final_runtime_ingress.collect_static for block-bound runtime evidence. Include fresh comparators, the corrected dynamic bookkeeping package and isolated triage inputs. Validate the final combination on Ubuntu, refresh host readiness and issue protocol v1.0 before the accepted sequential campaign. Do not rerun completed target qualifications or expand the study scope.",
+  "primary_contrasts": [
+    "Q-C minus B1",
+    "G-C minus B1",
+    "Q-A versus G-A",
+    "Q-C versus G-C",
+    "Q-C minus Q-A",
+    "G-C minus G-A"
+  ],
+  "prior_matrix": ".research/final_campaign_2026-10-22/execution_candidate_v9.json",
+  "proposed_llm_workload": {
+    "additional_pending_cases": 15,
+    "core_cases": 73,
+    "core_decisions_including_baselines": 1752,
+    "core_generations": 1168,
+    "maximum_decisions_with_current_pending": 2112,
+    "maximum_with_current_pending_generations": 1408,
+    "scope": "Planning arithmetic, not executed outputs, not statistical power, not a final sample-size approval."
+  },
+  "protocol": "0.8_unfrozen",
+  "reference_contrasts": "B0 denominators and retained-case sets are reported for every condition; B1 versus B0 is the deterministic reference.",
+  "remote_actions": true,
+  "repetitions": {
+    "cache_policy": "No uncontrolled host cache flushing. Report process/model startup and steady inference separately; no cold-versus-warm efficacy claim.",
+    "context_order": "Counterbalance alert/context first by paired case and block; clear slots before every request.",
+    "llm_blocks": 4,
+    "llm_model_orders": [
+      [
+        "Qwen",
+        "Gemma"
+      ],
+      [
+        "Gemma",
+        "Qwen"
+      ],
+      [
+        "Gemma",
+        "Qwen"
+      ],
+      [
+        "Qwen",
+        "Gemma"
+      ]
+    ],
+    "llm_seed": 17,
+    "llm_temperature": 0,
+    "purpose": "Execution/deterministic-output stability; repeated observations are not independent cases.",
+    "scanner_profiles": 5,
+    "status": "proposal_not_frozen"
+  },
+  "research_questions": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4"
+  ],
+  "runtime_integration": {
+    "active_remote_handle": null,
+    "analysis_entrypoint": "study/final_runtime_ingress.py:collect_static",
+    "archive_sha256": "e2f6bae02882082fd318411380204f4e79ff0732faabcae4e7aa2996449a62ba",
+    "audit_corruptions_rejected": 8,
+    "checkpoint": "RUNTIME_INTEGRATION_CHECKPOINT_2026-10-22.md",
+    "collected_files_verified": 376,
+    "execution_entrypoint": "engineering/static_campaign_run.py",
+    "file_identity_checks": 1931,
+    "final_campaign_ready": false,
+    "historical_probe_assertions_replayed": 24,
+    "immutable_qualification_builds": 1,
+    "latest_host_guard": {
+      "active_containers": [],
+      "active_project": "devsecops-electronics",
+      "blockers": [],
+      "competing_process_names": [],
+      "limits": "Cooperative start gate; existing experiment controllers must continue monitoring workload and memory during execution.",
+      "logical_cpus": 8,
+      "memory_available_bytes": 15182340096,
+      "memory_total_bytes": 16372285440,
+      "minimum_free_gib": 20,
+      "minimum_memory_gib": 12,
+      "paths": {
+        "<OTHER_PROJECT_2>": {
+          "allocated_bytes": 21324873728,
+          "canonical": "<USER_HOME>/<OTHER_PROJECT_2>",
+          "directory_budget_gib": 32,
+          "exists": true,
+          "expected": "<OTHER_PROJECT_2>/<OTHER_PROJECT_2>",
+          "resolved": "<OTHER_PROJECT_2>/<OTHER_PROJECT_2>"
+        },
+        "devsecops-electronics": {
+          "allocated_bytes": 43839000576,
+          "canonical": "<LAB_ROOT>",
+          "directory_budget_gib": 48,
+          "exists": true,
+          "expected": "<LAB_ROOT>",
+          "resolved": "<LAB_ROOT>"
+        },
+        "<OTHER_PROJECT_1>": {
+          "allocated_bytes": 39829307392,
+          "canonical": "<USER_HOME>/<OTHER_PROJECT_1>",
+          "directory_budget_gib": 45,
+          "exists": true,
+          "expected": "<OTHER_PROJECT_2>/<OTHER_PROJECT_1>",
+          "resolved": "<OTHER_PROJECT_2>/<OTHER_PROJECT_1>"
+        }
+      },
+      "ready": true,
+      "root_available_bytes": 24359145472,
+      "utc": "2026-10-22T22:18:12.791246+00:00"
+    },
+    "local_tests": 96,
+    "model_generations": 0,
+    "new_runtime_tests": 23,
+    "new_scientific_measurements": 0,
+    "next_action": "Seal component-specific execution/evaluation releases under one campaign manifest, using static_campaign_run.py and final_runtime_ingress.collect_static for block-bound runtime evidence. Include fresh comparators, the corrected dynamic bookkeeping package and isolated triage inputs. Validate the final combination on Ubuntu, refresh host readiness and issue protocol v1.0 before the accepted sequential campaign. Do not rerun completed target qualifications or expand the study scope.",
+    "package": "evidence/runtime_integration_2026-10-22/package-v1",
+    "package_files": 153,
+    "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+    "planned_final_runtime_probes": 120,
+    "preexisting_container_configurations_preserved": 262,
+    "protected_prior_sources_unchanged": 1476,
+    "protocol_frozen": false,
+    "real_qualification_probes": 24,
+    "remote_package": "<LAB_ROOT>/environment/runtime-integration-v1",
+    "remote_run": "<LAB_ROOT>/evidence/runtime-integration-qualification-20261022-01",
+    "scientific_scans": 0,
+    "scope": "Runtime integration qualification; separate construction overhead, no final scientific execution.",
+    "static_jobs": 375,
+    "static_profiles": 75,
+    "success": true,
+    "temporary_containers_removed": 24,
+    "ubuntu_audit": "evidence/runtime_integration_2026-10-22/ubuntu-audit-v1.json",
+    "ubuntu_tests": 96,
+    "verified_utc": "2026-10-22T22:22:00.441513+00:00"
+  },
+  "schema_version": "devsecops-final-matrix-draft-1",
+  "scientific_results_created": false,
+  "special_issue": "Advanced Technologies for Information Security",
+  "static_scanner_execution": {
+    "asset_locks_sha256": "4cd2d80e4f63e6895a0f20f1f938b4bab4b1c848a646a9f465c1841b303d6cf2",
+    "checkpoint": "STATIC_SCANNER_CHECKPOINT_2026-10-22.md",
+    "container_shapes_verified": 2,
+    "corrected_schedule": "evidence/final_output_2026-10-22/candidate-v1/schedule.json",
+    "corrected_schedule_sha256": "0985820e121a17d7809128e04fb87066462b6db273ddde8381c567beabfaf1ee",
+    "detector_profiles": 65,
+    "evidence": "evidence/static_scanner_controller_2026-10-22/verification_summary.json",
+    "execution_tests_each_platform": 31,
+    "historical_report_replays": 75,
+    "historical_source_files": 334,
+    "installed_package": "<LAB_ROOT>/environment/static-scanners-code-v2",
+    "inventory_profiles": 10,
+    "local_audit_controls": 5,
+    "model_generations": 0,
+    "order_amendment": "evidence/final_output_2026-10-22/candidate-v1/order_amendment.json",
+    "owned_containers_stopped": 2,
+    "package_manifest_sha256": "9b836a40cf1938e2b384ec52a7968c67adb58d6655647081a0e1b11a9ce320ed",
+    "plan": "evidence/static_scanner_controller_2026-10-22/candidate-v5/plan.json",
+    "planned_static_invocations": 375,
+    "preexisting_container_configurations_preserved": 260,
+    "prior_attempt": "Version 1 stopped at disk capacity before scanner/reset execution; preserved.",
+    "profiles": 75,
+    "protocol_frozen": false,
+    "qualification_limit": "Actual scanner completions/metrics remain for the released final campaign.",
+    "qualified_successor": {
+      "checkpoint": "RUNTIME_INTEGRATION_CHECKPOINT_2026-10-22.md",
+      "entrypoint": "engineering/static_campaign_run.py",
+      "note": "Prior qualified controller is preserved; the new controller supplies per-block runtime checks and verified reset receipts.",
+      "package_manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+    },
+    "remote_preflight": "<LAB_ROOT>/evidence/static-scanners-preflight-20261022-02",
+    "reset_checks": 18,
+    "scanner_invocations": 0,
+    "status": "static_reset_and_isolation_qualified_dynamic_bindings_pending",
+    "verified_utc": "2026-10-22T16:08:02.878713+00:00"
+  },
+  "status": "runtime_integration_qualified_final_composition_pending",
+  "technical_binding_candidate": {
+    "audit": "evidence/final_technical_2026-10-22/audit-v3.json",
+    "bundle": "evidence/final_technical_2026-10-22/candidate-v3",
+    "execution_receipts": 205,
+    "local_tests": 34,
+    "paired_candidates": 88,
+    "planned_study_decisions": 2112,
+    "planned_study_generations": 1408,
+    "remote_execution": false,
+    "replayed_comparator_families": 6,
+    "source_runs": 18,
+    "summary": "evidence/final_technical_2026-10-22/candidate-v3/summary.json",
+    "triage_blocks": 4
+  },
+  "transfer_status": "No unseen evaluation cohort is established. A group-disjoint unused OWASP extension needs a separate pre-outcome selection manifest before generalization claims.",
+  "triage_cohorts": {
+    "candidate_ids_changed_during_return_processing": false,
+    "canonical_registry_changed": false,
+    "core_finding_ids": [
+      "finding-02e22fb6305e7dcf5af3b25bc806b87a",
+      "finding-0790cf40238350ea523f8f4723049652",
+      "finding-0ba877722abe748eed87d905fffacdad",
+      "finding-0ff1ab9eab22b5ce19f8be21b3c427e9",
+      "finding-1028c8105b841dff7895150958b03a96",
+      "finding-11d35ca9b35195f6a843bd33f3391dec",
+      "finding-16035bf967ad9814dccf65133a229485",
+      "finding-256b0ca39dc2f754008afe54a0b451b3",
+      "finding-275ae5585deb69afd3fbcdc5b4928a10",
+      "finding-29a8dac23b75b2f4e26be497fb3387dd",
+      "finding-2b925116582afd332ab2ed48cd049e77",
+      "finding-2d43b32f6a9ae59d7256370bbcfa3933",
+      "finding-30349ce96d2f27318375e8b6afee89de",
+      "finding-341c3d114fb3e8beccb49db876d16449",
+      "finding-3fbda61988728a4a00fc34d4f2b3916e",
+      "finding-438d73dab755a4daf23257adfb283844",
+      "finding-53fe9de704e37b6ed17efe0a85532607",
+      "finding-5a214e22fdda7c7c13775d45b12a53b0",
+      "finding-5a5c29ff8a9670a06700f8fce0f921a0",
+      "finding-5c4a6e11c2d11c8d5983511f88627d7a",
+      "finding-5d3395084de3b8833191a1e305eb53dc",
+      "finding-6c55ca758a8acc0dce56a50066ab8df6",
+      "finding-720d56928f392c18fbad3735cc580fc1",
+      "finding-744ef03e799f44de6b46289e8cda33f0",
+      "finding-7a8482582de9d1ceb343a3269428adde",
+      "finding-7b7764d27011f3d55c7b7084bfba1813",
+      "finding-8161e2f1d4d91aa65ab8d65030163199",
+      "finding-829bcab14311f63b14d97d077baea7cc",
+      "finding-885f23465da46d95ff7374717bbb42b1",
+      "finding-893538e1b1d247e93deb874fd7059d21",
+      "finding-895b5921b02febd353d7a4832fd13a18",
+      "finding-89a48f0d5f2a92dbabec874037945f91",
+      "finding-8d3a088a58d6255a17808b827e53e83a",
+      "finding-8f3d3c254d4369b18bf9c303b2d85d28",
+      "finding-8f614bded799b9e815be0db348f93d2b",
+      "finding-911e112fe20114776a648f6c44413a15",
+      "finding-91444ad314e222f895c261c4ef76bb49",
+      "finding-919406ec8bcd1b962ae32023ac676435",
+      "finding-93c8410aae5bfd52bec4f1aa0c793e4e",
+      "finding-977aab07cb90f69f7b29eb6eb4bf6001",
+      "finding-981dd6cf989801cd56153d84e50f1d00",
+      "finding-9f3ffcf1eb100e2c5d975fab96a46c3b",
+      "finding-a6841bfc81c2ff284677238512937762",
+      "finding-a714e5f2f7d880eee8d0b1c1e6921571",
+      "finding-a85d86c5531f0d1b2ce706f100b2a940",
+      "finding-a89bd1dd84c21cdefbdcfaaff530660d",
+      "finding-a90b019974c83c5495c18c44c1e1681c",
+      "finding-ab0e1986cd221db4891f024358a43acf",
+      "finding-aca38cfd1c281881bda6d5325094556d",
+      "finding-acb8a0788a1b1067ce5029b8ef5a747f",
+      "finding-ae459088b87a59cc11c16292bf26cb44",
+      "finding-b722e754f26a712595184fa89e987dc6",
+      "finding-be10288ed2aaf349fde01696919f8761",
+      "finding-beb59db41c2fdf03cf71068f9b1f16fd",
+      "finding-c14401b071bf523387a1733e0e5cffae",
+      "finding-c58d7a35c481cd7a033ba04c9c454f06",
+      "finding-c8ae17f778aeae08a191e443b38919e9",
+      "finding-d0115b29da3608d3d0b3def28e0351f2",
+      "finding-d5099d84001c94d23c90711de1ee8c4e",
+      "finding-d8ba66b54c43aba94c43ee1ca0679478",
+      "finding-d8bbecdfff0accc1192f1ae745469cdd",
+      "finding-dc42dbc256761ec16a0352788dd8cc2c",
+      "finding-ded0bf2d477c4d947377cf91925a106c",
+      "finding-e0f8f99a9dc3a39a24325202df2e5e7a",
+      "finding-e138b6001898a78a7741546d350fb03c",
+      "finding-e17c7fef0746f26b3992b0917c30aaff",
+      "finding-e86efb30c7485060135b70a51b52c009",
+      "finding-eb0968763517aac2b55f02e630aa561b",
+      "finding-f0885be22c7aa084952bd7c0d626a1e7",
+      "finding-f22c7ea05a41eb9cbe774a7b8b6ea4e4",
+      "finding-f764317cb2cf3e234a030fca8c75b038",
+      "finding-fbf1ddaf25d1e1194e0f197c8ddbe9ba",
+      "finding-fe86969931b9a74a0764accbc8b1c4af"
+    ],
+    "core_rule": "All currently resolved native records; no selection by model decision, confidence or desired outcome.",
+    "evaluation_records": "evidence/review_reconciliation_2026-10-22/r1-v3/evaluation/candidate_endpoints.jsonl",
+    "human_revision_rule": "Retain an eligible identifier if its resolved label changes; unresolved or inapplicable exclusions require a reason before final inference. Never retain only favorable review answers.",
+    "inference_labels_permitted": false,
+    "new_final_labels": 0,
+    "outcome_exposure": "Selected after source/scanner/development outcome access. No unseen generalization claim.",
+    "review_date_precedes_21_october_plan_as_supplied": true,
+    "reviewed_declaration_finding_ids": [
+      "finding-076221ac5b8ff48828975cf3f5d251f5",
+      "finding-106038d5554d080a022817e70df33dd2",
+      "finding-1547cba3d045e5b9aeda8837adb1a451",
+      "finding-2204b9a74fe909866a3d1f779c297403",
+      "finding-260be630948a693089907273098811da",
+      "finding-2b9c5234218a84d2f27eeec3666f0ec0",
+      "finding-3fd9a193816404c1f8ace1f5f2bb624b",
+      "finding-82fb3eedbec15216ce90f13631a95aac",
+      "finding-832f283603b955d9fda07ea5ed4a8424",
+      "finding-c622cdfd1abec124cec7de0f35aa42fb",
+      "finding-cc4b7c21eda7342bc18e6dd4606cb099",
+      "finding-e4143b17c41564e942c34dd04d2b80fa",
+      "finding-eb4383480c98e849786fc6d037bd45d0",
+      "finding-f1e7fe9bc13ea9fb0fb53a371db5f226",
+      "finding-f91c67e07fd0df3b61f22cdf860a8114"
+    ],
+    "reviewed_declaration_rule": "All 15 previously named source declarations are supported at literal scope; full native security correctness remains unresolved. Keep separate from the 73 inherited native labels.",
+    "status": "review_reconciled_candidate_ids_with_separate_endpoints_not_final_campaign"
+  },
+  "triage_execution_controller": {
+    "audit": "ubuntu-audit-v2.json",
+    "candidate_package": "evidence/repeated_triage_controller_2026-10-22/package-v1",
+    "checkpoint": "REPEATED_TRIAGE_CONTROLLER_CHECKPOINT_2026-10-22.md",
+    "collected_preflight_files": 26,
+    "final_host_guard": "final_host_guard.json",
+    "installed_package": "<LAB_ROOT>/environment/triage-repeated-code-v1",
+    "local_audit_controls": 5,
+    "local_package_tests": 28,
+    "new_owned_containers_stopped": 3,
+    "next_step": "Build final scanner/reset jobs and freeze applicability, scanner repetitions and protocol v1.0.",
+    "package_files": 33,
+    "package_manifest_sha256": "9246db9a16772b15ebfc6c368ee317a6b9439e93a334b2ff99eab63e566aaa76",
+    "preexisting_containers_preserved": 257,
+    "protocol_frozen": false,
+    "remote_preflight": "<LAB_ROOT>/evidence/triage-repeated-preflight-20261022-01",
+    "scientific_decisions": 0,
+    "scientific_inferences": 0,
+    "status": "qualified_for_sequential_triage_after_final_protocol_release",
+    "ubuntu_package_tests": 28,
+    "verification": "evidence/repeated_triage_controller_2026-10-22/verification_summary.json"
+  },
+  "uncertainty_policy": "Primary descriptive paired effects and all cluster counts; bounded-source case-level sensitivity. No p-value claim or naive warning/pair-level interval. Any inferential extension requires a frozen source-family plan and adequate distinct groups.",
+  "whole_study_analysis": {
+    "audit": "evidence/whole_study_2026-10-22/audit-v1.json",
+    "audit_assertions": 3829,
+    "bundle": "data/references/bindings.json",
+    "bundle_sha256": "05ad1853da236dbabf0aea3811c2e0937e4f0130d4482753f122e58d348e4806",
+    "checkpoint": "WHOLE_STUDY_CHECKPOINT_2026-10-22.md",
+    "comparator_families": 6,
+    "corruption_controls_rejected": 8,
+    "dynamic_profiles": 18,
+    "links": 200,
+    "native_observations": 1988,
+    "new_scientific_results": false,
+    "populations": 35,
+    "protected_source_files_unchanged": 431,
+    "qualified_normalized_detection_populations": 16,
+    "reference_records": 338,
+    "remote_actions": false,
+    "source_manifest": "evidence/whole_study_2026-10-22/candidate-v1/source_manifest.json",
+    "static_profiles": 75,
+    "status": "locally_bound_and_audited_not_released",
+    "tests_passed": 19,
+    "triage_observations": 88
+  }
+}

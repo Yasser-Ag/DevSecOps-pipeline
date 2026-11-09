@@ -1,0 +1,165 @@
+[
+  {
+    "name": "crapi",
+    "url": "https://github.com/OWASP/crAPI",
+    "commit": "b5fc307f3e5f875809b095b771108ef342a33724",
+    "files": [
+      {
+        "path": ".github/workflows/pr-build.yml",
+        "sha256": "c077157feefe958df7394db531468e78309656dd7ad1d83d2ae956a437da9af1"
+      },
+      {
+        "path": ".github/workflows/publish.yml",
+        "sha256": "afb2619ecbe14e348a225569dfc2f516887d5a5ab38f6558759cabed021cd8b7"
+      },
+      {
+        "path": ".github/workflows/workflow-multiarch.yml",
+        "sha256": "d3c6e8e6be571984b186ed53a6df07cec989698ebdfab23462dc27c93ba6d987"
+      }
+    ],
+    "source": "evidence/infrastructure_development_2026-09-22/attempt-01-collection-v2/reference/reference_manifest.json"
+  },
+  {
+    "name": "terragoat",
+    "url": "https://github.com/bridgecrewio/terragoat",
+    "commit": "729f8da62c6a85ce4af5ad3d123de97776d954c4",
+    "files": [
+      {
+        "path": ".github/workflows/build.yaml",
+        "sha256": "7188d10859c9599ec45c0fe83c1bf9ad14e16516c0eaefbbec586792a8e8832f"
+      },
+      {
+        "path": ".github/workflows/pull_request.yaml",
+        "sha256": "728df08272a03a361b965245acf54599548ba13ca4f7d1ba865a80a6c3c9700c"
+      },
+      {
+        "path": ".github/workflows/semgrep.yml",
+        "sha256": "796611978ca6ae4e80f50b1bba749953077ba26893218b63ec80017b57c77d12"
+      },
+      {
+        "path": "terraform/aws/consts.tf",
+        "sha256": "517810c105054c1a64b8e58dafd4edc3ae958fa0416869cc5a64c742ea9c546a"
+      },
+      {
+        "path": "terraform/aws/db-app.tf",
+        "sha256": "242feb266e4ed7fc3a2725f88bade8b0029d46bbda3d66b60c4936381f7deda9"
+      },
+      {
+        "path": "terraform/aws/ec2.tf",
+        "sha256": "5fcc2d4cf052fb2032d9470179f63a903d280b99cf5b1bb2db6e15200ecd9428"
+      },
+      {
+        "path": "terraform/aws/ecr.tf",
+        "sha256": "727c87b76cdc42093d46bb1c54219e1db5b7a6fce253358ead09ec0c8aa80da7"
+      },
+      {
+        "path": "terraform/aws/eks.tf",
+        "sha256": "57cc62bd473ec45085c78b13cfa57a8ea35a24baac8192ab922e15d08ed17c2e"
+      },
+      {
+        "path": "terraform/aws/elb.tf",
+        "sha256": "2c85b9cd746c3895765514328fdc40c9266e06c2e7300e9728bfc0cacf05ff59"
+      },
+      {
+        "path": "terraform/aws/es.tf",
+        "sha256": "fd15bbc8a04349a8a78286bf66896efb2b2560683285cdb0b9b60e8eadcbbaba"
+      },
+      {
+        "path": "terraform/aws/iam.tf",
+        "sha256": "f0e93459e04e74b3999e1f057909776220cfcfa782e0837284d5f179c33521af"
+      },
+      {
+        "path": "terraform/aws/kms.tf",
+        "sha256": "f1f3d5f95507b15f2c5c0b18c0aae888452b1bee722199b989c3288371cd2f27"
+      },
+      {
+        "path": "terraform/aws/lambda.tf",
+        "sha256": "873fd285159d2de95d3021c5bb853cccb07e658e5e2e3453ab87147e545088d2"
+      },
+      {
+        "path": "terraform/aws/neptune.tf",
+        "sha256": "c743ca589b3c3ca0fa311ec9fc0c135233852314b0c2aea0a0bf6ed5203a2d6c"
+      },
+      {
+        "path": "terraform/aws/providers.tf",
+        "sha256": "edb39e696e7ac40f8f95d27e767435a129e4a651e54046ea2a3adcd12908928d"
+      },
+      {
+        "path": "terraform/aws/rds.tf",
+        "sha256": "b6b7b4e4577b6766d7b133fcd739eebbb02e950c1afa58943f3178e3906a4d27"
+      },
+      {
+        "path": "terraform/aws/s3.tf",
+        "sha256": "860ce876f7c4144f560517f16ef46e57b97b2917dc81b6db5ac32594a7ea643e"
+      }
+    ],
+    "source": "evidence/infrastructure_development_2026-09-22/attempt-01-collection-v2/reference/reference_manifest.json"
+  },
+  {
+    "name": "kubernetes-goat",
+    "url": "https://github.com/madhuakula/kubernetes-goat",
+    "commit": "723a0db478f050d173d23b4ce5044b65bce0bdd0",
+    "files": [
+      {
+        "path": "scenarios/batch-check/job.yaml",
+        "sha256": "fc1d29e62bf0d9a8ee51566bf0d9191ac1be88bd52199876bb9cbd481364b5a2"
+      },
+      {
+        "path": "scenarios/build-code/deployment.yaml",
+        "sha256": "8b68dd6fa70aba02b932ea0586b94eebe6c289b20fe985e192ac49fdebdbd3c3"
+      },
+      {
+        "path": "scenarios/cache-store/deployment.yaml",
+        "sha256": "abefe64d3421194aa829306580a98a7a6342beb48b63ce2d86917e62f8579c94"
+      },
+      {
+        "path": "scenarios/hidden-in-layers/deployment.yaml",
+        "sha256": "01e0c8a455b5481942e0029a5598361eb84cb76874e6ce0739385663948fb638"
+      },
+      {
+        "path": "scenarios/internal-proxy/deployment.yaml",
+        "sha256": "bbee97e74fd4975a89d35b55b7d309d20930e49af05baed6889a108a42f64b6f"
+      },
+      {
+        "path": "scenarios/poor-registry/deployment.yaml",
+        "sha256": "b616513d8f2c0047c6978a08bf3f12fad632aa8dc1c64e1a07b473bd697fdb1f"
+      },
+      {
+        "path": "scenarios/system-monitor/deployment.yaml",
+        "sha256": "80e9a538528b99dce15f0f01f2a4571134e371894cf4098fdb4b5fbde0155bd9"
+      }
+    ],
+    "source": "evidence/infrastructure_development_2026-09-22/attempt-01-collection-v2/reference/reference_manifest.json"
+  },
+  {
+    "name": "cicd-goat",
+    "url": "https://github.com/cider-security-research/cicd-goat",
+    "commit": "0ed10925f3983857cf219b2ac1c327b861fcccca",
+    "files": [
+      {
+        "path": ".github/workflows/release.yaml",
+        "sha256": "4e1b08a9f92ccfe9b557e9025aaff1009c155ea60a74180f6be2df4efc280178"
+      }
+    ],
+    "source": "evidence/infrastructure_development_2026-09-22/attempt-01-collection-v2/reference/reference_manifest.json"
+  },
+  {
+    "name": "AIGoat",
+    "url": "https://github.com/AISecurityConsortium/AIGoat",
+    "commit": "e1c538badb93c6c1c2307096ab5d709a9ee0fe55",
+    "source": "targets/aigoat/acquisition/source_manifest.json"
+  },
+  {
+    "name": "OWASP Benchmark Java",
+    "url": "https://github.com/OWASP-Benchmark/BenchmarkJava",
+    "commit": "20cbf3d11123347e47ed89541e6942836def53f7",
+    "source": "engineering/acquire_references.py"
+  },
+  {
+    "name": "DeepBits SBOM benchmark resource",
+    "url": "https://github.com/DeepBitsTechnology/sbom-benchmark",
+    "commit": "e6bcf23b2f4e384f9fc398793529583845612b63",
+    "source": "engineering/acquire_references.py",
+    "scope": "Reference resource; does not imply whole-dataset evaluation."
+  }
+]

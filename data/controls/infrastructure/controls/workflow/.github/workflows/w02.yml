@@ -1,0 +1,8 @@
+name: w02
+'on': workflow_dispatch
+permissions: write-all
+jobs:
+  alpha:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo development

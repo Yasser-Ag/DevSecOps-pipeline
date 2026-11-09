@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: containers-pod-false-child-true
+  namespace: development
+spec:
+  securityContext:
+    runAsNonRoot: false
+  containers:
+  - name: subject
+    image: registry.invalid/static-probe:never-executed
+    securityContext:
+      runAsNonRoot: true

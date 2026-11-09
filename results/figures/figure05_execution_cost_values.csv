@@ -1,0 +1,169 @@
+panel,profile,tool_band,role_or_eligibility,min,median,max,rss_MiB,native,source,rss_min,rss_max
+a,aigoat-semgrep-frontend,Semgrep,D,21.963807992171496,23.5967572000809,25.365246548317373,,,K_tables/A6_static_profiles.csv:14,,
+a,aigoat-semgrep-python,Semgrep,D,20.928308294620365,21.165890240110457,23.134399890899658,,,K_tables/A6_static_profiles.csv:15,,
+a,java-semgrep,Semgrep,D,16.235737935639918,16.283224565908313,16.485874885693192,,,K_tables/A6_static_profiles.csv:53,,
+a,java-findsecbugs,FindSecBugs,D,7.26476863026619,7.346303714904934,8.357855361886322,,,K_tables/A6_static_profiles.csv:52,,
+a,aigoat-bandit-python,Bandit,D,3.3213019389659166,3.347060198895633,3.965492407325655,,,K_tables/A6_static_profiles.csv:2,,
+a,sca-dependency-check,Dependency-Check,D,6.127206299919635,6.185410822741687,7.2605248731561005,,,K_tables/A6_static_profiles.csv:69,,
+a,aigoat-trivy-image-backend,Trivy (packages),D,21.014860631898046,22.155876444187015,23.31970473425463,,,K_tables/A6_static_profiles.csv:22,,
+a,aigoat-trivy-image-frontend,Trivy (packages),D,2.1980515220202506,2.245722013991326,2.2511858828365803,,,K_tables/A6_static_profiles.csv:23,,
+a,aigoat-trivy-image-ollama,Trivy (packages),D,3.303953481372446,3.88496821699664,3.9444305202923715,,,K_tables/A6_static_profiles.csv:24,,
+a,aigoat-trivy-source,Trivy (packages),D,0.5550968302413821,1.1105123520828784,1.1530481530353427,,,K_tables/A6_static_profiles.csv:26,,
+a,os-ubi92early-trivy,Trivy (packages),D,4.9583515441045165,5.548369977157563,5.603168824221939,,,K_tables/A6_static_profiles.csv:59,,
+a,os-ubi92late-trivy,Trivy (packages),D,4.956493335776031,5.551618620753288,5.590199921280146,,,K_tables/A6_static_profiles.csv:62,,
+a,os-ubi94-trivy,Trivy (packages),D,4.985896558035165,5.5123798358254135,6.200339235831052,,,K_tables/A6_static_profiles.csv:65,,
+a,os-ubi98-trivy,Trivy (packages),D,4.964368035085499,5.567686673719436,6.2483105240389705,,,K_tables/A6_static_profiles.csv:68,,
+a,sca-trivy-filesystem,Trivy (packages),D,0.5521044740453362,0.5687227547168732,0.5794728803448379,,,K_tables/A6_static_profiles.csv:74,,
+a,sca-trivy-image,Trivy (packages),D,1.1013057031668723,1.1221475647762418,1.1325927218422294,,,K_tables/A6_static_profiles.csv:75,,
+a,sca-trivy-rootfs,Trivy (packages),D,0.5626736870035529,0.5673650922253728,0.5773470308631659,,,K_tables/A6_static_profiles.csv:76,,
+a,aigoat-grype-image-backend,Grype,D,3.942780779208988,4.494045713916421,9.581366496626288,,,K_tables/A6_static_profiles.csv:7,,
+a,aigoat-grype-image-frontend,Grype,D,6.171592663042247,6.213703655637801,6.8067750236950815,,,K_tables/A6_static_profiles.csv:8,,
+a,aigoat-grype-image-ollama,Grype,D,3.9141269586980343,3.9278250471688807,3.948261389043182,,,K_tables/A6_static_profiles.csv:9,,
+a,aigoat-grype-source,Grype,D,3.8772466462105513,3.9213433102704585,3.940451861359179,,,K_tables/A6_static_profiles.csv:10,,
+a,os-ubi92early-grype,Grype,D,4.453364041168243,4.497151480987668,4.53240492194891,,,K_tables/A6_static_profiles.csv:57,,
+a,os-ubi92late-grype,Grype,D,3.9974957280792296,4.484069679863751,4.516363872215152,,,K_tables/A6_static_profiles.csv:60,,
+a,os-ubi94-grype,Grype,D,3.9349903417751193,4.48129818122834,4.534401103854179,,,K_tables/A6_static_profiles.csv:63,,
+a,os-ubi98-grype,Grype,D,3.8912473060190678,3.9295661649666727,3.9707823768258095,,,K_tables/A6_static_profiles.csv:66,,
+a,sca-grype-filesystem,Grype,D,1.6658676150254905,1.6853963849134743,1.7277195509523153,,,K_tables/A6_static_profiles.csv:70,,
+a,sca-grype-image,Grype,D,1.6904872059822083,1.6978845898993313,1.7303355867043138,,,K_tables/A6_static_profiles.csv:71,,
+a,aigoat-syft-image-backend,Syft,I,27.726101314648986,28.956293945666403,31.990403302945197,,,K_tables/A6_static_profiles.csv:16,,
+a,aigoat-syft-image-frontend,Syft,I,3.880094334948808,3.9350260170176625,4.473804295063019,,,K_tables/A6_static_profiles.csv:17,,
+a,aigoat-syft-image-ollama,Syft,I,5.566829169169068,6.103286293335259,6.2018372202292085,,,K_tables/A6_static_profiles.csv:18,,
+a,aigoat-syft-source,Syft,I,2.771807509008795,2.8258318416774273,3.47347184503451,,,K_tables/A6_static_profiles.csv:19,,
+a,os-ubi92early-syft,Syft,I,7.229887354187667,7.310312342364341,7.916179176885635,,,K_tables/A6_static_profiles.csv:58,,
+a,os-ubi92late-syft,Syft,I,7.204365883953869,7.248064546380192,7.275525644887239,,,K_tables/A6_static_profiles.csv:61,,
+a,os-ubi94-syft,Syft,I,7.213046290911734,7.814277326222509,7.835684989113361,,,K_tables/A6_static_profiles.csv:64,,
+a,os-ubi98-syft,Syft,I,7.234883590135723,7.803291122894734,8.408778427168727,,,K_tables/A6_static_profiles.csv:67,,
+a,sca-syft-filesystem,Syft,I,2.2482277671806514,2.280271204188466,2.868211809080094,,,K_tables/A6_static_profiles.csv:72,,
+a,sca-syft-image,Syft,I,2.7785142520442605,2.8004596941173077,2.810484719928354,,,K_tables/A6_static_profiles.csv:73,,
+a,aigoat-gitleaks-source,Gitleaks,D,1.6561339893378317,1.6903119613416493,1.6961311879567802,,,K_tables/A6_static_profiles.csv:6,,
+a,configuration-gitleaks,Gitleaks,D,1.1350581371225417,1.1432038489729166,1.1566683477722108,,,K_tables/A6_static_profiles.csv:30,,
+a,aigoat-trivy-secret-source,Trivy (secrets),D,1.1030668928287923,1.1158019280992448,1.1239853776060045,,,K_tables/A6_static_profiles.csv:25,,
+a,configuration-trivy-secret,Trivy (secrets),D,0.5540690030902624,0.5576679049991071,0.5640749931335449,,,K_tables/A6_static_profiles.csv:34,,
+a,aigoat-checkov-docker-deployment,Checkov,D,4.439540303777903,5.038626345805824,6.853747170418501,,,K_tables/A6_static_profiles.csv:3,,
+a,aigoat-checkov-docker-original,Checkov,D,4.535509682260454,5.02482237899676,5.047927598003298,,,K_tables/A6_static_profiles.csv:4,,
+a,aigoat-workflow-checkov-workflow-qualified,Checkov,D,4.555468125734478,5.080373034346849,6.231909336987883,,,K_tables/A6_static_profiles.csv:27,,
+a,configuration-checkov,Checkov,D,4.431510981172323,4.512256307061762,5.067149498034269,,,K_tables/A6_static_profiles.csv:29,,
+a,infrastructure-controls-checkov-kubernetes,Checkov,D,5.091510762926191,5.589180764742196,6.8278430621139705,,,K_tables/A6_static_profiles.csv:35,,
+a,infrastructure-controls-checkov-terraform,Checkov,D,4.500762721989304,5.0443272539414465,5.087586214300245,,,K_tables/A6_static_profiles.csv:36,,
+a,infrastructure-controls-checkov-workflow,Checkov,D,4.506768357940018,4.997408221941441,5.036567489150912,,,K_tables/A6_static_profiles.csv:37,,
+a,infrastructure-originals-checkov-kubernetes,Checkov,D,5.034371383022517,5.061170884873718,6.263792424928397,,,K_tables/A6_static_profiles.csv:43,,
+a,infrastructure-originals-checkov-terraform,Checkov,D,5.665767896920443,6.159145561046898,6.283589466009289,,,K_tables/A6_static_profiles.csv:44,,
+a,infrastructure-originals-checkov-workflow,Checkov,D,5.011184950824827,5.085669979918748,5.584669055882841,,,K_tables/A6_static_profiles.csv:45,,
+a,java-checkov,Checkov,D,5.060928930062801,5.089866203721613,5.616190461907536,,,K_tables/A6_static_profiles.csv:51,,
+a,k8s-scope-matrix-checkov,Checkov,D,4.999421123880893,5.052969431038946,5.105616061016917,,,K_tables/A6_static_profiles.csv:54,,
+a,aigoat-hadolint-deployment,Hadolint,D,0.5460212701000273,0.5462553203105927,0.5765805370174348,,,K_tables/A6_static_profiles.csv:11,,
+a,aigoat-hadolint-original,Hadolint,D,0.5446600127033889,0.5566568607464433,0.5693267481401563,,,K_tables/A6_static_profiles.csv:12,,
+a,configuration-hadolint,Hadolint,D,0.5444381013512611,0.5657562320120633,0.578707491979003,,,K_tables/A6_static_profiles.csv:31,,
+a,aigoat-compose-kics-compose-deployment-qualified,KICS,D,2.137432566843927,2.1907633170485497,4.193292341195047,,,K_tables/A6_static_profiles.csv:5,,
+a,aigoat-kics-compose,KICS,D,2.157758940011263,2.1631126906722784,4.156667087692767,,,K_tables/A6_static_profiles.csv:13,,
+a,configuration-kics-compose,KICS,D,2.1341923750005662,2.1478668148629367,2.1803586478345096,,,K_tables/A6_static_profiles.csv:32,,
+a,infrastructure-controls-kics-terraform,KICS,D,34.26433980278671,34.281077397055924,36.26935588615015,,,K_tables/A6_static_profiles.csv:38,,
+a,infrastructure-originals-kics-terraform,KICS,D,34.897766357753426,36.28840870875865,36.30131812999025,,,K_tables/A6_static_profiles.csv:46,,
+a,aigoat-trivy-config-deployment,Trivy (configuration),D,2.2320678690448403,2.260189162567258,2.2955148476175964,,,K_tables/A6_static_profiles.csv:20,,
+a,aigoat-trivy-config-original,Trivy (configuration),D,2.219239911995828,2.23961842386052,2.289265758357942,,,K_tables/A6_static_profiles.csv:21,,
+a,configuration-trivy-config,Trivy (configuration),D,2.2221353123895824,2.229837488848716,2.264569889754057,,,K_tables/A6_static_profiles.csv:33,,
+a,infrastructure-controls-trivy-kubernetes,Trivy (configuration),D,2.223064519930631,2.2372893621213734,2.260017483960837,,,K_tables/A6_static_profiles.csv:40,,
+a,infrastructure-controls-trivy-terraform,Trivy (configuration),D,2.206316019408405,2.241416727658361,2.266009690705687,,,K_tables/A6_static_profiles.csv:41,,
+a,infrastructure-originals-trivy-kubernetes,Trivy (configuration),D,2.210976763628423,2.8081813817843795,2.822110066190362,,,K_tables/A6_static_profiles.csv:48,,
+a,infrastructure-originals-trivy-terraform,Trivy (configuration),D,2.1851331032812595,2.246028011664748,2.8176378551870584,,,K_tables/A6_static_profiles.csv:49,,
+a,k8s-scope-matrix-trivy,Trivy (configuration),D,3.350383562967181,3.3538855598308146,3.949133440386504,,,K_tables/A6_static_profiles.csv:55,,
+a,k8s-scope-split-trivy,Trivy (configuration),D,2.2035169508308172,2.7778294421732426,2.8103118636645377,,,K_tables/A6_static_profiles.csv:56,,
+a,infrastructure-controls-kubescape,Kubescape,D,1.1115765781141818,1.1211684797890484,1.6756689329631627,,,K_tables/A6_static_profiles.csv:39,,
+a,infrastructure-originals-kubescape,Kubescape,D,1.1001905561424792,1.1248671589419246,1.16033874778077,,,K_tables/A6_static_profiles.csv:47,,
+a,aigoat-zizmor-workflow,zizmor,D,0.5504013691097498,0.5711091062985361,0.5729787792079151,,,K_tables/A6_static_profiles.csv:28,,
+a,infrastructure-controls-zizmor,zizmor,D,0.5466378252021968,0.5682721012271941,0.5780397141352296,,,K_tables/A6_static_profiles.csv:42,,
+a,infrastructure-originals-zizmor,zizmor,D,0.5497977980412543,0.5588584099896252,0.569427140057087,,,K_tables/A6_static_profiles.csv:50,,
+b,aigoat-semgrep-frontend,Semgrep,D,,550.37109375,,550.37109375,,K_tables/A6_static_profiles.csv:14,547.1953125,553.40234375
+b,aigoat-semgrep-python,Semgrep,D,,535.92578125,,535.92578125,,K_tables/A6_static_profiles.csv:15,532.45703125,537.3359375
+b,java-semgrep,Semgrep,D,,527.5703125,,527.5703125,,K_tables/A6_static_profiles.csv:53,481.328125,530.81640625
+b,java-findsecbugs,FindSecBugs,D,,416.984375,,416.984375,,K_tables/A6_static_profiles.csv:52,385.3515625,429.1171875
+b,aigoat-bandit-python,Bandit,D,,66.7421875,,66.7421875,,K_tables/A6_static_profiles.csv:2,66.5625,67.3125
+b,sca-dependency-check,Dependency-Check,D,,414.1953125,,414.1953125,,K_tables/A6_static_profiles.csv:69,386.15234375,436.75390625
+b,aigoat-trivy-image-backend,Trivy (packages),D,,264.71875,,264.71875,,K_tables/A6_static_profiles.csv:22,252.234375,364.07421875
+b,aigoat-trivy-image-frontend,Trivy (packages),D,,140.80078125,,140.80078125,,K_tables/A6_static_profiles.csv:23,135.28515625,169.41015625
+b,aigoat-trivy-image-ollama,Trivy (packages),D,,224.33203125,,224.33203125,,K_tables/A6_static_profiles.csv:24,183.61328125,231.14453125
+b,aigoat-trivy-source,Trivy (packages),D,,19.484375,,19.484375,,K_tables/A6_static_profiles.csv:26,11.203125,30.85546875
+b,os-ubi92early-trivy,Trivy (packages),D,,174.91796875,,174.91796875,,K_tables/A6_static_profiles.csv:59,144.51171875,179.9375
+b,os-ubi92late-trivy,Trivy (packages),D,,168.21875,,168.21875,,K_tables/A6_static_profiles.csv:62,138.125,192.26953125
+b,os-ubi94-trivy,Trivy (packages),D,,171.07421875,,171.07421875,,K_tables/A6_static_profiles.csv:65,134.90625,183.07421875
+b,os-ubi98-trivy,Trivy (packages),D,,181.86328125,,181.86328125,,K_tables/A6_static_profiles.csv:68,171.171875,198.70703125
+b,sca-trivy-filesystem,Trivy (packages),D,,19.44140625,,19.44140625,,K_tables/A6_static_profiles.csv:74,18.6953125,19.59765625
+b,sca-trivy-image,Trivy (packages),D,,124.80078125,,124.80078125,,K_tables/A6_static_profiles.csv:75,29.65234375,130.64453125
+b,sca-trivy-rootfs,Trivy (packages),D,,19.546875,,19.546875,,K_tables/A6_static_profiles.csv:76,12.44921875,33.12109375
+b,aigoat-grype-image-backend,Grype,D,,148.53515625,,148.53515625,,K_tables/A6_static_profiles.csv:7,145.4296875,152.55078125
+b,aigoat-grype-image-frontend,Grype,D,,111.50390625,,111.50390625,,K_tables/A6_static_profiles.csv:8,109.3515625,122.265625
+b,aigoat-grype-image-ollama,Grype,D,,120.51171875,,120.51171875,,K_tables/A6_static_profiles.csv:9,116.2578125,120.98046875
+b,aigoat-grype-source,Grype,D,,124.48828125,,124.48828125,,K_tables/A6_static_profiles.csv:10,118.80078125,124.97265625
+b,os-ubi92early-grype,Grype,D,,137.83203125,,137.83203125,,K_tables/A6_static_profiles.csv:57,137.13671875,138.44140625
+b,os-ubi92late-grype,Grype,D,,136.8984375,,136.8984375,,K_tables/A6_static_profiles.csv:60,136.19140625,137.3671875
+b,os-ubi94-grype,Grype,D,,134.76953125,,134.76953125,,K_tables/A6_static_profiles.csv:63,133.44921875,138.3828125
+b,os-ubi98-grype,Grype,D,,132.67578125,,132.67578125,,K_tables/A6_static_profiles.csv:66,131.24609375,134.6171875
+b,sca-grype-filesystem,Grype,D,,93.8046875,,93.8046875,,K_tables/A6_static_profiles.csv:70,91.90625,95.70703125
+b,sca-grype-image,Grype,D,,93.02734375,,93.02734375,,K_tables/A6_static_profiles.csv:71,92.3359375,94.22265625
+b,aigoat-syft-image-backend,Syft,I,,1750.55078125,,1750.55078125,,K_tables/A6_static_profiles.csv:16,1589.09765625,1782.921875
+b,aigoat-syft-image-frontend,Syft,I,,198.0703125,,198.0703125,,K_tables/A6_static_profiles.csv:17,193.96484375,218.58984375
+b,aigoat-syft-image-ollama,Syft,I,,258.37109375,,258.37109375,,K_tables/A6_static_profiles.csv:18,234.01953125,259.65625
+b,aigoat-syft-source,Syft,I,,208.6796875,,208.6796875,,K_tables/A6_static_profiles.csv:19,207.55859375,213.80859375
+b,os-ubi92early-syft,Syft,I,,266.46484375,,266.46484375,,K_tables/A6_static_profiles.csv:58,260.3125,277.5625
+b,os-ubi92late-syft,Syft,I,,241.34375,,241.34375,,K_tables/A6_static_profiles.csv:61,220.18359375,267.21875
+b,os-ubi94-syft,Syft,I,,279.99609375,,279.99609375,,K_tables/A6_static_profiles.csv:64,227.234375,290.734375
+b,os-ubi98-syft,Syft,I,,248.06640625,,248.06640625,,K_tables/A6_static_profiles.csv:67,233.28125,271.57421875
+b,sca-syft-filesystem,Syft,I,,196.19921875,,196.19921875,,K_tables/A6_static_profiles.csv:72,175.015625,209.55078125
+b,sca-syft-image,Syft,I,,197.98828125,,197.98828125,,K_tables/A6_static_profiles.csv:73,167.34375,204.55078125
+b,aigoat-gitleaks-source,Gitleaks,D,,109.8671875,,109.8671875,,K_tables/A6_static_profiles.csv:6,105.5546875,112.671875
+b,configuration-gitleaks,Gitleaks,D,,59.1875,,59.1875,,K_tables/A6_static_profiles.csv:30,58,59.80078125
+b,aigoat-trivy-secret-source,Trivy (secrets),D,,32.41015625,,32.41015625,,K_tables/A6_static_profiles.csv:25,21.42578125,133.90234375
+b,configuration-trivy-secret,Trivy (secrets),D,,12.47265625,,12.47265625,,K_tables/A6_static_profiles.csv:34,11.6875,18.8671875
+b,aigoat-checkov-docker-deployment,Checkov,D,,191.3046875,,191.3046875,,K_tables/A6_static_profiles.csv:3,191.1875,191.3828125
+b,aigoat-checkov-docker-original,Checkov,D,,191.06640625,,191.06640625,,K_tables/A6_static_profiles.csv:4,190.984375,191.26953125
+b,aigoat-workflow-checkov-workflow-qualified,Checkov,D,,191.26953125,,191.26953125,,K_tables/A6_static_profiles.csv:27,191.25,334.9375
+b,configuration-checkov,Checkov,D,,189.859375,,189.859375,,K_tables/A6_static_profiles.csv:29,189.75390625,189.9296875
+b,infrastructure-controls-checkov-kubernetes,Checkov,D,,202.6328125,,202.6328125,,K_tables/A6_static_profiles.csv:35,202.578125,202.79296875
+b,infrastructure-controls-checkov-terraform,Checkov,D,,192.3359375,,192.3359375,,K_tables/A6_static_profiles.csv:36,192.31640625,192.39453125
+b,infrastructure-controls-checkov-workflow,Checkov,D,,190.57421875,,190.57421875,,K_tables/A6_static_profiles.csv:37,190.5078125,626.48828125
+b,infrastructure-originals-checkov-kubernetes,Checkov,D,,199.0625,,199.0625,,K_tables/A6_static_profiles.csv:43,199.0234375,199.17578125
+b,infrastructure-originals-checkov-terraform,Checkov,D,,204.62109375,,204.62109375,,K_tables/A6_static_profiles.csv:44,203.90234375,205.5390625
+b,infrastructure-originals-checkov-workflow,Checkov,D,,479.26171875,,479.26171875,,K_tables/A6_static_profiles.csv:45,199.18359375,626.484375
+b,java-checkov,Checkov,D,,200.7890625,,200.7890625,,K_tables/A6_static_profiles.csv:51,200.59765625,200.88671875
+b,k8s-scope-matrix-checkov,Checkov,D,,190.5625,,190.5625,,K_tables/A6_static_profiles.csv:54,190.51171875,190.7109375
+b,aigoat-hadolint-deployment,Hadolint,D,,19.4921875,,19.4921875,,K_tables/A6_static_profiles.csv:11,11.03125,30.2421875
+b,aigoat-hadolint-original,Hadolint,D,,21.54296875,,21.54296875,,K_tables/A6_static_profiles.csv:12,11.8828125,30.8359375
+b,configuration-hadolint,Hadolint,D,,19.578125,,19.578125,,K_tables/A6_static_profiles.csv:31,11.390625,31.51171875
+b,aigoat-compose-kics-compose-deployment-qualified,KICS,D,,,,,,K_tables/A6_static_profiles.csv:5,,
+b,aigoat-kics-compose,KICS,D,,,,,,K_tables/A6_static_profiles.csv:13,,
+b,configuration-kics-compose,KICS,D,,,,,,K_tables/A6_static_profiles.csv:32,,
+b,infrastructure-controls-kics-terraform,KICS,D,,,,,,K_tables/A6_static_profiles.csv:38,,
+b,infrastructure-originals-kics-terraform,KICS,D,,,,,,K_tables/A6_static_profiles.csv:46,,
+b,aigoat-trivy-config-deployment,Trivy (configuration),D,,178.87109375,,178.87109375,,K_tables/A6_static_profiles.csv:20,177.70703125,186.3203125
+b,aigoat-trivy-config-original,Trivy (configuration),D,,180.67578125,,180.67578125,,K_tables/A6_static_profiles.csv:21,177.8359375,190.53125
+b,configuration-trivy-config,Trivy (configuration),D,,179.99609375,,179.99609375,,K_tables/A6_static_profiles.csv:33,177.8203125,181.98046875
+b,infrastructure-controls-trivy-kubernetes,Trivy (configuration),D,,185.765625,,185.765625,,K_tables/A6_static_profiles.csv:40,183.625,189.78125
+b,infrastructure-controls-trivy-terraform,Trivy (configuration),D,,185.5390625,,185.5390625,,K_tables/A6_static_profiles.csv:41,182.625,193.39453125
+b,infrastructure-originals-trivy-kubernetes,Trivy (configuration),D,,187.3046875,,187.3046875,,K_tables/A6_static_profiles.csv:48,182.8125,195.26171875
+b,infrastructure-originals-trivy-terraform,Trivy (configuration),D,,184.921875,,184.921875,,K_tables/A6_static_profiles.csv:49,181.28515625,194.07421875
+b,k8s-scope-matrix-trivy,Trivy (configuration),D,,197.0,,197.0,,K_tables/A6_static_profiles.csv:55,196.296875,199.88671875
+b,k8s-scope-split-trivy,Trivy (configuration),D,,189.9140625,,189.9140625,,K_tables/A6_static_profiles.csv:56,187.3203125,194.56640625
+b,infrastructure-controls-kubescape,Kubescape,D,,161.73828125,,161.73828125,,K_tables/A6_static_profiles.csv:39,158.78515625,163.36328125
+b,infrastructure-originals-kubescape,Kubescape,D,,161.24609375,,161.24609375,,K_tables/A6_static_profiles.csv:47,158.07421875,163.8125
+b,aigoat-zizmor-workflow,zizmor,D,,17.9921875,,17.9921875,,K_tables/A6_static_profiles.csv:28,12.2734375,30.1953125
+b,infrastructure-controls-zizmor,zizmor,D,,21.48046875,,21.48046875,,K_tables/A6_static_profiles.csv:42,19.453125,30.94921875
+b,infrastructure-originals-zizmor,zizmor,D,,19.45703125,,19.45703125,,K_tables/A6_static_profiles.csv:50,12.46484375,31.4609375
+c,crapi-zap-invalid,ZAP,eligible,29.34627530258149,29.56340184342116,30.227898519020528,,47,K_tables/A7_dynamic_profiles.csv:18,,
+c,crapi-zap-valid-a,ZAP,eligible,30.433591472450644,30.516053854953498,30.770118205342442,,44,K_tables/A7_dynamic_profiles.csv:19,,
+c,crapi-nuclei-invalid,Nuclei,eligible,0.3920875140465796,0.40275585697963834,0.44837831892073154,,24,K_tables/A7_dynamic_profiles.csv:8,,
+c,crapi-nuclei-valid-a,Nuclei,eligible,0.4314084742218256,0.505633010994643,0.6014151638373733,,24,K_tables/A7_dynamic_profiles.csv:9,,
+c,crapi-schemathesis-invalid,Schemathesis,limited,32.87036646762863,33.12709329277277,33.471805977169424,,0,K_tables/A7_dynamic_profiles.csv:16,,
+c,crapi-schemathesis-valid-a,Schemathesis,limited,32.944831611122936,33.24297382775694,33.82300022011623,,0,K_tables/A7_dynamic_profiles.csv:17,,
+c,crapi-restler-a-gated-namespace,RESTler,eligible,2.8909805468283594,3.016874964814633,3.0296817841008306,,0,K_tables/A7_dynamic_profiles.csv:10,,
+c,crapi-restler-a-raw-namespace,RESTler,eligible,2.8378887632861733,2.9173335898667574,3.315538051072508,,1,K_tables/A7_dynamic_profiles.csv:11,,
+c,crapi-restler-a-raw-no-checker,RESTler,eligible,2.7900340501219034,2.8364205779507756,3.022418299689889,,0,K_tables/A7_dynamic_profiles.csv:12,,
+c,crapi-restler-b-gated-namespace,RESTler,eligible,2.9133494193665683,3.06425540195778,3.2269186661578715,,0,K_tables/A7_dynamic_profiles.csv:13,,
+c,crapi-restler-b-raw-namespace,RESTler,eligible,2.8842521402984858,3.0926924869418144,3.224814875982702,,1,K_tables/A7_dynamic_profiles.csv:14,,
+c,crapi-restler-b-raw-no-checker,RESTler,eligible,2.696497429162264,2.8101981920190156,2.8798609422519803,,0,K_tables/A7_dynamic_profiles.csv:15,,
+c,aigoat-zap-invalid,ZAP,eligible,16.45198452891782,16.977560922969133,17.028863369952887,,3,K_tables/A7_dynamic_profiles.csv:6,,
+c,aigoat-zap-valid-alice,ZAP,eligible,16.65507858991623,16.798149335198104,18.427586966194212,,2–3,K_tables/A7_dynamic_profiles.csv:7,,
+c,aigoat-nuclei-invalid,Nuclei,limited,0.5086755198426545,0.5506858290173113,0.5953536927700043,,20,K_tables/A7_dynamic_profiles.csv:2,,
+c,aigoat-nuclei-valid-alice,Nuclei,limited,0.5036939838901162,0.541599023155868,0.5897757010534406,,20,K_tables/A7_dynamic_profiles.csv:3,,
+c,aigoat-schemathesis-invalid,Schemathesis,limited,3.66645162506029,3.8438583062961698,4.097794104833156,,0,K_tables/A7_dynamic_profiles.csv:4,,
+c,aigoat-schemathesis-valid-alice,Schemathesis,limited,3.637044053990394,3.7424480370245874,4.192921860143542,,0,K_tables/A7_dynamic_profiles.csv:5,,

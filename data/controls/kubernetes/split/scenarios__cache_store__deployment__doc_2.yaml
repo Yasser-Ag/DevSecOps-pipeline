@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: secure-middleware
+  name: cache-store-deployment
+  labels:
+    app: cache-store
+spec:
+  selector:
+    matchLabels:
+      app: cache-store
+  template:
+    metadata:
+      labels:
+        app: cache-store
+    spec:
+      containers:
+      - name: cache-store
+        image: madhuakula/k8s-goat-cache-store
+        ports:
+        - containerPort: 6379

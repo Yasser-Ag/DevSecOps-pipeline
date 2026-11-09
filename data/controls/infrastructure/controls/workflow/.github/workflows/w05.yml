@@ -1,0 +1,16 @@
+name: w05
+'on': workflow_dispatch
+permissions: read-all
+jobs:
+  alpha:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo development
+    permissions:
+      contents: write
+  bravo:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo development
+    permissions:
+      contents: write

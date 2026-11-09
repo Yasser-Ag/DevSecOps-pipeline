@@ -1,0 +1,6 @@
+review_scope,category,judgment,propositions,source
+reference_propositions,RAG,contradicted,6,data/derived/reference_review.csv:1
+reference_propositions,RAG,supported,6,data/derived/reference_review.csv:1
+reference_propositions,SAST,contradicted,7,data/derived/reference_review.csv:1
+reference_propositions,property_configuration,contradicted,4,data/derived/reference_review.csv:1
+reference_propositions,property_configuration,supported,9,data/derived/reference_review.csv:1

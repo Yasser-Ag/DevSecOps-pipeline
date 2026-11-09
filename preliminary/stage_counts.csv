@@ -1,0 +1,7 @@
+stage,findings_before_deduplication,findings_after_deduplication,wall_seconds
+sast,146,146,10.896035874
+sca,243,243,1.637088135
+secrets,11,11,1.458539576
+iac,896,896,15.909899393
+image,8066,8066,2.695889095
+dast,555,321,756.018526824

@@ -1,0 +1,2 @@
+run_number,workflow_conclusion,authenticated_dast_step_name,recorded_status,alert_count,source_log_sha256,source_file_name
+30,success,Stage 6 — DAST (ZAP + Nuclei) / authenticated pass,failed,0,43a9a9f15b2c6a927ca08f6c19dceee6f8be8da9236389400e5d7c119f5c1288,run-30-34730149457.zip!0_scan.txt

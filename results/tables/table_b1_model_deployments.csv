@@ -1,0 +1,9 @@
+Setting,Value
+Qwen3.5-9B [71],"unsloth/Qwen3.5-9B-GGUF, revision 3885219b, file Qwen3.5-9B-Q4_K_M.gguf (SHA-256 03b74727…52b7e8)"
+Gemma-4-E4B [72],"google/gemma-4-E4B-it-qat-q4_0-gguf, revision 4b4a2c1d, file gemma-4-E4B_q4_0-it.gguf (SHA-256 676c3507…fbaee)"
+Chat template,No override at launch; the template applied by the server was recorded and was the same in both passes
+Inference server,"llama.cpp [73], build b10964-b29c606e2; CPU only; context of 4,096 tokens; eight generation and eight batch threads; one slot; offline; reasoning off"
+Container,"Eight CPUs; 12 GiB limit on memory, swap included; no network; read-only root file system"
+Request,Temperature 0; seed 17; at most 384 output tokens; thinking disabled; prompt cache disabled and slot erased before each request
+Output format,Strict JSON schema with four required fields and no other property
+Decision contract,"Finding identifier equal to that of the packet; action retain, dismiss or abstain; evidence identifiers distinct and present in the packet, at least one for a dismissal; rationale of 1 to 2,000 characters. Malformed JSON, a duplicate key, a missing or extra field or a failed check makes the response invalid. Invalid responses and abstentions keep the alert."

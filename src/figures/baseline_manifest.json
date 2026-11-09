@@ -1,0 +1,73 @@
+{
+  "fig01": {
+    "inputs": {
+      "working/labels_final.json": "f43a0d77880183c84ca6e9fafd234db3d779c5eb1b73d823a6e9da6b74c18cb4"
+    },
+    "values_file": null,
+    "source": "fig01_study_design_editable.svg",
+    "source_sha256": "e0b9134812a8458a06de9b8ddeb64bb18c36bbd5675e72de31d41c3971accd73"
+  },
+  "fig02": {
+    "inputs": {
+      "inputs/reference_populations.csv": "3cd88e7853adafd81fb73ae8384ff40e90f8ded61b525e50138433e12afcb2cd"
+    },
+    "values_file": {
+      "name": "fig02_values.csv",
+      "sha256": "2a33ad94544c07dc10d28fefb6cab51caf34ce6ea195828369361d1bc61ef96d",
+      "rows": 204
+    },
+    "source": "fig02_coverage_editable.svg",
+    "source_sha256": "7d3f508e7bd4f8908ba664edcd1207f9c93de55d2552ae08999a4d2f02287995"
+  },
+  "fig03": {
+    "inputs": {
+      "inputs/grouping.csv": "3e5286d6fa0758a3f3e0d81aea73af34f39c9a11ca38f1d95ad96fa8c5f048eb"
+    },
+    "values_file": {
+      "name": "fig03_values.csv",
+      "sha256": "2feac365e539400f5b33ee2faed0d512c307dc63ed13bb44c962f4be68cf7116",
+      "rows": 42
+    },
+    "source": "fig03_grouping_editable.svg",
+    "source_sha256": "354813e8ebc6c7a2bc8e6f50cb4e3a33204c57c6eb8193893d040e331b435413"
+  },
+  "fig04": {
+    "inputs": {
+      "inputs/omissions.csv": "a972f8ad260413913e7c74c5abce4346cfe98170c5bb35ee9fd6c0433b679e6c",
+      "inputs/reference_populations.csv": "3cd88e7853adafd81fb73ae8384ff40e90f8ded61b525e50138433e12afcb2cd"
+    },
+    "values_file": {
+      "name": "fig04_values.csv",
+      "sha256": "51f6796470dc0d960ec07ab063902f94ce37f578ed0b18b4c6b5c8b609c514fa",
+      "rows": 16
+    },
+    "source": "fig04_omission_editable.svg",
+    "source_sha256": "af5171aa343b702eed653327c233e1d8880f60e3783d7d6949e34faf4cca7bd7"
+  },
+  "fig05": {
+    "inputs": {
+      "inputs/dynamic_profiles.csv": "4871083e4d22ff0490c0dc5037bd6fdd53ff354e574750741f4411935998edf9",
+      "inputs/static_memory_checks.csv": "b49e816b014a58aea544ba904679359dfcc3547772c49488fcca66740183fc87",
+      "inputs/static_profiles.csv": "8b20c94f80c0e1c65943071ab2d4595a2bdaf1d0eb87fee0a76ffe2211507d09"
+    },
+    "values_file": {
+      "name": "fig05_values.csv",
+      "sha256": "e846ca9f542310408711b483a7e03d362f33518f2a7ea2ab4689a3cc7ab08aeb",
+      "rows": 168
+    },
+    "source": "fig05_cost_editable.svg",
+    "source_sha256": "92c219c26537b44d03a5bc8155d7a30507211f59930cf09504b44905cf8a8f1c"
+  },
+  "fig06": {
+    "inputs": {
+      "inputs/triage_by_class.csv": "54e15b97df41c26f5232f477fc2cbf0d95110f9d5dba91dfbfe1ae12dd1aa2e3"
+    },
+    "values_file": {
+      "name": "fig06_values.csv",
+      "sha256": "9e86f8e2b8242cdc0154c733731fb203aa179eda0a53722b86b869c836d22831",
+      "rows": 84
+    },
+    "source": "fig06_triage_editable.svg",
+    "source_sha256": "51263b34b4999788701839bcfc88a2473ceeac02b280657854b57692a63f0b47"
+  }
+}

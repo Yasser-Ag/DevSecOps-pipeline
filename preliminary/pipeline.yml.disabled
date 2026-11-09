@@ -1,0 +1,334 @@
+name: devsecops-pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      cache_mode:
+        description: "cold (purge tool caches) or warm (nominal)"
+        type: choice
+        options: [warm, cold]
+        default: warm
+      target:
+        description: "target to scan (path relative to <LEGACY_LAB_ROOT>)"
+        default: app/crAPI
+  push:
+    branches: [main]
+
+env:
+  LAB: <LEGACY_LAB_ROOT>
+  PATH: <USER_HOME>/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+jobs:
+  scan:
+    runs-on: [self-hosted, devsecops]
+    steps:
+
+      - name: Resolve run parameters
+        run: |
+          echo "TARGET=${{ inputs.target || 'app/crAPI' }}" >> $GITHUB_ENV
+          echo "CACHE_MODE=${{ inputs.cache_mode || 'warm' }}" >> $GITHUB_ENV
+
+      - name: Fetch pipeline code
+        run: |
+          rm -rf $RUNNER_TEMP/repo
+          git clone --depth 1 <REPOSITORY_URL> $RUNNER_TEMP/repo
+
+      - name: Verify tool versions against lockfile
+        run: |
+          {
+            echo "semgrep=$(semgrep --version)"
+            echo "trivy=$(trivy --version | head -1 | awk '{print $2}')"
+            echo "gitleaks=$(gitleaks version)"
+            echo "checkov=$(checkov --version)"
+            echo "nuclei=$(nuclei -version 2>&1 | grep -o 'v[0-9.]*' | head -1)"
+          } > $RUNNER_TEMP/versions.observed
+          if ! diff -u $RUNNER_TEMP/repo/pipeline/versions.lock $RUNNER_TEMP/versions.observed; then
+            echo "::error::Tool versions drifted from versions.lock — results are not comparable to previous runs."
+            exit 1
+          fi
+          echo "Versions match lockfile."
+
+      - name: Prepare run directory
+        run: |
+          RUN_DIR=$LAB/results/run-${{ github.run_number }}
+          mkdir -p $RUN_DIR
+          echo "RUN_DIR=$RUN_DIR" >> $GITHUB_ENV
+          {
+            echo "target=$TARGET"
+            echo "commit_pipeline=${{ github.sha }}"
+            echo "commit_target=$(git -C $LAB/$TARGET rev-parse HEAD)"
+            echo "cache_mode=$CACHE_MODE"
+            echo "run_number=${{ github.run_number }}"
+            echo "started_at=$(date -u +%FT%TZ)"
+          } > $RUN_DIR/meta.txt
+          cp $RUNNER_TEMP/versions.observed $RUN_DIR/versions.txt
+
+      - name: Apply cache policy
+        run: |
+          if [ "$CACHE_MODE" = "cold" ]; then
+            trivy clean --all || true
+            rm -rf ~/.semgrep || true
+            echo "Caches purged (cold run)."
+          else
+            echo "Caches preserved (warm run)."
+          fi
+
+      - name: "Stage 1 — SAST (Semgrep)"
+        run: |
+          START=$(date +%s.%N)
+          semgrep scan --config p/owasp-top-ten --config p/secrets \
+            --json --output $RUN_DIR/01-sast-semgrep.json \
+            --metrics off --quiet $LAB/$TARGET || true
+          echo "sast=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 2 — SCA (Trivy fs)"
+        run: |
+          START=$(date +%s.%N)
+          trivy fs --scanners vuln --format json \
+            --output $RUN_DIR/02-sca-trivy.json $LAB/$TARGET || true
+          echo "sca=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 3 — Secrets (gitleaks)"
+        run: |
+          START=$(date +%s.%N)
+          gitleaks detect --source $LAB/$TARGET --no-git \
+            --report-format json --report-path $RUN_DIR/03-secrets-gitleaks.json \
+            --exit-code 0
+          echo "secrets=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 4 — IaC / Config (checkov + Trivy config)"
+        run: |
+          START=$(date +%s.%N)
+          checkov --directory $LAB/$TARGET \
+            --framework dockerfile,kubernetes,github_actions,terraform,secrets \
+            --output json --quiet --compact --soft-fail \
+            > $RUN_DIR/04a-iac-checkov.json 2>/dev/null || true
+          trivy config --format json \
+            --output $RUN_DIR/04b-config-trivy.json $LAB/$TARGET || true
+          echo "iac=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 5 — Image (Trivy image)"
+        run: |
+          START=$(date +%s.%N)
+          IMAGES=$(docker ps --filter "name=crapi" --format '{{.Image}}' | sort -u)
+          if [ -n "$IMAGES" ]; then
+            echo "$IMAGES" > $RUN_DIR/05-images.txt
+            for IMG in $IMAGES; do
+              SAFE=$(echo "$IMG" | tr '/:' '__')
+              trivy image --scanners vuln --format json \
+                --output $RUN_DIR/05-image-$SAFE.json "$IMG" || true
+            done
+          else
+            : > $RUN_DIR/05-images.txt
+            echo "No running target images — stage 5 skipped (target not deployed)."
+          fi
+          echo "image=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Stage 6 — DAST (ZAP + Nuclei)"
+        timeout-minutes: 35
+        run: |
+          START=$(date +%s.%N)
+          BASE=http://127.0.0.1:8888
+          SPEC=$LAB/$TARGET/openapi-spec/crapi-openapi-spec.json
+
+          if ! curl -sf -o /dev/null $BASE/; then
+            echo "Target not reachable — stage 6 skipped."
+            echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
+            : > $RUN_DIR/06c-dast-nuclei.jsonl
+            echo "dast=0" >> $RUN_DIR/timing.txt
+            exit 0
+          fi
+
+          # --- provision a disposable account for the authenticated pass
+          # A dynamic scan mutates application state. Measured on this target:
+          # an account reused across runs became unusable ("Invalid Credentials")
+          # while still present in the database with a rewritten bcrypt hash —
+          # ZAP had exercised /identity/api/v2/user/reset-password with the
+          # to the pipeline. A fresh account is therefore provisioned per run.
+          DAST_EMAIL="dast-${{ github.run_number }}@example.com"
+          DAST_PASS='[REDACTED_TEST_PASSWORD]'
+          DAST_PHONE="9$(printf '%09d' $(( (RANDOM * 32768 + RANDOM) % 1000000000 )))"
+
+          # JSON payloads are built with jq rather than by hand: manual quoting
+          # inside a YAML block scalar produced malformed bodies, to which the
+          # target replied HTTP 500 instead of a validation error.
+          SIGNUP_BODY=$(jq -nc \
+            --arg name "dast tester" \
+            --arg email "$DAST_EMAIL" \
+            --arg number "$DAST_PHONE" \
+            --arg password "$DAST_PASS" \
+            '{name:$name, email:$email, number:$number, password:$password}')
+          LOGIN_BODY=$(jq -nc \
+            --arg email "$DAST_EMAIL" \
+            --arg password "$DAST_PASS" \
+            '{email:$email, password:$password}')
+
+          SIGNUP=$(curl -s -o /tmp/signup.out -w '%{http_code}' \
+            -X POST $BASE/identity/api/auth/signup \
+            -H 'Content-Type: application/json' -d "$SIGNUP_BODY")
+          echo "signup $DAST_EMAIL -> HTTP $SIGNUP"
+          if [ "$SIGNUP" != "200" ]; then head -c 300 /tmp/signup.out; echo; fi
+
+          TOKEN=$(curl -s -X POST $BASE/identity/api/auth/login \
+            -H 'Content-Type: application/json' -d "$LOGIN_BODY" | jq -r '.token // empty')
+
+          {
+            echo "dast_account=$DAST_EMAIL"
+            echo "dast_auth_pass=$([ -n "$TOKEN" ] && echo token_acquired || echo skipped)"
+          } >> $RUN_DIR/meta.txt
+
+          if [ -n "$TOKEN" ]; then
+            echo "JWT acquired for $DAST_EMAIL (${#TOKEN} chars)."
+          else
+            echo "::error::Could not acquire JWT for $DAST_EMAIL (signup returned $SIGNUP). The authenticated pass is skipped and A1 recall from this run is NOT comparable to authenticated runs."
+          fi
+
+          mkdir -p $RUN_DIR/zap && chmod 777 $RUN_DIR/zap
+          cp $SPEC $RUN_DIR/zap/openapi.json
+
+          # --- pass 1: unauthenticated
+          timeout 900 docker run --rm --network host \
+            -v $RUN_DIR/zap:/zap/wrk:rw \
+            ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
+            -t /zap/wrk/openapi.json -f openapi \
+            -J zap-unauth.json -I -z "-config api.disablekey=true" \
+            > $RUN_DIR/zap/zap-unauth.log 2>&1 || true
+          cp $RUN_DIR/zap/zap-unauth.json $RUN_DIR/06a-dast-zap-unauth.json 2>/dev/null || echo '{}' > $RUN_DIR/06a-dast-zap-unauth.json
+
+          # --- pass 2: authenticated
+          # Both passes run with --network host and contend for ZAP's proxy
+          # port: if the second daemon starts while the first container is
+          # still holding it, it fails with BindException, waits out its 600s
+          # connection timeout and writes no report while the job still reports
+          # success. zap-api-scan.py exposes no port option (-p is a progress
+          # file), so the collision is avoided by waiting for the first
+          # container to be fully gone. The produced artifact is then validated
+          # rather than assumed.
+          if [ -n "$TOKEN" ]; then
+            for i in $(seq 1 30); do
+              docker ps -q --filter ancestor=ghcr.io/zaproxy/zaproxy:stable | grep -q . || break
+              sleep 5
+            done
+            sleep 10
+            timeout 900 docker run --rm --network host \
+              -v $RUN_DIR/zap:/zap/wrk:rw \
+              ghcr.io/zaproxy/zaproxy:stable zap-api-scan.py \
+              -t /zap/wrk/openapi.json -f openapi \
+              -J zap-auth.json -I \
+              -z "-config api.disablekey=true -config replacer.full_list\\(0\\).description=auth -config replacer.full_list\\(0\\).enabled=true -config replacer.full_list\\(0\\).matchtype=REQ_HEADER -config replacer.full_list\\(0\\).matchstr=Authorization -config replacer.full_list\\(0\\).regex=false -config replacer.full_list\\(0\\).replacement=\"Bearer $TOKEN\"" \
+              > $RUN_DIR/zap/zap-auth.log 2>&1 || true
+            cp $RUN_DIR/zap/zap-auth.json $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo '{}' > $RUN_DIR/06b-dast-zap-auth.json
+
+            AUTH_ALERTS=$(jq '[.site[]?.alerts[]?] | length' $RUN_DIR/06b-dast-zap-auth.json 2>/dev/null || echo 0)
+            echo "authenticated pass produced $AUTH_ALERTS alerts"
+            if [ "$AUTH_ALERTS" -gt 0 ]; then
+              sed -i "s/^dast_auth_pass=.*/dast_auth_pass=performed/" $RUN_DIR/meta.txt
+            else
+              sed -i "s/^dast_auth_pass=.*/dast_auth_pass=failed/" $RUN_DIR/meta.txt
+              echo "::error::Authenticated ZAP pass produced no alerts. A1 recall from this run is NOT comparable to authenticated runs. See $RUN_DIR/zap/zap-auth.log"
+            fi
+          fi
+
+          # --- nuclei
+          timeout 600 nuclei -u $BASE -jsonl -o $RUN_DIR/06c-dast-nuclei.jsonl \
+            -severity low,medium,high,critical -silent -no-interactsh \
+            > /dev/null 2>&1 || true
+          [ -f $RUN_DIR/06c-dast-nuclei.jsonl ] || : > $RUN_DIR/06c-dast-nuclei.jsonl
+
+          echo "dast=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: Record vulnerability database state
+        run: |
+          trivy version --format json > $RUN_DIR/trivy-db.json 2>/dev/null || echo '{}' > $RUN_DIR/trivy-db.json
+          {
+            echo "trivy_vulndb_updated_at=$(jq -r '.VulnerabilityDB.UpdatedAt // "unknown"' $RUN_DIR/trivy-db.json)"
+            echo "trivy_vulndb_downloaded_at=$(jq -r '.VulnerabilityDB.DownloadedAt // "unknown"' $RUN_DIR/trivy-db.json)"
+            echo "trivy_checkbundle_digest=$(jq -r '.CheckBundle.Digest // "unknown"' $RUN_DIR/trivy-db.json)"
+          } >> $RUN_DIR/meta.txt
+          cat $RUN_DIR/meta.txt
+
+      - name: "Stage 7 — Normalize (CWE)"
+        run: |
+          START=$(date +%s.%N)
+          python3 $RUNNER_TEMP/repo/pipeline/normalize.py $RUN_DIR --lab $LAB
+          echo "normalize=$(echo "$(date +%s.%N) - $START" | bc)" >> $RUN_DIR/timing.txt
+
+      - name: "Evaluate against A2 ground truth"
+        run: |
+          python3 $RUNNER_TEMP/repo/pipeline/evaluate.py $RUN_DIR \
+            --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a2.yaml
+
+      - name: "Evaluate against A1 ground truth"
+        run: |
+          python3 $RUNNER_TEMP/repo/pipeline/evaluate_a1.py $RUN_DIR \
+            --ground-truth $RUNNER_TEMP/repo/ground-truth/crapi-a1.yaml || true
+
+      - name: Collect artifacts
+        run: |
+          mkdir -p $RUNNER_TEMP/artifacts
+          cp $RUN_DIR/meta.txt $RUN_DIR/versions.txt $RUN_DIR/timing.txt \
+             $RUN_DIR/trivy-db.json $RUN_DIR/summary.json $RUN_DIR/consensus.json \
+             $RUN_DIR/evaluation-a2.json \
+             $RUN_DIR/findings.jsonl $RUN_DIR/findings-dedup.jsonl \
+             $RUNNER_TEMP/artifacts/
+          cp $RUN_DIR/evaluation-a1.json $RUNNER_TEMP/artifacts/ 2>/dev/null || true
+          cp $RUN_DIR/06c-dast-nuclei.jsonl $RUNNER_TEMP/artifacts/ 2>/dev/null || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: run-${{ github.run_number }}-${{ env.CACHE_MODE }}
+          path: ${{ runner.temp }}/artifacts
+          retention-days: 90
+
+      - name: Summary
+        run: |
+          S=$RUN_DIR/summary.json
+          E=$RUN_DIR/evaluation-a2.json
+          E1=$RUN_DIR/evaluation-a1.json
+          {
+            echo "## Run ${{ github.run_number }} — $(jq -r .target $S) (cache: $CACHE_MODE)"
+            echo "**$(jq -r .raw_total $S) raw → $(jq -r .dedup_total $S) normalized** — $(jq -r .consensus_pairs_strict $S) strict / $(jq -r .consensus_pairs_loose $S) loose cross-tool agreements, $(jq -r .no_cwe $S) without CWE"
+            echo ''
+            echo "Vulnerability DB published: \`$(grep trivy_vulndb_updated_at $RUN_DIR/meta.txt | cut -d= -f2)\`"
+            echo ''
+            echo "DAST authenticated pass: \`$(grep '^dast_auth_pass=' $RUN_DIR/meta.txt | cut -d= -f2 || echo n/a)\`"
+            echo ''
+            echo '| Stage | Findings |'; echo '|---|---|'
+            jq -r '.raw_by_stage | to_entries[] | "| \(.key) | \(.value) |"' $S
+            echo ''
+            echo '| Tool | Findings |'; echo '|---|---|'
+            jq -r '.raw_by_tool | to_entries[] | "| \(.key) | \(.value) |"' $S
+            echo ''
+            echo '| Severity | Count |'; echo '|---|---|'
+            jq -r '.by_severity | to_entries[] | "| \(.key) | \(.value) |"' $S
+            echo ''
+            echo '| Top CWE | Count |'; echo '|---|---|'
+            jq -r '.by_cwe | to_entries[:10][] | "| \(.key) | \(.value) |"' $S
+            echo ''
+            if [ -f "$E" ]; then
+              echo "### A2 ground-truth recall: $(jq -r .weaknesses_detected $E)/$(jq -r .weaknesses_total $E) weaknesses ($(jq -r '.weakness_recall * 100 | floor' $E)%)"
+              echo ''
+              echo '| ID | CWE | Artifacts | Findings | Tools |'; echo '|---|---|---|---|---|'
+              jq -r '.per_weakness[] | "| \(.id) | \(.cwe) | \(.matched_artifacts)/\(.expected_count) | \(.findings) | \(if (.by_tool | length) > 0 then (.by_tool | join(", ")) else "-" end) |"' $E
+              echo ''
+              echo '| Verified-absent control | CWE | False positives |'; echo '|---|---|---|'
+              jq -r '.verified_absent_checks[] | "| \(.id) \(.control) | \(.cwe) | \(.findings_on_absent_control) |"' $E
+              echo ''
+            fi
+            if [ -f "$E1" ]; then
+              echo "### A1 ground-truth recall: $(jq -r .detected_strict_cwe $E1)/$(jq -r .challenges_total $E1) strict CWE, $(jq -r .detected_any $E1)/$(jq -r .challenges_total $E1) CWE or endpoint"
+              echo ''
+              echo "Eligible families: $(jq -r '.eligible_families | join(", ")' $E1) — $(jq -r .findings_eligible $E1) findings considered, $(jq -r .findings_excluded_by_family $E1) excluded by construction"
+              echo ''
+              echo '| Family | Detected | Pre-registered bound |'; echo '|---|---|---|'
+              jq -r '.family_recall | to_entries[] | select(.value.bound > 0) | "| \(.key) | \(.value.detected) | \(.value.bound) |"' $E1
+              echo ''
+              echo '| ID | CWE | Nature | Detected by |'; echo '|---|---|---|---|'
+              jq -r '.per_challenge[] | "| \(.id) | \(.cwe) | \(.nature) | \(if (.by_tool | length) > 0 then (.by_tool | join(", ")) else "-" end) |"' $E1
+              echo ''
+              echo "External baseline — $(jq -r '.external_reference.project // "n/a"' $E1): $(jq -r '.external_reference.detected // "n/a"' $E1)/$(jq -r '.external_reference.total // "n/a"' $E1)"
+              echo ''
+            fi
+            echo '```'; cat $RUN_DIR/timing.txt; echo '```'
+          } >> $GITHUB_STEP_SUMMARY

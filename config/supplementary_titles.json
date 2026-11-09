@@ -1,0 +1,11 @@
+[
+  "Table S1: Static profiles: invocation time, sampled peak RSS and native output per block",
+  "Table S2: Dynamic profiles: command-phase time, eligibility, limitation reason and native alerts per block",
+  "Table S3: Grouping results by population, key, unit and policy, with incorrect and split pairs",
+  "Table S4: All 88 omissions, with and without loss",
+  "Table S5: Red Hat UBI 9 advisories by package and tool",
+  "Table S6: Propositions of the reference review and their judgments",
+  "Table S7: Triage decisions by reference class and pass, with the invalid responses",
+  "Table S8: Triage cost by condition and pass, with latency quartiles",
+  "Table S9: Native rule identifiers by population and tool"
+]

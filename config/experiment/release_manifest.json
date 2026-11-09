@@ -1,0 +1,97 @@
+{
+  "analysis_package": {
+    "manifest_sha256": "4579ba6ad6ec0b432725a94f4452f67aea70e60380b22158efb4dbba7a79b9e2",
+    "remote": "<LAB_ROOT>/environment/final-composition-v2"
+  },
+  "campaign_id": "devsecops-final-20261023-01",
+  "components": {
+    "scanners": {
+      "manifest_sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662",
+      "remote": "<LAB_ROOT>/environment/runtime-integration-v1"
+    },
+    "triage": {
+      "manifest_sha256": "9246db9a16772b15ebfc6c368ee317a6b9439e93a334b2ff99eab63e566aaa76",
+      "remote": "<LAB_ROOT>/environment/triage-repeated-code-v1"
+    }
+  },
+  "execution_policy": "Sequential under the guard. Inspect completed stage evidence before starting a later stage; no silent retry of a partial attempt.",
+  "expected_controller_calls": 97,
+  "files": [
+    {
+      "bytes": 12421,
+      "path": "PROTOCOL_V1.md",
+      "sha256": "05767b83e68990e669d3050b1f456c85365ddca357f7a605c06ff857bde2cafa"
+    },
+    {
+      "bytes": 2700317,
+      "path": "analysis_bindings.json",
+      "sha256": "05ad1853da236dbabf0aea3811c2e0937e4f0130d4482753f122e58d348e4806"
+    },
+    {
+      "bytes": 73383,
+      "path": "command_schedule.json",
+      "sha256": "fcc99804ded4685d31389e2d667391ea39df640f8661f00c74b47f672600d3cc"
+    },
+    {
+      "bytes": 5363,
+      "path": "composition.json",
+      "sha256": "7fc01c17c6836e6d5bf89656399ed04923f7902decfc3b186142e649b5ba6d27"
+    },
+    {
+      "bytes": 887,
+      "path": "composition_audit.json",
+      "sha256": "b2b1ef5a451c4097465d3834dfe221d69a74456a0a488411fcc2350402cf34ff"
+    },
+    {
+      "bytes": 910,
+      "path": "dynamic_release.json",
+      "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+    },
+    {
+      "bytes": 3945,
+      "path": "gates.json",
+      "sha256": "ee1d6b71e147a0a7b4db15bc287610d2ef4c8984462ba7ee74ec8ca8d53c036a"
+    },
+    {
+      "bytes": 503,
+      "path": "readiness_audit.json",
+      "sha256": "c734dec681cc68a10d4d220cad2dfd2458aa6b3e72e2c4d882d897127699f502"
+    },
+    {
+      "bytes": 4777,
+      "path": "release_tools/final_readiness.py",
+      "sha256": "ddea4216f04bf25d4c8f3177bd5c456ed58f21de1989319cb2a1a25ee8885935"
+    },
+    {
+      "bytes": 8367,
+      "path": "release_tools/seal_final_release.py",
+      "sha256": "e956e9e5492cdeba5901efb4728387d0cb1e679867a61b335b0cf6081265ac10"
+    },
+    {
+      "bytes": 8342,
+      "path": "release_tools/transport_final_release.py",
+      "sha256": "baf0400b28d5bb63171777a7b58533f9ddc5347930d3c9b5ef3b4b87fc737837"
+    },
+    {
+      "bytes": 62474,
+      "path": "study_specification.json",
+      "sha256": "00d2e4c824a07f6595f3b32b0b0e9d04d5f57698d049e3e88b2ed1b496652c9d"
+    },
+    {
+      "bytes": 7344,
+      "path": "static_release.json",
+      "sha256": "270e13e5545c8c45ca0725d959b0c56e52d00fede7eeab84b81f4df2a0f55246"
+    },
+    {
+      "bytes": 4639,
+      "path": "triage_release.json",
+      "sha256": "a312fd1a63717ffa0700f17ed87a7d3900faead7b9813ac2c05935e4fa422eb2"
+    }
+  ],
+  "final_campaign_ready": true,
+  "outcome_exposure": "Frozen after development outcome access; not an unseen evaluation corpus.",
+  "protocol": "v1.0",
+  "schema": "devsecops-final-release-v1",
+  "scientific_results_created_by_sealing": false,
+  "sealed_utc": "2026-10-23T10:46:19.526208+00:00"
+}

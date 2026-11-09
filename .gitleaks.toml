@@ -1,0 +1,779 @@
+title = "Scoped exceptions for the recorded research artifact"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''annotations\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''apacheds\-core\-api\-2\.0\.0\.AM27\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''apacheds\-interceptors\-authn\-2\.0\.0\.AM27\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''apacheds\-interceptors\-authz\-2\.0\.0\.AM27\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-asn1\-api\-2\.1\.7\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-asn1\-ber\-2\.1\.7\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-i18n\-2\.1\.7\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-ldap\-client\-api\-2\.1\.5\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-ldap\-extras\-codec\-api\-2\.1\.5\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''api\-util\-2\.1\.7\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''apiguardian\-api\-1\.1\.2\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''el\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''esapi\-2\.7\.0\.0\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''hibernate\-jpa\-2\.0\-api\-1\.0\.1\.Final\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''jakarta\.xml\.bind\-api\-2\.3\.3\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''jaspic\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''javax\.activation\-api\-1\.2\.0\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''jaxb\-api\-2\.3\.1\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''jsp\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''jsr311\-api\-1\.1\.1\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''junit\-jupiter\-api\-5\.10\.0\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)data/derived/matching/block1\.json$''',
+  '''(?:^|/)data/derived/matching/block2\.json$''',
+  '''(?:^|/)data/derived/matching/block3\.json$''',
+  '''(?:^|/)data/derived/matching/block4\.json$''',
+  '''(?:^|/)data/derived/matching/block5\.json$''',
+]
+regexes = ['''key":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/experiment/analysis_bindings\.json$''',
+  '''(?:^|/)config/inputs/whole_study_references\.json$''',
+  '''(?:^|/)data/derived/matching/block1\.json$''',
+  '''(?:^|/)data/derived/matching/block2\.json$''',
+  '''(?:^|/)data/derived/matching/block3\.json$''',
+  '''(?:^|/)data/derived/matching/block4\.json$''',
+  '''(?:^|/)data/derived/matching/block5\.json$''',
+  '''(?:^|/)data/references/bindings\.json$''',
+  '''(?:^|/)data/references/comparator_context\.json$''',
+]
+regexes = ['''key:[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''servlet\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''slf4j\-api\-2\.0\.19\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/inputs/aigoat_target_locks\.json$''',
+]
+regexes = ['''special_tokens_map\.json":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/inputs/aigoat_target_locks\.json$''',
+]
+regexes = ['''tokenizer\.json":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/inputs/aigoat_target_locks\.json$''',
+]
+regexes = ['''tokenizer_config\.json":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''tomcat\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''websocket\-api\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''xml\-apis\-1\.4\.01\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "File-integrity hash, grouping key, or public-key object identifier in a fixed metadata field"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/plan\.json$''',
+]
+regexes = ['''xml\-apis\-ext\-1\.3\.04\.jar":\ "[a-f0-9]{64}"''']
+
+[[allowlists]]
+description = "GitHub Actions secret-expression reference; no credential value is present"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)data/controls/infrastructure/originals/workflow/cicd_goat/\.github/workflows/release\.yaml$''',
+]
+regexes = ['''-u\s+"\$\{\{\ secrets\.CCI_TOKEN\ \}\}:"''']
+
+[[allowlists]]
+description = "Kubernetes secretKeyRef key name; not the referenced value"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)data/controls/infrastructure/originals/kubernetes/scenarios/system_monitor/deployment\.yaml$''',
+  '''(?:^|/)data/controls/kubernetes/originals/scenarios/system_monitor/deployment\.yaml$''',
+  '''(?:^|/)data/controls/kubernetes/split/scenarios__system_monitor__deployment__doc_1\.yaml$''',
+]
+regexes = ['''key:\ k8sgoatvaultkey''']
+
+[[allowlists]]
+description = "Kubernetes secretKeyRef key name; not the referenced value"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)static/block1/infrastructure_originals_checkov_kubernetes/native_report\.stdout$''',
+  '''(?:^|/)static/block2/infrastructure_originals_checkov_kubernetes/native_report\.stdout$''',
+  '''(?:^|/)static/block3/infrastructure_originals_checkov_kubernetes/native_report\.stdout$''',
+  '''(?:^|/)static/block4/infrastructure_originals_checkov_kubernetes/native_report\.stdout$''',
+  '''(?:^|/)static/block5/infrastructure_originals_checkov_kubernetes/native_report\.stdout$''',
+]
+regexes = ['''key:\ k8sgoatvaultkey\\n''']
+
+[[allowlists]]
+description = "Literal example header in advisory GHSA-r4q5-vmmm-2653 description; not a lab credential"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)static/block1/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static_assertion_catalog\.json$''',
+]
+regexes = ['''X\-API\-Key':\ 'sk\-live\-secret123'''']
+
+[[allowlists]]
+description = "Literal example header in advisory GHSA-r4q5-vmmm-2653 description; not a lab credential"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)static/block1/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_trivy_source/native_report\.json$''',
+  '''(?:^|/)static_assertion_catalog\.json$''',
+]
+regexes = ['''X\-API\-Key:\ sk\-live\-secret123`''']
+
+[[allowlists]]
+description = "Public model alias, not an authentication key"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)config/model_identities\.json$''',
+  '''(?:^|/)triage/pass1/recordings/verified_run_locks\.json$''',
+  '''(?:^|/)triage/pass2/recordings/verified_run_locks\.json$''',
+]
+regexes = ['''key":\ "qwen35\-9b\-q4km"''']
+
+[[allowlists]]
+description = "Public package-signing key fingerprint in recorded image metadata"
+condition = "AND"
+regexTarget = "match"
+paths = [
+  '''(?:^|/)static/block1/aigoat_grype_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block1/aigoat_syft_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block1/aigoat_syft_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block1/aigoat_trivy_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block1/aigoat_trivy_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_grype_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_syft_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_syft_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_trivy_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block2/aigoat_trivy_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_grype_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_syft_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_syft_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_trivy_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block3/aigoat_trivy_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_grype_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_syft_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_syft_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_trivy_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block4/aigoat_trivy_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_grype_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_syft_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_syft_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_trivy_image_backend/native_report\.json$''',
+  '''(?:^|/)static/block5/aigoat_trivy_image_ollama/native_report\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/after/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b1/before/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/after/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b2/before/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/after/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b3/before/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/after/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b4/before/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/after/images\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/c06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d01/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d01/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d01/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d02/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d02/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d02/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d03/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d03/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d03/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d04/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d04/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d04/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d05/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d05/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d05/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d06/cleanup_before\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d06/created\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/d06/finished\.json$''',
+  '''(?:^|/)static/campaign/runtime/b5/before/images\.json$''',
+]
+regexes = ['''GPG_KEY=[A-Fa-f0-9]{40}"''']

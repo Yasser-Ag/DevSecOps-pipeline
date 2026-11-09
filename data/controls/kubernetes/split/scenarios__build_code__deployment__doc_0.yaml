@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: build-code-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: build-code
+  template:
+    metadata:
+      labels:
+        app: build-code
+    spec:
+      containers:
+      - name: build-code
+        image: madhuakula/k8s-goat-build-code
+        resources:
+          limits:
+            memory: 50Mi
+            cpu: 20m
+        ports:
+        - containerPort: 3000

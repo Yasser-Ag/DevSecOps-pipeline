@@ -1,0 +1,902 @@
+[
+  {
+    "block": 1,
+    "generation": [
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 42.64842403307557
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 21.50456785596907
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-bob-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 24.26706003397703
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": false,
+        "non_fallback_reply": true,
+        "reference_in_context": false,
+        "request_id": "alice-document-bob-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 28.498797392006963
+      }
+    ],
+    "job_id": "b01-aigoat-generation",
+    "links": [],
+    "measurement_eligible": false,
+    "native_count": null,
+    "observations": [],
+    "profile_id": "aigoat-generation",
+    "reference_observations": [
+      {
+        "case_id": "case-0d8c87d0a117c5d7b2e81cdb8be4dce1",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-598e7c540a710ef4c3c404c6499049d6",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-6e5bec47e7313a5ae34da41691be4957",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-2a5d0f2c2358f27d7874bb8b3e33eb87",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-06d90a10e0757848dc1064b5388cf58c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-440ecc2395c133583b1abb1ec454343e",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-c227d3c961d1b79ec6a3189c72b0658c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-4772d209c8e7967fc8ffd719637668ac",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      }
+    ],
+    "reference_state_verified": true,
+    "role": "target_behavior_not_scanner_or_triage",
+    "source_manifest": [
+      {
+        "bytes": 699569,
+        "path": "asset_locks.json",
+        "sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-after/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-before/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 910,
+        "path": "protocol_release.json",
+        "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      {
+        "bytes": 64223,
+        "path": "summary.json",
+        "sha256": "29522c50ea82de0a5c28228b750cd582bd5eb5d0e924723f7feb146fedeaef72"
+      },
+      {
+        "bytes": 111923,
+        "path": "target/fixtures/after.json",
+        "sha256": "a73fb44d135aa20a29fe700460a3a0328a50842abe5bb8e177835f22b830e5c5"
+      },
+      {
+        "bytes": 111924,
+        "path": "target/fixtures/before.json",
+        "sha256": "ccd21c6ab2d4261a35813178a418cafcf80205bec8508436fb19cf29f24a6a4e"
+      },
+      {
+        "bytes": 57717,
+        "path": "target/fixtures/generation.json",
+        "sha256": "405f3c8c62737420147d75d8420e9c0ef1b2fd529c743eb195cd625ce864f5e0"
+      },
+      {
+        "bytes": 1032,
+        "path": "target/fixtures/private_fixture.json",
+        "sha256": "6b0af502634fb395c0c81710e1c6b218baa5925e85f45461ca06a73600cd4ff1"
+      },
+      {
+        "bytes": 60605,
+        "path": "target/outcome.json",
+        "sha256": "a1faab86d6f886b89763ba1bf4e2a14eb1e5ee3a9016de0aa46174d446a43c4a"
+      }
+    ],
+    "status": "collected"
+  },
+  {
+    "block": 2,
+    "generation": [
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 40.25201250379905
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 22.175578363705426
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-bob-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 26.19701810600236
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": false,
+        "non_fallback_reply": true,
+        "reference_in_context": false,
+        "request_id": "alice-document-bob-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 29.522720148786902
+      }
+    ],
+    "job_id": "b02-aigoat-generation",
+    "links": [],
+    "measurement_eligible": false,
+    "native_count": null,
+    "observations": [],
+    "profile_id": "aigoat-generation",
+    "reference_observations": [
+      {
+        "case_id": "case-0d8c87d0a117c5d7b2e81cdb8be4dce1",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-598e7c540a710ef4c3c404c6499049d6",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-6e5bec47e7313a5ae34da41691be4957",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-2a5d0f2c2358f27d7874bb8b3e33eb87",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-06d90a10e0757848dc1064b5388cf58c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-440ecc2395c133583b1abb1ec454343e",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-c227d3c961d1b79ec6a3189c72b0658c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-4772d209c8e7967fc8ffd719637668ac",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      }
+    ],
+    "reference_state_verified": true,
+    "role": "target_behavior_not_scanner_or_triage",
+    "source_manifest": [
+      {
+        "bytes": 699569,
+        "path": "asset_locks.json",
+        "sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-after/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-before/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 910,
+        "path": "protocol_release.json",
+        "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      {
+        "bytes": 64226,
+        "path": "summary.json",
+        "sha256": "95a9d82ab67bb903e936f8c318c5a65bf6dd3956248793c1ac34a34fc8266a52"
+      },
+      {
+        "bytes": 111923,
+        "path": "target/fixtures/after.json",
+        "sha256": "41a4e80426590058568e992d74e654b4e519ec8145c84157904b4d6bb3b5bb42"
+      },
+      {
+        "bytes": 111924,
+        "path": "target/fixtures/before.json",
+        "sha256": "4cff10a5d90b925ada09564db81890520e0d4a123142c6cc8fd012a11cdd4298"
+      },
+      {
+        "bytes": 57720,
+        "path": "target/fixtures/generation.json",
+        "sha256": "64198b232840b2483f051244f24f15466c92db883336c7eded67ae3785ed8ac5"
+      },
+      {
+        "bytes": 1032,
+        "path": "target/fixtures/private_fixture.json",
+        "sha256": "6b0af502634fb395c0c81710e1c6b218baa5925e85f45461ca06a73600cd4ff1"
+      },
+      {
+        "bytes": 60608,
+        "path": "target/outcome.json",
+        "sha256": "35c0877a8d43378c57269ae137833da9d89abc278cf31151dabc218c41feb4a7"
+      }
+    ],
+    "status": "collected"
+  },
+  {
+    "block": 3,
+    "generation": [
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 39.05793160479516
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 20.821577364113182
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-bob-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 22.15826060017571
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": false,
+        "non_fallback_reply": true,
+        "reference_in_context": false,
+        "request_id": "alice-document-bob-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 26.650496842339635
+      }
+    ],
+    "job_id": "b03-aigoat-generation",
+    "links": [],
+    "measurement_eligible": false,
+    "native_count": null,
+    "observations": [],
+    "profile_id": "aigoat-generation",
+    "reference_observations": [
+      {
+        "case_id": "case-0d8c87d0a117c5d7b2e81cdb8be4dce1",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-598e7c540a710ef4c3c404c6499049d6",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-6e5bec47e7313a5ae34da41691be4957",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-2a5d0f2c2358f27d7874bb8b3e33eb87",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-06d90a10e0757848dc1064b5388cf58c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-440ecc2395c133583b1abb1ec454343e",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-c227d3c961d1b79ec6a3189c72b0658c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-4772d209c8e7967fc8ffd719637668ac",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      }
+    ],
+    "reference_state_verified": true,
+    "role": "target_behavior_not_scanner_or_triage",
+    "source_manifest": [
+      {
+        "bytes": 699569,
+        "path": "asset_locks.json",
+        "sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-after/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-before/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 910,
+        "path": "protocol_release.json",
+        "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      {
+        "bytes": 64224,
+        "path": "summary.json",
+        "sha256": "31ef339a081f59e38634611fb094d28e78cb03a499e6256c8f6bd436c00dea9c"
+      },
+      {
+        "bytes": 111923,
+        "path": "target/fixtures/after.json",
+        "sha256": "3509deddcc8c5ebe6799380e470b8ff3034d0a6b85a3418de04ceba3f66d67ff"
+      },
+      {
+        "bytes": 111924,
+        "path": "target/fixtures/before.json",
+        "sha256": "f0971689a3ec63d474c9924931392e41f5bb85e9e43e70e1d4773bc0e93bf735"
+      },
+      {
+        "bytes": 57718,
+        "path": "target/fixtures/generation.json",
+        "sha256": "0ea3a551d5491f241bffd45e0a3ad96fbc71d2b3d57bc83feabbe8e5145769ab"
+      },
+      {
+        "bytes": 1032,
+        "path": "target/fixtures/private_fixture.json",
+        "sha256": "6b0af502634fb395c0c81710e1c6b218baa5925e85f45461ca06a73600cd4ff1"
+      },
+      {
+        "bytes": 60606,
+        "path": "target/outcome.json",
+        "sha256": "7f2ba3b686cbd73f57ebfd9ce4db73ad5cc81905811cbf98ffeb14a0e32bfd67"
+      }
+    ],
+    "status": "collected"
+  },
+  {
+    "block": 4,
+    "generation": [
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 37.896248983219266
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 20.21694693621248
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-bob-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 21.84822590975091
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": false,
+        "non_fallback_reply": true,
+        "reference_in_context": false,
+        "request_id": "alice-document-bob-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 24.73494007671252
+      }
+    ],
+    "job_id": "b04-aigoat-generation",
+    "links": [],
+    "measurement_eligible": false,
+    "native_count": null,
+    "observations": [],
+    "profile_id": "aigoat-generation",
+    "reference_observations": [
+      {
+        "case_id": "case-0d8c87d0a117c5d7b2e81cdb8be4dce1",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-598e7c540a710ef4c3c404c6499049d6",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-6e5bec47e7313a5ae34da41691be4957",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-2a5d0f2c2358f27d7874bb8b3e33eb87",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-06d90a10e0757848dc1064b5388cf58c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-440ecc2395c133583b1abb1ec454343e",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-c227d3c961d1b79ec6a3189c72b0658c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-4772d209c8e7967fc8ffd719637668ac",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      }
+    ],
+    "reference_state_verified": true,
+    "role": "target_behavior_not_scanner_or_triage",
+    "source_manifest": [
+      {
+        "bytes": 699569,
+        "path": "asset_locks.json",
+        "sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-after/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-before/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 910,
+        "path": "protocol_release.json",
+        "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      {
+        "bytes": 64225,
+        "path": "summary.json",
+        "sha256": "c61e4ab2f13ba6b613c56b965fc86d1771c622b8c101de00bbd34c79d9826f0b"
+      },
+      {
+        "bytes": 111923,
+        "path": "target/fixtures/after.json",
+        "sha256": "e2db4fb3a1aeec12059330c1971f488ba4fd155b6441b4f4f070d8697748a925"
+      },
+      {
+        "bytes": 111924,
+        "path": "target/fixtures/before.json",
+        "sha256": "dadc7df370ff9ab29adf715ba969001930f57fabb8a223419c2925f0a9bfe160"
+      },
+      {
+        "bytes": 57719,
+        "path": "target/fixtures/generation.json",
+        "sha256": "6f440936db46c2c7639771d981ad5596ce8a9729714c82a0966d3cdeba1c0bea"
+      },
+      {
+        "bytes": 1032,
+        "path": "target/fixtures/private_fixture.json",
+        "sha256": "6b0af502634fb395c0c81710e1c6b218baa5925e85f45461ca06a73600cd4ff1"
+      },
+      {
+        "bytes": 60607,
+        "path": "target/outcome.json",
+        "sha256": "338cbb2c4ce0e3128adf4f5d285ba6d7a2a2aab0157493fa3fec2b601e479529"
+      }
+    ],
+    "status": "collected"
+  },
+  {
+    "block": 5,
+    "generation": [
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 38.88070785300806
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-alice-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 20.51963412296027
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": true,
+        "non_fallback_reply": true,
+        "reference_in_context": true,
+        "request_id": "alice-document-bob-L0",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 21.942578767426312
+      },
+      {
+        "attempted": true,
+        "document": "document-owner:alice",
+        "http_status": 200,
+        "marker_emitted": false,
+        "non_fallback_reply": true,
+        "reference_in_context": false,
+        "request_id": "alice-document-bob-L2",
+        "role": "target_behavior_not_scanner_or_triage",
+        "status": "completed",
+        "wall_seconds": 27.81787200132385
+      }
+    ],
+    "job_id": "b05-aigoat-generation",
+    "links": [],
+    "measurement_eligible": false,
+    "native_count": null,
+    "observations": [],
+    "profile_id": "aigoat-generation",
+    "reference_observations": [
+      {
+        "case_id": "case-0d8c87d0a117c5d7b2e81cdb8be4dce1",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-598e7c540a710ef4c3c404c6499049d6",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-6e5bec47e7313a5ae34da41691be4957",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-2a5d0f2c2358f27d7874bb8b3e33eb87",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-06d90a10e0757848dc1064b5388cf58c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": true
+      },
+      {
+        "case_id": "case-440ecc2395c133583b1abb1ec454343e",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-c227d3c961d1b79ec6a3189c72b0658c",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      },
+      {
+        "case_id": "case-4772d209c8e7967fc8ffd719637668ac",
+        "role": "reference_check_not_scanner",
+        "scanner_coverage": null,
+        "scenario_family": "aigoat:llm02-4",
+        "status": "verified_context_property",
+        "unauthorized_inclusion": false
+      }
+    ],
+    "reference_state_verified": true,
+    "role": "target_behavior_not_scanner_or_triage",
+    "source_manifest": [
+      {
+        "bytes": 699569,
+        "path": "asset_locks.json",
+        "sha256": "a13ca6bfd0b419c1453319a360b24c967d3f7b16dc2928456a4f5d5bbcd05ab9"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-after/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 28202,
+        "path": "assets-before/package_verification.json",
+        "sha256": "06e60151cacc46b6bb57d39db4dda1292ce76f586ede82ebbe7e8c5df8e5e662"
+      },
+      {
+        "bytes": 910,
+        "path": "protocol_release.json",
+        "sha256": "7813ef723b359d60f1e0370037af061e0a93da1680434ee13af01e065847b450"
+      },
+      {
+        "bytes": 64223,
+        "path": "summary.json",
+        "sha256": "5eab52484ebdead0bda659c1cd000be17e7ccc301e6fc9b461b8f897329e7927"
+      },
+      {
+        "bytes": 111923,
+        "path": "target/fixtures/after.json",
+        "sha256": "f40ebe8f36bd105c43dff7b1ab5b9a76d79e67ad0dac60d493bcf4243a8ea2f9"
+      },
+      {
+        "bytes": 111924,
+        "path": "target/fixtures/before.json",
+        "sha256": "62e55a63b07fca1b97caa410f4ebf03c21a01157a6b707e085ea4f6c8b7fa070"
+      },
+      {
+        "bytes": 57717,
+        "path": "target/fixtures/generation.json",
+        "sha256": "73ac67090cf3371d2232fdb27aef6b9bc4152865bfb3ba593806e0203e1927b3"
+      },
+      {
+        "bytes": 1032,
+        "path": "target/fixtures/private_fixture.json",
+        "sha256": "6b0af502634fb395c0c81710e1c6b218baa5925e85f45461ca06a73600cd4ff1"
+      },
+      {
+        "bytes": 60605,
+        "path": "target/outcome.json",
+        "sha256": "796814895ed3e4273c77782ec4d4209e8c4adc1eabf560045b73afc60e3e3d95"
+      }
+    ],
+    "status": "collected"
+  }
+]

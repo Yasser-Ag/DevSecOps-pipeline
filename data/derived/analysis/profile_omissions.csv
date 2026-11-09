@@ -1,0 +1,441 @@
+population,block,grouping,full_comparison_available,omitted,omitted_profiles,supported_before,supported_after,lost_case_ids,lost_count,object_count_before,object_count_after,lost_object_count
+sast-java,1,profile,True,java-findsecbugs,"[""java-findsecbugs""]",10,6,"[""case-1cd7557c5e45cfcda55320e6e21feba5"", ""case-5c302a409359158746b08c49684c9007"", ""case-a6ee8ebaf235880ffba512b0726fc61f"", ""case-aa6d688f1414b770ebc690856ed531e3""]",4,,,
+sast-java,1,profile,True,java-semgrep,"[""java-semgrep""]",10,10,[],0,,,
+sca,1,profile,True,sca-dependency-check,"[""sca-dependency-check""]",6,6,[],0,2,2,0
+sca,1,profile,True,sca-grype-filesystem,"[""sca-grype-filesystem""]",6,6,[],0,2,2,0
+sca,1,profile,True,sca-grype-image,"[""sca-grype-image""]",6,6,[],0,2,2,0
+sca,1,profile,True,sca-trivy-filesystem,"[""sca-trivy-filesystem""]",6,6,[],0,2,2,0
+sca,1,profile,True,sca-trivy-image,"[""sca-trivy-image""]",6,6,[],0,2,2,0
+sca,1,profile,True,sca-trivy-rootfs,"[""sca-trivy-rootfs""]",6,6,[],0,2,2,0
+secret,1,profile,True,configuration-gitleaks,"[""configuration-gitleaks""]",4,4,[],0,2,2,0
+secret,1,profile,True,configuration-trivy-secret,"[""configuration-trivy-secret""]",4,4,[],0,2,2,0
+docker,1,profile,True,configuration-checkov,"[""configuration-checkov""]",3,3,[],0,,,
+docker,1,profile,True,configuration-hadolint,"[""configuration-hadolint""]",3,3,[],0,,,
+docker,1,profile,True,configuration-trivy-config,"[""configuration-trivy-config""]",3,2,"[""case-9c6babe18babe5d2fb8c654900ca3879""]",1,,,
+compose:runtime_uid_zero,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:writable_rootfs,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:no_new_privileges_disabled,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-032b1486ce86e311fcb2f466a66b2690""]",1,,,
+compose:privileged_enabled,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-b9213c612a5d4f6dfc6776e129793e97""]",1,,,
+compose:host_network_enabled,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-00ea202c7c7dfcc8507b7c5901188938""]",1,,,
+compose:docker_socket_mounted,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-0e317233fa64e9022aebd7f7a5dc739b""]",1,,,
+compose:unqualified-native,1,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+terraform:controls,1,profile,True,infrastructure-controls-checkov-terraform,"[""infrastructure-controls-checkov-terraform""]",4,4,[],0,,,
+terraform:controls,1,profile,True,infrastructure-controls-kics-terraform,"[""infrastructure-controls-kics-terraform""]",4,4,[],0,,,
+terraform:controls,1,profile,True,infrastructure-controls-trivy-terraform,"[""infrastructure-controls-trivy-terraform""]",4,4,[],0,,,
+terraform:originals,1,profile,True,infrastructure-originals-checkov-terraform,"[""infrastructure-originals-checkov-terraform""]",1,1,[],0,,,
+terraform:originals,1,profile,True,infrastructure-originals-kics-terraform,"[""infrastructure-originals-kics-terraform""]",1,1,[],0,,,
+terraform:originals,1,profile,True,infrastructure-originals-trivy-terraform,"[""infrastructure-originals-trivy-terraform""]",1,1,[],0,,,
+workflow-job:controls,1,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-job:controls,1,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-job:originals,1,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-job:originals,1,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+workflow-global:controls,1,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-global:controls,1,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-global:originals,1,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-global:originals,1,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+kubernetes:controls,1,profile,True,infrastructure-controls-checkov-kubernetes,"[""infrastructure-controls-checkov-kubernetes""]",3,2,"[""case-320f440d2756cb168e51041cead018bc""]",1,,,
+kubernetes:controls,1,profile,True,infrastructure-controls-kubescape,"[""infrastructure-controls-kubescape""]",3,3,[],0,,,
+kubernetes:controls,1,profile,True,infrastructure-controls-trivy-kubernetes,"[""infrastructure-controls-trivy-kubernetes""]",3,3,[],0,,,
+kubernetes:originals,1,profile,True,infrastructure-originals-checkov-kubernetes,"[""infrastructure-originals-checkov-kubernetes""]",8,8,[],0,,,
+kubernetes:originals,1,profile,True,infrastructure-originals-kubescape,"[""infrastructure-originals-kubescape""]",8,8,[],0,,,
+kubernetes:originals,1,profile,True,infrastructure-originals-trivy-kubernetes,"[""infrastructure-originals-trivy-kubernetes""]",8,6,"[""case-6f8342e1a580a5cf150b797855971949"", ""case-ab6eac3cbc58576a7834a52b9b2b1092""]",2,,,
+kubernetes:matrix,1,profile,True,k8s-scope-matrix-checkov,"[""k8s-scope-matrix-checkov""]",9,8,"[""case-cc1d90becc04d18f6bdef6cc71a7f6dd""]",1,,,
+kubernetes:matrix,1,profile,True,k8s-scope-matrix-trivy,"[""k8s-scope-matrix-trivy""]",9,5,"[""case-3314850e2974d13384d80695418ab7ca"", ""case-609499e589c036da8d6a1808bdabdd90"", ""case-66cf98e1bded1143a6f9e1601e9148e3"", ""case-977e1b966839d52697ac7f3c6e242d3a""]",4,,,
+kubernetes:split,1,profile,True,k8s-scope-split-trivy,"[""k8s-scope-split-trivy""]",6,0,"[""case-0bbdf1e764e2dad6e591bb9a111c2aac"", ""case-253fb40e18e3cdc03fd97ab9cbc380fa"", ""case-414449b9a05764a8ae1844a2daa5886d"", ""case-4c64abe108cede5b3785c84d8d619974"", ""case-91474f037d5e88ecfde64a6663753147"", ""case-bb6788070fe220ef6efcfd60238186db""]",6,,,
+os-advisory,1,profile,True,os-ubi92early-grype,"[""os-ubi92early-grype""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi92early-trivy,"[""os-ubi92early-trivy""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi92late-grype,"[""os-ubi92late-grype""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi92late-trivy,"[""os-ubi92late-trivy""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi94-grype,"[""os-ubi94-grype""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi94-trivy,"[""os-ubi94-trivy""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi98-grype,"[""os-ubi98-grype""]",1,1,[],0,,,
+os-advisory,1,profile,True,os-ubi98-trivy,"[""os-ubi98-trivy""]",1,1,[],0,,,
+api-native:invalid,1,profile,False,crapi-nuclei-invalid,"[""crapi-nuclei-invalid""]",0,0,[],0,,,
+api-native:invalid,1,profile,False,crapi-zap-invalid,"[""crapi-zap-invalid""]",0,0,[],0,,,
+api-native:a,1,profile,False,crapi-nuclei-valid-a,"[""crapi-nuclei-valid-a""]",0,0,[],0,,,
+api-native:a,1,profile,False,crapi-zap-valid-a,"[""crapi-zap-valid-a""]",0,0,[],0,,,
+api-authorization,1,profile,True,crapi-restler-a-gated-namespace,"[""crapi-restler-a-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,1,profile,True,crapi-restler-a-raw-namespace,"[""crapi-restler-a-raw-namespace""]",2,1,"[""case-8077b068fc61386d5d168c03f926271b""]",1,1,1,0
+api-authorization,1,profile,True,crapi-restler-a-raw-no-checker,"[""crapi-restler-a-raw-no-checker""]",2,2,[],0,1,1,0
+api-authorization,1,profile,True,crapi-restler-b-gated-namespace,"[""crapi-restler-b-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,1,profile,True,crapi-restler-b-raw-namespace,"[""crapi-restler-b-raw-namespace""]",2,1,"[""case-395b97626e65daee0af6df53d74d2aa1""]",1,1,1,0
+api-authorization,1,profile,True,crapi-restler-b-raw-no-checker,"[""crapi-restler-b-raw-no-checker""]",2,2,[],0,1,1,0
+aigoat-declared-properties,1,profile,True,aigoat-checkov-docker-deployment,"[""aigoat-checkov-docker-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,1,profile,True,aigoat-checkov-docker-original,"[""aigoat-checkov-docker-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,1,profile,True,aigoat-compose-kics-compose-deployment-qualified,"[""aigoat-compose-kics-compose-deployment-qualified""]",31,20,"[""case-1fd50537c1dcfe45545bf3d4ea24ade1"", ""case-3a13915fda59836626fb30ffa3a336aa"", ""case-579f2b9b3e9bdd36913d2c2794339abd"", ""case-5b28107992b96773bf4c475332897023"", ""case-6b699d249fc4cbdbcc0803a58f203c9b"", ""case-89b0e49af1daf54436041623066909dc"", ""case-b7f26170a1016f110a7764efff855a4c"", ""case-d82c12ad15a8f332e63aa73acdd8459c"", ""case-df6eadd3e723835b65babed724bbdf78"", ""case-eb1a2653fda489d563c380c3feaa1898"", ""case-f82fca6dad11ed7b924ea2824b47aef9""]",11,15,8,7
+aigoat-declared-properties,1,profile,True,aigoat-hadolint-deployment,"[""aigoat-hadolint-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,1,profile,True,aigoat-hadolint-original,"[""aigoat-hadolint-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,1,profile,True,aigoat-kics-compose,"[""aigoat-kics-compose""]",31,21,"[""case-031652dfd33ee7f706a5373a0746a32d"", ""case-2ea5db50187afa2140893f66d9aa56e4"", ""case-56e7c95d9e8be3496c8591c0facba7e1"", ""case-620df80ca24bf880bb09e6571fac7720"", ""case-7bc2d4239a367c86b4fe41801d49c76b"", ""case-7ea1693403ccdd7f05af8ae2ad9aefc8"", ""case-abfba592980b683eaa459ffc6198263b"", ""case-af4cebed08725d144ff0a830f717670c"", ""case-b041ef6dd2088ad91445039baea2f8e3"", ""case-bdb91ccaba5249d31a28521af30385e1""]",10,15,12,3
+aigoat-declared-properties,1,profile,True,aigoat-trivy-config-deployment,"[""aigoat-trivy-config-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,1,profile,True,aigoat-trivy-config-original,"[""aigoat-trivy-config-original""]",31,31,[],0,15,15,0
+aigoat-http-properties,1,profile,False,aigoat-zap-invalid,"[""aigoat-zap-invalid""]",3,1,"[""case-a1fdd6fbd7e114e457b934690e0ee122"", ""case-ab361d1c528ee764f5109cddf6b766c5""]",2,2,1,1
+aigoat-http-properties,1,profile,False,aigoat-zap-valid-alice,"[""aigoat-zap-valid-alice""]",3,2,"[""case-4b34e3f0a572a8a3870995899777a2a0""]",1,2,2,0
+aigoat-unresolved:bandit,1,profile,True,aigoat-bandit-python,"[""aigoat-bandit-python""]",0,0,[],0,,,
+aigoat-unresolved:checkov,1,profile,True,aigoat-workflow-checkov-workflow-qualified,"[""aigoat-workflow-checkov-workflow-qualified""]",0,0,[],0,,,
+aigoat-unresolved:gitleaks,1,profile,True,aigoat-gitleaks-source,"[""aigoat-gitleaks-source""]",0,0,[],0,,,
+aigoat-unresolved:grype,1,profile,True,aigoat-grype-image-backend,"[""aigoat-grype-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:grype,1,profile,True,aigoat-grype-image-frontend,"[""aigoat-grype-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:grype,1,profile,True,aigoat-grype-image-ollama,"[""aigoat-grype-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:grype,1,profile,True,aigoat-grype-source,"[""aigoat-grype-source""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,1,profile,True,aigoat-semgrep-frontend,"[""aigoat-semgrep-frontend""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,1,profile,True,aigoat-semgrep-python,"[""aigoat-semgrep-python""]",0,0,[],0,,,
+aigoat-unresolved:trivy,1,profile,True,aigoat-trivy-image-backend,"[""aigoat-trivy-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,1,profile,True,aigoat-trivy-image-frontend,"[""aigoat-trivy-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,1,profile,True,aigoat-trivy-image-ollama,"[""aigoat-trivy-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:trivy,1,profile,True,aigoat-trivy-secret-source,"[""aigoat-trivy-secret-source""]",0,0,[],0,,,
+aigoat-unresolved:trivy,1,profile,True,aigoat-trivy-source,"[""aigoat-trivy-source""]",0,0,[],0,,,
+aigoat-unresolved:zizmor,1,profile,True,aigoat-zizmor-workflow,"[""aigoat-zizmor-workflow""]",0,0,[],0,,,
+sca,1,recorded_stage,True,image_scan,"[""sca-grype-image"", ""sca-trivy-image""]",6,3,"[""case-528f692cdd1e7ff4460c03b7f89e7eb7"", ""case-61efa8693a69e782df0611352d020cfe"", ""case-f278e83679b4e67099c126b0cb2c4a9b""]",3,2,2,0
+sca,1,recorded_stage,True,source_sca,"[""sca-dependency-check"", ""sca-grype-filesystem"", ""sca-trivy-filesystem"", ""sca-trivy-rootfs""]",6,3,"[""case-6fbc5af32d929f2516c8398d4c94dabe"", ""case-e474d9c6f23012e66a7b30f0f0e1c4ff"", ""case-ee147c98ebd3dcc59174d31cbc09037e""]",3,2,2,0
+sast-java,2,profile,True,java-findsecbugs,"[""java-findsecbugs""]",10,6,"[""case-1cd7557c5e45cfcda55320e6e21feba5"", ""case-5c302a409359158746b08c49684c9007"", ""case-a6ee8ebaf235880ffba512b0726fc61f"", ""case-aa6d688f1414b770ebc690856ed531e3""]",4,,,
+sast-java,2,profile,True,java-semgrep,"[""java-semgrep""]",10,10,[],0,,,
+sca,2,profile,True,sca-dependency-check,"[""sca-dependency-check""]",6,6,[],0,2,2,0
+sca,2,profile,True,sca-grype-filesystem,"[""sca-grype-filesystem""]",6,6,[],0,2,2,0
+sca,2,profile,True,sca-grype-image,"[""sca-grype-image""]",6,6,[],0,2,2,0
+sca,2,profile,True,sca-trivy-filesystem,"[""sca-trivy-filesystem""]",6,6,[],0,2,2,0
+sca,2,profile,True,sca-trivy-image,"[""sca-trivy-image""]",6,6,[],0,2,2,0
+sca,2,profile,True,sca-trivy-rootfs,"[""sca-trivy-rootfs""]",6,6,[],0,2,2,0
+secret,2,profile,True,configuration-gitleaks,"[""configuration-gitleaks""]",4,4,[],0,2,2,0
+secret,2,profile,True,configuration-trivy-secret,"[""configuration-trivy-secret""]",4,4,[],0,2,2,0
+docker,2,profile,True,configuration-checkov,"[""configuration-checkov""]",3,3,[],0,,,
+docker,2,profile,True,configuration-hadolint,"[""configuration-hadolint""]",3,3,[],0,,,
+docker,2,profile,True,configuration-trivy-config,"[""configuration-trivy-config""]",3,2,"[""case-9c6babe18babe5d2fb8c654900ca3879""]",1,,,
+compose:runtime_uid_zero,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:writable_rootfs,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:no_new_privileges_disabled,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-032b1486ce86e311fcb2f466a66b2690""]",1,,,
+compose:privileged_enabled,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-b9213c612a5d4f6dfc6776e129793e97""]",1,,,
+compose:host_network_enabled,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-00ea202c7c7dfcc8507b7c5901188938""]",1,,,
+compose:docker_socket_mounted,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-0e317233fa64e9022aebd7f7a5dc739b""]",1,,,
+compose:unqualified-native,2,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+terraform:controls,2,profile,True,infrastructure-controls-checkov-terraform,"[""infrastructure-controls-checkov-terraform""]",4,4,[],0,,,
+terraform:controls,2,profile,True,infrastructure-controls-kics-terraform,"[""infrastructure-controls-kics-terraform""]",4,4,[],0,,,
+terraform:controls,2,profile,True,infrastructure-controls-trivy-terraform,"[""infrastructure-controls-trivy-terraform""]",4,4,[],0,,,
+terraform:originals,2,profile,True,infrastructure-originals-checkov-terraform,"[""infrastructure-originals-checkov-terraform""]",1,1,[],0,,,
+terraform:originals,2,profile,True,infrastructure-originals-kics-terraform,"[""infrastructure-originals-kics-terraform""]",1,1,[],0,,,
+terraform:originals,2,profile,True,infrastructure-originals-trivy-terraform,"[""infrastructure-originals-trivy-terraform""]",1,1,[],0,,,
+workflow-job:controls,2,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-job:controls,2,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-job:originals,2,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-job:originals,2,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+workflow-global:controls,2,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-global:controls,2,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-global:originals,2,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-global:originals,2,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+kubernetes:controls,2,profile,True,infrastructure-controls-checkov-kubernetes,"[""infrastructure-controls-checkov-kubernetes""]",3,2,"[""case-320f440d2756cb168e51041cead018bc""]",1,,,
+kubernetes:controls,2,profile,True,infrastructure-controls-kubescape,"[""infrastructure-controls-kubescape""]",3,3,[],0,,,
+kubernetes:controls,2,profile,True,infrastructure-controls-trivy-kubernetes,"[""infrastructure-controls-trivy-kubernetes""]",3,3,[],0,,,
+kubernetes:originals,2,profile,True,infrastructure-originals-checkov-kubernetes,"[""infrastructure-originals-checkov-kubernetes""]",8,8,[],0,,,
+kubernetes:originals,2,profile,True,infrastructure-originals-kubescape,"[""infrastructure-originals-kubescape""]",8,8,[],0,,,
+kubernetes:originals,2,profile,True,infrastructure-originals-trivy-kubernetes,"[""infrastructure-originals-trivy-kubernetes""]",8,6,"[""case-6f8342e1a580a5cf150b797855971949"", ""case-ab6eac3cbc58576a7834a52b9b2b1092""]",2,,,
+kubernetes:matrix,2,profile,True,k8s-scope-matrix-checkov,"[""k8s-scope-matrix-checkov""]",9,8,"[""case-cc1d90becc04d18f6bdef6cc71a7f6dd""]",1,,,
+kubernetes:matrix,2,profile,True,k8s-scope-matrix-trivy,"[""k8s-scope-matrix-trivy""]",9,5,"[""case-3314850e2974d13384d80695418ab7ca"", ""case-609499e589c036da8d6a1808bdabdd90"", ""case-66cf98e1bded1143a6f9e1601e9148e3"", ""case-977e1b966839d52697ac7f3c6e242d3a""]",4,,,
+kubernetes:split,2,profile,True,k8s-scope-split-trivy,"[""k8s-scope-split-trivy""]",6,0,"[""case-0bbdf1e764e2dad6e591bb9a111c2aac"", ""case-253fb40e18e3cdc03fd97ab9cbc380fa"", ""case-414449b9a05764a8ae1844a2daa5886d"", ""case-4c64abe108cede5b3785c84d8d619974"", ""case-91474f037d5e88ecfde64a6663753147"", ""case-bb6788070fe220ef6efcfd60238186db""]",6,,,
+os-advisory,2,profile,True,os-ubi92early-grype,"[""os-ubi92early-grype""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi92early-trivy,"[""os-ubi92early-trivy""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi92late-grype,"[""os-ubi92late-grype""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi92late-trivy,"[""os-ubi92late-trivy""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi94-grype,"[""os-ubi94-grype""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi94-trivy,"[""os-ubi94-trivy""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi98-grype,"[""os-ubi98-grype""]",1,1,[],0,,,
+os-advisory,2,profile,True,os-ubi98-trivy,"[""os-ubi98-trivy""]",1,1,[],0,,,
+api-native:invalid,2,profile,False,crapi-nuclei-invalid,"[""crapi-nuclei-invalid""]",0,0,[],0,,,
+api-native:invalid,2,profile,False,crapi-zap-invalid,"[""crapi-zap-invalid""]",0,0,[],0,,,
+api-native:a,2,profile,False,crapi-nuclei-valid-a,"[""crapi-nuclei-valid-a""]",0,0,[],0,,,
+api-native:a,2,profile,False,crapi-zap-valid-a,"[""crapi-zap-valid-a""]",0,0,[],0,,,
+api-authorization,2,profile,True,crapi-restler-a-gated-namespace,"[""crapi-restler-a-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,2,profile,True,crapi-restler-a-raw-namespace,"[""crapi-restler-a-raw-namespace""]",2,1,"[""case-8077b068fc61386d5d168c03f926271b""]",1,1,1,0
+api-authorization,2,profile,True,crapi-restler-a-raw-no-checker,"[""crapi-restler-a-raw-no-checker""]",2,2,[],0,1,1,0
+api-authorization,2,profile,True,crapi-restler-b-gated-namespace,"[""crapi-restler-b-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,2,profile,True,crapi-restler-b-raw-namespace,"[""crapi-restler-b-raw-namespace""]",2,1,"[""case-395b97626e65daee0af6df53d74d2aa1""]",1,1,1,0
+api-authorization,2,profile,True,crapi-restler-b-raw-no-checker,"[""crapi-restler-b-raw-no-checker""]",2,2,[],0,1,1,0
+aigoat-declared-properties,2,profile,True,aigoat-checkov-docker-deployment,"[""aigoat-checkov-docker-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,2,profile,True,aigoat-checkov-docker-original,"[""aigoat-checkov-docker-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,2,profile,True,aigoat-compose-kics-compose-deployment-qualified,"[""aigoat-compose-kics-compose-deployment-qualified""]",31,20,"[""case-1fd50537c1dcfe45545bf3d4ea24ade1"", ""case-3a13915fda59836626fb30ffa3a336aa"", ""case-579f2b9b3e9bdd36913d2c2794339abd"", ""case-5b28107992b96773bf4c475332897023"", ""case-6b699d249fc4cbdbcc0803a58f203c9b"", ""case-89b0e49af1daf54436041623066909dc"", ""case-b7f26170a1016f110a7764efff855a4c"", ""case-d82c12ad15a8f332e63aa73acdd8459c"", ""case-df6eadd3e723835b65babed724bbdf78"", ""case-eb1a2653fda489d563c380c3feaa1898"", ""case-f82fca6dad11ed7b924ea2824b47aef9""]",11,15,8,7
+aigoat-declared-properties,2,profile,True,aigoat-hadolint-deployment,"[""aigoat-hadolint-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,2,profile,True,aigoat-hadolint-original,"[""aigoat-hadolint-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,2,profile,True,aigoat-kics-compose,"[""aigoat-kics-compose""]",31,21,"[""case-031652dfd33ee7f706a5373a0746a32d"", ""case-2ea5db50187afa2140893f66d9aa56e4"", ""case-56e7c95d9e8be3496c8591c0facba7e1"", ""case-620df80ca24bf880bb09e6571fac7720"", ""case-7bc2d4239a367c86b4fe41801d49c76b"", ""case-7ea1693403ccdd7f05af8ae2ad9aefc8"", ""case-abfba592980b683eaa459ffc6198263b"", ""case-af4cebed08725d144ff0a830f717670c"", ""case-b041ef6dd2088ad91445039baea2f8e3"", ""case-bdb91ccaba5249d31a28521af30385e1""]",10,15,12,3
+aigoat-declared-properties,2,profile,True,aigoat-trivy-config-deployment,"[""aigoat-trivy-config-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,2,profile,True,aigoat-trivy-config-original,"[""aigoat-trivy-config-original""]",31,31,[],0,15,15,0
+aigoat-http-properties,2,profile,False,aigoat-zap-invalid,"[""aigoat-zap-invalid""]",3,1,"[""case-a1fdd6fbd7e114e457b934690e0ee122"", ""case-ab361d1c528ee764f5109cddf6b766c5""]",2,2,1,1
+aigoat-http-properties,2,profile,False,aigoat-zap-valid-alice,"[""aigoat-zap-valid-alice""]",3,2,"[""case-4b34e3f0a572a8a3870995899777a2a0""]",1,2,2,0
+aigoat-unresolved:bandit,2,profile,True,aigoat-bandit-python,"[""aigoat-bandit-python""]",0,0,[],0,,,
+aigoat-unresolved:checkov,2,profile,True,aigoat-workflow-checkov-workflow-qualified,"[""aigoat-workflow-checkov-workflow-qualified""]",0,0,[],0,,,
+aigoat-unresolved:gitleaks,2,profile,True,aigoat-gitleaks-source,"[""aigoat-gitleaks-source""]",0,0,[],0,,,
+aigoat-unresolved:grype,2,profile,True,aigoat-grype-image-backend,"[""aigoat-grype-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:grype,2,profile,True,aigoat-grype-image-frontend,"[""aigoat-grype-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:grype,2,profile,True,aigoat-grype-image-ollama,"[""aigoat-grype-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:grype,2,profile,True,aigoat-grype-source,"[""aigoat-grype-source""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,2,profile,True,aigoat-semgrep-frontend,"[""aigoat-semgrep-frontend""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,2,profile,True,aigoat-semgrep-python,"[""aigoat-semgrep-python""]",0,0,[],0,,,
+aigoat-unresolved:trivy,2,profile,True,aigoat-trivy-image-backend,"[""aigoat-trivy-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,2,profile,True,aigoat-trivy-image-frontend,"[""aigoat-trivy-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,2,profile,True,aigoat-trivy-image-ollama,"[""aigoat-trivy-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:trivy,2,profile,True,aigoat-trivy-secret-source,"[""aigoat-trivy-secret-source""]",0,0,[],0,,,
+aigoat-unresolved:trivy,2,profile,True,aigoat-trivy-source,"[""aigoat-trivy-source""]",0,0,[],0,,,
+aigoat-unresolved:zizmor,2,profile,True,aigoat-zizmor-workflow,"[""aigoat-zizmor-workflow""]",0,0,[],0,,,
+sca,2,recorded_stage,True,image_scan,"[""sca-grype-image"", ""sca-trivy-image""]",6,3,"[""case-528f692cdd1e7ff4460c03b7f89e7eb7"", ""case-61efa8693a69e782df0611352d020cfe"", ""case-f278e83679b4e67099c126b0cb2c4a9b""]",3,2,2,0
+sca,2,recorded_stage,True,source_sca,"[""sca-dependency-check"", ""sca-grype-filesystem"", ""sca-trivy-filesystem"", ""sca-trivy-rootfs""]",6,3,"[""case-6fbc5af32d929f2516c8398d4c94dabe"", ""case-e474d9c6f23012e66a7b30f0f0e1c4ff"", ""case-ee147c98ebd3dcc59174d31cbc09037e""]",3,2,2,0
+sast-java,3,profile,True,java-findsecbugs,"[""java-findsecbugs""]",10,6,"[""case-1cd7557c5e45cfcda55320e6e21feba5"", ""case-5c302a409359158746b08c49684c9007"", ""case-a6ee8ebaf235880ffba512b0726fc61f"", ""case-aa6d688f1414b770ebc690856ed531e3""]",4,,,
+sast-java,3,profile,True,java-semgrep,"[""java-semgrep""]",10,10,[],0,,,
+sca,3,profile,True,sca-dependency-check,"[""sca-dependency-check""]",6,6,[],0,2,2,0
+sca,3,profile,True,sca-grype-filesystem,"[""sca-grype-filesystem""]",6,6,[],0,2,2,0
+sca,3,profile,True,sca-grype-image,"[""sca-grype-image""]",6,6,[],0,2,2,0
+sca,3,profile,True,sca-trivy-filesystem,"[""sca-trivy-filesystem""]",6,6,[],0,2,2,0
+sca,3,profile,True,sca-trivy-image,"[""sca-trivy-image""]",6,6,[],0,2,2,0
+sca,3,profile,True,sca-trivy-rootfs,"[""sca-trivy-rootfs""]",6,6,[],0,2,2,0
+secret,3,profile,True,configuration-gitleaks,"[""configuration-gitleaks""]",4,4,[],0,2,2,0
+secret,3,profile,True,configuration-trivy-secret,"[""configuration-trivy-secret""]",4,4,[],0,2,2,0
+docker,3,profile,True,configuration-checkov,"[""configuration-checkov""]",3,3,[],0,,,
+docker,3,profile,True,configuration-hadolint,"[""configuration-hadolint""]",3,3,[],0,,,
+docker,3,profile,True,configuration-trivy-config,"[""configuration-trivy-config""]",3,2,"[""case-9c6babe18babe5d2fb8c654900ca3879""]",1,,,
+compose:runtime_uid_zero,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:writable_rootfs,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:no_new_privileges_disabled,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-032b1486ce86e311fcb2f466a66b2690""]",1,,,
+compose:privileged_enabled,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-b9213c612a5d4f6dfc6776e129793e97""]",1,,,
+compose:host_network_enabled,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-00ea202c7c7dfcc8507b7c5901188938""]",1,,,
+compose:docker_socket_mounted,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-0e317233fa64e9022aebd7f7a5dc739b""]",1,,,
+compose:unqualified-native,3,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+terraform:controls,3,profile,True,infrastructure-controls-checkov-terraform,"[""infrastructure-controls-checkov-terraform""]",4,4,[],0,,,
+terraform:controls,3,profile,True,infrastructure-controls-kics-terraform,"[""infrastructure-controls-kics-terraform""]",4,4,[],0,,,
+terraform:controls,3,profile,True,infrastructure-controls-trivy-terraform,"[""infrastructure-controls-trivy-terraform""]",4,4,[],0,,,
+terraform:originals,3,profile,True,infrastructure-originals-checkov-terraform,"[""infrastructure-originals-checkov-terraform""]",1,1,[],0,,,
+terraform:originals,3,profile,True,infrastructure-originals-kics-terraform,"[""infrastructure-originals-kics-terraform""]",1,1,[],0,,,
+terraform:originals,3,profile,True,infrastructure-originals-trivy-terraform,"[""infrastructure-originals-trivy-terraform""]",1,1,[],0,,,
+workflow-job:controls,3,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-job:controls,3,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-job:originals,3,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-job:originals,3,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+workflow-global:controls,3,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-global:controls,3,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-global:originals,3,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-global:originals,3,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+kubernetes:controls,3,profile,True,infrastructure-controls-checkov-kubernetes,"[""infrastructure-controls-checkov-kubernetes""]",3,2,"[""case-320f440d2756cb168e51041cead018bc""]",1,,,
+kubernetes:controls,3,profile,True,infrastructure-controls-kubescape,"[""infrastructure-controls-kubescape""]",3,3,[],0,,,
+kubernetes:controls,3,profile,True,infrastructure-controls-trivy-kubernetes,"[""infrastructure-controls-trivy-kubernetes""]",3,3,[],0,,,
+kubernetes:originals,3,profile,True,infrastructure-originals-checkov-kubernetes,"[""infrastructure-originals-checkov-kubernetes""]",8,8,[],0,,,
+kubernetes:originals,3,profile,True,infrastructure-originals-kubescape,"[""infrastructure-originals-kubescape""]",8,8,[],0,,,
+kubernetes:originals,3,profile,True,infrastructure-originals-trivy-kubernetes,"[""infrastructure-originals-trivy-kubernetes""]",8,6,"[""case-6f8342e1a580a5cf150b797855971949"", ""case-ab6eac3cbc58576a7834a52b9b2b1092""]",2,,,
+kubernetes:matrix,3,profile,True,k8s-scope-matrix-checkov,"[""k8s-scope-matrix-checkov""]",9,8,"[""case-cc1d90becc04d18f6bdef6cc71a7f6dd""]",1,,,
+kubernetes:matrix,3,profile,True,k8s-scope-matrix-trivy,"[""k8s-scope-matrix-trivy""]",9,5,"[""case-3314850e2974d13384d80695418ab7ca"", ""case-609499e589c036da8d6a1808bdabdd90"", ""case-66cf98e1bded1143a6f9e1601e9148e3"", ""case-977e1b966839d52697ac7f3c6e242d3a""]",4,,,
+kubernetes:split,3,profile,True,k8s-scope-split-trivy,"[""k8s-scope-split-trivy""]",6,0,"[""case-0bbdf1e764e2dad6e591bb9a111c2aac"", ""case-253fb40e18e3cdc03fd97ab9cbc380fa"", ""case-414449b9a05764a8ae1844a2daa5886d"", ""case-4c64abe108cede5b3785c84d8d619974"", ""case-91474f037d5e88ecfde64a6663753147"", ""case-bb6788070fe220ef6efcfd60238186db""]",6,,,
+os-advisory,3,profile,True,os-ubi92early-grype,"[""os-ubi92early-grype""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi92early-trivy,"[""os-ubi92early-trivy""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi92late-grype,"[""os-ubi92late-grype""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi92late-trivy,"[""os-ubi92late-trivy""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi94-grype,"[""os-ubi94-grype""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi94-trivy,"[""os-ubi94-trivy""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi98-grype,"[""os-ubi98-grype""]",1,1,[],0,,,
+os-advisory,3,profile,True,os-ubi98-trivy,"[""os-ubi98-trivy""]",1,1,[],0,,,
+api-native:invalid,3,profile,False,crapi-nuclei-invalid,"[""crapi-nuclei-invalid""]",0,0,[],0,,,
+api-native:invalid,3,profile,False,crapi-zap-invalid,"[""crapi-zap-invalid""]",0,0,[],0,,,
+api-native:a,3,profile,False,crapi-nuclei-valid-a,"[""crapi-nuclei-valid-a""]",0,0,[],0,,,
+api-native:a,3,profile,False,crapi-zap-valid-a,"[""crapi-zap-valid-a""]",0,0,[],0,,,
+api-authorization,3,profile,True,crapi-restler-a-gated-namespace,"[""crapi-restler-a-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,3,profile,True,crapi-restler-a-raw-namespace,"[""crapi-restler-a-raw-namespace""]",2,1,"[""case-8077b068fc61386d5d168c03f926271b""]",1,1,1,0
+api-authorization,3,profile,True,crapi-restler-a-raw-no-checker,"[""crapi-restler-a-raw-no-checker""]",2,2,[],0,1,1,0
+api-authorization,3,profile,True,crapi-restler-b-gated-namespace,"[""crapi-restler-b-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,3,profile,True,crapi-restler-b-raw-namespace,"[""crapi-restler-b-raw-namespace""]",2,1,"[""case-395b97626e65daee0af6df53d74d2aa1""]",1,1,1,0
+api-authorization,3,profile,True,crapi-restler-b-raw-no-checker,"[""crapi-restler-b-raw-no-checker""]",2,2,[],0,1,1,0
+aigoat-declared-properties,3,profile,True,aigoat-checkov-docker-deployment,"[""aigoat-checkov-docker-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,3,profile,True,aigoat-checkov-docker-original,"[""aigoat-checkov-docker-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,3,profile,True,aigoat-compose-kics-compose-deployment-qualified,"[""aigoat-compose-kics-compose-deployment-qualified""]",31,20,"[""case-1fd50537c1dcfe45545bf3d4ea24ade1"", ""case-3a13915fda59836626fb30ffa3a336aa"", ""case-579f2b9b3e9bdd36913d2c2794339abd"", ""case-5b28107992b96773bf4c475332897023"", ""case-6b699d249fc4cbdbcc0803a58f203c9b"", ""case-89b0e49af1daf54436041623066909dc"", ""case-b7f26170a1016f110a7764efff855a4c"", ""case-d82c12ad15a8f332e63aa73acdd8459c"", ""case-df6eadd3e723835b65babed724bbdf78"", ""case-eb1a2653fda489d563c380c3feaa1898"", ""case-f82fca6dad11ed7b924ea2824b47aef9""]",11,15,8,7
+aigoat-declared-properties,3,profile,True,aigoat-hadolint-deployment,"[""aigoat-hadolint-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,3,profile,True,aigoat-hadolint-original,"[""aigoat-hadolint-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,3,profile,True,aigoat-kics-compose,"[""aigoat-kics-compose""]",31,21,"[""case-031652dfd33ee7f706a5373a0746a32d"", ""case-2ea5db50187afa2140893f66d9aa56e4"", ""case-56e7c95d9e8be3496c8591c0facba7e1"", ""case-620df80ca24bf880bb09e6571fac7720"", ""case-7bc2d4239a367c86b4fe41801d49c76b"", ""case-7ea1693403ccdd7f05af8ae2ad9aefc8"", ""case-abfba592980b683eaa459ffc6198263b"", ""case-af4cebed08725d144ff0a830f717670c"", ""case-b041ef6dd2088ad91445039baea2f8e3"", ""case-bdb91ccaba5249d31a28521af30385e1""]",10,15,12,3
+aigoat-declared-properties,3,profile,True,aigoat-trivy-config-deployment,"[""aigoat-trivy-config-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,3,profile,True,aigoat-trivy-config-original,"[""aigoat-trivy-config-original""]",31,31,[],0,15,15,0
+aigoat-http-properties,3,profile,False,aigoat-zap-invalid,"[""aigoat-zap-invalid""]",3,1,"[""case-a1fdd6fbd7e114e457b934690e0ee122"", ""case-ab361d1c528ee764f5109cddf6b766c5""]",2,2,1,1
+aigoat-http-properties,3,profile,False,aigoat-zap-valid-alice,"[""aigoat-zap-valid-alice""]",3,2,"[""case-4b34e3f0a572a8a3870995899777a2a0""]",1,2,2,0
+aigoat-unresolved:bandit,3,profile,True,aigoat-bandit-python,"[""aigoat-bandit-python""]",0,0,[],0,,,
+aigoat-unresolved:checkov,3,profile,True,aigoat-workflow-checkov-workflow-qualified,"[""aigoat-workflow-checkov-workflow-qualified""]",0,0,[],0,,,
+aigoat-unresolved:gitleaks,3,profile,True,aigoat-gitleaks-source,"[""aigoat-gitleaks-source""]",0,0,[],0,,,
+aigoat-unresolved:grype,3,profile,True,aigoat-grype-image-backend,"[""aigoat-grype-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:grype,3,profile,True,aigoat-grype-image-frontend,"[""aigoat-grype-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:grype,3,profile,True,aigoat-grype-image-ollama,"[""aigoat-grype-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:grype,3,profile,True,aigoat-grype-source,"[""aigoat-grype-source""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,3,profile,True,aigoat-semgrep-frontend,"[""aigoat-semgrep-frontend""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,3,profile,True,aigoat-semgrep-python,"[""aigoat-semgrep-python""]",0,0,[],0,,,
+aigoat-unresolved:trivy,3,profile,True,aigoat-trivy-image-backend,"[""aigoat-trivy-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,3,profile,True,aigoat-trivy-image-frontend,"[""aigoat-trivy-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,3,profile,True,aigoat-trivy-image-ollama,"[""aigoat-trivy-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:trivy,3,profile,True,aigoat-trivy-secret-source,"[""aigoat-trivy-secret-source""]",0,0,[],0,,,
+aigoat-unresolved:trivy,3,profile,True,aigoat-trivy-source,"[""aigoat-trivy-source""]",0,0,[],0,,,
+aigoat-unresolved:zizmor,3,profile,True,aigoat-zizmor-workflow,"[""aigoat-zizmor-workflow""]",0,0,[],0,,,
+sca,3,recorded_stage,True,image_scan,"[""sca-grype-image"", ""sca-trivy-image""]",6,3,"[""case-528f692cdd1e7ff4460c03b7f89e7eb7"", ""case-61efa8693a69e782df0611352d020cfe"", ""case-f278e83679b4e67099c126b0cb2c4a9b""]",3,2,2,0
+sca,3,recorded_stage,True,source_sca,"[""sca-dependency-check"", ""sca-grype-filesystem"", ""sca-trivy-filesystem"", ""sca-trivy-rootfs""]",6,3,"[""case-6fbc5af32d929f2516c8398d4c94dabe"", ""case-e474d9c6f23012e66a7b30f0f0e1c4ff"", ""case-ee147c98ebd3dcc59174d31cbc09037e""]",3,2,2,0
+sast-java,4,profile,True,java-findsecbugs,"[""java-findsecbugs""]",10,6,"[""case-1cd7557c5e45cfcda55320e6e21feba5"", ""case-5c302a409359158746b08c49684c9007"", ""case-a6ee8ebaf235880ffba512b0726fc61f"", ""case-aa6d688f1414b770ebc690856ed531e3""]",4,,,
+sast-java,4,profile,True,java-semgrep,"[""java-semgrep""]",10,10,[],0,,,
+sca,4,profile,True,sca-dependency-check,"[""sca-dependency-check""]",6,6,[],0,2,2,0
+sca,4,profile,True,sca-grype-filesystem,"[""sca-grype-filesystem""]",6,6,[],0,2,2,0
+sca,4,profile,True,sca-grype-image,"[""sca-grype-image""]",6,6,[],0,2,2,0
+sca,4,profile,True,sca-trivy-filesystem,"[""sca-trivy-filesystem""]",6,6,[],0,2,2,0
+sca,4,profile,True,sca-trivy-image,"[""sca-trivy-image""]",6,6,[],0,2,2,0
+sca,4,profile,True,sca-trivy-rootfs,"[""sca-trivy-rootfs""]",6,6,[],0,2,2,0
+secret,4,profile,True,configuration-gitleaks,"[""configuration-gitleaks""]",4,4,[],0,2,2,0
+secret,4,profile,True,configuration-trivy-secret,"[""configuration-trivy-secret""]",4,4,[],0,2,2,0
+docker,4,profile,True,configuration-checkov,"[""configuration-checkov""]",3,3,[],0,,,
+docker,4,profile,True,configuration-hadolint,"[""configuration-hadolint""]",3,3,[],0,,,
+docker,4,profile,True,configuration-trivy-config,"[""configuration-trivy-config""]",3,2,"[""case-9c6babe18babe5d2fb8c654900ca3879""]",1,,,
+compose:runtime_uid_zero,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:writable_rootfs,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:no_new_privileges_disabled,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-032b1486ce86e311fcb2f466a66b2690""]",1,,,
+compose:privileged_enabled,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-b9213c612a5d4f6dfc6776e129793e97""]",1,,,
+compose:host_network_enabled,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-00ea202c7c7dfcc8507b7c5901188938""]",1,,,
+compose:docker_socket_mounted,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-0e317233fa64e9022aebd7f7a5dc739b""]",1,,,
+compose:unqualified-native,4,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+terraform:controls,4,profile,True,infrastructure-controls-checkov-terraform,"[""infrastructure-controls-checkov-terraform""]",4,4,[],0,,,
+terraform:controls,4,profile,True,infrastructure-controls-kics-terraform,"[""infrastructure-controls-kics-terraform""]",4,4,[],0,,,
+terraform:controls,4,profile,True,infrastructure-controls-trivy-terraform,"[""infrastructure-controls-trivy-terraform""]",4,4,[],0,,,
+terraform:originals,4,profile,True,infrastructure-originals-checkov-terraform,"[""infrastructure-originals-checkov-terraform""]",1,1,[],0,,,
+terraform:originals,4,profile,True,infrastructure-originals-kics-terraform,"[""infrastructure-originals-kics-terraform""]",1,1,[],0,,,
+terraform:originals,4,profile,True,infrastructure-originals-trivy-terraform,"[""infrastructure-originals-trivy-terraform""]",1,1,[],0,,,
+workflow-job:controls,4,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-job:controls,4,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-job:originals,4,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-job:originals,4,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+workflow-global:controls,4,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-global:controls,4,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-global:originals,4,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-global:originals,4,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+kubernetes:controls,4,profile,True,infrastructure-controls-checkov-kubernetes,"[""infrastructure-controls-checkov-kubernetes""]",3,2,"[""case-320f440d2756cb168e51041cead018bc""]",1,,,
+kubernetes:controls,4,profile,True,infrastructure-controls-kubescape,"[""infrastructure-controls-kubescape""]",3,3,[],0,,,
+kubernetes:controls,4,profile,True,infrastructure-controls-trivy-kubernetes,"[""infrastructure-controls-trivy-kubernetes""]",3,3,[],0,,,
+kubernetes:originals,4,profile,True,infrastructure-originals-checkov-kubernetes,"[""infrastructure-originals-checkov-kubernetes""]",8,8,[],0,,,
+kubernetes:originals,4,profile,True,infrastructure-originals-kubescape,"[""infrastructure-originals-kubescape""]",8,8,[],0,,,
+kubernetes:originals,4,profile,True,infrastructure-originals-trivy-kubernetes,"[""infrastructure-originals-trivy-kubernetes""]",8,6,"[""case-6f8342e1a580a5cf150b797855971949"", ""case-ab6eac3cbc58576a7834a52b9b2b1092""]",2,,,
+kubernetes:matrix,4,profile,True,k8s-scope-matrix-checkov,"[""k8s-scope-matrix-checkov""]",9,8,"[""case-cc1d90becc04d18f6bdef6cc71a7f6dd""]",1,,,
+kubernetes:matrix,4,profile,True,k8s-scope-matrix-trivy,"[""k8s-scope-matrix-trivy""]",9,5,"[""case-3314850e2974d13384d80695418ab7ca"", ""case-609499e589c036da8d6a1808bdabdd90"", ""case-66cf98e1bded1143a6f9e1601e9148e3"", ""case-977e1b966839d52697ac7f3c6e242d3a""]",4,,,
+kubernetes:split,4,profile,True,k8s-scope-split-trivy,"[""k8s-scope-split-trivy""]",6,0,"[""case-0bbdf1e764e2dad6e591bb9a111c2aac"", ""case-253fb40e18e3cdc03fd97ab9cbc380fa"", ""case-414449b9a05764a8ae1844a2daa5886d"", ""case-4c64abe108cede5b3785c84d8d619974"", ""case-91474f037d5e88ecfde64a6663753147"", ""case-bb6788070fe220ef6efcfd60238186db""]",6,,,
+os-advisory,4,profile,True,os-ubi92early-grype,"[""os-ubi92early-grype""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi92early-trivy,"[""os-ubi92early-trivy""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi92late-grype,"[""os-ubi92late-grype""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi92late-trivy,"[""os-ubi92late-trivy""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi94-grype,"[""os-ubi94-grype""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi94-trivy,"[""os-ubi94-trivy""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi98-grype,"[""os-ubi98-grype""]",1,1,[],0,,,
+os-advisory,4,profile,True,os-ubi98-trivy,"[""os-ubi98-trivy""]",1,1,[],0,,,
+api-native:invalid,4,profile,False,crapi-nuclei-invalid,"[""crapi-nuclei-invalid""]",0,0,[],0,,,
+api-native:invalid,4,profile,False,crapi-zap-invalid,"[""crapi-zap-invalid""]",0,0,[],0,,,
+api-native:a,4,profile,False,crapi-nuclei-valid-a,"[""crapi-nuclei-valid-a""]",0,0,[],0,,,
+api-native:a,4,profile,False,crapi-zap-valid-a,"[""crapi-zap-valid-a""]",0,0,[],0,,,
+api-authorization,4,profile,True,crapi-restler-a-gated-namespace,"[""crapi-restler-a-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,4,profile,True,crapi-restler-a-raw-namespace,"[""crapi-restler-a-raw-namespace""]",2,1,"[""case-8077b068fc61386d5d168c03f926271b""]",1,1,1,0
+api-authorization,4,profile,True,crapi-restler-a-raw-no-checker,"[""crapi-restler-a-raw-no-checker""]",2,2,[],0,1,1,0
+api-authorization,4,profile,True,crapi-restler-b-gated-namespace,"[""crapi-restler-b-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,4,profile,True,crapi-restler-b-raw-namespace,"[""crapi-restler-b-raw-namespace""]",2,1,"[""case-395b97626e65daee0af6df53d74d2aa1""]",1,1,1,0
+api-authorization,4,profile,True,crapi-restler-b-raw-no-checker,"[""crapi-restler-b-raw-no-checker""]",2,2,[],0,1,1,0
+aigoat-declared-properties,4,profile,True,aigoat-checkov-docker-deployment,"[""aigoat-checkov-docker-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,4,profile,True,aigoat-checkov-docker-original,"[""aigoat-checkov-docker-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,4,profile,True,aigoat-compose-kics-compose-deployment-qualified,"[""aigoat-compose-kics-compose-deployment-qualified""]",31,20,"[""case-1fd50537c1dcfe45545bf3d4ea24ade1"", ""case-3a13915fda59836626fb30ffa3a336aa"", ""case-579f2b9b3e9bdd36913d2c2794339abd"", ""case-5b28107992b96773bf4c475332897023"", ""case-6b699d249fc4cbdbcc0803a58f203c9b"", ""case-89b0e49af1daf54436041623066909dc"", ""case-b7f26170a1016f110a7764efff855a4c"", ""case-d82c12ad15a8f332e63aa73acdd8459c"", ""case-df6eadd3e723835b65babed724bbdf78"", ""case-eb1a2653fda489d563c380c3feaa1898"", ""case-f82fca6dad11ed7b924ea2824b47aef9""]",11,15,8,7
+aigoat-declared-properties,4,profile,True,aigoat-hadolint-deployment,"[""aigoat-hadolint-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,4,profile,True,aigoat-hadolint-original,"[""aigoat-hadolint-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,4,profile,True,aigoat-kics-compose,"[""aigoat-kics-compose""]",31,21,"[""case-031652dfd33ee7f706a5373a0746a32d"", ""case-2ea5db50187afa2140893f66d9aa56e4"", ""case-56e7c95d9e8be3496c8591c0facba7e1"", ""case-620df80ca24bf880bb09e6571fac7720"", ""case-7bc2d4239a367c86b4fe41801d49c76b"", ""case-7ea1693403ccdd7f05af8ae2ad9aefc8"", ""case-abfba592980b683eaa459ffc6198263b"", ""case-af4cebed08725d144ff0a830f717670c"", ""case-b041ef6dd2088ad91445039baea2f8e3"", ""case-bdb91ccaba5249d31a28521af30385e1""]",10,15,12,3
+aigoat-declared-properties,4,profile,True,aigoat-trivy-config-deployment,"[""aigoat-trivy-config-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,4,profile,True,aigoat-trivy-config-original,"[""aigoat-trivy-config-original""]",31,31,[],0,15,15,0
+aigoat-http-properties,4,profile,False,aigoat-zap-invalid,"[""aigoat-zap-invalid""]",3,1,"[""case-a1fdd6fbd7e114e457b934690e0ee122"", ""case-ab361d1c528ee764f5109cddf6b766c5""]",2,2,1,1
+aigoat-http-properties,4,profile,False,aigoat-zap-valid-alice,"[""aigoat-zap-valid-alice""]",3,2,"[""case-4b34e3f0a572a8a3870995899777a2a0""]",1,2,2,0
+aigoat-unresolved:bandit,4,profile,True,aigoat-bandit-python,"[""aigoat-bandit-python""]",0,0,[],0,,,
+aigoat-unresolved:checkov,4,profile,True,aigoat-workflow-checkov-workflow-qualified,"[""aigoat-workflow-checkov-workflow-qualified""]",0,0,[],0,,,
+aigoat-unresolved:gitleaks,4,profile,True,aigoat-gitleaks-source,"[""aigoat-gitleaks-source""]",0,0,[],0,,,
+aigoat-unresolved:grype,4,profile,True,aigoat-grype-image-backend,"[""aigoat-grype-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:grype,4,profile,True,aigoat-grype-image-frontend,"[""aigoat-grype-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:grype,4,profile,True,aigoat-grype-image-ollama,"[""aigoat-grype-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:grype,4,profile,True,aigoat-grype-source,"[""aigoat-grype-source""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,4,profile,True,aigoat-semgrep-frontend,"[""aigoat-semgrep-frontend""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,4,profile,True,aigoat-semgrep-python,"[""aigoat-semgrep-python""]",0,0,[],0,,,
+aigoat-unresolved:trivy,4,profile,True,aigoat-trivy-image-backend,"[""aigoat-trivy-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,4,profile,True,aigoat-trivy-image-frontend,"[""aigoat-trivy-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,4,profile,True,aigoat-trivy-image-ollama,"[""aigoat-trivy-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:trivy,4,profile,True,aigoat-trivy-secret-source,"[""aigoat-trivy-secret-source""]",0,0,[],0,,,
+aigoat-unresolved:trivy,4,profile,True,aigoat-trivy-source,"[""aigoat-trivy-source""]",0,0,[],0,,,
+aigoat-unresolved:zizmor,4,profile,True,aigoat-zizmor-workflow,"[""aigoat-zizmor-workflow""]",0,0,[],0,,,
+sca,4,recorded_stage,True,image_scan,"[""sca-grype-image"", ""sca-trivy-image""]",6,3,"[""case-528f692cdd1e7ff4460c03b7f89e7eb7"", ""case-61efa8693a69e782df0611352d020cfe"", ""case-f278e83679b4e67099c126b0cb2c4a9b""]",3,2,2,0
+sca,4,recorded_stage,True,source_sca,"[""sca-dependency-check"", ""sca-grype-filesystem"", ""sca-trivy-filesystem"", ""sca-trivy-rootfs""]",6,3,"[""case-6fbc5af32d929f2516c8398d4c94dabe"", ""case-e474d9c6f23012e66a7b30f0f0e1c4ff"", ""case-ee147c98ebd3dcc59174d31cbc09037e""]",3,2,2,0
+sast-java,5,profile,True,java-findsecbugs,"[""java-findsecbugs""]",10,6,"[""case-1cd7557c5e45cfcda55320e6e21feba5"", ""case-5c302a409359158746b08c49684c9007"", ""case-a6ee8ebaf235880ffba512b0726fc61f"", ""case-aa6d688f1414b770ebc690856ed531e3""]",4,,,
+sast-java,5,profile,True,java-semgrep,"[""java-semgrep""]",10,10,[],0,,,
+sca,5,profile,True,sca-dependency-check,"[""sca-dependency-check""]",6,6,[],0,2,2,0
+sca,5,profile,True,sca-grype-filesystem,"[""sca-grype-filesystem""]",6,6,[],0,2,2,0
+sca,5,profile,True,sca-grype-image,"[""sca-grype-image""]",6,6,[],0,2,2,0
+sca,5,profile,True,sca-trivy-filesystem,"[""sca-trivy-filesystem""]",6,6,[],0,2,2,0
+sca,5,profile,True,sca-trivy-image,"[""sca-trivy-image""]",6,6,[],0,2,2,0
+sca,5,profile,True,sca-trivy-rootfs,"[""sca-trivy-rootfs""]",6,6,[],0,2,2,0
+secret,5,profile,True,configuration-gitleaks,"[""configuration-gitleaks""]",4,4,[],0,2,2,0
+secret,5,profile,True,configuration-trivy-secret,"[""configuration-trivy-secret""]",4,4,[],0,2,2,0
+docker,5,profile,True,configuration-checkov,"[""configuration-checkov""]",3,3,[],0,,,
+docker,5,profile,True,configuration-hadolint,"[""configuration-hadolint""]",3,3,[],0,,,
+docker,5,profile,True,configuration-trivy-config,"[""configuration-trivy-config""]",3,2,"[""case-9c6babe18babe5d2fb8c654900ca3879""]",1,,,
+compose:runtime_uid_zero,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:writable_rootfs,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+compose:no_new_privileges_disabled,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-032b1486ce86e311fcb2f466a66b2690""]",1,,,
+compose:privileged_enabled,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-b9213c612a5d4f6dfc6776e129793e97""]",1,,,
+compose:host_network_enabled,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-00ea202c7c7dfcc8507b7c5901188938""]",1,,,
+compose:docker_socket_mounted,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",1,0,"[""case-0e317233fa64e9022aebd7f7a5dc739b""]",1,,,
+compose:unqualified-native,5,profile,True,configuration-kics-compose,"[""configuration-kics-compose""]",0,0,[],0,,,
+terraform:controls,5,profile,True,infrastructure-controls-checkov-terraform,"[""infrastructure-controls-checkov-terraform""]",4,4,[],0,,,
+terraform:controls,5,profile,True,infrastructure-controls-kics-terraform,"[""infrastructure-controls-kics-terraform""]",4,4,[],0,,,
+terraform:controls,5,profile,True,infrastructure-controls-trivy-terraform,"[""infrastructure-controls-trivy-terraform""]",4,4,[],0,,,
+terraform:originals,5,profile,True,infrastructure-originals-checkov-terraform,"[""infrastructure-originals-checkov-terraform""]",1,1,[],0,,,
+terraform:originals,5,profile,True,infrastructure-originals-kics-terraform,"[""infrastructure-originals-kics-terraform""]",1,1,[],0,,,
+terraform:originals,5,profile,True,infrastructure-originals-trivy-terraform,"[""infrastructure-originals-trivy-terraform""]",1,1,[],0,,,
+workflow-job:controls,5,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-job:controls,5,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-job:originals,5,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-job:originals,5,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+workflow-global:controls,5,profile,True,infrastructure-controls-checkov-workflow,"[""infrastructure-controls-checkov-workflow""]",0,0,[],0,,,
+workflow-global:controls,5,profile,True,infrastructure-controls-zizmor,"[""infrastructure-controls-zizmor""]",0,0,[],0,,,
+workflow-global:originals,5,profile,True,infrastructure-originals-checkov-workflow,"[""infrastructure-originals-checkov-workflow""]",0,0,[],0,,,
+workflow-global:originals,5,profile,True,infrastructure-originals-zizmor,"[""infrastructure-originals-zizmor""]",0,0,[],0,,,
+kubernetes:controls,5,profile,True,infrastructure-controls-checkov-kubernetes,"[""infrastructure-controls-checkov-kubernetes""]",3,2,"[""case-320f440d2756cb168e51041cead018bc""]",1,,,
+kubernetes:controls,5,profile,True,infrastructure-controls-kubescape,"[""infrastructure-controls-kubescape""]",3,3,[],0,,,
+kubernetes:controls,5,profile,True,infrastructure-controls-trivy-kubernetes,"[""infrastructure-controls-trivy-kubernetes""]",3,3,[],0,,,
+kubernetes:originals,5,profile,True,infrastructure-originals-checkov-kubernetes,"[""infrastructure-originals-checkov-kubernetes""]",8,8,[],0,,,
+kubernetes:originals,5,profile,True,infrastructure-originals-kubescape,"[""infrastructure-originals-kubescape""]",8,8,[],0,,,
+kubernetes:originals,5,profile,True,infrastructure-originals-trivy-kubernetes,"[""infrastructure-originals-trivy-kubernetes""]",8,6,"[""case-6f8342e1a580a5cf150b797855971949"", ""case-ab6eac3cbc58576a7834a52b9b2b1092""]",2,,,
+kubernetes:matrix,5,profile,True,k8s-scope-matrix-checkov,"[""k8s-scope-matrix-checkov""]",9,8,"[""case-cc1d90becc04d18f6bdef6cc71a7f6dd""]",1,,,
+kubernetes:matrix,5,profile,True,k8s-scope-matrix-trivy,"[""k8s-scope-matrix-trivy""]",9,5,"[""case-3314850e2974d13384d80695418ab7ca"", ""case-609499e589c036da8d6a1808bdabdd90"", ""case-66cf98e1bded1143a6f9e1601e9148e3"", ""case-977e1b966839d52697ac7f3c6e242d3a""]",4,,,
+kubernetes:split,5,profile,True,k8s-scope-split-trivy,"[""k8s-scope-split-trivy""]",6,0,"[""case-0bbdf1e764e2dad6e591bb9a111c2aac"", ""case-253fb40e18e3cdc03fd97ab9cbc380fa"", ""case-414449b9a05764a8ae1844a2daa5886d"", ""case-4c64abe108cede5b3785c84d8d619974"", ""case-91474f037d5e88ecfde64a6663753147"", ""case-bb6788070fe220ef6efcfd60238186db""]",6,,,
+os-advisory,5,profile,True,os-ubi92early-grype,"[""os-ubi92early-grype""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi92early-trivy,"[""os-ubi92early-trivy""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi92late-grype,"[""os-ubi92late-grype""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi92late-trivy,"[""os-ubi92late-trivy""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi94-grype,"[""os-ubi94-grype""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi94-trivy,"[""os-ubi94-trivy""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi98-grype,"[""os-ubi98-grype""]",1,1,[],0,,,
+os-advisory,5,profile,True,os-ubi98-trivy,"[""os-ubi98-trivy""]",1,1,[],0,,,
+api-native:invalid,5,profile,False,crapi-nuclei-invalid,"[""crapi-nuclei-invalid""]",0,0,[],0,,,
+api-native:invalid,5,profile,False,crapi-zap-invalid,"[""crapi-zap-invalid""]",0,0,[],0,,,
+api-native:a,5,profile,False,crapi-nuclei-valid-a,"[""crapi-nuclei-valid-a""]",0,0,[],0,,,
+api-native:a,5,profile,False,crapi-zap-valid-a,"[""crapi-zap-valid-a""]",0,0,[],0,,,
+api-authorization,5,profile,True,crapi-restler-a-gated-namespace,"[""crapi-restler-a-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,5,profile,True,crapi-restler-a-raw-namespace,"[""crapi-restler-a-raw-namespace""]",2,1,"[""case-8077b068fc61386d5d168c03f926271b""]",1,1,1,0
+api-authorization,5,profile,True,crapi-restler-a-raw-no-checker,"[""crapi-restler-a-raw-no-checker""]",2,2,[],0,1,1,0
+api-authorization,5,profile,True,crapi-restler-b-gated-namespace,"[""crapi-restler-b-gated-namespace""]",2,2,[],0,1,1,0
+api-authorization,5,profile,True,crapi-restler-b-raw-namespace,"[""crapi-restler-b-raw-namespace""]",2,1,"[""case-395b97626e65daee0af6df53d74d2aa1""]",1,1,1,0
+api-authorization,5,profile,True,crapi-restler-b-raw-no-checker,"[""crapi-restler-b-raw-no-checker""]",2,2,[],0,1,1,0
+aigoat-declared-properties,5,profile,True,aigoat-checkov-docker-deployment,"[""aigoat-checkov-docker-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,5,profile,True,aigoat-checkov-docker-original,"[""aigoat-checkov-docker-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,5,profile,True,aigoat-compose-kics-compose-deployment-qualified,"[""aigoat-compose-kics-compose-deployment-qualified""]",31,20,"[""case-1fd50537c1dcfe45545bf3d4ea24ade1"", ""case-3a13915fda59836626fb30ffa3a336aa"", ""case-579f2b9b3e9bdd36913d2c2794339abd"", ""case-5b28107992b96773bf4c475332897023"", ""case-6b699d249fc4cbdbcc0803a58f203c9b"", ""case-89b0e49af1daf54436041623066909dc"", ""case-b7f26170a1016f110a7764efff855a4c"", ""case-d82c12ad15a8f332e63aa73acdd8459c"", ""case-df6eadd3e723835b65babed724bbdf78"", ""case-eb1a2653fda489d563c380c3feaa1898"", ""case-f82fca6dad11ed7b924ea2824b47aef9""]",11,15,8,7
+aigoat-declared-properties,5,profile,True,aigoat-hadolint-deployment,"[""aigoat-hadolint-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,5,profile,True,aigoat-hadolint-original,"[""aigoat-hadolint-original""]",31,31,[],0,15,15,0
+aigoat-declared-properties,5,profile,True,aigoat-kics-compose,"[""aigoat-kics-compose""]",31,21,"[""case-031652dfd33ee7f706a5373a0746a32d"", ""case-2ea5db50187afa2140893f66d9aa56e4"", ""case-56e7c95d9e8be3496c8591c0facba7e1"", ""case-620df80ca24bf880bb09e6571fac7720"", ""case-7bc2d4239a367c86b4fe41801d49c76b"", ""case-7ea1693403ccdd7f05af8ae2ad9aefc8"", ""case-abfba592980b683eaa459ffc6198263b"", ""case-af4cebed08725d144ff0a830f717670c"", ""case-b041ef6dd2088ad91445039baea2f8e3"", ""case-bdb91ccaba5249d31a28521af30385e1""]",10,15,12,3
+aigoat-declared-properties,5,profile,True,aigoat-trivy-config-deployment,"[""aigoat-trivy-config-deployment""]",31,31,[],0,15,15,0
+aigoat-declared-properties,5,profile,True,aigoat-trivy-config-original,"[""aigoat-trivy-config-original""]",31,31,[],0,15,15,0
+aigoat-http-properties,5,profile,False,aigoat-zap-invalid,"[""aigoat-zap-invalid""]",3,1,"[""case-a1fdd6fbd7e114e457b934690e0ee122"", ""case-ab361d1c528ee764f5109cddf6b766c5""]",2,2,1,1
+aigoat-http-properties,5,profile,False,aigoat-zap-valid-alice,"[""aigoat-zap-valid-alice""]",3,2,"[""case-4b34e3f0a572a8a3870995899777a2a0""]",1,2,2,0
+aigoat-unresolved:bandit,5,profile,True,aigoat-bandit-python,"[""aigoat-bandit-python""]",0,0,[],0,,,
+aigoat-unresolved:checkov,5,profile,True,aigoat-workflow-checkov-workflow-qualified,"[""aigoat-workflow-checkov-workflow-qualified""]",0,0,[],0,,,
+aigoat-unresolved:gitleaks,5,profile,True,aigoat-gitleaks-source,"[""aigoat-gitleaks-source""]",0,0,[],0,,,
+aigoat-unresolved:grype,5,profile,True,aigoat-grype-image-backend,"[""aigoat-grype-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:grype,5,profile,True,aigoat-grype-image-frontend,"[""aigoat-grype-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:grype,5,profile,True,aigoat-grype-image-ollama,"[""aigoat-grype-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:grype,5,profile,True,aigoat-grype-source,"[""aigoat-grype-source""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,5,profile,True,aigoat-semgrep-frontend,"[""aigoat-semgrep-frontend""]",0,0,[],0,,,
+aigoat-unresolved:semgrep,5,profile,True,aigoat-semgrep-python,"[""aigoat-semgrep-python""]",0,0,[],0,,,
+aigoat-unresolved:trivy,5,profile,True,aigoat-trivy-image-backend,"[""aigoat-trivy-image-backend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,5,profile,True,aigoat-trivy-image-frontend,"[""aigoat-trivy-image-frontend""]",0,0,[],0,,,
+aigoat-unresolved:trivy,5,profile,True,aigoat-trivy-image-ollama,"[""aigoat-trivy-image-ollama""]",0,0,[],0,,,
+aigoat-unresolved:trivy,5,profile,True,aigoat-trivy-secret-source,"[""aigoat-trivy-secret-source""]",0,0,[],0,,,
+aigoat-unresolved:trivy,5,profile,True,aigoat-trivy-source,"[""aigoat-trivy-source""]",0,0,[],0,,,
+aigoat-unresolved:zizmor,5,profile,True,aigoat-zizmor-workflow,"[""aigoat-zizmor-workflow""]",0,0,[],0,,,
+sca,5,recorded_stage,True,image_scan,"[""sca-grype-image"", ""sca-trivy-image""]",6,3,"[""case-528f692cdd1e7ff4460c03b7f89e7eb7"", ""case-61efa8693a69e782df0611352d020cfe"", ""case-f278e83679b4e67099c126b0cb2c4a9b""]",3,2,2,0
+sca,5,recorded_stage,True,source_sca,"[""sca-dependency-check"", ""sca-grype-filesystem"", ""sca-trivy-filesystem"", ""sca-trivy-rootfs""]",6,3,"[""case-6fbc5af32d929f2516c8398d4c94dabe"", ""case-e474d9c6f23012e66a7b30f0f0e1c4ff"", ""case-ee147c98ebd3dcc59174d31cbc09037e""]",3,2,2,0

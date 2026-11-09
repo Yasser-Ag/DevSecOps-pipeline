@@ -1,0 +1,2 @@
+FROM python@sha256:0495f5559318affa673172ec7e35cd0a5213e4aaf4c76d0a66554c0af97b157e
+CMD ["python", "-c", "print(1)"]

@@ -1,0 +1,7 @@
+category,count,denominator_raw_dast,percentage_raw_dast,source,status
+all_raw_dast,555,555,100.000000,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé
+CWE-388_all_client_and_server,366,555,65.945946,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé
+CWE-388_client_error_title,342,555,61.621622,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé
+CWE-388_server_error_title,24,555,4.324324,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé
+server_error_title_HTTP_500_evidence,22,555,3.963964,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé
+server_error_title_HTTP_503_evidence,2,555,0.360360,original_sha256:a85bbdca55c43feff29c4209fe17f84207f17dd2a0116b8aafab1946a1437671; 06a-dast-zap-unauth.json; 06b-dast-zap-auth.json,recalculé

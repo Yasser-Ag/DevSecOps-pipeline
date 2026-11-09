@@ -1,0 +1,11 @@
+block,removed_tool,union_before,union_after,lost_instances,lost_case_ids,catalogue_size
+1,checkov,0,0,0,[],4
+1,zizmor,0,0,0,[],4
+2,checkov,0,0,0,[],4
+2,zizmor,0,0,0,[],4
+3,checkov,0,0,0,[],4
+3,zizmor,0,0,0,[],4
+4,checkov,0,0,0,[],4
+4,zizmor,0,0,0,[],4
+5,checkov,0,0,0,[],4
+5,zizmor,0,0,0,[],4

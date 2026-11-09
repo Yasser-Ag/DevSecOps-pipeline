@@ -1,0 +1,205 @@
+row,column,value,source
+Java SAST cases,Semgrep,6,K_tables/A1_populations.csv:2
+Java SAST cases,FindSecBugs,10,K_tables/A1_populations.csv:2
+Java SAST cases,Dependency-Check,–,K_tables/A1_populations.csv:2
+Java SAST cases,Trivy,–,K_tables/A1_populations.csv:2
+Java SAST cases,Grype,–,K_tables/A1_populations.csv:2
+Java SAST cases,Gitleaks,–,K_tables/A1_populations.csv:2
+Java SAST cases,Checkov,–,K_tables/A1_populations.csv:2
+Java SAST cases,Hadolint,–,K_tables/A1_populations.csv:2
+Java SAST cases,KICS,–,K_tables/A1_populations.csv:2
+Java SAST cases,Kubescape,–,K_tables/A1_populations.csv:2
+Java SAST cases,RESTler,–,K_tables/A1_populations.csv:2
+Java SAST cases,Union / catalog,10/11,K_tables/A1_populations.csv:2
+SCA occurrences,Semgrep,–,K_tables/A1_populations.csv:3
+SCA occurrences,FindSecBugs,–,K_tables/A1_populations.csv:3
+SCA occurrences,Dependency-Check,3,K_tables/A1_populations.csv:3
+SCA occurrences,Trivy,6,K_tables/A1_populations.csv:3
+SCA occurrences,Grype,6,K_tables/A1_populations.csv:3
+SCA occurrences,Gitleaks,–,K_tables/A1_populations.csv:3
+SCA occurrences,Checkov,–,K_tables/A1_populations.csv:3
+SCA occurrences,Hadolint,–,K_tables/A1_populations.csv:3
+SCA occurrences,KICS,–,K_tables/A1_populations.csv:3
+SCA occurrences,Kubescape,–,K_tables/A1_populations.csv:3
+SCA occurrences,RESTler,–,K_tables/A1_populations.csv:3
+SCA occurrences,Union / catalog,6/6,K_tables/A1_populations.csv:3
+Secret occurrences,Semgrep,–,K_tables/A1_populations.csv:4
+Secret occurrences,FindSecBugs,–,K_tables/A1_populations.csv:4
+Secret occurrences,Dependency-Check,–,K_tables/A1_populations.csv:4
+Secret occurrences,Trivy,4,K_tables/A1_populations.csv:4
+Secret occurrences,Grype,–,K_tables/A1_populations.csv:4
+Secret occurrences,Gitleaks,4,K_tables/A1_populations.csv:4
+Secret occurrences,Checkov,–,K_tables/A1_populations.csv:4
+Secret occurrences,Hadolint,–,K_tables/A1_populations.csv:4
+Secret occurrences,KICS,–,K_tables/A1_populations.csv:4
+Secret occurrences,Kubescape,–,K_tables/A1_populations.csv:4
+Secret occurrences,RESTler,–,K_tables/A1_populations.csv:4
+Secret occurrences,Union / catalog,4/4,K_tables/A1_populations.csv:4
+Dockerfiles,Semgrep,–,K_tables/A1_populations.csv:5
+Dockerfiles,FindSecBugs,–,K_tables/A1_populations.csv:5
+Dockerfiles,Dependency-Check,–,K_tables/A1_populations.csv:5
+Dockerfiles,Trivy,3,K_tables/A1_populations.csv:5
+Dockerfiles,Grype,–,K_tables/A1_populations.csv:5
+Dockerfiles,Gitleaks,–,K_tables/A1_populations.csv:5
+Dockerfiles,Checkov,0,K_tables/A1_populations.csv:5
+Dockerfiles,Hadolint,2,K_tables/A1_populations.csv:5
+Dockerfiles,KICS,–,K_tables/A1_populations.csv:5
+Dockerfiles,Kubescape,–,K_tables/A1_populations.csv:5
+Dockerfiles,RESTler,–,K_tables/A1_populations.csv:5
+Dockerfiles,Union / catalog,3/3,K_tables/A1_populations.csv:5
+Compose: no-new-privileges disabled,Semgrep,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,FindSecBugs,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Dependency-Check,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Trivy,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Grype,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Gitleaks,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Checkov,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Hadolint,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,KICS,1,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Kubescape,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,RESTler,–,K_tables/A1_populations.csv:8
+Compose: no-new-privileges disabled,Union / catalog,1/1,K_tables/A1_populations.csv:8
+Compose: privileged,Semgrep,–,K_tables/A1_populations.csv:9
+Compose: privileged,FindSecBugs,–,K_tables/A1_populations.csv:9
+Compose: privileged,Dependency-Check,–,K_tables/A1_populations.csv:9
+Compose: privileged,Trivy,–,K_tables/A1_populations.csv:9
+Compose: privileged,Grype,–,K_tables/A1_populations.csv:9
+Compose: privileged,Gitleaks,–,K_tables/A1_populations.csv:9
+Compose: privileged,Checkov,–,K_tables/A1_populations.csv:9
+Compose: privileged,Hadolint,–,K_tables/A1_populations.csv:9
+Compose: privileged,KICS,1,K_tables/A1_populations.csv:9
+Compose: privileged,Kubescape,–,K_tables/A1_populations.csv:9
+Compose: privileged,RESTler,–,K_tables/A1_populations.csv:9
+Compose: privileged,Union / catalog,1/1,K_tables/A1_populations.csv:9
+Compose: host network,Semgrep,–,K_tables/A1_populations.csv:10
+Compose: host network,FindSecBugs,–,K_tables/A1_populations.csv:10
+Compose: host network,Dependency-Check,–,K_tables/A1_populations.csv:10
+Compose: host network,Trivy,–,K_tables/A1_populations.csv:10
+Compose: host network,Grype,–,K_tables/A1_populations.csv:10
+Compose: host network,Gitleaks,–,K_tables/A1_populations.csv:10
+Compose: host network,Checkov,–,K_tables/A1_populations.csv:10
+Compose: host network,Hadolint,–,K_tables/A1_populations.csv:10
+Compose: host network,KICS,1,K_tables/A1_populations.csv:10
+Compose: host network,Kubescape,–,K_tables/A1_populations.csv:10
+Compose: host network,RESTler,–,K_tables/A1_populations.csv:10
+Compose: host network,Union / catalog,1/1,K_tables/A1_populations.csv:10
+Compose: Docker socket mounted,Semgrep,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,FindSecBugs,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Dependency-Check,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Trivy,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Grype,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Gitleaks,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Checkov,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Hadolint,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,KICS,1,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Kubescape,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,RESTler,–,K_tables/A1_populations.csv:11
+Compose: Docker socket mounted,Union / catalog,1/1,K_tables/A1_populations.csv:11
+Terraform: controls,Semgrep,–,K_tables/A1_populations.csv:13
+Terraform: controls,FindSecBugs,–,K_tables/A1_populations.csv:13
+Terraform: controls,Dependency-Check,–,K_tables/A1_populations.csv:13
+Terraform: controls,Trivy,4,K_tables/A1_populations.csv:13
+Terraform: controls,Grype,–,K_tables/A1_populations.csv:13
+Terraform: controls,Gitleaks,–,K_tables/A1_populations.csv:13
+Terraform: controls,Checkov,4,K_tables/A1_populations.csv:13
+Terraform: controls,Hadolint,–,K_tables/A1_populations.csv:13
+Terraform: controls,KICS,4,K_tables/A1_populations.csv:13
+Terraform: controls,Kubescape,–,K_tables/A1_populations.csv:13
+Terraform: controls,RESTler,–,K_tables/A1_populations.csv:13
+Terraform: controls,Union / catalog,4/4,K_tables/A1_populations.csv:13
+Terraform: originals,Semgrep,–,K_tables/A1_populations.csv:14
+Terraform: originals,FindSecBugs,–,K_tables/A1_populations.csv:14
+Terraform: originals,Dependency-Check,–,K_tables/A1_populations.csv:14
+Terraform: originals,Trivy,1,K_tables/A1_populations.csv:14
+Terraform: originals,Grype,–,K_tables/A1_populations.csv:14
+Terraform: originals,Gitleaks,–,K_tables/A1_populations.csv:14
+Terraform: originals,Checkov,1,K_tables/A1_populations.csv:14
+Terraform: originals,Hadolint,–,K_tables/A1_populations.csv:14
+Terraform: originals,KICS,1,K_tables/A1_populations.csv:14
+Terraform: originals,Kubescape,–,K_tables/A1_populations.csv:14
+Terraform: originals,RESTler,–,K_tables/A1_populations.csv:14
+Terraform: originals,Union / catalog,1/1,K_tables/A1_populations.csv:14
+Kubernetes: controls,Semgrep,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,FindSecBugs,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Dependency-Check,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Trivy,2,K_tables/A1_populations.csv:19
+Kubernetes: controls,Grype,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Gitleaks,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Checkov,3,K_tables/A1_populations.csv:19
+Kubernetes: controls,Hadolint,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,KICS,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Kubescape,0,K_tables/A1_populations.csv:19
+Kubernetes: controls,RESTler,–,K_tables/A1_populations.csv:19
+Kubernetes: controls,Union / catalog,3/5,K_tables/A1_populations.csv:19
+Kubernetes: originals,Semgrep,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,FindSecBugs,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Dependency-Check,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Trivy,8,K_tables/A1_populations.csv:20
+Kubernetes: originals,Grype,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Gitleaks,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Checkov,6,K_tables/A1_populations.csv:20
+Kubernetes: originals,Hadolint,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,KICS,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Kubescape,0,K_tables/A1_populations.csv:20
+Kubernetes: originals,RESTler,–,K_tables/A1_populations.csv:20
+Kubernetes: originals,Union / catalog,8/8,K_tables/A1_populations.csv:20
+Kubernetes: scope matrix,Semgrep,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,FindSecBugs,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Dependency-Check,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Trivy,8,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Grype,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Gitleaks,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Checkov,5,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Hadolint,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,KICS,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Kubescape,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,RESTler,–,K_tables/A1_populations.csv:21
+Kubernetes: scope matrix,Union / catalog,9/15,K_tables/A1_populations.csv:21
+Kubernetes: split documents,Semgrep,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,FindSecBugs,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Dependency-Check,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Trivy,6,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Grype,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Gitleaks,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Checkov,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Hadolint,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,KICS,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Kubescape,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,RESTler,–,K_tables/A1_populations.csv:22
+Kubernetes: split documents,Union / catalog,6/6,K_tables/A1_populations.csv:22
+OS advisories,Semgrep,–,K_tables/A1_populations.csv:23
+OS advisories,FindSecBugs,–,K_tables/A1_populations.csv:23
+OS advisories,Dependency-Check,–,K_tables/A1_populations.csv:23
+OS advisories,Trivy,1,K_tables/A1_populations.csv:23
+OS advisories,Grype,1,K_tables/A1_populations.csv:23
+OS advisories,Gitleaks,–,K_tables/A1_populations.csv:23
+OS advisories,Checkov,–,K_tables/A1_populations.csv:23
+OS advisories,Hadolint,–,K_tables/A1_populations.csv:23
+OS advisories,KICS,–,K_tables/A1_populations.csv:23
+OS advisories,Kubescape,–,K_tables/A1_populations.csv:23
+OS advisories,RESTler,–,K_tables/A1_populations.csv:23
+OS advisories,Union / catalog,1/1,K_tables/A1_populations.csv:23
+API object authorization,Semgrep,–,K_tables/A1_populations.csv:26
+API object authorization,FindSecBugs,–,K_tables/A1_populations.csv:26
+API object authorization,Dependency-Check,–,K_tables/A1_populations.csv:26
+API object authorization,Trivy,–,K_tables/A1_populations.csv:26
+API object authorization,Grype,–,K_tables/A1_populations.csv:26
+API object authorization,Gitleaks,–,K_tables/A1_populations.csv:26
+API object authorization,Checkov,–,K_tables/A1_populations.csv:26
+API object authorization,Hadolint,–,K_tables/A1_populations.csv:26
+API object authorization,KICS,–,K_tables/A1_populations.csv:26
+API object authorization,Kubescape,–,K_tables/A1_populations.csv:26
+API object authorization,RESTler,2,K_tables/A1_populations.csv:26
+API object authorization,Union / catalog,2/2,K_tables/A1_populations.csv:26
+AIGoat declared properties,Semgrep,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,FindSecBugs,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,Dependency-Check,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,Trivy,10,K_tables/A1_populations.csv:28
+AIGoat declared properties,Grype,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,Gitleaks,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,Checkov,10,K_tables/A1_populations.csv:28
+AIGoat declared properties,Hadolint,0,K_tables/A1_populations.csv:28
+AIGoat declared properties,KICS,21,K_tables/A1_populations.csv:28
+AIGoat declared properties,Kubescape,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,RESTler,–,K_tables/A1_populations.csv:28
+AIGoat declared properties,Union / catalog,31/37,K_tables/A1_populations.csv:28
